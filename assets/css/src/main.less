@@ -1,0 +1,73 @@
+//main less file
+@import '../../vendor/bootstrap/less/bootstrap.less';
+
+
+body.admin-bar {
+	#wpadminbar {
+		display:none;
+	}
+}
+
+.navegacion-principal {
+	.navbar;
+	.navbar-inverse;
+	.navbar-fixed-top;
+}
+
+header#header-sitio {
+	text-align:center;
+	padding:12px 0;
+	margin-top:48px;
+}
+
+
+//Layout
+#main {
+	.contenedor-estandar {
+		
+		margin-top:32px;
+		
+		.make-row();
+		.navegador-capitulos,
+		.navegador-relacionados
+		 {
+			.make-md-column(3);
+		}
+		.articulo-constitucion {
+			.make-md-column(6);
+		}
+
+		.capitulo-constitucion {
+			.make-md-column(9);
+			.articulos-capitulo {
+				.make-row();
+				.articulo-constitucion {
+					.make-md-column(8);	
+				}
+				.navegador-relacionados {
+					.make-md-column(4);
+				}
+			}
+		}
+	}
+}
+
+//Contenidos
+.articulo-constitucion {
+	p.afterp {
+		display:none;
+	}
+}
+
+.grupo-articulo {
+	padding-bottom:12px;
+	margin-bottom:12px;
+	border-bottom:1px solid #ccc;
+	.clearfix();
+}
+
+.con-rel {
+	p {
+		.bg-warning;
+	}
+}
