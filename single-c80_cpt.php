@@ -6,8 +6,6 @@
 <div id="main" class="container">
 	<section class="contenedor-estandar">
 		
-		<?php get_sidebar('articulos');?>
-		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		
 		<?php 

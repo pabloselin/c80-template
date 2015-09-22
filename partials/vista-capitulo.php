@@ -1,6 +1,6 @@
 <article class="capitulo-constitucion">
 	<header>
-		<h1><?php the_title();?></h1>
+		<h1><i class="fa fa-book"></i> <?php the_title();?></h1>
 	</header>	
 		<?php 
 			$args = array(

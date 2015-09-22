@@ -1,24 +1,23 @@
 //main less file
 @import '../../vendor/bootstrap/less/bootstrap.less';
+@import 'c80-variables.less';
+@import 'c80-header.less';
 
+
+body {
+	background-color:@gris-encabezado;
+}
 
 body.admin-bar {
 	#wpadminbar {
-		display:none;
+		//display:none;
 	}
 }
 
-.navegacion-principal {
-	.navbar;
-	.navbar-inverse;
-	.navbar-fixed-top;
+h1, h2, h3 {
+	font-family:@sans;
 }
 
-header#header-sitio {
-	text-align:center;
-	padding:12px 0;
-	margin-top:48px;
-}
 
 
 //Layout
@@ -34,11 +33,11 @@ header#header-sitio {
 			.make-md-column(3);
 		}
 		.articulo-constitucion {
-			.make-md-column(6);
+			.make-md-column(8);
 		}
 
 		.capitulo-constitucion {
-			.make-md-column(9);
+			.make-md-column(12);
 			.articulos-capitulo {
 				.make-row();
 				.articulo-constitucion {
@@ -52,18 +51,94 @@ header#header-sitio {
 	}
 }
 
+#footer-sitio {
+	min-height:200px;
+	background-color:@azul-footer;
+	color:white;
+	.footer-content {
+		.make-row();
+		.footer-column {
+			.make-md-column(8);
+			padding-top:@stdpad;
+		}	
+	}
+		a {
+			color:#2E76B7;
+		}
+}
+
 //Contenidos
-.articulo-constitucion {
+.capitulo-constitucion {
+	header {
+		h1 {
+			font-size:2rem;
+			font-weight:bold;
+			margin-bottom:12px;
+		}
+	}
+}
+
+
+.articulo-constitucion > div {
+	box-shadow:@stdshadow;
+	background-color:white;
+	header {
+		background-color:@gris-encabezado;
+		padding:@stdpad;
+		h1 {
+			font-family:@sans;
+			font-size:2rem;
+			font-weight:700;
+			margin-top:0;
+			color:@gris-claro;
+		}
+	}
 	p.afterp {
 		display:none;
+	}
+
+	.meta {
+		font-family:@sans;
+		color:@gris-tags;
+		font-size:1.6rem;
+			a {
+				color:@gris-tags;
+			}
+	}
+	.main-content {
+		font-family:@serif;
+		font-size:1.8rem;
+		padding:@stdpad;
+		a {
+			color:@gris-oscuro;
+			&:hover {
+				text-decoration:none;
+			}
+		}
 	}
 }
 
 .grupo-articulo {
 	padding-bottom:12px;
 	margin-bottom:12px;
-	border-bottom:1px solid #ccc;
 	.clearfix();
+}
+
+aside.navegador-relacionados {
+	box-shadow: @stdshadow;
+	background-color:white;
+	> div {
+		padding:@stdpad;
+	}
+	h4 {
+		font-family:@sans;
+		margin-top:0;
+		ul {
+			li {
+				font-family:@sans;
+			}
+		}
+	}
 }
 
 .con-rel {

@@ -1,0 +1,77 @@
+//header related rules
+
+header#header-sitio {
+	padding:125px 0 0 0;
+	background-color:@azul;
+	background-image:url(../img/header_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:top center;
+	font-family:'Open Sans', sans-serif;
+	.navegacion-principal {
+	.navbar;
+	.navbar-inverse;
+		background-color:@azul;
+		margin-bottom:0;
+		border:0;
+		.c80-dropdown {
+			color:@gris-claro;
+			background-color:@gris-oscuro;
+			display:block;
+			float:right;
+			width:400px;
+			&:hover {
+				background-color:@gris-inactivo;
+				
+			}
+		}
+	}
+
+	
+	.navegacion-texto {
+		background-color:@gris-claro;
+		.c80-nav {
+			.make-row();
+			.zmargx();
+			.separador-tipo-indice {
+				background-color:@gris-claro;
+				.make-md-column(3);
+				.zpadx();
+				ul {
+					.navul();
+					li {
+						
+						a {
+							color:@gris-inactivo;
+							text-transform:uppercase;
+							padding:12px 24px;
+							display:block;
+							background-color:@gris-claro;
+							font-family: @sans;
+							font-weight: 700;
+							font-size:1.3rem;
+							&:hover, &.active {
+								color:white;
+								text-decoration: none;
+								background-color:@gris-oscuro;
+							}
+						}
+					}
+				}
+			}
+			.visor-textos,
+			.visor-capitulos,
+			.visor-temas {
+				background-color:@gris-oscuro;
+				.make-md-column(9);
+				.zpadx();
+			}
+
+
+		}
+	}
+
+	.breadcrumb {
+		.make-row();
+		background-color:@gris-breadcrumb;
+	}
+}

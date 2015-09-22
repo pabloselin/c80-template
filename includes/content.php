@@ -46,14 +46,14 @@ function c80t_articulos() {
 	return $output;
 }
 
-function c80t_capitulo() {
+function c80t_capitulos() {
 
 }
 
 function c80t_parentname($postid, $en_capitulo = false) {
 	$ancestors = get_post_ancestors( $postid );
 	if($ancestors && !$en_capitulo) {
-		$name = get_the_title($ancestors[0]);
+		$name = get_the_title($ancestors[0]) . ' <i class="fa fa-caret-right"></i> ';
 		return $name;	
 	}	
 }
