@@ -59,7 +59,10 @@ function c80t_parentname($postid, $en_capitulo = false) {
 }
 
 function c80t_template_loader($template, $data) {
-	
+	/**
+	 * Cargador de plantillas incluyendo variables
+	 */
+
 	ob_start();
 	
 	extract($data);
@@ -68,4 +71,50 @@ function c80t_template_loader($template, $data) {
 
 	return ob_get_clean();
 
+}
+
+function c80t_run_frontpage() {
+	/**
+	 * Crea un loop para los menús
+	 */
+	$items = c80t_getmenus('portada');
+	//si tengo items creo un arreglo con los ids
+	if($items) {
+		foreach($items as $item) {
+			$ids[] = $item->object_id;
+		}
+	
+	$args = array(
+		'post__in' => $ids
+		);
+	$query = new WP_Query($args);
+	return $query;
+	}
+}
+
+function c80t_getmenus($menu) {
+	/**
+	 * Obtiene items de un objeto de menú
+	 */
+		$menuobject = c80t_getmenuobject($menu);
+		if($menuobject) {
+		//Si tengo un objeto menú me devuelve el objeto y empiezo a recolectar items
+			$items = wp_get_nav_menu_items( $menuobject->term_id );
+			return $items;
+		} else {
+			//Si no hay hago un llamado independiente por sección
+			return false;
+		}
+}
+
+function c80t_getmenuobject($location) {
+	/**
+	 * Obtiene el menú desde una ubicación escogida
+	 */
+	if( ( $locations = get_nav_menu_locations() ) && isset($locations[$location]) ){
+		$menu = wp_get_nav_menu_object( $locations[$location] );
+		return $menu;
+	} else {
+		return false;
+	}
 }
