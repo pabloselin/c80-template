@@ -59,6 +59,14 @@
 								<?php echo $he;?>	
 							</div>
 							
+							<?php if($key > 1) {?>
+								
+								<div class="excerpt">
+									<?php the_excerpt();?>
+								</div>
+
+							<?php }?>
+							
 							
 							<div class="bottom-meta">
 								
@@ -67,7 +75,7 @@
 								</p>
 							
 								<p class="temas">
-									<?php the_tags( 'Etiquetas: ', ', ' );?>
+									<?php the_tags( '<i class="fa fa-tags"></i> ', ' ' );?>
 								</p>	
 							
 							</div>
@@ -88,13 +96,50 @@
 
 		<section class="opinion">
 			
+			<div class="pad">
 			<header>
-				<h2>Columnas</h2>
-				<p class="date">
-					<?php echo date_i18n( 'F, Y' );?>
-				</p>
+					<h2>Columnas</h2>
+					<p class="date">
+						<?php echo date_i18n( 'F, Y' );?>
+					</p>
 			</header>
+				
+				<?php 
+					$columnas = c80t_get_columnas(3);
+					while($columnas->have_posts() ): $columnas->the_post();?>
+				
+					<article class="columna">
+						
+						<div class="avatar">
+							<?php echo c80t_avatar(70);?>
+						</div>
 
+						<div class="top-meta">
+							<p class="cats"><?php the_category( ', ' );?></p>
+							<p class="autor"><?php the_author( );?></p>
+						</div>
+				
+						<h3>
+							<a href="<?php the_permalink();?>"><?php the_title();?></a>
+						</h3>
+						<div class="bottom-meta">
+							
+							<p class="citas">
+								<i class="fa fa-file-text-o"></i> Artículos citados
+							</p>
+
+							<p class="comentarios">
+								<i class="fa fa-comments"></i> Comentarios
+							</p>
+
+						</div>
+					</article>
+					
+				
+					<?php 
+					wp_reset_postdata();
+					endwhile; 
+				?></div>
 		</section>
 
 	</div>

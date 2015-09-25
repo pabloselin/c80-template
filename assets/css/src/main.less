@@ -79,10 +79,15 @@ h1, h2, h3
 
 		section.opinion {
 			.make-md-column(4);
-			box-shadow:@stdshadow;
-			padding:12px;
-			background-color:white;
+			div.pad {
+				box-shadow:@stdshadow;
+				background-color:white;
+			}
 			min-height:100px;
+			header {
+				background-color:#f5f5f5;
+				padding:12px;
+			}
 		}
 
 	}
@@ -114,6 +119,16 @@ section.noticias article {
 	h2 {
 		font-size:2.2rem;
 	}
+
+	.excerpt {
+		padding:@stdpad;
+		font-family:@sans;
+	}
+}
+
+section.opinion article {
+	padding:@stdpad;
+	margin-bottom:16px;
 }
 
 p.categoria,
@@ -150,6 +165,17 @@ div.bottom-meta {
 	background-color:#F5F5F5;
 }
 
+p.temas {
+	a {
+		display:inline-block;
+		padding:3px 6px;
+		background-color:fade(@azul, 50%);
+		color:white;
+		font-size:1.3rem;
+		border-radius:3px;
+	}
+}
+
 //Estilo artículo principal
 
 section.noticias article.item-1 {
@@ -172,16 +198,94 @@ section.opinion {
 	header {
 		h2 {
 			margin:0;
+			font-size:2rem;
 		}
 		p.date {
 			font-family:@sans;
 			font-weight:700;
 			color:#666666;
 			font-size:1.8rem;
+			margin-bottom:0;
+		}
+	}
+
+	article.columna {
+
+		.top-meta {
+			font-family:@sans;
+			font-weight:700;
+			padding:0;
+			
+			p {
+				margin-bottom:0;
+			}
+		}
+
+		h3 {
+			margin:0;
+			font-family:@serif;
+			font-style:italic;
+			font-weight:normal;
+				a {
+					color:#000;
+				}
+			}
+
+		.bottom-meta {
+			background-color:white;
+			border-top:1px solid #000;
+			border-bottom:1px solid #000;
+			padding:6px 0;
+			margin-top:12px;
+			overflow:hidden;
+			p {
+				width:50%;
+				float:left;
+				margin-bottom:0;
+			}
+		}
+
+		div.avatar {
+			width:70px;
+			height:70px;
+			overflow: hidden;
+			border-radius:35px;
+			float:left;
+			margin-right:12px;
 		}
 	}
 }
 
+//Artículo single
+
+
+
+article.articulo-estandar {
+	.make-md-column(8);
+	margin-bottom:12px;
+	div.pad {
+		background-color:white;
+		box-shadow:@stdshadow;
+		header {
+			position: relative;
+			margin-bottom:12px;
+			h1 {
+				font-family:@sans;
+				color:white;
+				position:absolute;
+				bottom:0;
+				text-shadow:1px 1px 3px #000;
+				padding:12px;
+			}
+		}
+		div.contenido {
+			padding:12px;
+			font-family:@sans;
+			font-size:1.6rem;
+		}
+	}
+	
+}
 
 #footer-sitio {
 	min-height:200px;

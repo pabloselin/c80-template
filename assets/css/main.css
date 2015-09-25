@@ -7128,9 +7128,6 @@ h3 {
   min-height: 1px;
   padding-left: 8px;
   padding-right: 8px;
-  box-shadow: 0 0 3px #dfdfdf;
-  padding: 12px;
-  background-color: white;
   min-height: 100px;
 }
 @media (min-width: 992px) {
@@ -7138,6 +7135,14 @@ h3 {
     float: left;
     width: 33.33333333%;
   }
+}
+#main .contenedor-home section.opinion div.pad {
+  box-shadow: 0 0 3px #dfdfdf;
+  background-color: white;
+}
+#main .contenedor-home section.opinion header {
+  background-color: #f5f5f5;
+  padding: 12px;
 }
 section.noticias article {
   margin-bottom: 16px;
@@ -7164,6 +7169,14 @@ section.noticias article h2 a:hover {
 }
 section.noticias article h2 {
   font-size: 2.2rem;
+}
+section.noticias article .excerpt {
+  padding: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+section.opinion article {
+  padding: 12px;
+  margin-bottom: 16px;
 }
 p.categoria,
 p.fecha {
@@ -7197,6 +7210,14 @@ div.bottom-meta {
   padding: 12px;
   background-color: #F5F5F5;
 }
+p.temas a {
+  display: inline-block;
+  padding: 3px 6px;
+  background-color: rgba(9, 70, 113, 0.5);
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 3px;
+}
 section.noticias article.item-1 div.img {
   position: relative;
 }
@@ -7210,12 +7231,86 @@ section.noticias article.item-1 div.img h1 a {
 }
 section.opinion header h2 {
   margin: 0;
+  font-size: 2rem;
 }
 section.opinion header p.date {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   color: #666666;
   font-size: 1.8rem;
+  margin-bottom: 0;
+}
+section.opinion article.columna .top-meta {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  padding: 0;
+}
+section.opinion article.columna .top-meta p {
+  margin-bottom: 0;
+}
+section.opinion article.columna h3 {
+  margin: 0;
+  font-family: 'Alegreya', serif;
+  font-style: italic;
+  font-weight: normal;
+}
+section.opinion article.columna h3 a {
+  color: #000;
+}
+section.opinion article.columna .bottom-meta {
+  background-color: white;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 6px 0;
+  margin-top: 12px;
+  overflow: hidden;
+}
+section.opinion article.columna .bottom-meta p {
+  width: 50%;
+  float: left;
+  margin-bottom: 0;
+}
+section.opinion article.columna div.avatar {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 35px;
+  float: left;
+  margin-right: 12px;
+}
+article.articulo-estandar {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 12px;
+}
+@media (min-width: 992px) {
+  article.articulo-estandar {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+article.articulo-estandar div.pad {
+  background-color: white;
+  box-shadow: 0 0 3px #dfdfdf;
+}
+article.articulo-estandar div.pad header {
+  position: relative;
+  margin-bottom: 12px;
+}
+article.articulo-estandar div.pad header h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  text-shadow: 1px 1px 3px #000;
+  padding: 12px;
+}
+article.articulo-estandar div.pad div.contenido {
+  padding: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
 }
 #footer-sitio {
   min-height: 200px;

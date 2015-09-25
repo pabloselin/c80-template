@@ -85,11 +85,24 @@ function c80t_run_frontpage() {
 		}
 	
 	$args = array(
-		'post__in' => $ids
+		'post__in' => $ids,
+		'orderby' => 'post__in'
 		);
 	$query = new WP_Query($args);
 	return $query;
 	}
+}
+
+function c80t_get_columnas($numberposts = 3) {
+	/**
+	 * Devuelve las últimas columnas
+	 */
+	$args = array(
+		'post_type' => 'columnas',
+		'posts_per_page' => $numberposts
+		);
+	$query = new WP_Query($args);
+	return $query;
 }
 
 function c80t_getmenus($menu) {
@@ -117,4 +130,11 @@ function c80t_getmenuobject($location) {
 	} else {
 		return false;
 	}
+}
+
+function c80t_avatar($size) {
+	global $post;
+	$authorid = get_the_author_meta( 'ID' );
+	$avatar = get_avatar($authorid, $size);
+	return $avatar;
 }
