@@ -7312,6 +7312,13 @@ article.articulo-estandar div.pad div.contenido {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
 }
+article.articulo-estandar div.pad div.contenido div.excerpt {
+  font-family: 'Alegreya', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #3B0803;
+}
 #footer-sitio {
   min-height: 200px;
   background-color: #253746;

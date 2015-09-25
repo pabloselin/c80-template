@@ -12,6 +12,20 @@
 		
 			<div class="pad">
 				<header>
+					<div class="top-meta">
+						<p class="categoria">
+							<?php the_category(', ');?>
+						</p>
+						<p class="fecha">
+							<?php the_time(get_option('date_format'));?>
+						</p>
+						<p class="related">
+									<a href="#">
+										<i class="fa fa-file-text-o"></i>
+									</a>
+								</p>	
+					</div>
+
 					<?php if(has_post_thumbnail( )):?>
 						<?php the_post_thumbnail( 'main' );?>
 					<?php endif;?>	
@@ -21,6 +35,10 @@
 						
 				<div class="contenido">
 					
+					<p class="autor">
+						Por: <?php the_author( );?>
+					</p>
+
 					<div class="excerpt">
 						<?php the_excerpt();?>
 					</div>	
