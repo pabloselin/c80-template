@@ -1,7 +1,10 @@
 //main less file
 @import '../../vendor/bootstrap/less/bootstrap.less';
+@import 'wpcore.less';
 @import 'c80-variables.less';
 @import 'c80-header.less';
+@import 'c80-comments.less';
+@import 'c80-cargador.less';
 
 
 body {
@@ -20,7 +23,9 @@ h1, h2, h3
 	font-weight:700;
 }
 
-
+.afterp {
+	display:none;
+		}
 
 //Layout
 #main {
@@ -145,7 +150,8 @@ p.fecha {
 div.top-meta {
 	padding:@stdpad;
 	position: relative;
-	p.related {
+	p.related a 
+	{
 		position: absolute;
 		right:6px;
 		top:12px;
@@ -156,6 +162,7 @@ div.top-meta {
 		text-align:center;
 		background-color:#f5f5f5;
 		border-radius:50%;
+		border:2px solid #337ab7;
 	}
 }
 
@@ -256,11 +263,10 @@ section.opinion {
 	}
 }
 
-//Artículo single
 
-
-
-article.articulo-estandar {
+article.articulo-estandar,
+article.columna-estandar
+ {
 	.make-md-column(8);
 	margin-bottom:12px;
 	div.pad {
@@ -271,11 +277,7 @@ article.articulo-estandar {
 			margin-bottom:12px;
 			h1 {
 				font-family:@sans;
-				color:white;
-				position:absolute;
-				bottom:0;
-				text-shadow:1px 1px 3px #000;
-				padding:12px;
+				padding-left:12px;
 			}
 		}
 		div.contenido {
@@ -292,6 +294,24 @@ article.articulo-estandar {
 		}
 	}
 	
+}
+
+article.articulo-estandar {
+	div.pad {
+		header {
+			h1 {
+				color:white;
+				position:absolute;
+				bottom:0;
+				text-shadow:1px 1px 3px #000;
+				padding:12px;
+			}
+		}
+	}
+}
+
+div.comments {
+	.make-md-column(8);
 }
 
 #footer-sitio {

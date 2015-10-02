@@ -8,16 +8,18 @@ function c80t_articulos() {
 	$args = array(
 		'post_type' => 'c80_cpt',
 		'numberposts' => 100,
-		'post_parent' => 0
+		'post_parent' => 0,
+		'order_by' => 'menu_order',
+		'order' => 'ASC'
 		);
 
 	$capitulos = get_posts($args);
 	
 	$items = '';
-	$capitems = '';	
+	
 
 	foreach($capitulos as $capitulo) {
-
+		$capitems = '';		
 		$capitems .= '<a class="capitulo-lista" href="'.get_permalink($capitulo->ID).'">'.$capitulo->post_title.'</a>';
 
 		//Segundo nivel
@@ -138,3 +140,10 @@ function c80t_avatar($size) {
 	$avatar = get_avatar($authorid, $size);
 	return $avatar;
 }
+
+function c80t_comments_fields( $fields ) {
+	$fields['url'] = '';
+	return $fields;
+}
+
+add_filter('comment_form_default_fields', 'c80t_comments_fields');

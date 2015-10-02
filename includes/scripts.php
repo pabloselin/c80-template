@@ -4,7 +4,7 @@
 function c80t_scripts() {
 	//bootstrap
 	wp_enqueue_script( 'bootstrap', get_bloginfo('template_url') . '/assets/vendor/bootstrap/dist/js/bootstrap.js', array(), C80_THEME_VERSION, false );
-	wp_enqueue_script( 'c80t-scripts', get_bloginfo('template_url') . '/assets/js/scripts.js', array('bootstrap'), C80_THEME_VERSION, false);
+	wp_enqueue_script( 'c80t-scripts', get_bloginfo('template_url') . '/assets/js/scripts.js', array('bootstrap', 'jquery'), C80_THEME_VERSION, false);
 }
 
 function c80t_styles() {

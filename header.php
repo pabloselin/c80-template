@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php wp_title();?></title>
 	<?php wp_head();?>
 </head>
-<body <?php body_class();?>>
+<body <?php body_class();?> >
 
 <header id="header-sitio">
     <!-- Navegación principal -->
      <nav class="navegacion-principal">
-      <div class="container">
+      <div class="container-fluid">
         
         <?php
             wp_nav_menu( array(
@@ -29,7 +28,7 @@
 
     <div class="breadcrumb">
       <!-- contenedor breadcrumb -->
-        <div class="container">
+        <div class="container-fluid">
           
             <div class="c80-breadcrumb">
               <a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a>

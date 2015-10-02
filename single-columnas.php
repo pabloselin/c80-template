@@ -8,20 +8,23 @@
 		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part('partials/aside', 'c80rel');?>
-		<article class="articulo-estandar deslizable">
+		<article class="columna-estandar deslizable">
 		
 			<div class="pad">
 				<header>
 					<div class="top-meta">
+						
 						<p class="categoria">
 							<?php the_category(', ');?>
 						</p>
+						
 						<p class="fecha">
 							<?php the_time(get_option('date_format'));?>
 						</p>
+						
 						<p class="related">
-									<?php echo c80t_relink($post->ID);?>
-								</p>	
+							<?php echo c80t_relink($post->ID);?>
+						</p>	
 					</div>
 
 					<?php if(has_post_thumbnail( )):?>

@@ -1,0 +1,92 @@
+// Cargador c80
+
+//Artículo single
+body.single {
+	.contenedor-estandar {
+		position: relative;
+		
+		.deslizable {
+			transition:left linear 0.25s;	
+		}
+
+		&.con-c80-rel {
+			overflow:hidden;
+			.deslizable {
+				left:@loaderwidth;
+			}
+		}
+	}
+}
+
+.cargador-articulos {
+	transition:all linear 0.25s;
+	background-color:white;
+	top:0;
+	position:absolute;
+	padding:12px;
+	width:@loaderwidth;
+	left:-@loaderwidth;
+	box-shadow:@stdshadow;
+	h2 {
+		font-size:1.8rem;
+		margin-top:0;
+	}
+
+	&.enabled {
+		left:0;
+		opacity:1;
+	}
+	&.disabled {
+		left:-@loaderwidth;
+		opacity:0;
+	}
+
+	.tab-pane {
+		padding:12px;
+		border-width:0 1px 1px 1px;
+		border-style:solid;
+		border-color:#ccc;
+	}
+
+	.textos-c80-mini {
+		max-height:550px;
+		overflow:scroll;
+		h3 {
+			font-size:1.8rem;
+		}
+		h4 {
+			font-size:1.6rem;
+		}
+		ul {
+			margin:0;
+			padding:0;
+			li {
+				margin:0 0 12px 0;
+				padding:0;
+				list-style:none;
+				.lc {
+					font-family:@serif;
+					font-size:1.6rem;
+					a {
+						color:@stdtxt;
+					}
+				}
+			}
+		}
+	}
+
+	.texto-c80-rel {
+		.constarticle {
+			padding-bottom:12px;
+			margin-bottom:12px;
+			border-bottom:1px dotted #ccc;
+		}
+		.lc {
+			font-family:@serif;
+			font-size:1.6rem;
+			a {
+				color:@stdtxt;
+			}
+		}
+	}
+}
