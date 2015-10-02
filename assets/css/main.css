@@ -6333,6 +6333,10 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
 .cargador-articulos .textos-c80-mini ul li .lc a {
   color: #333333;
 }
+.cargador-articulos .texto-c80-rel {
+  max-height: 550px;
+  overflow: scroll;
+}
 .cargador-articulos .texto-c80-rel .constarticle {
   padding-bottom: 12px;
   margin-bottom: 12px;
