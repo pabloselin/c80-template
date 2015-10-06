@@ -147,3 +147,18 @@ function c80t_comments_fields( $fields ) {
 }
 
 add_filter('comment_form_default_fields', 'c80t_comments_fields');
+
+function c80t_breadcrumb() {
+	/**
+	 * Devuelve el breadcrumb
+	 */
+	$html = '<div class="breadcrumb">';
+	$html .= '<div class="container">';
+	$html .= '<div class="c80-breadcrumb">';
+    $html .= '<a href="' . get_bloginfo('url') . '">' . get_bloginfo('name') . '</a>';
+    $html .= '</div>';
+	$html .= '</div>';
+    $html .= '</div>';
+
+    return $html;
+}

@@ -7,8 +7,16 @@
 
 <header id="header-sitio">
     <!-- Navegación principal -->
+    <div class="container">
+        <div class="row">
+            <h1>
+                <img src="<?php bloginfo('template_url');?>/assets/img/logo-c80.png" alt="<?php bloginfo('name');?>" class="logo">
+            </h1>
+            <h2 class="description"><?php bloginfo('description');?></h2>
+        </div>
+    </div>
      <nav class="navegacion-principal">
-      <div class="container-fluid">
+      <div class="container">
         
         <?php
             wp_nav_menu( array(
@@ -25,15 +33,8 @@
         
       </div>
     </nav>
-
-    <div class="breadcrumb">
-      <!-- contenedor breadcrumb -->
-        <div class="container-fluid">
-          
-            <div class="c80-breadcrumb">
-              <a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a>
-            </div>
-            
-        </div>
-    </div>
+    
+    <?php if(!is_front_page()):?>
+        <?php echo c80t_breadcrumb();?>
+    <?php endif;?>
 </header>

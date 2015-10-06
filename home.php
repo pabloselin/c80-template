@@ -32,22 +32,23 @@
 					<article <?php post_class('item-' . $key );?> >
 						
 						<div class="pad">
-							<div class="top-meta">
-								
-								<p class="categoria">
-									<?php the_category( ', ' );?>
-								</p>
-							
-								<p class="fecha">
-									<?php the_time( get_option( 'date_format' ) );?>
-								</p>
-								
-								<p class="related">
-									<a href="#">
-										<i class="fa fa-file-text-o"></i>
-									</a>
-								</p>
-							</div>
+							<?php if($key > 1) { ?>
+									<div class="top-meta">
+										<p class="categoria">
+											<?php the_category( ', ' );?>
+										</p>
+									
+										<p class="fecha">
+											<?php the_time( get_option( 'date_format' ) );?>
+										</p>
+										
+										<p class="related">
+											<a href="#">
+												<i class="fa fa-file-text-o"></i>
+											</a>
+										</p>
+									</div>
+								<?php }?>
 							<div class="img">
 								<?php if(has_post_thumbnail( )):?>
 									<a href="<?php the_permalink();?>">
@@ -67,6 +68,23 @@
 
 							<?php }?>
 							
+							<?php if($key == 1) {?>
+								<div class="top-meta">
+										<p class="categoria">
+											<?php the_category( ', ' );?>
+										</p>
+									
+										<p class="fecha">
+											<?php the_time( get_option( 'date_format' ) );?>
+										</p>
+										
+										<p class="related">
+											<a href="#">
+												<i class="fa fa-file-text-o"></i>
+											</a>
+										</p>
+									</div>
+							<?php }?>
 							
 							<div class="bottom-meta">
 								
