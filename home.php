@@ -48,11 +48,11 @@
 									</div>
 								<?php }?>
 							<div class="img">
-								<?php if(has_post_thumbnail( )):?>
+								
 									<a href="<?php the_permalink();?>">
 										<?php the_post_thumbnail( $size );?>
 									</a>
-								<?php endif;?>
+								
 								<?php echo $hs;?>
 									<a href="<?php the_permalink();?>"><?php the_title();?></a>
 								<?php echo $he;?>	
