@@ -162,3 +162,30 @@ function c80t_breadcrumb() {
 
     return $html;
 }
+
+function c80t_default_post_thumbnail($html, $post_id, $post_thumbnail_id, $size, $attr) {
+	/**
+	 * Añade imagen por defecto en caso de que no haya
+	 */
+
+	$id = get_post_thumbnail_id(); // gets the id of the current post_thumbnail (in the loop)
+    $src = wp_get_attachment_image_src($id, $size); // gets the image url specific to the passed in size (aka. custom image size)
+    $alt = get_the_title($id); // gets the post thumbnail title
+    if(is_array($attr) && isset($attr['class'])) {
+    	$class = $attr['class']; // gets classes passed to the post thumbnail, defined here 	
+    } else {
+    	$class = 'post-image';
+    }
+    
+    $defaultsrc = get_bloginfo('template_url') . '/assets/img/placeholder-' . $size . '.png';
+
+    if(has_post_thumbnail( $post_id )) {
+    	$html = '<img src="' . $src[0] . '" alt="' . $alt . '" class="' . $class . '" />';
+    } else {
+    	$html = '<img src="' . $defaultsrc . '" alt="' . get_the_title($post_id) . '" class="placeholder">';
+    }
+
+    return $html;
+}
+
+add_filter('post_thumbnail_html', 'c80t_default_post_thumbnail', 99, 5);
