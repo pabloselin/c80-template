@@ -43,9 +43,7 @@
 										</p>
 										
 										<p class="related">
-											<a href="#">
-												<i class="fa fa-file-text-o"></i>
-											</a>
+											<?php echo c80t_relink($post->ID);?>
 										</p>
 									</div>
 								<?php }?>
@@ -79,9 +77,7 @@
 										</p>
 										
 										<p class="related">
-											<a href="#">
-												<i class="fa fa-file-text-o"></i>
-											</a>
+											<?php echo c80t_relink($post->ID);?>
 										</p>
 									</div>
 							<?php }?>

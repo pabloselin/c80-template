@@ -80,7 +80,7 @@ function c80t_capquery($capid) {
 }
 
 function c80t_relink($postid) {
-	$relink = '<a data-toggle="tooltip" data-placement="left" class="showC80Rel" href="#" title="' . c80t_countrels($postid) . ' artículos relacionados, clic para ver.">';
+	$relink = '<a data-toggle="tooltip" data-placement="left" class="showC80Rel" href="#" title="' . c80t_countrels($postid) . ' artículos relacionados.">';
 	$relink .= '<i class="fa fa-file-text-o"></i></a>';
 	return $relink;
 }
