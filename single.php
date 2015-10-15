@@ -24,9 +24,9 @@
 								</p>	
 					</div>
 
-					<?php if(has_post_thumbnail( )):?>
-						<?php the_post_thumbnail( 'main' );?>
-					<?php endif;?>	
+					
+					<?php the_post_thumbnail( 'main' );?>
+					
 					<h1><?php the_title();?></h1>
 						
 				</header>
