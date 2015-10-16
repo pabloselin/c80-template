@@ -6823,3 +6823,56 @@ a.con-rel p:hover,
 a.con-rel p:focus {
   background-color: #f7ecb5;
 }
+aside {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition: all ease-in 0.5s;
+}
+@media (min-width: 992px) {
+  aside {
+    float: left;
+    width: 25%;
+  }
+}
+aside h2 {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 12px 12px 0;
+}
+aside ul {
+  margin: 0;
+  padding: 0;
+}
+aside div {
+  background-color: white;
+  box-shadow: 0 0 3px #dfdfdf;
+  padding-bottom: 12px;
+}
+aside .aside-item {
+  padding: 0;
+  list-style: none;
+}
+aside .aside-item a {
+  display: block;
+  padding: 12px 12px 0;
+}
+aside .aside-item a:hover {
+  text-decoration: none;
+}
+aside .aside-item p.fecha {
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #333;
+}
+aside .aside-item p.author {
+  margin-bottom: 0;
+}
+aside .aside-item h3 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+aside.disp {
+  display: none;
+}

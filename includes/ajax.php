@@ -52,7 +52,7 @@ function c80t_constquery() {
 		$artitems = '';
 		while($articulos->have_posts()): $articulos->the_post();
 			$content = apply_filters( 'the_content', get_the_content() );
-			$artitems .= '<li><h4><a href="' . get_permalink($articulos->ID) . '" class="articulo-lista">' . get_the_title() . '</a></h4><div class="lc">' . $content . '</div></li>';
+			$artitems .= '<li><h4><a href="' . get_permalink($articulos->ID) . '" class="articulo-lista"><i class="fa fa-file-text-o"></i> ' . get_the_title() . '</a></h4><div class="lc">' . $content . '</div></li>';
 		endwhile;
 		wp_reset_postdata();
 
@@ -60,7 +60,8 @@ function c80t_constquery() {
 	
 	}
 
-	$output = '<ul>' . $items . '</ul>';
+	$link = '<a href="' . get_post_type_archive_link( 'c80_cpt' ) . '"><i class="fa fa-book"></i> ver texto completo</a>';
+	$output = '<p>' . $link . '</p><ul>' . $items . '</ul>';
 
 	return $output;
 }
@@ -85,6 +86,13 @@ function c80t_relink($postid) {
 	return $relink;
 }
 
+function c80t_relfoot($postid) {
+	$nlinks = c80t_countrels($postid);
+	$relink = '<a class="showC80Rel" href="#" title="' . c80t_countrels($postid) . ' artículos relacionados.">';
+	$relink .= '<i class="fa fa-file-text-o"></i> <strong>' . $nlinks . '</strong> Artículos relacionados</a>';
+	return $relink;
+}
+
 function c80t_artquery($artid) {
 		$args = array(
 			'p' => $artid,
@@ -96,8 +104,9 @@ function c80t_artquery($artid) {
 		while( $archivequery->have_posts() ): $archivequery->the_post();
 			$content = apply_filters( 'the_content', get_the_content() );
 			$title = c80t_parentname($archivequery->ID) . get_the_title();
+			$artlink = '<p><a href="' . get_permalink($artid) . '">( ir a artículo )</a></p>';
 			$artitems .= '<div class="constarticle">';
-			$artitems .= '<h4>' . $title . '</h4><div class="lc">' . $content . '</div></div>';
+			$artitems .= '<h4>' . $title . '</h4>' . $artlink . '<div class="lc">' . $content . '</div></div>';
 		endwhile;	
 		wp_reset_postdata();
 		return $artitems;

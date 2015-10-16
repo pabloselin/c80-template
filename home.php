@@ -58,13 +58,13 @@
 								<?php echo $he;?>	
 							</div>
 							
-							<?php if($key > 1) {?>
+							
 								
 								<div class="excerpt">
 									<?php the_excerpt();?>
 								</div>
 
-							<?php }?>
+							
 							
 							<?php if($key == 1) {?>
 								<div class="top-meta">

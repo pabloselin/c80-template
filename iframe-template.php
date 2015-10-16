@@ -1,6 +1,6 @@
 <?php 
-//standard index para vista de artículos
-	get_header();
+//single iframe para compartir en otros lados
+	get_header('iframe');
 ?>
 
 <div id="main" class="container">
@@ -8,9 +8,8 @@
 		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		
-		<?php get_template_part('partials/aside', 'c80rel');?>
-		
-		<article class="articulo-estandar deslizable">
+	
+		<article class="articulo-iframe">
 		
 			<div class="pad">
 				<header>
@@ -22,8 +21,8 @@
 							<?php the_time(get_option('date_format'));?>
 						</p>
 						<p class="related">
-							<?php echo c80t_relink($post->ID);?>
-						</p>	
+									<?php echo c80t_relink($post->ID);?>
+								</p>	
 					</div>
 
 					
@@ -36,7 +35,7 @@
 				<div class="contenido">
 					
 					<p class="autor">
-						Por: <?php the_author();?>
+						Por: <?php the_author( );?>
 					</p>
 
 					<div class="excerpt">
@@ -45,20 +44,12 @@
 
 					<?php the_content();?>
 						
-
-					<?php echo c80t_relfoot($post->ID);?>
-
 				</div>
 			</div>
 		
 		</article>
 		
 			<?php endwhile; ?>
-
-			<?php get_sidebar();?>
-
-			<!-- comments -->
-				<?php comments_template();?>
 
 			<!-- post navigation -->
 
@@ -67,7 +58,7 @@
 			<div class="error404">
 			
 				<p>No se encontró contenido</p>
-				
+			
 			</div>
 		
 		<?php endif; ?>
@@ -76,5 +67,5 @@
 </div>
 
 <?php
-	get_footer();
+	get_footer('iframe');
 ?>

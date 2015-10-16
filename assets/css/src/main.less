@@ -409,3 +409,58 @@ aside.navegador-relacionados {
 		.bg-warning;
 	}
 }
+
+aside {
+	.make-md-column(3);
+	
+	transition:all ease-in 0.5s;
+	
+	h2 {
+		font-size:1.6rem;
+		margin:0;
+		padding:12px 12px 0;
+	}
+	ul {
+		margin:0;
+		padding:0;
+	}
+
+	div {
+		background-color:white;
+		box-shadow:@stdshadow;	
+		padding-bottom:12px;
+	}
+	
+	.aside-item {
+		padding:0;
+		list-style:none;
+		
+		a {
+			display:block;
+			padding:@stdpad @stdpad 0;	
+		}
+
+		a:hover {
+			text-decoration:none;	
+		}
+		
+		p.fecha {
+			font-weight:normal;
+			font-size:1.3rem;
+			color:#333;	
+		}
+
+		p.author {
+			margin-bottom:0;
+		}
+
+		h3 {
+			margin:0;
+			font-size:1.6rem;
+		}
+	}
+}
+
+aside.disp {
+	display:none;
+}
