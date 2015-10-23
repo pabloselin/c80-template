@@ -32,30 +32,23 @@
 					<article <?php post_class('item-' . $key );?> >
 						
 						<div class="pad">
-							<?php if($key > 1) { ?>
-									<div class="top-meta">
-										<p class="categoria">
-											<?php the_category( ', ' );?>
-										</p>
-									
-										<p class="fecha">
-											<?php the_time( get_option( 'date_format' ) );?>
-										</p>
-										
-										<p class="related">
-											<?php echo c80t_relink($post->ID);?>
-										</p>
-									</div>
-								<?php }?>
 							<div class="img">
 								
 									<a href="<?php the_permalink();?>">
 										<?php the_post_thumbnail( $size );?>
 									</a>
 								
-								<?php echo $hs;?>
-									<a href="<?php the_permalink();?>"><?php the_title();?></a>
-								<?php echo $he;?>	
+								<div class="top-info">
+									<?php the_category( ', ' );?> |	<?php the_time( get_option( 'date_format' ) );?>
+									<?php echo $hs;?>
+										<a href="<?php the_permalink();?>"><?php the_title();?></a>
+									<?php echo $he;?>
+									
+									<p class="autor">
+										<?php the_author( );?>
+									</p>
+
+								</div>
 							</div>
 							
 							
@@ -66,30 +59,16 @@
 
 							
 							
-							<?php if($key == 1) {?>
-								<div class="top-meta">
-										<p class="categoria">
-											<?php the_category( ', ' );?>
-										</p>
-									
-										<p class="fecha">
-											<?php the_time( get_option( 'date_format' ) );?>
-										</p>
-										
-										<p class="related">
-											<?php echo c80t_relink($post->ID);?>
-										</p>
-									</div>
-							<?php }?>
+							
 							
 							<div class="bottom-meta">
 								
-								<p class="autor">
-									Por: <?php the_author( );?>
+								<p class="related">
+											<?php echo c80t_relink($post->ID);?>
 								</p>
 							
 								<p class="temas">
-									<?php the_tags( '<i class="fa fa-tags"></i> ', ' ' );?>
+									<?php the_tags( '<span class="nrel"><i class="fa fa-tags"></i> </span>', ' ' );?>
 								</p>	
 							
 							</div>

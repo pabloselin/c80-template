@@ -4,8 +4,14 @@
 ?>
 
 <div id="main" class="container">
+
 	<section class="contenedor-estandar">
 		
+		<div class="navegador-c80">
+			<h2>Constitución 1980</h2>
+				
+		</div>
+
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		
 		<?php 

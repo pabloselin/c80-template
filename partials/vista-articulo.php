@@ -10,7 +10,7 @@ global $post;
 				<div>
 					<header>
 						
-						<h1><i class="fa fa-file-text-o"></i> <?php echo c80t_parentname($post->ID, $en_capitulo);?> <?php the_title();?></h1>
+						<h1><i class="fa fa-file-text-o"></i> <?php echo c80t_parentname($post->ID, $en_capitulo);?> <?php echo c80t_captitle($post->ID);?> <i class="fa fa-caret-right"></i> <?php the_title();?></h1>
 						<div class="meta">
 							<?php the_tags('<strong><i class="fa fa-tags"></i> Temas: </strong>');?>
 						</div>		
@@ -19,10 +19,38 @@ global $post;
 					<div class="main-content">
 								
 						<?php the_content();?>
-								
+						
 					</div>
 				</div>
-			
+			<?php 
+							/**
+							 * Toma subcapítulos
+							 */
+							$args = array(
+								'post_type' => 'c80_cpt',
+								'numberposts' => 100,
+								'post_parent' => $post->ID,
+								'order_by' => 'menu_order',
+								'order' => 'ASC'
+								);
+							$subcap = new WP_Query($args);
+							if($subcap->have_posts()):
+								while($subcap->have_posts()):
+									$subcap->the_post();?>
+									
+									<div class="sub-article">
+										<header>
+											<h2 class="subtitle"><?php the_title();?></h2>
+										</header>
+										<div class="sub-content">
+											<?php the_content();?>
+										</div>
+									</div>
+
+								<?php endwhile;
+								wp_reset_postdata();
+							endif;
+						?>
 	</article>
 	
 	

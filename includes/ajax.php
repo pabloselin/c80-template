@@ -16,8 +16,9 @@ function c80t_footerconst() {
 function c80t_constquery() {
 	/**
 	 * Query para todos los artículos de la constitución, por capítulo y ordenados
+	 * Devuelve un listado de los artículos del tipo de post de constitución
+	 * TODO: Hacer que tome también los contenidos de tercer nivel
 	 */
-	//Devuelve un listado de los artículos del tipo de post de constitución
 	
 	//Primer nivel
 	$args = array(
@@ -53,10 +54,30 @@ function c80t_constquery() {
 		while($articulos->have_posts()): $articulos->the_post();
 			$content = apply_filters( 'the_content', get_the_content() );
 			$artitems .= '<li><h4><a href="' . get_permalink($articulos->ID) . '" class="articulo-lista"><i class="fa fa-file-text-o"></i> ' . get_the_title() . '</a></h4><div class="lc">' . $content . '</div></li>';
+
+			/**
+			 * Busco elementos de tercer nivel
+			 */
+			$args = array(
+				'post_type' => 'c80_cpt',
+				'numberposts' => 100,
+				'post_parent' => $articulos->ID,
+				'order_by' => 'menu_order',
+				'order' => 'ASC'
+				);
+			$subcap = new WP_Query($args);
+			if($subcap->have_posts()):
+				while($subcap->have_posts()): $subcap->the_post();
+					$subcontent = apply_filters( 'the_content', get_the_content() );
+					$subitems .= '<li><h4><a href="' . get_permalink($subcap->ID) . '">' . get_the_title() . '</h4><div class="lc">' . $subcontent . '</div></li>';
+				endwhile;
+				wp_reset_postdata();
+			endif;
+
 		endwhile;
 		wp_reset_postdata();
 
-		$items .= '<li>' . $capitems .  '<ul>' . $artitems . '</ul></li>';
+		$items .= '<li>' . $capitems .  '<ul>' . $artitems . $subitems . '</ul></li>';
 	
 	}
 
@@ -81,8 +102,15 @@ function c80t_capquery($capid) {
 }
 
 function c80t_relink($postid) {
-	$relink = '<a data-toggle="tooltip" data-placement="left" class="showC80Rel" href="#" title="' . c80t_countrels($postid) . ' artículos relacionados.">';
-	$relink .= '<i class="fa fa-file-text-o"></i></a>';
+	$nrel = c80t_countrels($postid);
+	$rels = c80t_rels($postid);
+	$relink = '<div class="relbox">';
+	$relink .= '<p class="hrel"><span class="nrel"><i class="fa fa-book"></i> ' . $nrel. '</span>';
+	foreach($rels as $rel) {
+		$capinfo = 'En: ' . c80t_parentname($rel) . ' &gt; ' .  c80t_captitle($rel); 
+		$relink .= '<a data-toggle="tooltip" data-placement="bottom" class="relart" title="' . $capinfo . '" href="#art-'. $rel . '" class="inpagelink"><span><i class="fa fa-file-text-o"></i> ' . get_the_title($rel) . '</span></a>';
+	}
+	$relink .= '</p></div>';
 	return $relink;
 }
 
@@ -103,10 +131,10 @@ function c80t_artquery($artid) {
 		$artitems = '';
 		while( $archivequery->have_posts() ): $archivequery->the_post();
 			$content = apply_filters( 'the_content', get_the_content() );
-			$title = c80t_parentname($archivequery->ID) . get_the_title();
+			$title = c80t_parentname($archivequery->ID) . ': ' . c80t_captitle($archivequery->ID) . ' <i class="fa fa-caret-right"></i> ' .  get_the_title();
 			$artlink = '<p><a href="' . get_permalink($artid) . '">( ir a artículo )</a></p>';
 			$artitems .= '<div class="constarticle">';
-			$artitems .= '<h4>' . $title . '</h4>' . $artlink . '<div class="lc">' . $content . '</div></div>';
+			$artitems .= '<h4><a href="javascript:void(0);" name="art-'. $artid .'">' . $title . '</a></h4>' . $artlink . '<div class="lc">' . $content . '</div></div>';
 		endwhile;	
 		wp_reset_postdata();
 		return $artitems;
@@ -119,4 +147,19 @@ function c80t_countrels($postid) {
 	$rels = rwmb_meta('c80_artrel', 'multiple=true', $postid);
 
 	return( count($rels) );
+}
+
+function c80t_rels($postid) {
+	/**
+	 * Devuelve IDs de artículos relacionados
+	 */
+	$rels = rwmb_meta('c80_artrel', 'multiple=true', $postid);
+
+	return $rels;
+}
+
+function c80t_list() {
+	/**
+	 * Devuelve un listado ordenado de todos los contenidos de constitución
+	 */
 }

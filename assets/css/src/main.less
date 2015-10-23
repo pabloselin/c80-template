@@ -5,7 +5,8 @@
 @import 'c80-header.less';
 @import 'c80-comments.less';
 @import 'c80-cargador.less';
-
+@import 'c80-single.less';
+@import 'c80-constitucion.less';
 
 body {
 	background-color:@gris-encabezado;
@@ -39,8 +40,13 @@ h1, h2, h3
 		 {
 			.make-md-column(3);
 		}
+
+		.navegador-c80 {
+			.make-md-column(2);
+		}
+
 		.articulo-constitucion {
-			.make-md-column(8);
+			.make-md-column(7);
 		}
 
 		.capitulo-constitucion {
@@ -48,12 +54,35 @@ h1, h2, h3
 			.articulos-capitulo {
 				.make-row();
 				.articulo-constitucion {
-					.make-md-column(8);	
+					.make-md-column(6);	
 				}
 				.navegador-relacionados {
-					.make-md-column(4);
+					.make-md-column(3);
 				}
 			}
+		}
+	}
+}
+
+//Layout Constitución completa
+#main {
+	.row-constitucion {
+		.make-row();
+		.navegador-c80 {
+			.make-md-column(2);
+		}
+		.contenedor-constitucion {
+			.make-md-column(10);
+		}
+		.capitulo-constitucion {
+			.make-md-column(12);
+			.articulo-constitucion {
+				.make-md-column(9);
+						
+			}
+		}
+		.navegador-relacionados {
+			.make-md-column(3);
 		}
 	}
 }
@@ -110,11 +139,16 @@ section.noticias article {
 		background-color:white;		
 	}
 
+	div.top-info {
+		padding:12px 12px 0 12px;
+	}
+
 	h1, h2 {
-		margin:12px 0;
-		padding:0 @stdpad;
+		margin:0;
+		padding:0;
 		a {
-			color:#8D8D8D;
+			color:@azul-titulo;
+			font-weight:normal;
 			&:hover {
 				text-decoration:none;
 			}
@@ -122,12 +156,14 @@ section.noticias article {
 	}
 
 	h2 {
-		font-size:2.2rem;
+		font-size:2.5rem;
+		margin-bottom:6px;
 	}
 
 	.excerpt {
 		padding:@stdpad;
 		font-family:@sans;
+		font-size:1.8rem;
 	}
 }
 
@@ -169,17 +205,20 @@ div.top-meta {
 div.bottom-meta {
 	font-family:@sans;
 	padding:@stdpad;
-	background-color:#F5F5F5;
 }
 
 p.temas {
 	a {
 		display:inline-block;
 		padding:3px 6px;
-		background-color:fade(@azul, 50%);
+		background-color:lighten(@azul, 50%);
 		color:white;
 		font-size:1.3rem;
 		border-radius:3px;
+		&:hover {
+			text-decoration:none;
+			background-color: lighten(@azul, 30%)
+		}
 	}
 }
 
@@ -188,12 +227,18 @@ p.temas {
 section.noticias article.item-1 {
 	div.img {
 		position:relative;
-		h1 {
+		.top-info {
 			position: absolute;
 			bottom:0;
+			padding-left:18px;
+			color:white;
+			text-shadow:1px 1px 3px #000;
 			a {
 				color:white;
-				text-shadow:1px 1px 3px #000;
+			}
+			h1 {
+				padding:0;
+				margin:0 0 12px 0;
 			}
 		}
 	}
@@ -263,57 +308,6 @@ section.opinion {
 	}
 }
 
-
-article.articulo-estandar,
-article.columna-estandar
- {
-	.make-md-column(8);
-	margin-bottom:12px;
-	div.pad {
-		background-color:white;
-		box-shadow:@stdshadow;
-		header {
-			position: relative;
-			margin-bottom:12px;
-			h1 {
-				font-family:@sans;
-				padding-left:12px;
-			}
-		}
-		div.contenido {
-			padding:12px;
-			font-family:@sans;
-			font-size:1.6rem;
-			div.excerpt {
-				font-family:@serif;
-				font-size:2rem;
-				font-weight:bold;
-				font-style:italic;
-				color:#3B0803;
-			}
-		}
-	}
-	
-}
-
-article.articulo-estandar {
-	div.pad {
-		header {
-			h1 {
-				color:white;
-				position:absolute;
-				bottom:0;
-				text-shadow:1px 1px 3px #000;
-				padding:12px;
-			}
-		}
-	}
-}
-
-div.comments {
-	.make-md-column(8);
-}
-
 #footer-sitio {
 	min-height:200px;
 	background-color:@azul-footer;
@@ -330,87 +324,9 @@ div.comments {
 		}
 }
 
-//Contenidos
-.capitulo-constitucion {
-	header {
-		h1 {
-			font-size:2rem;
-			font-weight:bold;
-			margin-bottom:12px;
-		}
-	}
-}
 
 
-.articulo-constitucion > div {
-	box-shadow:@stdshadow;
-	background-color:white;
-	header {
-		background-color:@gris-encabezado;
-		padding:@stdpad;
-		h1 {
-			font-family:@sans;
-			font-size:2rem;
-			font-weight:700;
-			margin-top:0;
-			color:@gris-claro;
-		}
-	}
-	p.afterp {
-		display:none;
-	}
-
-	.meta {
-		font-family:@sans;
-		color:@gris-tags;
-		font-size:1.6rem;
-			a {
-				color:@gris-tags;
-			}
-	}
-	.main-content {
-		font-family:@serif;
-		font-size:1.8rem;
-		padding:@stdpad;
-		a {
-			color:@gris-oscuro;
-			&:hover {
-				text-decoration:none;
-			}
-		}
-	}
-}
-
-.grupo-articulo {
-	padding-bottom:12px;
-	margin-bottom:12px;
-	.clearfix();
-}
-
-aside.navegador-relacionados {
-	box-shadow: @stdshadow;
-	background-color:white;
-	> div {
-		padding:@stdpad;
-	}
-	h4 {
-		font-family:@sans;
-		margin-top:0;
-		ul {
-			li {
-				font-family:@sans;
-			}
-		}
-	}
-}
-
-.con-rel {
-	p {
-		.bg-warning;
-	}
-}
-
-aside {
+aside.standard {
 	.make-md-column(3);
 	
 	transition:all ease-in 0.5s;

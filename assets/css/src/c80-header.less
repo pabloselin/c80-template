@@ -88,3 +88,37 @@ header#header-sitio {
 		border-radius:0;
 	}
 }
+
+div.menu-constitucion {
+	float:right;
+	height:32px;
+	ul {
+		margin:0;
+		padding:0;
+		li {
+			margin:0;
+			padding:0;
+			list-style:none;
+			a {
+				display:block;
+				color:white;
+				text-transform:uppercase;
+				line-height:36px;
+				padding:0 12px;
+				background-color:lighten(@amarillo, 10%);
+				color:darken(@amarillo, 30%);
+				&:hover {
+					text-decoration:none;
+					background-color:@amarillo;
+				}
+			}
+		}
+	}
+}
+
+#main-nav {
+	margin-right:220px;
+	max-width:600px;
+	float:left;
+}
+

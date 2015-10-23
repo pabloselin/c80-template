@@ -55,9 +55,24 @@ function c80t_capitulos() {
 function c80t_parentname($postid, $en_capitulo = false) {
 	$ancestors = get_post_ancestors( $postid );
 	if($ancestors && !$en_capitulo) {
-		$name = get_the_title($ancestors[0]) . ' <i class="fa fa-caret-right"></i> ';
+		$name = get_the_title($ancestors[0]);
 		return $name;	
 	}	
+}
+
+function c80t_captitle($postid) {
+	/**
+	 * Devuelve el nombre del capítulo desde un capítulo o desde un artículo
+	 */
+	$ancestors = get_post_ancestors( $postid );
+	if($ancestors) {
+		$subt = get_post_meta($ancestors[0], 'c80_subtartcap', true);
+	} else {
+		//es de nivel superior o sea está en un capítulo...
+		$subt = get_post_meta($postid, 'c80_subtartcap', true);
+	}
+
+	return $subt;
 }
 
 function c80t_template_loader($template, $data) {

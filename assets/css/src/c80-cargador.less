@@ -18,18 +18,21 @@ body.single {
 	}
 }
 
-.cargador-articulos {
+.c80-rels {
 	transition:all linear 0.25s;
 	background-color:white;
-	top:0;
-	position:absolute;
 	padding:12px;
-	width:@loaderwidth;
-	left:-@loaderwidth;
+	.make-md-column(4);
+	
 	box-shadow:@stdshadow;
 	h2 {
-		font-size:1.8rem;
+		font-size:2.2rem;
 		margin-top:0;
+		margin-bottom:12px;
+		font-weight:normal;
+		i {
+			color:@amarillo;
+		}
 	}
 
 	&.enabled {
@@ -57,23 +60,14 @@ body.single {
 		h4 {
 			font-size:1.6rem;
 		}
-		ul {
-			margin:0;
-			padding:0;
-			li {
-				margin:0 0 12px 0;
-				padding:0;
-				list-style:none;
-				.lc {
-					font-family:@serif;
-					font-size:1.6rem;
-					a {
-						color:@stdtxt;
-					}
+		.lc {
+			font-family:@serif;
+			font-size:1.6rem;
+				a {
+				color:@stdtxt;
 				}
 			}
 		}
-	}
 
 	.texto-c80-rel {
 		max-height:550px;

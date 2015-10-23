@@ -1,0 +1,92 @@
+//Contenidos
+.capitulo-constitucion {
+	header {
+		h1 {
+			font-size:2rem;
+			font-weight:bold;
+			margin-bottom:12px;
+		}
+	}
+}
+
+
+.articulo-constitucion > div,
+.sub-article
+ {
+	box-shadow:@stdshadow;
+	background-color:white;
+	header {
+		background-color:@gris-encabezado;
+		padding:@stdpad;
+		h1, h2 {
+			font-family:@sans;
+			font-size:2rem;
+			font-weight:700;
+			margin-top:0;
+			color:@gris-claro;
+		}
+	}
+	p.afterp {
+		display:none;
+	}
+
+	.meta {
+		font-family:@sans;
+		color:@gris-tags;
+		font-size:1.6rem;
+			a {
+				color:@gris-tags;
+			}
+	}
+	.main-content,
+	.sub-content
+	 {
+		font-family:@serif;
+		font-size:1.8rem;
+		padding:@stdpad;
+		a {
+			color:@gris-oscuro;
+			&:hover {
+				text-decoration:none;
+			}
+		}
+	}
+}
+
+.grupo-articulo {
+	padding-bottom:12px;
+	margin-bottom:12px;
+	.clearfix();
+}
+
+aside.navegador-relacionados {
+	box-shadow: @stdshadow;
+	background-color:white;
+	> div {
+		padding:@stdpad;
+	}
+	h4 {
+		font-family:@sans;
+		margin-top:0;
+		ul {
+			li {
+				font-family:@sans;
+			}
+		}
+	}
+}
+
+.con-rel {
+	p {
+		.bg-warning;
+	}
+}
+
+.navegador-c80 {
+	.make-md-column(3);
+	text-align:right;
+	h2 {
+		font-weight:normal;
+		font-size:2rem;
+	}
+}

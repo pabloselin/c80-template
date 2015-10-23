@@ -1,11 +1,11 @@
 <aside class="standard">
 	<div>
-		<h2>Más artículos</h2>
+		<h2>Más noticias</h2>
 		<!--Contenedor estándar-->
 		<ul>
 		<?php 
 			$args = array(
-				'post_type' => array('post', 'columnas'),
+				'post_type' => array('post'),
 				'numberposts' => 6,
 				'exclude' => $post->ID
 				);
