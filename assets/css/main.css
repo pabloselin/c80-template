@@ -5981,8 +5981,12 @@ header#header-sitio .navegacion-texto .c80-nav .visor-temas {
   }
 }
 header#header-sitio .breadcrumb {
-  background-color: #dfdfdf;
+  color: #aeaeae;
   border-radius: 0;
+  font-size: 12px;
+}
+header#header-sitio .breadcrumb a {
+  color: #aeaeae;
 }
 div.menu-constitucion {
   float: right;
@@ -6500,9 +6504,19 @@ p.autor {
   bottom: 0;
   right: 0;
 }
+.columna-estandar img.avatar {
+  float: left;
+  margin-right: 6px;
+}
+.columna-estandar div.info-columna {
+  margin-top: 6px;
+}
+.columna-estandar .contenido {
+  clear: left;
+}
 .capitulo-constitucion header h1 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.4rem;
+  font-weight: normal;
   margin-bottom: 12px;
 }
 .articulo-constitucion > div,
@@ -6512,7 +6526,7 @@ p.autor {
 }
 .articulo-constitucion > div header,
 .sub-article header {
-  background-color: #f5f5f5;
+  background-color: rgba(242, 171, 14, 0.3);
   padding: 12px;
 }
 .articulo-constitucion > div header h1,
@@ -6520,10 +6534,11 @@ p.autor {
 .articulo-constitucion > div header h2,
 .sub-article header h2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.2rem;
+  font-weight: normal;
   margin-top: 0;
-  color: #484c4f;
+  color: #aa7809;
+  margin-bottom: 0;
 }
 .articulo-constitucion > div p.afterp,
 .sub-article p.afterp {
@@ -6681,7 +6696,7 @@ h3 {
 @media (min-width: 992px) {
   #main .contenedor-estandar .capitulo-constitucion {
     float: left;
-    width: 100%;
+    width: 75%;
   }
 }
 #main .contenedor-estandar .capitulo-constitucion .articulos-capitulo {
@@ -6697,7 +6712,7 @@ h3 {
 @media (min-width: 992px) {
   #main .contenedor-estandar .capitulo-constitucion .articulos-capitulo .articulo-constitucion {
     float: left;
-    width: 50%;
+    width: 75%;
   }
 }
 #main .contenedor-estandar .capitulo-constitucion .articulos-capitulo .navegador-relacionados {
@@ -6970,8 +6985,7 @@ section.opinion article.columna .top-meta p {
 }
 section.opinion article.columna h3 {
   margin: 0;
-  font-family: 'Alegreya', serif;
-  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
 }
 section.opinion article.columna h3 a {
@@ -6979,15 +6993,11 @@ section.opinion article.columna h3 a {
 }
 section.opinion article.columna .bottom-meta {
   background-color: white;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
   padding: 6px 0;
   margin-top: 12px;
   overflow: hidden;
 }
 section.opinion article.columna .bottom-meta p {
-  width: 50%;
-  float: left;
   margin-bottom: 0;
 }
 section.opinion article.columna div.avatar {

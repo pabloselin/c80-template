@@ -19,7 +19,7 @@
 					<h1><?php the_title();?></h1>
 
 					<p class="autor">
-						Por: <?php the_author();?>
+						<?php the_author();?>
 					</p>
 
 					<div class="img">

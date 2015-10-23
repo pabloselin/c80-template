@@ -6,6 +6,7 @@
 @import 'c80-comments.less';
 @import 'c80-cargador.less';
 @import 'c80-single.less';
+@import 'c80-single-columnas.less';
 @import 'c80-constitucion.less';
 
 body {
@@ -50,11 +51,11 @@ h1, h2, h3
 		}
 
 		.capitulo-constitucion {
-			.make-md-column(12);
+			.make-md-column(9);
 			.articulos-capitulo {
 				.make-row();
 				.articulo-constitucion {
-					.make-md-column(6);	
+					.make-md-column(9);	
 				}
 				.navegador-relacionados {
 					.make-md-column(3);
@@ -275,8 +276,7 @@ section.opinion {
 
 		h3 {
 			margin:0;
-			font-family:@serif;
-			font-style:italic;
+			font-family:@sans;
 			font-weight:normal;
 				a {
 					color:#000;
@@ -285,14 +285,11 @@ section.opinion {
 
 		.bottom-meta {
 			background-color:white;
-			border-top:1px solid #000;
-			border-bottom:1px solid #000;
 			padding:6px 0;
 			margin-top:12px;
 			overflow:hidden;
 			p {
-				width:50%;
-				float:left;
+				
 				margin-bottom:0;
 			}
 		}

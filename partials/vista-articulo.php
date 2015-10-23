@@ -10,7 +10,7 @@ global $post;
 				<div>
 					<header>
 						
-						<h1><i class="fa fa-file-text-o"></i> <?php echo c80t_parentname($post->ID, $en_capitulo);?> <?php echo c80t_captitle($post->ID);?> <i class="fa fa-caret-right"></i> <?php the_title();?></h1>
+						<h1><i class="fa fa-file-text-o"></i> <?php echo c80t_parentname($post->ID, $en_capitulo);?> <?php the_title();?></h1>
 						<div class="meta">
 							<?php the_tags('<strong><i class="fa fa-tags"></i> Temas: </strong>');?>
 						</div>		

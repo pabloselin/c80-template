@@ -7,42 +7,38 @@
 	<section class="contenedor-estandar">
 		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part('partials/aside', 'c80rel');?>
-		<article class="columna-estandar deslizable">
+	
+		<article class="columna-estandar">
 		
 			<div class="pad">
 				<header>
-					<div class="top-meta">
-						
-						<p class="categoria">
-							<?php the_category(', ');?>
-						</p>
-						
-						<p class="fecha">
-							<?php the_time(get_option('date_format'));?>
-						</p>
-						
-						<p class="related">
-							<?php echo c80t_relink($post->ID);?>
-						</p>	
-					</div>
 
-					<?php if(has_post_thumbnail( )):?>
-						<?php the_post_thumbnail( 'main' );?>
-					<?php endif;?>	
-					<h1><?php the_title();?></h1>
-						
+					<?php echo c80t_avatar(160);?>
+
+					<div class="info-columna">
+						<div class="top-meta">
+							<?php the_category( ', ' );?> |	<?php the_time( get_option( 'date_format' ) );?>
+						</div>
+						<h1><?php the_title();?></h1>
+						<p class="autor">
+							<?php the_author( );?>
+						</p>
+					</div>
+					
 				</header>
 					
 				<div class="contenido">
 					
-					<p class="autor">
-						Por: <?php the_author( );?>
-					</p>
-
 					<div class="excerpt">
 						<?php the_excerpt();?>
 					</div>	
+
+					<p class="related">
+						<?php echo c80t_relink($post->ID);?>
+					</p>	
+					<p class="temas">
+						<?php the_tags( '<span class="nrel"><i class="fa fa-tags"></i> </span>', ' ' );?>
+					</p>	
 
 					<?php the_content();?>
 						
@@ -53,7 +49,7 @@
 		
 			<?php endwhile; ?>
 
-			<?php get_sidebar('relacionados');?>
+			<?php get_template_part('partials/aside', 'c80rel');?>
 
 			<!-- comments -->
 				<?php comments_template();?>

@@ -90,12 +90,7 @@
 		<section class="opinion">
 			
 			<div class="pad">
-			<header>
-					<h2>Columnas</h2>
-					<p class="date">
-						<?php echo date_i18n( 'F, Y' );?>
-					</p>
-			</header>
+			
 				
 				<?php 
 					$columnas = c80t_get_columnas(3);
@@ -109,22 +104,18 @@
 
 						<div class="top-meta">
 							<p class="cats"><?php the_category( ', ' );?></p>
-							<p class="autor"><?php the_author( );?></p>
 						</div>
 				
 						<h3>
 							<a href="<?php the_permalink();?>"><?php the_title();?></a>
 						</h3>
+						<p class="autor"><?php the_author( );?></p>
 						<div class="bottom-meta">
 							
 							<p class="citas">
-								<i class="fa fa-file-text-o"></i> Artículos citados
+								<?php echo c80t_relink($post->ID);?>
 							</p>
-
-							<p class="comentarios">
-								<i class="fa fa-comments"></i> Comentarios
-							</p>
-
+						
 						</div>
 					</article>
 					

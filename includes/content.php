@@ -56,7 +56,10 @@ function c80t_parentname($postid, $en_capitulo = false) {
 	$ancestors = get_post_ancestors( $postid );
 	if($ancestors && !$en_capitulo) {
 		$name = get_the_title($ancestors[0]);
-		return $name;	
+		$subname = c80t_captitle($postid);
+
+		$fullname = $name . ': ' . $subname;
+		return $fullname;
 	}	
 }
 
@@ -164,13 +167,34 @@ function c80t_comments_fields( $fields ) {
 add_filter('comment_form_default_fields', 'c80t_comments_fields');
 
 function c80t_breadcrumb() {
+	global $post;
 	/**
 	 * Devuelve el breadcrumb
 	 */
 	$html = '<div class="breadcrumb">';
 	$html .= '<div class="container">';
 	$html .= '<div class="c80-breadcrumb">';
-    $html .= '<a href="' . get_bloginfo('url') . '">' . get_bloginfo('name') . '</a>';
+    $html .= '<a href="' . get_bloginfo('url') . '">' . '<i class="fa fa-home"></i> Inicio' . '</a>';
+    
+    if(is_single() ):
+    	$ptype = get_post_type_object( get_post_type( $post->ID ) );
+    	$ptypelink = get_post_type_archive_link( $ptype->name );
+    	$parents = get_post_ancestors( $post->ID );
+
+    	$html .= ' <i class="fa fa-angle-right"></i> <a href="' . $ptypelink . '"> ' . $ptype->labels->name . ' </a>';
+    	
+    	if($parents) {
+    		$parents = array_reverse($parents);
+    		foreach($parents as $parent) {
+    			$parentlink = get_permalink($parent);
+    			$html .= ' <i class="fa fa-angle-right"></i> <a href="' . $parentlink . '"> ' . get_the_title($parent) . ' </a>';
+    		}
+    	};
+
+    	$html .= '<i class="fa fa-angle-right"></i> ' . $post->post_title;
+
+    endif;
+
     $html .= '</div>';
 	$html .= '</div>';
     $html .= '</div>';
