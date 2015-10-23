@@ -8,6 +8,7 @@
 @import 'c80-single.less';
 @import 'c80-single-columnas.less';
 @import 'c80-constitucion.less';
+@import 'c80-asides.less';
 
 body {
 	background-color:@gris-encabezado;
@@ -71,14 +72,18 @@ h1, h2, h3
 		.make-row();
 		.navegador-c80 {
 			.make-md-column(2);
+			padding:0;
 		}
 		.contenedor-constitucion {
 			.make-md-column(10);
+			
 		}
 		.capitulo-constitucion {
 			.make-md-column(12);
+			padding:0;
 			.articulo-constitucion {
 				.make-md-column(9);
+				
 						
 			}
 		}

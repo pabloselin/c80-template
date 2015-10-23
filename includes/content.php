@@ -20,7 +20,7 @@ function c80t_articulos() {
 
 	foreach($capitulos as $capitulo) {
 		$capitems = '';		
-		$capitems .= '<a class="capitulo-lista" href="'.get_permalink($capitulo->ID).'">'.$capitulo->post_title.'</a>';
+		$capitems .= '<a class="capitulo-lista" href="'.get_permalink($capitulo->ID).'">' . get_the_title($capitulo->ID) . ': ' .  c80t_captitle($capitulo->ID) .'</a>';
 
 		//Segundo nivel
 		$args = array(
@@ -36,14 +36,36 @@ function c80t_articulos() {
 		$artitems = '';
 		
 		foreach($articulos as $articulo) {
-			$artitems .= '<li><a href="' . get_permalink($articulo->ID) . '" class="articulo-lista">' . $articulo->post_title . '</a></li>';
+			//Tercer nivel, si es que hay tercer nivel se desactiva el link en el segundo nivel.
+			$args = array(
+				'post_type' => 'c80_cpt',
+				'numberposts' => 100,
+				'post_parent' => $articulo->ID,
+				'order_by' => 'menu_order',
+				'order' => 'ASC'
+				);
+			$children = get_posts($args);
+			if($children) {
+				$artitems .= '<li class="art-section">' . $articulo->post_title;
+
+				$artitems .= '<ul class="articulos">';
+				foreach($children as $child):
+					$artitems .= '<li class="subart"><a href="' . get_permalink($child->ID) . '" class="articulo-lista">' . $child->post_title . '</a></li>';
+				endforeach;
+				$artitems .= '</ul></li>';
+
+			} else {
+				$artitems .= '<li><a href="' . get_permalink($articulo->ID) . '" class="articulo-lista">' . $articulo->post_title . '</a></li>';	
+			}
+			
+
 		}
 
-		$items .= '<li>' . $capitems .  '<ul>' . $artitems . '</ul></li>';
+		$items .= '<li>' . $capitems .  '<ul class="articulos">' . $artitems . '</ul></li>';
 	
 	}
 
-	$output = '<ul>' . $items . '</ul>';
+	$output = '<ul class="items-constitucion">' . $items . '</ul>';
 
 	return $output;
 }
@@ -166,41 +188,6 @@ function c80t_comments_fields( $fields ) {
 
 add_filter('comment_form_default_fields', 'c80t_comments_fields');
 
-function c80t_breadcrumb() {
-	global $post;
-	/**
-	 * Devuelve el breadcrumb
-	 */
-	$html = '<div class="breadcrumb">';
-	$html .= '<div class="container">';
-	$html .= '<div class="c80-breadcrumb">';
-    $html .= '<a href="' . get_bloginfo('url') . '">' . '<i class="fa fa-home"></i> Inicio' . '</a>';
-    
-    if(is_single() ):
-    	$ptype = get_post_type_object( get_post_type( $post->ID ) );
-    	$ptypelink = get_post_type_archive_link( $ptype->name );
-    	$parents = get_post_ancestors( $post->ID );
-
-    	$html .= ' <i class="fa fa-angle-right"></i> <a href="' . $ptypelink . '"> ' . $ptype->labels->name . ' </a>';
-    	
-    	if($parents) {
-    		$parents = array_reverse($parents);
-    		foreach($parents as $parent) {
-    			$parentlink = get_permalink($parent);
-    			$html .= ' <i class="fa fa-angle-right"></i> <a href="' . $parentlink . '"> ' . get_the_title($parent) . ' </a>';
-    		}
-    	};
-
-    	$html .= '<i class="fa fa-angle-right"></i> ' . $post->post_title;
-
-    endif;
-
-    $html .= '</div>';
-	$html .= '</div>';
-    $html .= '</div>';
-
-    return $html;
-}
 
 function c80t_default_post_thumbnail($html, $post_id, $post_thumbnail_id, $size, $attr) {
 	/**

@@ -6527,14 +6527,14 @@ p.autor {
 .articulo-constitucion > div header,
 .sub-article header {
   background-color: rgba(242, 171, 14, 0.3);
-  padding: 12px;
+  padding: 12px 12px 3px 12px;
 }
 .articulo-constitucion > div header h1,
 .sub-article header h1,
 .articulo-constitucion > div header h2,
 .sub-article header h2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: normal;
   margin-top: 0;
   color: #aa7809;
@@ -6544,15 +6544,9 @@ p.autor {
 .sub-article p.afterp {
   display: none;
 }
-.articulo-constitucion > div .meta,
-.sub-article .meta {
-  font-family: 'Open Sans', sans-serif;
-  color: #757c81;
-  font-size: 1.6rem;
-}
-.articulo-constitucion > div .meta a,
-.sub-article .meta a {
-  color: #757c81;
+.articulo-constitucion > div p.temas,
+.sub-article p.temas {
+  margin-top: 12px;
 }
 .articulo-constitucion > div .main-content,
 .sub-article .main-content,
@@ -6620,7 +6614,7 @@ a.con-rel p:focus {
   min-height: 1px;
   padding-left: 8px;
   padding-right: 8px;
-  text-align: right;
+  text-align: left;
 }
 @media (min-width: 992px) {
   .navegador-c80 {
@@ -6628,9 +6622,67 @@ a.con-rel p:focus {
     width: 25%;
   }
 }
+.navegador-c80.affix {
+  top: 60px;
+  position: fixed;
+}
 .navegador-c80 h2 {
   font-weight: normal;
   font-size: 2rem;
+}
+ul.items-constitucion {
+  margin: 24px 0 0 0;
+  padding: 12px;
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+}
+ul.items-constitucion ul.articulos {
+  display: none;
+}
+ul.items-constitucion a {
+  color: #555;
+}
+ul.items-constitucion a:hover {
+  text-decoration: none;
+}
+ul.items-constitucion li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.items-constitucion li ul {
+  margin: 0;
+  padding: 0;
+}
+ul.items-constitucion li ul li {
+  list-style: none;
+}
+ul.items-constitucion a.capitulo-lista {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding-bottom: 3px;
+  margin: 12px 0 3px;
+  border-bottom: 1px solid #ccc;
+  display: block;
+}
+.navegador-relacionados {
+  padding: 12px;
+}
+.navegador-relacionados ul {
+  margin: 0;
+  padding: 0;
+}
+.navegador-relacionados ul li {
+  margin: 0 0 12px 0;
+  padding: 0;
+  list-style: none;
+}
+.navegador-relacionados ul li h5 {
+  margin-top: 0;
+}
+.navegador-relacionados ul li span {
+  display: block;
+  font-size: 12px;
 }
 body {
   background-color: #f5f5f5;
@@ -6736,6 +6788,7 @@ h3 {
   min-height: 1px;
   padding-left: 8px;
   padding-right: 8px;
+  padding: 0;
 }
 @media (min-width: 992px) {
   #main .row-constitucion .navegador-c80 {
@@ -6760,6 +6813,7 @@ h3 {
   min-height: 1px;
   padding-left: 8px;
   padding-right: 8px;
+  padding: 0;
 }
 @media (min-width: 992px) {
   #main .row-constitucion .capitulo-constitucion {

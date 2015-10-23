@@ -6,10 +6,8 @@
 <div id="main" class="container">
 	
 	<div class="row-constitucion">
-		<div class="navegador-c80">
-		
-			<h2>Constitución 1980</h2>
-					
+		<div class="navegador-c80" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+			<?php echo c80t_articulos();?>	
 		</div>
 		
 		<section class="contenedor-constitucion">

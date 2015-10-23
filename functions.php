@@ -28,6 +28,7 @@ if ( ! isset( $content_width ) ) {
 include( TEMPLATEPATH . '/includes/scripts.php');
 include( TEMPLATEPATH . '/includes/metatags.php');
 include( TEMPLATEPATH . '/includes/content.php');
+include( TEMPLATEPATH . '/includes/breadcrumb.php');
 include( TEMPLATEPATH . '/includes/ajax.php');
 include( TEMPLATEPATH . '/includes/post-types.php');
 include( TEMPLATEPATH . '/includes/bootstrap-menu.php');

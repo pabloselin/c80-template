@@ -8,8 +8,7 @@
 	<section class="contenedor-estandar">
 		
 		<div class="navegador-c80">
-			<h2>Constitución 1980</h2>
-				
+			<?php echo c80t_articulos();?>	
 		</div>
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
