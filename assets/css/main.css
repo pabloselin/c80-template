@@ -6458,6 +6458,11 @@ article.columna-estandar div.pad div.contenido div.excerpt {
   font-style: italic;
   color: #3B0803;
 }
+article.articulo-estandar div.pad div.contenido img,
+article.columna-estandar div.pad div.contenido img {
+  max-width: 100%;
+  margin: 12px 0;
+}
 div.comments {
   position: relative;
   min-height: 1px;
