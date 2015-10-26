@@ -6441,8 +6441,8 @@ article.articulo-estandar div.pad header div.top-meta,
 article.columna-estandar div.pad header div.top-meta {
   padding: 0;
 }
-article.articulo-estandar div.pad header img,
-article.columna-estandar div.pad header img {
+article.articulo-estandar div.pad header div.img img.post-image,
+article.columna-estandar div.pad header div.img img.post-image {
   margin: 0 -12px;
 }
 article.articulo-estandar div.pad div.contenido,
@@ -6506,7 +6506,8 @@ p.autor {
 }
 .columna-estandar img.avatar {
   float: left;
-  margin-right: 6px;
+  margin-right: 24px;
+  border-radius: 50%;
 }
 .columna-estandar div.info-columna {
   margin-top: 6px;
@@ -6913,9 +6914,11 @@ h3 {
   box-shadow: 0 0 3px #dfdfdf;
   background-color: white;
 }
-#main .contenedor-home section.opinion header {
-  background-color: #f5f5f5;
-  padding: 12px;
+#main .contenedor-home section.opinion .excerpt {
+  font-size: 1.5rem;
+}
+#main .contenedor-home section.opinion .autor {
+  margin-left: 82px;
 }
 section.noticias article {
   margin-bottom: 16px;
