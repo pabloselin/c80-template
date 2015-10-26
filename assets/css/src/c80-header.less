@@ -1,8 +1,7 @@
 //header related rules
 
 header#header-sitio {
-	background-color:@azul;
-	background-image:url(../img/header_bg.jpg);
+	background-color:@azulvega2;
 	background-repeat:no-repeat;
 	background-position:top center;
 	background-size:cover;
@@ -23,7 +22,7 @@ header#header-sitio {
 	.navegacion-principal {
 	.navbar;
 	.navbar-inverse;
-		background-color:@azul;
+		background-color:#106696;
 		margin-bottom:0;
 		border:0;
 		.c80-dropdown {
@@ -109,8 +108,8 @@ div.menu-constitucion {
 				text-transform:uppercase;
 				line-height:36px;
 				padding:0 12px;
-				background-color:lighten(@amarillo, 10%);
-				color:darken(@amarillo, 30%);
+				background-color:@naranjo;
+				color:white;
 				&:hover {
 					text-decoration:none;
 					background-color:@amarillo;
@@ -120,9 +119,30 @@ div.menu-constitucion {
 	}
 }
 
+@topnav: 42px;
+
+.admin-bar {
+	#main-nav {
+		top:@topnav + 32px;
+	}
+}
+
 #main-nav {
-	margin-right:220px;
-	max-width:600px;
-	float:left;
+	position: absolute;
+	right:0;
+	top:@topnav;
+	li:nth-child(odd) {
+		border-right:1px solid white;	
+	}
+
+	a {
+		color:white;
+		font-weight:bold;
+		font-family:@sans;
+		font-size:1.8rem;
+		&:hover {
+			background-color:transparent;
+		}
+	}
 }
 

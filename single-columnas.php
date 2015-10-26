@@ -13,17 +13,27 @@
 			<div class="pad">
 				<header>
 
-					<?php echo c80t_avatar(160);?>
-
 					<div class="info-columna">
 						<div class="top-meta">
 							<?php the_category( ', ' );?> |	<?php the_time( get_option( 'date_format' ) );?>
 						</div>
 						<h1><?php the_title();?></h1>
-						<p class="autor">
-							<?php the_author( );?>
-						</p>
+						<div class="autor-card">
+							<?php echo c80t_avatar(70);?>
+							<p class="autor">
+								<?php the_author( );?>
+							</p>
+							<p class="autormeta">
+								<?php the_author_meta( 'description' );?>
+							</p>
+						</div>
 					</div>
+
+					<?php if(has_post_thumbnail( )):?>
+							<div class="img">
+								<?php the_post_thumbnail( 'main' );?>
+							</div>
+					<?php endif;?>
 					
 				</header>
 					

@@ -13,12 +13,8 @@
                 <img src="<?php bloginfo('template_url');?>/assets/img/logo-c80.png" alt="<?php bloginfo('name');?>" class="logo">
             </h1>
             <h2 class="description"><?php bloginfo('description');?></h2>
-        </div>
-    </div>
-     <nav class="navegacion-principal">
-      <div class="container">
-        
-        <?php
+
+            <?php
             wp_nav_menu( array(
                 'theme_location'    => 'principal',
                 'depth'             => 2,
@@ -30,6 +26,10 @@
                 'walker'            => new wp_bootstrap_navwalker())
             );
         ?>
+        </div>
+    </div>
+     <nav class="navegacion-principal">
+      <div class="container">
 
         <div class="menu-constitucion">
             <ul>

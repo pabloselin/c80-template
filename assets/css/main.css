@@ -5769,8 +5769,7 @@ a img.aligncenter {
   /* Above WP toolbar. */
 }
 header#header-sitio {
-  background-color: #094671;
-  background-image: url(../img/header_bg.jpg);
+  background-color: #2b388c;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -5795,7 +5794,7 @@ header#header-sitio .navegacion-principal {
   margin-bottom: 20px;
   background-color: #1f2f3c;
   border-color: #0e151a;
-  background-color: #094671;
+  background-color: #106696;
   margin-bottom: 0;
   border: 0;
 }
@@ -6003,21 +6002,35 @@ div.menu-constitucion ul li {
 }
 div.menu-constitucion ul li a {
   display: block;
-  color: white;
   text-transform: uppercase;
   line-height: 36px;
   padding: 0 12px;
-  background-color: #f5bc3e;
-  color: #624505;
+  background-color: #ef7937;
+  color: white;
 }
 div.menu-constitucion ul li a:hover {
   text-decoration: none;
   background-color: #f2ab0e;
 }
+.admin-bar #main-nav {
+  top: 74px;
+}
 #main-nav {
-  margin-right: 220px;
-  max-width: 600px;
-  float: left;
+  position: absolute;
+  right: 0;
+  top: 42px;
+}
+#main-nav li:nth-child(odd) {
+  border-right: 1px solid white;
+}
+#main-nav a {
+  color: white;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+}
+#main-nav a:hover {
+  background-color: transparent;
 }
 /*  Comments */
 div.comments {
@@ -6461,6 +6474,7 @@ article.columna-estandar div.pad div.contenido div.excerpt {
 article.articulo-estandar div.pad div.contenido img,
 article.columna-estandar div.pad div.contenido img {
   max-width: 100%;
+  height: auto;
   margin: 12px 0;
 }
 div.comments {
@@ -6515,10 +6529,21 @@ p.autor {
   border-radius: 50%;
 }
 .columna-estandar div.info-columna {
-  margin-top: 6px;
+  margin: 6px 0 12px 0;
 }
 .columna-estandar .contenido {
   clear: left;
+}
+.columna-estandar .autor-card {
+  padding: 12px;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  margin: 0 -12px -12px -12px;
+}
+.columna-estandar .autor-card p.autor {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
 }
 .capitulo-constitucion header h1 {
   font-size: 2.4rem;
