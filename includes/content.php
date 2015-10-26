@@ -174,12 +174,7 @@ function c80t_getmenuobject($location) {
 	}
 }
 
-function c80t_avatar($size) {
-	global $post;
-	$authorid = get_the_author_meta( 'ID' );
-	$avatar = get_avatar($authorid, $size);
-	return $avatar;
-}
+
 
 function c80t_comments_fields( $fields ) {
 	$fields['url'] = '';

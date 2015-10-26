@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <h1>
-                <img src="<?php bloginfo('template_url');?>/assets/img/logo-c80.png" alt="<?php bloginfo('name');?>" class="logo">
+                <img src="<?php bloginfo('template_url');?>/assets/img/logo-c80-2.png" alt="<?php bloginfo('name');?>" class="logo">
             </h1>
             <h2 class="description"><?php bloginfo('description');?></h2>
 

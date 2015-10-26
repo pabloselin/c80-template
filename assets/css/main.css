@@ -5778,7 +5778,9 @@ header#header-sitio {
 header#header-sitio h1 {
   float: left;
   margin-right: 12px;
-  width: 100px;
+  width: 97px;
+  height: 130px;
+  margin: -18px 12px 12px 0;
 }
 header#header-sitio h2 {
   font-weight: 400;
@@ -6536,7 +6538,7 @@ p.autor {
 }
 .columna-estandar .autor-card {
   padding: 12px;
-  background-color: #f3f3f3;
+  background-color: #fdf2d9;
   overflow: hidden;
   margin: 0 -12px -12px -12px;
 }
@@ -6714,6 +6716,35 @@ ul.items-constitucion a.capitulo-lista {
 .navegador-relacionados ul li span {
   display: block;
   font-size: 12px;
+}
+.archive-items {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 992px) {
+  .archive-items {
+    float: left;
+    width: 75%;
+  }
+}
+.articulo-archivo {
+  overflow: hidden;
+  margin-bottom: 12px;
+  background-color: white;
+}
+.articulo-archivo img {
+  float: left;
+  margin-right: 12px;
+}
+.articulo-archivo h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+.articulo-archivo p.top-meta {
+  margin: 12px 0 0 0;
 }
 body {
   background-color: #f5f5f5;

@@ -32,6 +32,7 @@ include( TEMPLATEPATH . '/includes/breadcrumb.php');
 include( TEMPLATEPATH . '/includes/ajax.php');
 include( TEMPLATEPATH . '/includes/post-types.php');
 include( TEMPLATEPATH . '/includes/bootstrap-menu.php');
+include( TEMPLATEPATH . '/includes/author.php');
 
 //actions
 add_action('wp_enqueue_scripts', 'c80t_scripts');
