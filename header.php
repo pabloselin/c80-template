@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <h1>
-                <img src="<?php bloginfo('template_url');?>/assets/img/logo-c80-2.png" alt="<?php bloginfo('name');?>" class="logo">
+                <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/img/logo-c80-3.png" alt="<?php bloginfo('name');?>" class="logo"></a>
             </h1>
             <h2 class="description"><?php bloginfo('description');?></h2>
 
@@ -31,11 +31,18 @@
      <nav class="navegacion-principal">
       <div class="container">
 
-        <div class="menu-constitucion">
+        <div class="menu-secciones">
             <ul>
-                <li>
+                <li class="link-constitucion">
                     <a href="<?php echo get_post_type_archive_link('c80_cpt');?>"><i class="fa fa-book"></i> Constitución 1980</a>
                 </li>
+                <li class="link-opinion">
+                    <a href="<?php echo get_post_type_archive_link('columnas');?>">Opinión</a>
+                </li>
+                <li class="link-noticias">
+                    <a href="<?php echo get_bloginfo('url');?>/noticias">Noticias</a>
+                </li>
+
             </ul>
         </div>
         

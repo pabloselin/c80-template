@@ -9,16 +9,16 @@ header#header-sitio {
 	h1 {
 		float:left;
 		margin-right:12px;
-		width:97px;
-		height:130px;
-		margin:-18px 12px 12px 0;
+		width:70px;
+		height:80px;
+		margin:0 12px 12px 0;
 	}
 	h2 {
 		font-weight:400;
 		float:left;
 		color:white;
 		max-width:600px;
-		margin-top:46px;
+		margin-top:26px;
 		font-size:2.2rem;
 	}
 	.navegacion-principal {
@@ -94,7 +94,7 @@ header#header-sitio {
 	}
 }
 
-div.menu-constitucion {
+div.menu-secciones {
 	float:right;
 	height:32px;
 	ul {
@@ -104,24 +104,35 @@ div.menu-constitucion {
 			margin:0;
 			padding:0;
 			list-style:none;
+			display:inline;
 			a {
 				display:block;
 				color:white;
 				text-transform:uppercase;
 				line-height:36px;
 				padding:0 12px;
-				background-color:@naranjo;
 				color:white;
+				float:right;
+				font-weight:bold;
 				&:hover {
 					text-decoration:none;
 					background-color:@amarillo;
 				}
 			}
+			&.link-opinion a {
+				background-color:@morado;
+			}
+			&.link-constitucion a {
+				background-color:@naranjo;
+			}
+			&.link-noticias a {
+				background-color:@azulvega;
+			}
 		}
 	}
 }
 
-@topnav: 42px;
+@topnav: 26px;
 
 .admin-bar {
 	#main-nav {

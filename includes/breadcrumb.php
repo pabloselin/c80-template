@@ -32,9 +32,24 @@ function c80t_breadcrumb() {
     		}
     	};
 
-    	$html .= '<i class="fa fa-angle-right"></i> ' . $post->post_title;
+    	$html .= ' <i class="fa fa-angle-right"></i> ' . $post->post_title;
 
     endif;
+
+    if(is_page() ):
+        $parents = get_post_ancestors( $post->ID );
+        
+        if($parents) {
+            $parents = array_reverse($parents);
+            foreach($parents as $parent) {
+                $parentlink = get_permalink($parent);
+                $html .= ' <i class="fa fa-angle-right"></i> <a href="' . $parentlink . '"> ' . get_the_title($parent) . ' </a>';
+            }
+        };
+
+        $html .= ' <i class="fa fa-angle-right"></i> ' . $post->post_title;
+    endif;
+    
 
     $html .= '</div>';
 	$html .= '</div>';

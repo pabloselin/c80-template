@@ -5778,16 +5778,16 @@ header#header-sitio {
 header#header-sitio h1 {
   float: left;
   margin-right: 12px;
-  width: 97px;
-  height: 130px;
-  margin: -18px 12px 12px 0;
+  width: 70px;
+  height: 80px;
+  margin: 0 12px 12px 0;
 }
 header#header-sitio h2 {
   font-weight: 400;
   float: left;
   color: white;
   max-width: 600px;
-  margin-top: 46px;
+  margin-top: 26px;
   font-size: 2.2rem;
 }
 header#header-sitio .navegacion-principal {
@@ -5989,38 +5989,49 @@ header#header-sitio .breadcrumb {
 header#header-sitio .breadcrumb a {
   color: #aeaeae;
 }
-div.menu-constitucion {
+div.menu-secciones {
   float: right;
   height: 32px;
 }
-div.menu-constitucion ul {
+div.menu-secciones ul {
   margin: 0;
   padding: 0;
 }
-div.menu-constitucion ul li {
+div.menu-secciones ul li {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: inline;
 }
-div.menu-constitucion ul li a {
+div.menu-secciones ul li a {
   display: block;
   text-transform: uppercase;
   line-height: 36px;
   padding: 0 12px;
-  background-color: #ef7937;
   color: white;
+  float: right;
+  font-weight: bold;
 }
-div.menu-constitucion ul li a:hover {
+div.menu-secciones ul li a:hover {
   text-decoration: none;
   background-color: #f2ab0e;
 }
+div.menu-secciones ul li.link-opinion a {
+  background-color: #9651bc;
+}
+div.menu-secciones ul li.link-constitucion a {
+  background-color: #ef7937;
+}
+div.menu-secciones ul li.link-noticias a {
+  background-color: #25a8ce;
+}
 .admin-bar #main-nav {
-  top: 74px;
+  top: 58px;
 }
 #main-nav {
   position: absolute;
   right: 0;
-  top: 42px;
+  top: 26px;
 }
 #main-nav li:nth-child(odd) {
   border-right: 1px solid white;
@@ -6363,12 +6374,11 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
 }
 .c80-rels h2 {
   font-size: 2.2rem;
-  margin-top: 0;
-  margin-bottom: 12px;
+  margin: -12px -8px 12px -8px;
   font-weight: normal;
-}
-.c80-rels h2 i {
-  color: #f2ab0e;
+  background-color: #ef7937;
+  padding: 12px;
+  color: white;
 }
 .c80-rels.enabled {
   left: 0;
@@ -6421,7 +6431,8 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
   margin-top: 0;
 }
 article.articulo-estandar,
-article.columna-estandar {
+article.columna-estandar,
+article.page {
   position: relative;
   min-height: 1px;
   padding-left: 8px;
@@ -6430,54 +6441,70 @@ article.columna-estandar {
 }
 @media (min-width: 992px) {
   article.articulo-estandar,
-  article.columna-estandar {
+  article.columna-estandar,
+  article.page {
     float: left;
     width: 66.66666667%;
   }
 }
 article.articulo-estandar div.pad,
-article.columna-estandar div.pad {
+article.columna-estandar div.pad,
+article.page div.pad {
   background-color: white;
   box-shadow: 0 0 3px #dfdfdf;
 }
 article.articulo-estandar div.pad header,
-article.columna-estandar div.pad header {
+article.columna-estandar div.pad header,
+article.page div.pad header {
   position: relative;
   padding: 12px 12px 0 12px;
 }
 article.articulo-estandar div.pad header h1,
-article.columna-estandar div.pad header h1 {
+article.columna-estandar div.pad header h1,
+article.page div.pad header h1 {
   margin-top: 0;
   font-weight: normal;
   color: #02476e;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
+  line-height: 1.35em;
 }
 article.articulo-estandar div.pad header div.top-meta,
-article.columna-estandar div.pad header div.top-meta {
+article.columna-estandar div.pad header div.top-meta,
+article.page div.pad header div.top-meta {
   padding: 0;
 }
 article.articulo-estandar div.pad header div.img img.post-image,
-article.columna-estandar div.pad header div.img img.post-image {
+article.columna-estandar div.pad header div.img img.post-image,
+article.page div.pad header div.img img.post-image {
   margin: 0 -12px;
 }
 article.articulo-estandar div.pad div.contenido,
-article.columna-estandar div.pad div.contenido {
+article.columna-estandar div.pad div.contenido,
+article.page div.pad div.contenido {
   padding: 18px;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
 }
 article.articulo-estandar div.pad div.contenido div.excerpt,
-article.columna-estandar div.pad div.contenido div.excerpt {
-  font-family: 'Alegreya', serif;
+article.columna-estandar div.pad div.contenido div.excerpt,
+article.page div.pad div.contenido div.excerpt {
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.2rem;
-  font-style: italic;
+  font-weight: 700;
   color: #3B0803;
 }
 article.articulo-estandar div.pad div.contenido img,
-article.columna-estandar div.pad div.contenido img {
+article.columna-estandar div.pad div.contenido img,
+article.page div.pad div.contenido img {
   max-width: 100%;
   height: auto;
   margin: 12px 0;
+}
+article.articulo-estandar .pad {
+  border-top: 10px solid #25a8ce;
+}
+article.columna-estandar .pad {
+  border-top: 10px solid #9651bc;
 }
 div.comments {
   position: relative;
@@ -6698,6 +6725,9 @@ ul.items-constitucion a.capitulo-lista {
   border-bottom: 1px solid #ccc;
   display: block;
 }
+.c80_p {
+  cursor: pointer;
+}
 .navegador-relacionados {
   padding: 12px;
 }
@@ -6752,8 +6782,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
 }
 .afterp {
   display: none;
@@ -7091,6 +7121,12 @@ section.noticias article.item-1 div.img .top-info h1 {
   padding: 0;
   margin: 0 0 12px 0;
 }
+section.noticias article.item-2 .img,
+section.noticias article.item-3 .img,
+section.noticias article.item-4 .img,
+section.noticias article.item-5 .img {
+  border-top: 10px solid #25a8ce;
+}
 section.noticias article.item-2 .excerpt,
 section.noticias article.item-3 .excerpt,
 section.noticias article.item-4 .excerpt,
@@ -7118,11 +7154,11 @@ section.opinion article.columna .top-meta p {
 }
 section.opinion article.columna h3 {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: normal;
 }
 section.opinion article.columna h3 a {
-  color: #000;
+  color: #02476e;
 }
 section.opinion article.columna .bottom-meta {
   background-color: white;

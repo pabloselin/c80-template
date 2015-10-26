@@ -5,7 +5,8 @@
 }
 
 article.articulo-estandar,
-article.columna-estandar
+article.columna-estandar,
+article.page
  {
 	.make-md-column(8);
 	margin-bottom:12px;
@@ -19,7 +20,8 @@ article.columna-estandar
 				margin-top:0;
 				font-weight:normal;
 				color:@azul-titulo;
-				font-size:3.2rem;
+				font-size:3.6rem;
+				line-height:1.35em;
 			}
 			div.top-meta {
 				padding:0;
@@ -34,9 +36,9 @@ article.columna-estandar
 			font-family:@sans;
 			font-size:1.6rem;
 			div.excerpt {
-				font-family:@serif;
+				font-family:@sans;
 				font-size:2.2rem;
-				font-style:italic;
+				font-weight:700;
 				color:#3B0803;
 			}
 
@@ -48,6 +50,18 @@ article.columna-estandar
 		}
 	}
 	
+}
+
+article.articulo-estandar {
+	.pad {
+		border-top:10px solid @azulvega;
+	}
+}
+
+article.columna-estandar {
+	.pad {
+		border-top:10px solid @morado;
+	}
 }
 
 div.comments {

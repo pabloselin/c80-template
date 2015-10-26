@@ -10,6 +10,12 @@ jQuery(document).ready(function($) {
 	var stdarticle = $('section.contenedor-estandar')
 	var moreaside = $('aside.standard');
 
+	var c80p = $('a.c80_p');
+
+	c80p.on('click', function() {
+		event.preventDefault();
+	})
+
 	c80Rel.on('click', function() {
 		if($(this).hasClass('active')) {
 			c80Loader.removeClass('enabled').addClass('disabled');

@@ -1,0 +1,19 @@
+{
+  "name": "c80-template",
+  "version": "1.0.0",
+  "description": "Tema para proyecto Constitución",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "wordpress"
+  ],
+  "author": "Pablo Selín carrasco",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "c80-template",
+  "version": "0.1.0",
+  "authors": [
+    "Pablo Selín Carrasco Armijo <pabloselin@gmail.com>"
+  ],
+  "description": "Tema para proyecto C80",
+  "main": "index.php",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "responsive",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "homepage": "http://apie.cl",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0"
+  }
+}
