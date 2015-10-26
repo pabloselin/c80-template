@@ -6496,7 +6496,7 @@ div.relbox a.relart {
   display: inline-block;
   padding: 3px 6px;
   font-size: 12px;
-  background-color: #094671;
+  background-color: #ef7937;
   color: white;
   border-radius: 4px;
   margin-right: 4px;
@@ -6934,6 +6934,14 @@ h3 {
   padding-right: 8px;
   min-height: 100px;
 }
+#main .contenedor-home section.opinion .opsect {
+  background-color: #9651bc;
+  color: white;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 12px;
+}
 @media (min-width: 992px) {
   #main .contenedor-home section.opinion {
     float: left;
@@ -7025,7 +7033,7 @@ div.bottom-meta {
 p.temas a {
   display: inline-block;
   padding: 3px 6px;
-  background-color: #84c6f5;
+  background-color: #3feb9e;
   color: white;
   font-size: 1.3rem;
   border-radius: 3px;
@@ -7036,6 +7044,7 @@ p.temas a:hover {
 }
 section.noticias article.item-1 div.img {
   position: relative;
+  border-top: 10px solid #25a8ce;
 }
 section.noticias article.item-1 div.img .top-info {
   position: absolute;
@@ -7050,6 +7059,12 @@ section.noticias article.item-1 div.img .top-info a {
 section.noticias article.item-1 div.img .top-info h1 {
   padding: 0;
   margin: 0 0 12px 0;
+}
+section.noticias article.item-2 .excerpt,
+section.noticias article.item-3 .excerpt,
+section.noticias article.item-4 .excerpt,
+section.noticias article.item-5 .excerpt {
+  font-size: 1.4rem;
 }
 section.opinion header h2 {
   margin: 0;

@@ -88,7 +88,7 @@
 		</section>
 
 		<section class="opinion">
-			
+			<h2 class="opsect">Opinión</h2>
 			<div class="pad">
 			
 				

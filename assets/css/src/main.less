@@ -118,6 +118,15 @@ h1, h2, h3
 		}
 
 		section.opinion {
+			.opsect {
+				background-color:@morado;
+				color:white;
+				font-size:2rem;
+				font-weight:normal;
+				margin:0;
+				padding:12px;
+			}
+
 			.make-md-column(4);
 			div.pad {
 				box-shadow:@stdshadow;
@@ -220,7 +229,7 @@ p.temas {
 	a {
 		display:inline-block;
 		padding:3px 6px;
-		background-color:lighten(@azul, 50%);
+		background-color:@calipso;
 		color:white;
 		font-size:1.3rem;
 		border-radius:3px;
@@ -236,6 +245,7 @@ p.temas {
 section.noticias article.item-1 {
 	div.img {
 		position:relative;
+		border-top:10px solid @azulvega;
 		.top-info {
 			position: absolute;
 			bottom:0;
@@ -251,6 +261,17 @@ section.noticias article.item-1 {
 			}
 		}
 	}
+}
+
+section.noticias {
+	article.item-2,
+	article.item-3,
+	article.item-4,
+	article.item-5 {
+		.excerpt {
+			font-size:1.4rem;
+		}
+}
 }
 
 //Estilo columna de columnas
