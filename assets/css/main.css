@@ -6503,6 +6503,10 @@ article.page div.pad div.contenido {
   padding: 18px;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
+}
+article.articulo-estandar div.pad div.contenido div.the-content,
+article.columna-estandar div.pad div.contenido div.the-content,
+article.page div.pad div.contenido div.the-content {
   line-height: 1.9em;
 }
 article.articulo-estandar div.pad div.contenido div.excerpt,

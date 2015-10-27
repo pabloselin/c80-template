@@ -50,7 +50,9 @@
 						<?php the_tags( '<span class="nrel"><i class="fa fa-tags"></i> </span>', ' ' );?>
 					</p>	
 
-					<?php the_content();?>
+					<div class="the-content">
+						<?php the_content();?>
+					</div>
 						
 				</div>
 			</div>
