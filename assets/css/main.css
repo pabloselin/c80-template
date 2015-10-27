@@ -6509,6 +6509,11 @@ article.columna-estandar div.pad div.contenido div.the-content,
 article.page div.pad div.contenido div.the-content {
   line-height: 1.9em;
 }
+article.articulo-estandar div.pad div.contenido div.the-content p,
+article.columna-estandar div.pad div.contenido div.the-content p,
+article.page div.pad div.contenido div.the-content p {
+  margin-bottom: 18px;
+}
 article.articulo-estandar div.pad div.contenido div.excerpt,
 article.columna-estandar div.pad div.contenido div.excerpt,
 article.page div.pad div.contenido div.excerpt {
@@ -6810,6 +6815,36 @@ h1.archive-title {
 }
 .articulo-archivo p.top-meta {
   margin: 12px 0 0 0;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../fonts/Open_Sans/OpenSans-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../fonts/Open_Sans/OpenSans-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oswald Light'), local('Oswald-Light'), url(../fonts/Oswald/Oswald-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/Oswald/Oswald-Regular.ttf) format('truetype');
 }
 body {
   background-color: #f5f5f5;
@@ -7236,7 +7271,7 @@ section.opinion article.columna div.avatar {
   }
 }
 #footer-sitio a {
-  color: #2E76B7;
+  color: #70a8db;
 }
 aside.standard {
   position: relative;
