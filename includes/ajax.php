@@ -132,7 +132,7 @@ function c80t_artquery($artid) {
 		$artitems = '';
 		while( $archivequery->have_posts() ): $archivequery->the_post();
 			$content = apply_filters( 'the_content', get_the_content() );
-			$title = c80t_parentname($archivequery->ID) . ': ' . c80t_captitle($archivequery->ID) . ' <i class="fa fa-caret-right"></i> ' .  get_the_title();
+			$title = c80t_parentname($archivequery->ID) . ': <i class="fa fa-caret-right"></i> ' .  get_the_title();
 			$artlink = '<p><a href="' . get_permalink($artid) . '">( ir a artículo )</a></p>';
 			$artitems .= '<div class="constarticle">';
 			$artitems .= '<h4><a href="javascript:void(0);" name="art-'. $artid .'">' . $title . '</a></h4>' . $artlink . '<div class="lc">' . $content . '</div></div>';

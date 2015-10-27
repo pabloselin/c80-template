@@ -51,5 +51,7 @@
     
     <?php if(!is_front_page()):?>
         <?php echo c80t_breadcrumb();?>
+    <?php else:?>
+        <?php echo c80t_temas();?>
     <?php endif;?>
 </header>

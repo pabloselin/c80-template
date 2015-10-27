@@ -25,14 +25,15 @@ if ( ! isset( $content_width ) ) {
 }
 
 //includes
-include( TEMPLATEPATH . '/includes/scripts.php');
-include( TEMPLATEPATH . '/includes/metatags.php');
-include( TEMPLATEPATH . '/includes/content.php');
-include( TEMPLATEPATH . '/includes/breadcrumb.php');
-include( TEMPLATEPATH . '/includes/ajax.php');
-include( TEMPLATEPATH . '/includes/post-types.php');
-include( TEMPLATEPATH . '/includes/bootstrap-menu.php');
-include( TEMPLATEPATH . '/includes/author.php');
+include( TEMPLATEPATH . '/includes/scripts.php' );
+include( TEMPLATEPATH . '/includes/metatags.php' );
+include( TEMPLATEPATH . '/includes/content.php' );
+include( TEMPLATEPATH . '/includes/content-archive.php' );
+include( TEMPLATEPATH . '/includes/breadcrumb.php' );
+include( TEMPLATEPATH . '/includes/ajax.php' );
+include( TEMPLATEPATH . '/includes/post-types.php' );
+include( TEMPLATEPATH . '/includes/bootstrap-menu.php' );
+include( TEMPLATEPATH . '/includes/author.php' );
 
 //actions
 add_action('wp_enqueue_scripts', 'c80t_scripts');

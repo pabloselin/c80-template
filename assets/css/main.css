@@ -5775,6 +5775,9 @@ header#header-sitio {
   background-size: cover;
   font-family: 'Open Sans', sans-serif;
 }
+header#header-sitio .row {
+  position: relative;
+}
 header#header-sitio h1 {
   float: left;
   margin-right: 12px;
@@ -5981,6 +5984,25 @@ header#header-sitio .navegacion-texto .c80-nav .visor-temas {
     width: 75%;
   }
 }
+header#header-sitio .temas-header {
+  background-color: #3feb9e;
+}
+header#header-sitio .temas-header ul {
+  padding: 0;
+  margin: 0;
+}
+header#header-sitio .temas-header ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header#header-sitio .temas-header ul li a {
+  color: #333;
+  text-transform: uppercase;
+  display: block;
+  padding: 6px;
+  float: left;
+}
 header#header-sitio .breadcrumb {
   color: #aeaeae;
   border-radius: 0;
@@ -6025,13 +6047,10 @@ div.menu-secciones ul li.link-constitucion a {
 div.menu-secciones ul li.link-noticias a {
   background-color: #25a8ce;
 }
-.admin-bar #main-nav {
-  top: 58px;
-}
 #main-nav {
   position: absolute;
   right: 0;
-  top: 26px;
+  top: 18px;
 }
 #main-nav li:nth-child(odd) {
   border-right: 1px solid white;
@@ -6725,8 +6744,11 @@ ul.items-constitucion a.capitulo-lista {
   border-bottom: 1px solid #ccc;
   display: block;
 }
-.c80_p {
+a.c80_p {
   cursor: pointer;
+}
+a.c80_p.highlight p {
+  background-color: rgba(242, 171, 14, 0.2);
 }
 .navegador-relacionados {
   padding: 12px;
@@ -6758,6 +6780,9 @@ ul.items-constitucion a.capitulo-lista {
     float: left;
     width: 75%;
   }
+}
+h1.archive-title {
+  margin-bottom: 24px;
 }
 .articulo-archivo {
   overflow: hidden;

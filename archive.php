@@ -6,7 +6,7 @@
 <div id="main" class="container">
 	<section class="contenedor-estandar">
 		
-		<h1>Archivo</h1>
+		<h1 class="archive-title"><?php echo c80t_archivetitle();?></h1>
 
 		<div class="archive-items">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -17,8 +17,10 @@
 			?>
 			<article class="articulo-archivo">
 			
-				<?php if(has_post_thumbnail( )):?>
+				<?php if(has_post_thumbnail( ) && $ptype == 'post'):?>
 					<?php the_post_thumbnail( 'thumbnail' );?>
+				<?php else:?>
+					<?php echo c80t_avatar(160);?>
 				<?php endif;?>
 			
 				<p class="top-meta">

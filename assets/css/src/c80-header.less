@@ -6,6 +6,11 @@ header#header-sitio {
 	background-position:top center;
 	background-size:cover;
 	font-family:'Open Sans', sans-serif;
+	
+	.row {
+		position: relative;
+	}
+
 	h1 {
 		float:left;
 		margin-right:12px;
@@ -84,6 +89,26 @@ header#header-sitio {
 		}
 	}
 
+	.temas-header {
+		background-color:@calipso;
+		ul {
+			padding: 0;
+			margin: 0;
+			li {
+				list-style:none;
+				margin: 0;
+				padding: 0;
+				a {
+					color:#333;
+					text-transform:uppercase;
+					display: block;
+					padding: 6px;
+					float: left;
+				}
+			}
+		}
+	}
+
 	.breadcrumb {
 		color:lighten(#555, 35%);
 		border-radius:0;
@@ -132,13 +157,13 @@ div.menu-secciones {
 	}
 }
 
-@topnav: 26px;
+@topnav: 18px;
 
-.admin-bar {
-	#main-nav {
-		top:@topnav + 32px;
-	}
-}
+// .admin-bar {
+// 	#main-nav {
+// 		top:@topnav + 32px;
+// 	}
+// }
 
 #main-nav {
 	position: absolute;

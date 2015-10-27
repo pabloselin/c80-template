@@ -210,3 +210,20 @@ function c80t_default_post_thumbnail($html, $post_id, $post_thumbnail_id, $size,
 }
 
 add_filter('post_thumbnail_html', 'c80t_default_post_thumbnail', 99, 5);
+
+function c80t_temas() {
+	$args = array(
+		'hide_empty' => 0
+		);
+	$temas = get_categories( $args );
+	$output = '';
+	foreach($temas as $tema) {
+		$output .= '<li><a class="cats" href="' . get_category_link($tema->term_id) .'">' . $tema->name . '</a></li>';
+	}
+
+	$html = '<div class="temas-header">
+		<div class="container"><div class="row"><div class="col-md-12"><ul>' . $output . '</ul></div></div></div>
+	</div>';
+
+	return $html;
+}
