@@ -6513,6 +6513,11 @@ article.page div.pad div.contenido div.excerpt {
   font-weight: 700;
   color: #3B0803;
 }
+article.articulo-estandar div.pad div.contenido h3,
+article.columna-estandar div.pad div.contenido h3,
+article.page div.pad div.contenido h3 {
+  margin-bottom: 16px;
+}
 article.articulo-estandar div.pad div.contenido img,
 article.columna-estandar div.pad div.contenido img,
 article.page div.pad div.contenido img {
@@ -7042,6 +7047,7 @@ h3 {
 #main .contenedor-home section.opinion .excerpt {
   font-size: 1.5rem;
 }
+#main .contenedor-home section.opinion h3,
 #main .contenedor-home section.opinion .autor {
   margin-left: 82px;
 }
