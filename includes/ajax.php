@@ -25,7 +25,7 @@ function c80t_constquery() {
 		'post_type' => 'c80_cpt',
 		'numberposts' => 100,
 		'post_parent' => 0,
-		'order_by' => 'menu_order',
+		'orderby' => 'menu_order',
 		'order' => 'ASC'
 		);
 
@@ -44,7 +44,7 @@ function c80t_constquery() {
 			'post_type' => 'c80_cpt',
 			'numberposts' => 100,
 			'post_parent' => $capitulo->ID,
-			'order_by' => 'menu_order',
+			'orderby' => 'menu_order',
 			'order' => 'ASC'
 			);
 		
@@ -62,7 +62,7 @@ function c80t_constquery() {
 				'post_type' => 'c80_cpt',
 				'numberposts' => 100,
 				'post_parent' => $articulos->ID,
-				'order_by' => 'menu_order',
+				'orderby' => 'menu_order',
 				'order' => 'ASC'
 				);
 			$subcap = new WP_Query($args);
@@ -94,7 +94,7 @@ function c80t_capquery($capid) {
 	 */
 	$args = array(
 			'post__in' => $capid,
-			'order_by' => 'menu_order',
+			'orderby' => 'menu_order',
 			'order' => 'ASC'
 			);
 		$archivequery = new WP_Query($args);
@@ -139,6 +139,33 @@ function c80t_artquery($artid) {
 		endwhile;	
 		wp_reset_postdata();
 		return $artitems;
+}
+
+function c80t_pquery($parid) {
+	/**
+	 * Devuelve el párrafo relacionado del artículo de la constitución correspondiente
+	 */
+	//Descompongo el ID
+	$pararr = explode('-', $parid);
+	$parkey = $pararr[0];
+	$parcount = $parkey + 1;
+	$artid = $pararr[1];
+
+	//Obtengo el Artículo
+	$parrafo = rwmb_meta('c80_parrafo', 'multiple=true', $artid);
+	$parrafocontent = $parrafo[0];
+	//Obtengo el Párrafo
+	$html = '';
+
+	$html .= '<div class="constarticle">';
+	$html .= '<h4><a href="#">' . c80t_parentname($artid) . ' <i class="fa fa-caret-right"></i> ' . get_the_title($artid) . ' (Párrafo #' . $parcount .')</a></h4>';
+	$html .= '<p><a href="' . get_permalink($artid) . '#parrafo-' . $parid . '">(Ir a artículo)</a></p>';
+	$html .= '<div class="lc">';
+	$html .= '<p id="' . $parid . '">' . $parrafocontent[$parkey] . '</p>';
+	$html .= '</div>';
+	$html .= '</div>';
+
+	return $html;
 }
 
 function c80t_countrels($postid) {

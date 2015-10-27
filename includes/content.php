@@ -9,7 +9,7 @@ function c80t_articulos() {
 		'post_type' => 'c80_cpt',
 		'numberposts' => 100,
 		'post_parent' => 0,
-		'order_by' => 'menu_order',
+		'orderby' => 'menu_order',
 		'order' => 'ASC'
 		);
 
@@ -27,7 +27,7 @@ function c80t_articulos() {
 			'post_type' => 'c80_cpt',
 			'numberposts' => 100,
 			'post_parent' => $capitulo->ID,
-			'order_by' => 'menu_order',
+			'orderby' => 'menu_order',
 			'order' => 'ASC'
 			);
 		
@@ -41,7 +41,7 @@ function c80t_articulos() {
 				'post_type' => 'c80_cpt',
 				'numberposts' => 100,
 				'post_parent' => $articulo->ID,
-				'order_by' => 'menu_order',
+				'orderby' => 'menu_order',
 				'order' => 'ASC'
 				);
 			$children = get_posts($args);

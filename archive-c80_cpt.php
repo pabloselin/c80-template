@@ -17,7 +17,7 @@
 				'posts_per_page' => -1,
 				'post_type' => 'c80_cpt',
 				'post_parent' => 0,
-				'order_by' => 'menu_order',
+				'orderby' => 'menu_order',
 				'order' => 'ASC'
 				);
 			$archivequery = new WP_Query($args);

@@ -32,7 +32,7 @@ global $post;
 								'post_type' => 'c80_cpt',
 								'numberposts' => 100,
 								'post_parent' => $post->ID,
-								'order_by' => 'menu_order',
+								'orderby' => 'menu_order',
 								'order' => 'ASC'
 								);
 							$subcap = new WP_Query($args);

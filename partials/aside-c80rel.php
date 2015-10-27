@@ -6,9 +6,14 @@
 			<div class="textos-c80-mini">
 				<?php 
 						$rel = rwmb_meta('c80_artrel', 'multiple=true', $post->ID);
-						//$rel = get_post_meta($post->ID, 'c80_artrel', true);
-					
-						if($rel){
+						$relpar = rwmb_meta('c80_parraforel', 'multiple=true', $post->ID);
+
+						if($rel && $relpar) {
+							foreach($relpar as $relp) {
+								echo c80t_pquery($relp);
+							}
+						}
+						elseif($rel){
 							foreach($rel as $r){
 								echo c80t_artquery($r);	
 							}

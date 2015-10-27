@@ -6424,7 +6424,7 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
   font-size: 1.6rem;
 }
 .c80-rels .textos-c80-mini .lc {
-  font-family: 'Alegreya', serif;
+  font-family: serif;
   font-size: 1.6rem;
 }
 .c80-rels .textos-c80-mini .lc a {
@@ -6440,7 +6440,7 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
   border-bottom: 1px dotted #ccc;
 }
 .c80-rels .texto-c80-rel .lc {
-  font-family: 'Alegreya', serif;
+  font-family: serif;
   font-size: 1.6rem;
 }
 .c80-rels .texto-c80-rel .lc a {
@@ -6503,6 +6503,7 @@ article.page div.pad div.contenido {
   padding: 18px;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
+  line-height: 1.9em;
 }
 article.articulo-estandar div.pad div.contenido div.excerpt,
 article.columna-estandar div.pad div.contenido div.excerpt,
@@ -6631,7 +6632,7 @@ p.autor {
 .sub-article .main-content,
 .articulo-constitucion > div .sub-content,
 .sub-article .sub-content {
-  font-family: 'Alegreya', serif;
+  font-family: serif;
   font-size: 1.8rem;
   padding: 12px;
 }

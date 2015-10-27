@@ -8,7 +8,7 @@
 				'numberposts' => 100,
 				'posts_per_page' => 100,
 				'post_parent' => $post->ID,
-				'order_by' => 'menu_order',
+				'orderby' => 'menu_order',
 				'order' => 'ASC'
 				);
 			
