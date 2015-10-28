@@ -110,7 +110,7 @@
 							<a href="<?php the_permalink();?>"><?php the_title();?></a>
 						</h3>
 						<p class="autor"><?php the_author( );?>
-							<?php if(the_author_meta('author_org')):?>
+							<?php if(get_the_author_meta('author_org')):?>
 								- <?php the_author_meta('author_org');?></p>
 							<?php endif;?>
 						<div class="excerpt">

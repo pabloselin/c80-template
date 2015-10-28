@@ -6509,7 +6509,7 @@ article.page div.pad div.contenido {
 article.articulo-estandar div.pad div.contenido div.the-content,
 article.columna-estandar div.pad div.contenido div.the-content,
 article.page div.pad div.contenido div.the-content {
-  line-height: 1.9em;
+  line-height: 1.6em;
 }
 article.articulo-estandar div.pad div.contenido div.the-content p,
 article.columna-estandar div.pad div.contenido div.the-content p,
@@ -7197,7 +7197,7 @@ div.bottom-meta {
 p.temas a {
   display: inline-block;
   padding: 3px 6px;
-  background-color: #3feb9e;
+  background-color: #15c978;
   color: white;
   font-size: 1.3rem;
   border-radius: 3px;

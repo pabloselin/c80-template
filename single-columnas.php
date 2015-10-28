@@ -28,7 +28,7 @@
 							</p>
 							<p>
 
-							<?php if(the_author_meta('author_orgurl')):?>
+							<?php if(get_the_author_meta('author_orgurl')):?>
 							<a href="<?php the_author_meta('author_orgurl');?>" target="_blank" title="<?php the_author_meta('author_org');?>">
 								<i class="fa fa-external-link"></i>	<?php the_author_meta('author_org');?>
 							</a>
