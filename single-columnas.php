@@ -26,6 +26,13 @@
 							<p class="autormeta">
 								<?php the_author_meta( 'description' );?>
 							</p>
+							<p>
+
+							<a href="<?php the_author_meta('author_orgurl');?>" target="_blank" title="<?php the_author_meta('author_org');?>">
+
+								<i class="fa fa-external-link"></i>	<?php the_author_meta('author_org');?>
+
+							</a></p>
 						</div>
 					</div>
 

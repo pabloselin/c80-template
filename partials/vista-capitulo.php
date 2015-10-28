@@ -1,6 +1,6 @@
 <article class="capitulo-constitucion">
-	<header>
-		<h1><i class="fa fa-book"></i> <?php the_title();?>: <?php echo c80t_captitle($post->ID);?></h1>
+	<header class="header-capitulo">
+		<h1><i class="fa fa-book"></i> <span class="txt"><span class="titlename"><?php the_title();?></span> <br> <span class="capsubt"><?php echo c80t_captitle($post->ID);?></span> </span></h1>
 	</header>	
 		<?php 
 			$args = array(

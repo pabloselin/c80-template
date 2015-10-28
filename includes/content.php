@@ -80,7 +80,7 @@ function c80t_parentname($postid, $en_capitulo = false) {
 		$name = get_the_title($ancestors[0]);
 		$subname = c80t_captitle($postid);
 
-		$fullname = $name . ': ' . $subname;
+		$fullname = '<span class="titlename">' . $name . ':</span> ' . $subname;
 		return $fullname;
 	}	
 }
