@@ -16,7 +16,12 @@ function c80t_breadcrumb() {
         $ptype = get_post_type_object( get_post_type( $post->ID ) );
         $html .= ' <i class="fa fa-angle-right"></i> ' . $ptype->labels->name;
     endif;
-    
+
+    if(is_category() ):
+        $cat = single_cat_title('Categoría: ', false );
+        $html .= ' <i class="fa fa-angle-right"></i> ' . $cat;
+    endif;
+
     if(is_single() ):
     	$ptype = get_post_type_object( get_post_type( $post->ID ) );
     	$ptypelink = get_post_type_archive_link( $ptype->name );
