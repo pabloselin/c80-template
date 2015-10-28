@@ -93,7 +93,7 @@
 			
 				
 				<?php 
-					$columnas = c80t_get_columnas(3);
+					$columnas = c80t_get_columnas(4);
 					while($columnas->have_posts() ): $columnas->the_post();?>
 				
 					<article class="columna">

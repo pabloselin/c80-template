@@ -36,8 +36,8 @@ include( TEMPLATEPATH . '/includes/bootstrap-menu.php' );
 include( TEMPLATEPATH . '/includes/author.php' );
 
 //actions
-add_action('wp_enqueue_scripts', 'c80t_scripts');
-add_action('wp_enqueue_scripts', 'c80t_styles');
+add_action( 'wp_enqueue_scripts', 'c80t_scripts' );
+add_action( 'wp_enqueue_scripts', 'c80t_styles' );
 
 //Image sizes
 function c80t_imgsizes() {
