@@ -56,7 +56,7 @@ global $post;
 	</article>
 	
 	
-			<?php get_sidebar('relacionados');?>
+			<?php include( TEMPLATEPATH . '/sidebar-relacionados.php');?>
 			
 	</aside>
 </div>
