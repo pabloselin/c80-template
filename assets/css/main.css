@@ -5769,7 +5769,7 @@ a img.aligncenter {
   /* Above WP toolbar. */
 }
 header#header-sitio {
-  background-color: #2b388c;
+  background-color: #253746;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -6446,7 +6446,8 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
 .c80-rels .texto-c80-rel .lc a {
   color: #333333;
 }
-.single #main .contenedor-estandar {
+.single #main .contenedor-estandar,
+.page #main .contenedor-estandar {
   margin-top: 0;
 }
 article.articulo-estandar,
@@ -7251,27 +7252,74 @@ section.opinion article.columna div.avatar {
 #footer-sitio {
   min-height: 200px;
   background-color: #253746;
+  border-top: 10px solid #ef7937;
   color: white;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 24px;
+  overflow: hidden;
 }
 #footer-sitio .footer-content {
   margin-left: -8px;
   margin-right: -8px;
 }
 #footer-sitio .footer-content .footer-column {
+  padding-top: 48px;
+}
+#footer-sitio .footer-content .footer-column.info {
   position: relative;
   min-height: 1px;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 12px;
+  font-size: 2.3rem;
 }
 @media (min-width: 992px) {
-  #footer-sitio .footer-content .footer-column {
+  #footer-sitio .footer-content .footer-column.info {
     float: left;
-    width: 66.66666667%;
+    width: 33.33333333%;
   }
+}
+#footer-sitio .footer-content .footer-column.menu {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 1.8rem;
+}
+@media (min-width: 992px) {
+  #footer-sitio .footer-content .footer-column.menu {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+#footer-sitio .footer-content .footer-column.auspicios {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  #footer-sitio .footer-content .footer-column.auspicios {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+#footer-sitio .footer-content .footer-column.auspicios p {
+  text-align: center;
+}
+#footer-sitio .footer-content .footer-licencia {
+  clear: both;
+  text-align: right;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 24px;
+  font-size: 1.3rem;
 }
 #footer-sitio a {
   color: #70a8db;
+}
+#footer-sitio ul li {
+  list-style: none;
 }
 aside.standard {
   position: relative;
