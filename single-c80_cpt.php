@@ -34,8 +34,9 @@
 			</div>
 		
 		<?php endif; ?>
-
+	
 	</section>
+	<?php get_template_part( 'partials/fuente' );?>
 </div>
 
 <?php

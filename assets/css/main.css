@@ -5392,6 +5392,8 @@ header#header-sitio .navegacion-principal:before,
 header#header-sitio .navegacion-principal:after,
 header#header-sitio .navegacion-texto .c80-nav:before,
 header#header-sitio .navegacion-texto .c80-nav:after,
+div.fuente-constitucion:before,
+div.fuente-constitucion:after,
 #main .contenedor-estandar:before,
 #main .contenedor-estandar:after,
 #main .contenedor-estandar .capitulo-constitucion .articulos-capitulo:before,
@@ -5424,6 +5426,7 @@ header#header-sitio .navegacion-texto .c80-nav:after,
 .modal-footer:after,
 header#header-sitio .navegacion-principal:after,
 header#header-sitio .navegacion-texto .c80-nav:after,
+div.fuente-constitucion:after,
 #main .contenedor-estandar:after,
 #main .contenedor-estandar .capitulo-constitucion .articulos-capitulo:after,
 #main .row-constitucion:after,
@@ -6638,6 +6641,55 @@ p.autor {
   margin-right: 12px;
   margin-top: 12px;
 }
+div.fuente-constitucion {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+div.fuente-constitucion div.wrap {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
+}
+@media (min-width: 992px) {
+  div.fuente-constitucion div.wrap {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+div.fuente-constitucion div.wrap h4 {
+  margin-top: 0;
+  color: inherit;
+}
+div.fuente-constitucion div.wrap .alert-link {
+  font-weight: bold;
+}
+div.fuente-constitucion div.wrap > p,
+div.fuente-constitucion div.wrap > ul {
+  margin-bottom: 0;
+}
+div.fuente-constitucion div.wrap > p + p {
+  margin-top: 5px;
+}
+div.fuente-constitucion div.wrap hr {
+  border-top-color: #f7e1b5;
+}
+div.fuente-constitucion div.wrap .alert-link {
+  color: #66512c;
+}
+@media (min-width: 992px) {
+  div.fuente-constitucion div.wrap {
+    margin-left: 16.66666667%;
+  }
+}
 .articulo-constitucion > div,
 .sub-article {
   box-shadow: 0 0 3px #dfdfdf;
@@ -7347,10 +7399,11 @@ section.opinion article.columna div.avatar {
   font-size: 1.3rem;
 }
 #footer-sitio a {
-  color: #70a8db;
+  color: white;
 }
 #footer-sitio ul li {
   list-style: none;
+  margin-bottom: 6px;
 }
 aside.standard {
   position: relative;

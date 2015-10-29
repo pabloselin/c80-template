@@ -10,12 +10,12 @@
 
 			<div class="footer-column menu">
 				<ul>
-					<li>sobre el proyecto</li>
-					<li>¿cómo colaborar?</li>
-					<li>contacto</li>
-					<li>noticias</li>
-					<li>opinión</li>
-					<li>constitución</li>
+					<li><a href="<?php echo get_permalink(68);?>">sobre el proyecto</a></li>
+					<li><a href="https://docs.google.com/document/d/1s2iJIYTWPd1A2vH_-zBdT0B5WD1BLFVoGml9z_4PK74/edit?usp=sharing" target="_blank">¿cómo colaborar?</a></li>
+					<li><a href="<?php echo get_permalink(70);?>">contacto</a></li>
+					<li><a href="<?php bloginfo('url');?>/noticias">noticias</li>
+					<li><a href="<?php echo get_post_type_archive_link( 'columnas' );?>">opinión</a></li>
+					<li><a href="<?php echo get_post_type_archive_link( 'c80_cpt' );?>">constitución</a></li>
 				</ul>
 			</div>
 

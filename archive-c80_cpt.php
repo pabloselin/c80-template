@@ -28,9 +28,9 @@
 			?>
 		
 			<?php endwhile;?>
-		
 		</section>
 	</div>
+	<?php get_template_part( 'partials/fuente' );?>
 </div>
 
 <?php
