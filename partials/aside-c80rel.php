@@ -1,6 +1,6 @@
 <aside class="c80-rels">
 		<header>
-			<h2><i class="fa fa-book"></i>  <?php echo c80t_countrels($post->ID);?> Artículos relacionados</h2>
+			<h2><i class="fa fa-book"></i>  <?php echo c80t_countrels($post->ID);?> Artículos de la constitución relacionados</h2>
 		</header>
 	
 			<div class="textos-c80-mini">

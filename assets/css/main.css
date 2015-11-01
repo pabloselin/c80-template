@@ -5394,16 +5394,16 @@ header#header-sitio .navegacion-texto .c80-nav:before,
 header#header-sitio .navegacion-texto .c80-nav:after,
 div.fuente-constitucion:before,
 div.fuente-constitucion:after,
+#main .contenedor-home:before,
+#main .contenedor-home:after,
+#main .contenedor-home section.noticias > div.rm:before,
+#main .contenedor-home section.noticias > div.rm:after,
 #main .contenedor-estandar:before,
 #main .contenedor-estandar:after,
 #main .contenedor-estandar .capitulo-constitucion .articulos-capitulo:before,
 #main .contenedor-estandar .capitulo-constitucion .articulos-capitulo:after,
 #main .row-constitucion:before,
 #main .row-constitucion:after,
-#main .contenedor-home:before,
-#main .contenedor-home:after,
-#main .contenedor-home section.noticias > div.rm:before,
-#main .contenedor-home section.noticias > div.rm:after,
 #footer-sitio .footer-content:before,
 #footer-sitio .footer-content:after {
   content: " ";
@@ -5427,11 +5427,11 @@ div.fuente-constitucion:after,
 header#header-sitio .navegacion-principal:after,
 header#header-sitio .navegacion-texto .c80-nav:after,
 div.fuente-constitucion:after,
+#main .contenedor-home:after,
+#main .contenedor-home section.noticias > div.rm:after,
 #main .contenedor-estandar:after,
 #main .contenedor-estandar .capitulo-constitucion .articulos-capitulo:after,
 #main .row-constitucion:after,
-#main .contenedor-home:after,
-#main .contenedor-home section.noticias > div.rm:after,
 #footer-sitio .footer-content:after {
   clear: both;
 }
@@ -6931,165 +6931,41 @@ h1.archive-title {
   font-weight: 400;
   src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/Oswald/Oswald-Regular.ttf) format('truetype');
 }
-body {
-  background-color: #f5f5f5;
+.social-share {
+  overflow: hidden;
+  margin: 6px 0;
 }
-h1,
-h2,
-h3 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
+.social-share .sharebutton a {
+  display: block;
+  width: 60px;
+  padding: 6px 12px;
+  color: white;
+  margin-right: 6px;
+  float: left;
+  transition: all ease-in 0.2s;
 }
-.afterp {
-  display: none;
+.social-share .sharebutton a i {
+  margin-right: 6px;
+  font-size: 18px;
 }
-#main .contenedor-estandar {
-  margin-left: -8px;
-  margin-right: -8px;
+.social-share .sharebutton a.sharer__facebook {
+  background-color: #3b5998;
 }
-#main .contenedor-estandar .navegador-capitulos,
-#main .contenedor-estandar .navegador-relacionados {
-  position: relative;
-  min-height: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
+.social-share .sharebutton a.sharer__twitter {
+  background-color: #00aced;
 }
-@media (min-width: 992px) {
-  #main .contenedor-estandar .navegador-capitulos,
-  #main .contenedor-estandar .navegador-relacionados {
-    float: left;
-    width: 25%;
-  }
+.social-share .sharebutton a.sharer__whatsapp {
+  background-color: #34af23;
+  text-align: center;
+  width: 50px;
+  padding: 5px 3px;
 }
-#main .contenedor-estandar .navegador-c80 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
+.social-share .sharebutton a.sharer__whatsapp i {
+  font-size: 22px;
 }
-@media (min-width: 992px) {
-  #main .contenedor-estandar .navegador-c80 {
-    float: left;
-    width: 16.66666667%;
-  }
-}
-#main .contenedor-estandar .articulo-constitucion {
-  position: relative;
-  min-height: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-@media (min-width: 992px) {
-  #main .contenedor-estandar .articulo-constitucion {
-    float: left;
-    width: 58.33333333%;
-  }
-}
-#main .contenedor-estandar .capitulo-constitucion {
-  position: relative;
-  min-height: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-@media (min-width: 992px) {
-  #main .contenedor-estandar .capitulo-constitucion {
-    float: left;
-    width: 75%;
-  }
-}
-#main .contenedor-estandar .capitulo-constitucion .articulos-capitulo {
-  margin-left: -8px;
-  margin-right: -8px;
-}
-#main .contenedor-estandar .capitulo-constitucion .articulos-capitulo .articulo-constitucion {
-  position: relative;
-  min-height: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-@media (min-width: 992px) {
-  #main .contenedor-estandar .capitulo-constitucion .articulos-capitulo .articulo-constitucion {
-    float: left;
-    width: 75%;
-  }
-}
-#main .contenedor-estandar .capitulo-constitucion .articulos-capitulo .navegador-relacionados {
-  position: relative;
-  min-height: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-@media (min-width: 992px) {
-  #main .contenedor-estandar .capitulo-constitucion .articulos-capitulo .navegador-relacionados {
-    float: left;
-    width: 25%;
-  }
-}
-#main .row-constitucion {
-  margin-left: -8px;
-  margin-right: -8px;
-}
-#main .row-constitucion .navegador-c80 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding: 0;
-}
-@media (min-width: 992px) {
-  #main .row-constitucion .navegador-c80 {
-    float: left;
-    width: 16.66666667%;
-  }
-}
-#main .row-constitucion .contenedor-constitucion {
-  position: relative;
-  min-height: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-@media (min-width: 992px) {
-  #main .row-constitucion .contenedor-constitucion {
-    float: left;
-    width: 83.33333333%;
-  }
-}
-#main .row-constitucion .capitulo-constitucion {
-  position: relative;
-  min-height: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding: 0;
-}
-@media (min-width: 992px) {
-  #main .row-constitucion .capitulo-constitucion {
-    float: left;
-    width: 100%;
-  }
-}
-#main .row-constitucion .capitulo-constitucion .articulo-constitucion {
-  position: relative;
-  min-height: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-@media (min-width: 992px) {
-  #main .row-constitucion .capitulo-constitucion .articulo-constitucion {
-    float: left;
-    width: 75%;
-  }
-}
-#main .row-constitucion .navegador-relacionados {
-  position: relative;
-  min-height: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-@media (min-width: 992px) {
-  #main .row-constitucion .navegador-relacionados {
-    float: left;
-    width: 25%;
-  }
+.social-share .sharebutton a:hover {
+  text-decoration: none;
+  border-radius: 10px;
 }
 #main .contenedor-home {
   margin-top: 32px;
@@ -7331,6 +7207,226 @@ section.opinion article.columna div.avatar {
   border-radius: 35px;
   float: left;
   margin-right: 12px;
+}
+header#header-sitio h1 {
+  float: left;
+  margin-left: 12px;
+}
+header#header-sitio h2 {
+  float: left;
+  max-width: 200px;
+}
+#nav-mobile {
+  background-color: #094671;
+  color: white;
+  padding: 6px 0;
+  margin-bottom: 0;
+}
+#nav-mobile a,
+#nav-mobile i {
+  color: white;
+}
+#nav-mobile .navbar-toggle {
+  border-color: white;
+  padding: 6px;
+  border-radius: 6px;
+}
+#nav-mobile .navbar-toggle i {
+  font-size: 22px;
+}
+#nav-mobile .navbar-toggle:hover {
+  background-color: #031a2a;
+}
+@media screen and (max-width: 768px) {
+  section.noticias article.item-1 div.img .top-info {
+    position: relative;
+  }
+  section.noticias article.item-1 div.img .top-info .over-title {
+    color: #333;
+    text-shadow: none;
+  }
+  section.noticias article.item-1 div.img .top-info .over-title a {
+    color: #02476e;
+  }
+  section.noticias article.item-1 div.img .top-info h1 {
+    font-size: 2.6rem;
+  }
+  section.noticias article.item-1 div.img .top-info h1 a {
+    color: #02476e;
+  }
+  section.noticias article.item-1 div.img .top-info h1,
+  section.noticias article.item-1 div.img .top-info p.autor {
+    text-shadow: none;
+  }
+  .breadcrumb {
+    display: none;
+  }
+  #footer-sitio {
+    display: none;
+  }
+  .temas-header {
+    display: none;
+  }
+}
+body {
+  background-color: #f5f5f5;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+.afterp {
+  display: none;
+}
+#main .contenedor-estandar {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+#main .contenedor-estandar .navegador-capitulos,
+#main .contenedor-estandar .navegador-relacionados {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 992px) {
+  #main .contenedor-estandar .navegador-capitulos,
+  #main .contenedor-estandar .navegador-relacionados {
+    float: left;
+    width: 25%;
+  }
+}
+#main .contenedor-estandar .navegador-c80 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 992px) {
+  #main .contenedor-estandar .navegador-c80 {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+#main .contenedor-estandar .articulo-constitucion {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 992px) {
+  #main .contenedor-estandar .articulo-constitucion {
+    float: left;
+    width: 58.33333333%;
+  }
+}
+#main .contenedor-estandar .capitulo-constitucion {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 992px) {
+  #main .contenedor-estandar .capitulo-constitucion {
+    float: left;
+    width: 75%;
+  }
+}
+#main .contenedor-estandar .capitulo-constitucion .articulos-capitulo {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+#main .contenedor-estandar .capitulo-constitucion .articulos-capitulo .articulo-constitucion {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 992px) {
+  #main .contenedor-estandar .capitulo-constitucion .articulos-capitulo .articulo-constitucion {
+    float: left;
+    width: 75%;
+  }
+}
+#main .contenedor-estandar .capitulo-constitucion .articulos-capitulo .navegador-relacionados {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 992px) {
+  #main .contenedor-estandar .capitulo-constitucion .articulos-capitulo .navegador-relacionados {
+    float: left;
+    width: 25%;
+  }
+}
+#main .row-constitucion {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+#main .row-constitucion .navegador-c80 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  #main .row-constitucion .navegador-c80 {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+#main .row-constitucion .contenedor-constitucion {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 992px) {
+  #main .row-constitucion .contenedor-constitucion {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+#main .row-constitucion .capitulo-constitucion {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  #main .row-constitucion .capitulo-constitucion {
+    float: left;
+    width: 100%;
+  }
+}
+#main .row-constitucion .capitulo-constitucion .articulo-constitucion {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 992px) {
+  #main .row-constitucion .capitulo-constitucion .articulo-constitucion {
+    float: left;
+    width: 75%;
+  }
+}
+#main .row-constitucion .navegador-relacionados {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 992px) {
+  #main .row-constitucion .navegador-relacionados {
+    float: left;
+    width: 25%;
+  }
 }
 #footer-sitio {
   min-height: 200px;

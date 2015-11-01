@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
 	//1. Tooltip
 	$('a[data-toggle="tooltip"]').tooltip();
 	
+	var body = $('body');
 	var c80Rel = $('a.showC80Rel');
 	var c80Loader = $('aside.cargador-articulos');
 	var stdarticle = $('section.contenedor-estandar')
@@ -30,4 +31,8 @@ jQuery(document).ready(function($) {
 			moreaside.addClass('disp');
 		}
 	});
+
+	
+	singleCounter();
+	
 });

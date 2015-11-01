@@ -107,7 +107,7 @@ function c80t_relink($postid) {
 	$relink = '<div class="relbox">';
 	$relink .= '<p class="hrel"><span class="nrel"><i class="fa fa-book"></i> ' . $nrel. '</span>';
 	foreach($rels as $rel) {
-		$title = str_replace('Artículo' , 'Art.', get_the_title($rel) );
+		$title = str_replace('Artículo' , 'Art. Nº', get_the_title($rel) );
 		$capinfo = c80t_parentname($rel); 
 		$relink .= '<a data-toggle="tooltip" data-placement="bottom" class="relart" title="' . $capinfo . '" href="' . get_permalink($rel) .'" class="inpagelink"><span><i class="fa fa-file-text-o"></i> ' . $title . '</span></a>';
 	}

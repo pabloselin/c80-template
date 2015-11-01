@@ -1,0 +1,46 @@
+//Sharer
+
+.social-share {
+	overflow:hidden;
+	margin:6px 0;
+	.sharebutton {
+		a {
+			display: block;
+			width:60px;
+			padding:6px 12px;
+			color:white;
+			margin-right:6px;
+			float:left;
+			transition:all ease-in 0.2s;
+			
+			i {
+				margin-right:6px;
+				font-size:18px;
+			}
+			
+			&.sharer__facebook {
+				background-color:@fbblue;
+			}
+
+			&.sharer__twitter {
+				background-color:@twtblue;
+			}
+
+			&.sharer__whatsapp {
+				background-color:@whatsapp;
+				text-align:center;
+				width:50px;
+				padding:5px 3px;
+				
+				i {
+					font-size:22px;
+				}
+			}
+
+			&:hover {
+				text-decoration:none;
+				border-radius:10px;
+			}
+		}
+	}
+}

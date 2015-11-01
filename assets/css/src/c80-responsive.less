@@ -1,0 +1,74 @@
+// Responsive basic stuff
+
+header#header-sitio {
+	h1 {
+		float:left;
+		margin-left:12px;
+	}
+
+	h2 {
+		float:left;
+		max-width:200px;
+	}
+}
+
+#nav-mobile {
+	background-color:@azul;
+	color:white;
+	padding:6px 0;
+	margin-bottom:0;
+		a, i {
+			color:white;
+		}
+
+	.navbar-toggle {
+		border-color:white;
+		padding:6px;
+		border-radius:6px;
+			i {
+				font-size:22px;
+			}
+		&:hover {
+			background-color:darken(@azul, 15%);
+		}
+	}
+
+}
+
+@media screen and (max-width:@screen-sm) {
+	section.noticias article.item-1 {
+		div.img {
+			.top-info {
+				position: relative;
+				.over-title {
+					color:#333;
+					text-shadow:none;
+					a {
+						color:@azul-titulo;
+					}
+				}
+				h1 {
+					font-size:2.6rem;
+					a {
+						color:@azul-titulo;
+					}
+				}
+				h1, p.autor {
+					text-shadow:none;
+				}
+			}
+		}
+	}
+
+	.breadcrumb {
+		display:none;
+	}
+
+	#footer-sitio {
+		display:none;
+	}
+
+	.temas-header {
+		display:none;
+	}
+}

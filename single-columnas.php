@@ -61,6 +61,8 @@
 						<?php the_tags( '<span class="nrel"><i class="fa fa-tags"></i> </span>', ' ' );?>
 					</p>	
 
+					<?php get_template_part('partials/sharer');?>
+					
 					<div class="the-content">
 						<?php the_content();?>
 					</div>

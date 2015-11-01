@@ -39,7 +39,9 @@
 									</a>
 								
 								<div class="top-info">
-									<?php the_category( ', ' );?> |	<?php the_time( get_option( 'date_format' ) );?>
+									<div class="over-title">
+										<?php the_category( ', ' );?> |	<?php the_time( get_option( 'date_format' ) );?>
+									</div>
 									<?php echo $hs;?>
 										<a href="<?php the_permalink();?>"><?php the_title();?></a>
 									<?php echo $he;?>
