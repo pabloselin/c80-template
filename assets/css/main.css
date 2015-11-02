@@ -7248,6 +7248,7 @@ header#header-sitio .navbar-toggle:hover {
 #nav-mobile {
   background-color: #094671;
   color: white;
+  display: none;
 }
 #nav-mobile a,
 #nav-mobile i {
@@ -7266,6 +7267,9 @@ header#header-sitio .navbar-toggle:hover {
   margin-top: 6px;
 }
 @media screen and (max-width: 768px) {
+  #nav-mobile {
+    display: block;
+  }
   section.noticias article.item-1 div.img .top-info {
     position: relative;
   }

@@ -30,6 +30,7 @@ header#header-sitio {
 #nav-mobile {
 	background-color:@azul;
 	color:white;
+	display:none;
 		a, i {
 			color:white;
 		}
@@ -55,6 +56,11 @@ header#header-sitio {
 }
 
 @media screen and (max-width:@screen-sm) {
+	
+	#nav-mobile {
+		display:block;
+	}
+
 	section.noticias article.item-1 {
 		div.img {
 			.top-info {
