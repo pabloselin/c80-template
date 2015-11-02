@@ -6057,7 +6057,8 @@ div.menu-secciones ul li.link-noticias a {
   top: 18px;
 }
 #main-nav li:nth-child(1),
-#main-nav li:nth-child(2) {
+#main-nav li:nth-child(2),
+#main-nav li:nth-child(3) {
   border-right: 1px solid white;
 }
 #main-nav a {
