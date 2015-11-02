@@ -5,6 +5,10 @@
 h1.archive-title {
 	margin-bottom:24px;
 	margin-top:0;
+	@media screen and (max-width:@screen-sm) {
+		font-size:2rem;
+		margin:12px 0 12px 12px;
+	}
 }
 
 .articulo-archivo {
@@ -16,6 +20,9 @@ h1.archive-title {
 	img {
 		float:left;
 		margin-right:12px;
+		@media screen and (max-width:@screen-sm) {
+			margin-left:-36px;
+		}
 		
 	}
 
@@ -23,6 +30,9 @@ h1.archive-title {
 		font-family:@heading;
 		font-weight:normal;
 		margin:0;
+		@media screen and (max-width:@screen-sm) {
+			font-size:1.8rem;
+		}
 	}
 
 	p.top-meta {

@@ -13,6 +13,11 @@
                 <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/img/logo-c80-3.png" alt="<?php bloginfo('name');?>" class="logo"></a>
             </h1>
             <h2 class="description"><?php bloginfo('description');?></h2>
+            
+            <a href="#" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-movil" aria-expanded="false">
+                <span class="sr-only">Activar navegación</span>
+                <i class="fa fa-navicon"></i>
+            </a>
 
             <?php
             wp_nav_menu( array(
@@ -51,17 +56,7 @@
     </nav>
 
     <!--Navegación móvil-->
-    <nav class="visible-sm visible-xs navbar navbar-default" id="nav-mobile">
-    
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-movil" aria-expanded="false">
-        <span class="sr-only">Activar navegación</span>
-        <i class="fa fa-navicon"></i>
-      </button>
-      <a class="navbar-brand" href="#">Menú</a>
-    </div>
-
+    <nav id="nav-mobile">
         <div class="collapse navbar-collapse" id="menu-movil">
             <ul class="nav navbar-nav">
                 <li class="link-noticias">
@@ -85,7 +80,6 @@
             </ul>
         </div>
     </nav>
-    
     <?php if(!is_front_page()):?>
         <?php echo c80t_breadcrumb();?>
     <?php else:?>
