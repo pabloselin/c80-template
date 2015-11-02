@@ -19,18 +19,25 @@
                 <i class="fa fa-navicon"></i>
             </a>
 
-            <?php
-            wp_nav_menu( array(
-                'theme_location'    => 'principal',
-                'depth'             => 2,
-                'container'         => 'div',
-                'container_class'   => 'collapse navbar-collapse',
-                'container_id'      => 'main-nav',
-                'menu_class'        => 'nav navbar-nav hidden-sm hidden-xs',
-                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                'walker'            => new wp_bootstrap_navwalker())
-            );
-        ?>
+            <div id="main-nav">
+                <ul class="nav navbar-nav hidden-sm hidden-xs">
+                    <li>
+                        <a href="<?php get_permalink(68);?>">Somos</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_permalink(516);?>" target="_blank">¿cómo colaborar?</a>
+                    </li>
+                    <li>
+                        <a href="<?php get_permalink(70);?>">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo c80t_twitter();?>"><i class="fa fa-twitter"></i> @<?php echo C80_TWITTER;?></a>
+                    </li>
+                </ul>
+            </div>
+
+            
+
         </div>
     </div>
      <nav class="navegacion-principal hidden-sm hidden-xs">
@@ -72,10 +79,10 @@
                     <span></span>
                 </li>
                 <li>
-                    <a href="<?php get_permalink();?>">Somos</a>
+                    <a href="<?php get_permalink(68);?>">Somos</a>
                 </li>
                 <li>
-                    <a href="<?php get_permalink();?>">Contacto</a>
+                    <a href="<?php get_permalink(70);?>">Contacto</a>
                 </li>
             </ul>
         </div>

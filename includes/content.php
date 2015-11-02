@@ -228,3 +228,8 @@ function c80t_temas() {
 
 	return $html;
 }
+
+function c80t_twitter() {
+	$baseurl = 'https://twitter.com' . C80_TWITTER;
+	return $baseurl;
+}

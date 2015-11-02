@@ -170,15 +170,17 @@ div.menu-secciones {
 	position: absolute;
 	right:0;
 	top:@topnav;
-	li:nth-child(odd) {
+	li:nth-child(1),
+	li:nth-child(2),
+	 {
 		border-right:1px solid white;	
 	}
 
 	a {
 		color:white;
-		font-weight:bold;
+		font-weight:normal;
 		font-family:@sans;
-		font-size:1.8rem;
+		font-size:1.6rem;
 		&:hover {
 			background-color:transparent;
 		}

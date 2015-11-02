@@ -19,7 +19,9 @@
 						
 				<div class="contenido">
 						
-					<?php the_content();?>
+					<div class="the-content">
+						<?php the_content();?>
+					</div>
 						
 				</div>
 			</div>
