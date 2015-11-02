@@ -69,7 +69,8 @@
 						
 				</div>
 			</div>
-		
+			
+			<?php get_template_part('partials/colabora');?>
 		</article>
 		
 			<?php endwhile; ?>

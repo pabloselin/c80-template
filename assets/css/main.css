@@ -6607,6 +6607,17 @@ p.autor {
   bottom: 0;
   right: 0;
 }
+div.colabora {
+  border-radius: 0;
+  text-align: right;
+}
+div.colabora h5 {
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+div.colabora p {
+  font-size: 1.8rem;
+}
 .columna-estandar img.avatar {
   float: left;
   margin-right: 24px;
@@ -7518,12 +7529,16 @@ h3 {
   padding-left: 8px;
   padding-right: 8px;
   font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
 }
 @media (min-width: 992px) {
   #footer-sitio .footer-content .footer-column.menu {
     float: left;
     width: 33.33333333%;
   }
+}
+#footer-sitio .footer-content .footer-column.menu li a {
+  font-weight: normal;
 }
 #footer-sitio .footer-content .footer-column.auspicios {
   position: relative;
