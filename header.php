@@ -80,10 +80,13 @@
                     <span></span>
                 </li>
                 <li>
-                    <a href="<?php get_permalink(68);?>">Somos</a>
+                    <a href="<?php echo get_permalink(68);?>">Somos</a>
                 </li>
                 <li>
-                    <a href="<?php get_permalink(70);?>">Contacto</a>
+                    <a href="<?php echo get_permalink(516);?>" target="_blank">¿Cómo colaborar?</a>
+                </li>
+                <li>
+                    <a href="<?php echo get_permalink(70);?>">Contacto</a>
                 </li>
             </ul>
         </div>
