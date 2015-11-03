@@ -26,7 +26,7 @@
                         <a href="<?php echo get_permalink(68);?>">Somos</a>
                     </li>
                     <li>
-                        <a href="<?php echo get_permalink(516);?>" target="_blank">¿cómo colaborar?</a>
+                        <a href="<?php echo get_permalink(516);?>" target="_blank">¿Cómo colaborar?</a>
                     </li>
                     <li>
                         <a href="<?php echo get_permalink(70);?>">Contacto</a>

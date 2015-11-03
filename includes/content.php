@@ -213,7 +213,7 @@ add_filter('post_thumbnail_html', 'c80t_default_post_thumbnail', 99, 5);
 
 function c80t_temas() {
 	$args = array(
-		'hide_empty' => 0,
+		'hide_empty' => 1,
 		'exclude' => 1,
 		'number' => 8
 		);
