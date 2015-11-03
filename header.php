@@ -6,6 +6,7 @@
 <body <?php body_class();?> >
 
 <header id="header-sitio">
+    <span class="beta">BETA</span>
     <!-- Navegación principal -->
     <div class="container">
         <div class="row">

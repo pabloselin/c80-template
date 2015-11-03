@@ -6268,6 +6268,17 @@ div.menu-secciones ul li.link-noticias a {
 #main-nav a:hover {
   background-color: transparent;
 }
+.beta {
+  position: absolute;
+  top: 12px;
+  left: -38px;
+  background-color: #5ec4e2;
+  color: #094671;
+  font-size: 12px;
+  display: block;
+  padding: 3px 48px;
+  transform: rotate(-45deg);
+}
 /*  Comments */
 div.comments {
   margin-top: 24px;
