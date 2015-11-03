@@ -1,6 +1,7 @@
 //main less file
 @import '../../vendor/bootstrap/less/bootstrap.less';
 @import 'wpcore.less';
+@import 'mailchimp.less';
 @import 'c80-variables.less';
 @import 'c80-header.less';
 @import 'c80-comments.less';
@@ -210,4 +211,25 @@ aside.standard {
 
 aside.disp {
 	display:none;
+}
+
+#mc_embed_signup {
+	margin-top:24px;
+	font-family:@sans;
+	font-size:1.6rem;
+	padding:0;
+	border-top:1px solid fade(@azulvega, 20%);
+	form {
+		padding:0;
+		input {
+			max-width:300px;
+			color:#333;
+		}
+	}
+
+	h2 {
+		font-family:@sans;
+		font-weight:normal;
+		font-size:1.6rem;
+	}
 }
