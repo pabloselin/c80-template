@@ -6278,6 +6278,7 @@ div.menu-secciones ul li.link-noticias a {
   display: block;
   padding: 3px 48px;
   transform: rotate(-45deg);
+  z-index: 10;
 }
 .admin-bar .beta {
   top: 44px;
