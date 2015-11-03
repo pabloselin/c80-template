@@ -16,6 +16,7 @@ add_action( 'after_setup_theme', 'c80t_theme_setup' );
 function c80t_menus() {
 	register_nav_menu( 'principal', 'Menú principal' );
 	register_nav_menu( 'portada', 'Control contenidos portada' );
+	register_nav_menu( 'columnas', 'Control Columnas' );
 }
 
 add_action( 'after_setup_theme', 'c80t_menus' );

@@ -147,6 +147,27 @@ function c80t_get_columnas($numberposts = 3) {
 	return $query;
 }
 
+function c80t_run_columnas($numberposts = 5) {
+	/**
+	 * Crea un loop para las columnas
+	 */
+	$items = c80t_getmenus('columnas');
+	//si tengo items creo un arreglo con los ids
+	if($items) {
+		foreach($items as $item) {
+			$ids[] = $item->object_id;
+		}
+	
+	$args = array(
+		'post_type' => 'columnas',
+		'post__in' => $ids,
+		'orderby' => 'post__in'
+		);
+	$query = new WP_Query($args);
+	return $query;
+	}
+}
+
 function c80t_getmenus($menu) {
 	/**
 	 * Obtiene items de un objeto de menú

@@ -6279,6 +6279,9 @@ div.menu-secciones ul li.link-noticias a {
   padding: 3px 48px;
   transform: rotate(-45deg);
 }
+.admin-bar .beta {
+  top: 44px;
+}
 /*  Comments */
 div.comments {
   margin-top: 24px;
