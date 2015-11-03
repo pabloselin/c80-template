@@ -6618,6 +6618,9 @@ div.colabora h5 {
 div.colabora p {
   font-size: 1.8rem;
 }
+.home div.colabora {
+  text-align: center;
+}
 .columna-estandar img.avatar {
   float: left;
   margin-right: 24px;

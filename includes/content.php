@@ -230,6 +230,6 @@ function c80t_temas() {
 }
 
 function c80t_twitter() {
-	$baseurl = 'https://twitter.com' . C80_TWITTER;
+	$baseurl = 'https://twitter.com/' . C80_TWITTER;
 	return $baseurl;
 }

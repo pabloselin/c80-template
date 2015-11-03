@@ -138,7 +138,7 @@
 
 	<div class="ancho-home">
 		<section class="map">
-			
+			<?php get_template_part('partials/colabora');?>
 		</section>
 	</div>
 </div>
