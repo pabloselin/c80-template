@@ -7858,3 +7858,6 @@ aside.disp {
   font-weight: normal;
   font-size: 1.6rem;
 }
+.avatar > .alignnone {
+  margin: 0;
+}
