@@ -95,7 +95,7 @@
 			
 				
 				<?php 
-					$columnas = c80t_run_columnas(5);
+					$columnas = c80t_run_columnas();
 					while($columnas->have_posts() ): $columnas->the_post();?>
 				
 					<article class="columna">

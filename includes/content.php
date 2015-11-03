@@ -147,7 +147,7 @@ function c80t_get_columnas($numberposts = 3) {
 	return $query;
 }
 
-function c80t_run_columnas($numberposts = 5) {
+function c80t_run_columnas() {
 	/**
 	 * Crea un loop para las columnas
 	 */
