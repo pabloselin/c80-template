@@ -15,7 +15,9 @@
 					
 					<h1><?php the_title();?></h1>
 
-					<?php the_post_thumbnail( 'main' );?>
+					<div class="img">
+						<?php the_post_thumbnail( 'main' );?>
+					</div>
 						
 				</header>
 						
