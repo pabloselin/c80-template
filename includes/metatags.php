@@ -11,7 +11,7 @@ function c80t_columnimg() {
 	if(is_singular( 'columnas' ) && !has_post_thumbnail( $post->ID )) {
 		$avatarsrc = get_wp_user_avatar_src( get_the_author_meta('ID'), 'large' );
 		echo '<meta property="og:image" content="' . $avatarsrc . '">';
-	} elseif(is_page( )) {
+	} elseif(is_page( ) || is_home() ) {
 		$defaultimg = get_bloginfo('template_url') . '/assets/img/placeholder-main.png';
 		echo '<meta property="og:image" content="' . $defaultimg . '">';
 	}
