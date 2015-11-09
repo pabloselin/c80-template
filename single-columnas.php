@@ -8,19 +8,19 @@
 		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
-		<article class="columna-estandar">
+		<article itemscope itemtype="http://schema.org/Article" class="columna-estandar">
 		
 			<div class="pad">
 				<header>
 
 					<div class="info-columna">
 						<div class="top-meta">
-							<?php the_category( ', ' );?> |	<?php the_time( get_option( 'date_format' ) );?>
+							<?php the_category( ', ' );?> |	<span itemprop="datePublished" content="<?php the_date('c'); ?>" pubdate><?php the_time( get_option( 'date_format' ) );?></span>
 						</div>
-						<h1><?php the_title();?></h1>
+						<h1 itemprop="name"><?php the_title();?></h1>
 						<div class="autor-card">
 							<?php echo c80t_avatar(70);?>
-							<p class="autor">
+							<p class="autor" itemprop="author">
 								<?php the_author( );?>
 							</p>
 							<p class="autormeta">
@@ -63,7 +63,7 @@
 
 					<?php get_template_part('partials/sharer');?>
 					
-					<div class="the-content">
+					<div class="the-content" itemprop="articleBody">
 						<?php the_content();?>
 					</div>
 						

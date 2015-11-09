@@ -8,17 +8,17 @@
 		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		
-		<article <?php post_class('articulo-estandar');?> >
+		<article itemscope itemtype="http://schema.org/Article" <?php post_class('articulo-estandar');?> >
 		
 			<div class="pad">
 				<header>
 					<div class="top-meta">
-						<?php the_category( ', ' );?> |	<?php the_time( get_option( 'date_format' ) );?>
+						<?php the_category( ', ' );?> |	<span itemprop="datePublished" content="<?php the_date('c'); ?>" pubdate><?php the_time( get_option( 'date_format' ) );?></span>
 					</div>
 					
-					<h1><?php the_title();?></h1>
+					<h1 itemprop="name"><?php the_title();?></h1>
 
-					<p class="autor">
+					<p class="autor" itemprop="author">
 						<?php the_author();?>
 					</p>
 
@@ -50,7 +50,7 @@
 						<?php the_excerpt();?>
 					</div>	
 
-					<div class="the-content">
+					<div class="the-content" itemprop="articleBody">
 						<?php the_content();?>
 					</div>
 
