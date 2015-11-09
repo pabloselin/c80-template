@@ -14,6 +14,8 @@
 				<header>
 					
 					<h1><?php the_title();?></h1>
+
+					<?php the_post_thumbnail( 'main' );?>
 						
 				</header>
 						
