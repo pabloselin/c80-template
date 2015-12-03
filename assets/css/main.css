@@ -6823,10 +6823,14 @@ p.autor {
 div.colabora {
   border-radius: 0;
   text-align: right;
+  background-color: rgba(150, 81, 188, 0.3);
 }
 div.colabora h5 {
   margin-top: 0;
   font-size: 2.2rem;
+}
+div.colabora a {
+  color: #9651BC;
 }
 div.colabora p {
   font-size: 1.8rem;
