@@ -147,7 +147,7 @@ function c80t_get_columnas($numberposts = 3) {
 	return $query;
 }
 
-function c80t_run_columnas() {
+function c80t_run_columnas($numberposts = 6) {
 	/**
 	 * Crea un loop para las columnas
 	 */
@@ -161,7 +161,8 @@ function c80t_run_columnas() {
 	$args = array(
 		'post_type' => 'columnas',
 		'post__in' => $ids,
-		'orderby' => 'post__in'
+		'orderby' => 'post__in',
+		'posts_per_page' => $numberposts
 		);
 	$query = new WP_Query($args);
 	return $query;
