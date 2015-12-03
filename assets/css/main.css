@@ -6834,6 +6834,11 @@ div.colabora p {
 .home div.colabora {
   text-align: center;
 }
+#mc_embed_signup.inline {
+  margin: 36px -18px -18px -18px;
+  padding: 18px;
+  background-color: #e1e9ef;
+}
 .columna-estandar img.avatar {
   float: left;
   margin-right: 24px;
