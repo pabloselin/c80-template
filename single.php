@@ -9,22 +9,42 @@
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		
 		<article itemscope itemtype="http://schema.org/Article" <?php post_class('articulo-estandar');?> >
-		
+			
+			<meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="<?php bloginfo('url');?>"/>
+
 			<div class="pad">
 				<header>
 					<div class="top-meta">
 						<?php the_category( ', ' );?> |	<span itemprop="datePublished" content="<?php the_date('c'); ?>" pubdate><?php the_time( get_option( 'date_format' ) );?></span>
+						<meta itemprop="dateModified" content="<?php echo get_the_modified_date( 'c' );?>">
 					</div>
 					
-					<h1 itemprop="name"><?php the_title();?></h1>
+					<h1 itemprop="headline"><?php the_title();?></h1>
 
 					<p class="autor" itemprop="author">
 						<?php the_author();?>
 					</p>
 
+					<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+						<meta itemprop="name" content="<?php bloginfo('name');?>">
+					</div>
+
 					<div class="img">
+
+					<?php if(has_post_thumbnail()):
 						
-						<?php the_post_thumbnail( 'main' );?>
+						$imgid = get_post_thumbnail_id( $post->ID );
+						$pthsrc = wp_get_attachment_image_src( $imgid, 'main' );
+
+
+						?>	
+						<div class="imgobj" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+							<?php the_post_thumbnail( 'main' );?>
+							<meta itemprop="url" content="<?php echo $pthsrc[0];?>">
+    						<meta itemprop="width" content="<?php echo $pthsrc[1];?>">
+    						<meta itemprop="height" content="<?php echo $pthsrc[2];?>">
+						</div>
+					<?php endif;?>
 
 						<div class="in-img-meta">
 							<p class="related">
