@@ -9,7 +9,7 @@
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 		<article itemscope itemtype="http://schema.org/Article" class="columna-estandar">
-		
+			<meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="<?php bloginfo('url');?>"/>
 			<div class="pad">
 				<header>
 
