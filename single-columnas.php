@@ -65,7 +65,7 @@
     						<meta itemprop="height" content="<?php echo $pthsrc[2];?>">
 						</div>
 					<?php else:?>
-						<div class="imgobj" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+						<div class="imgobj hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
 							<img src="<?php echo get_bloginfo('template_url');?>/assets/img/placeholder-main.png">
 							<meta itemprop="url" content="<?php echo get_bloginfo('template_url');?>/assets/img/placeholder-main.png">
     						<meta itemprop="width" content="754>">
