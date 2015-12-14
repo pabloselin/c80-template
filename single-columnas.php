@@ -16,8 +16,9 @@
 					<div class="info-columna">
 						<div class="top-meta">
 							<?php the_category( ', ' );?> |	<span itemprop="datePublished" content="<?php the_date('c'); ?>" pubdate><?php the_time( get_option( 'date_format' ) );?></span>
+							<meta itemprop="dateModified" content="<?php echo get_the_modified_date( 'c' );?>">
 						</div>
-						<h1 itemprop="name"><?php the_title();?></h1>
+						<h1 itemprop="headline"><?php the_title();?></h1>
 						<div class="autor-card">
 							<?php echo c80t_avatar(70);?>
 							<p class="autor" itemprop="author">
@@ -38,12 +39,31 @@
 
 							</p>
 						</div>
+
+						<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+							<meta itemprop="name" content="<?php bloginfo('name');?>">
+							 <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+							    <meta itemprop="url" content="<?php bloginfo('template_url');?>/assets/img/logo-c80-str.png">
+							    <meta itemprop="width" content="183">
+							    <meta itemprop="height" content="60">
+							 </div>
+						</div>
+
 					</div>
 
-					<?php if(has_post_thumbnail( )):?>
-							<div class="img">
-								<?php the_post_thumbnail( 'main' );?>
-							</div>
+					<?php if(has_post_thumbnail()):
+						
+						$imgid = get_post_thumbnail_id( $post->ID );
+						$pthsrc = wp_get_attachment_image_src( $imgid, 'main' );
+
+
+						?>	
+						<div class="imgobj" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+							<?php the_post_thumbnail( 'main' );?>
+							<meta itemprop="url" content="<?php echo $pthsrc[0];?>">
+    						<meta itemprop="width" content="<?php echo $pthsrc[1];?>">
+    						<meta itemprop="height" content="<?php echo $pthsrc[2];?>">
+						</div>
 					<?php endif;?>
 					
 				</header>
