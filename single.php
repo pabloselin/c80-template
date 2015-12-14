@@ -27,6 +27,11 @@
 
 					<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 						<meta itemprop="name" content="<?php bloginfo('name');?>">
+						 <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+						    <meta itemprop="url" content="<?php bloginfo('template_url');?>/assets/img/logo-c80-str.png">
+						    <meta itemprop="width" content="183">
+						    <meta itemprop="height" content="60">
+						 </div>
 					</div>
 
 					<div class="img">
