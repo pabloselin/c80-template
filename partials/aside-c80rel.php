@@ -5,19 +5,32 @@
 	
 			<div class="textos-c80-mini">
 				<?php 
-						$rel = rwmb_meta('c80_artrel', 'multiple=true', $post->ID);
+						$rels = rwmb_meta('c80_artrel', 'multiple=true', $post->ID);
 						$relpar = rwmb_meta('c80_parraforel', 'multiple=true', $post->ID);
+						
+						$artids = array();
+						$plids = array();
+						foreach($relpar as $relp) {
+							$ids = explode('-', $relp);
+							$artids[] = array(
+								'parrafo' => $ids[0], 
+								'articulo' => $ids[1]
+								);
+							$plids[] = $ids[1];
+						}
 
-						if($rel && $relpar) {
-							foreach($relpar as $relp) {
-								echo c80t_pquery($relp);
+						//Cada uno de los $artids tiene un párrafo
+						foreach($rels as $rel) {
+							//Si $rel no está en $artids es por que está el artículo pelado
+							if(in_array($rel, $plids)) {
+								foreach($artids as $artid) {
+									echo c80t_pquery($artid['parrafo'] . '-' . $artid['articulo']);
+								}
+							} else {
+								echo c80t_artquery($rel);
 							}
 						}
-						elseif($rel){
-							foreach($rel as $r){
-								echo c80t_artquery($r);	
-							}
-						}
+						
 				?>
 			</div>
 </aside>

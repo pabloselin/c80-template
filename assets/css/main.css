@@ -6636,6 +6636,11 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
   max-height: 550px;
   overflow: scroll;
 }
+.c80-rels .textos-c80-mini .constarticle {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px dotted #ccc;
+}
 .c80-rels .textos-c80-mini h3 {
   font-size: 1.8rem;
 }
