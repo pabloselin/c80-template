@@ -36,10 +36,12 @@ include( TEMPLATEPATH . '/includes/ajax.php' );
 include( TEMPLATEPATH . '/includes/post-types.php' );
 include( TEMPLATEPATH . '/includes/bootstrap-menu.php' );
 include( TEMPLATEPATH . '/includes/author.php' );
+include( TEMPLATEPATH . '/includes/content-embeds.php' );
 
 //actions
 add_action( 'wp_enqueue_scripts', 'c80t_scripts' );
 add_action( 'wp_enqueue_scripts', 'c80t_styles' );
+
 
 //Image sizes
 function c80t_imgsizes() {

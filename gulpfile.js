@@ -17,10 +17,19 @@ gulp.task('less', function() {
 	return gulp.src('assets/css/src/main.less')
 		.pipe(plumber(plumberErrorHandler))
 		.pipe(less())
-		.pipe(gulp.dest('assets/css'))	
+		.pipe(gulp.dest('assets/css'));	
 });
 
+gulp.task('embeds', function() {
+	return gulp.src('assets/css/src/c80-embeds.less')
+		.pipe(plumber(plumberErrorHandler))
+		.pipe(less())
+		.pipe(gulp.dest('assets/css'));
+});
+
+
+
 gulp.task('watch', function() {
-	gulp.watch('assets/css/src/**/*.less', ['less']);
+	gulp.watch('assets/css/src/**/*.less', ['less', 'embeds']);
 });
 

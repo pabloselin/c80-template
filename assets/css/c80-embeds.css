@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+div.relbox p.hrel {
+  font-weight: normal;
+}
+div.relbox a.relart {
+  display: inline-block;
+  padding: 3px 6px;
+  font-size: 12px;
+  background-color: #ef7937;
+  color: white;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+div.relbox a.relart:hover {
+  text-decoration: none;
+  background-color: #0d63a0;
+}
+span.nrel {
+  display: inline-block;
+  padding: 3px 6px;
+  background-color: #f0f0f0;
+  margin-right: 6px;
+}
+.wp-embed {
+  padding: 0;
+}
+.wp-embed-footer {
+  background-color: #094671;
+  padding: 8px 5px;
+  border-top: 5px solid #25a8ce;
+}
+.wp-embed-heading a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  color: #02476e;
+  font-size: 26px;
+}
+.wp-embed-heading,
+.wp-embed-excerpt {
+  padding: 0 12px;
+}
+.wp-embed-footer a,
+.wp-embed-footer a .dashicons {
+  color: white;
+}
+.embed-footer-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: normal;
+}
+.embed-footer-title img {
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin-right: 12px;
+}
+.wp-embed-comments {
+  display: none;
+}
+.wp-embed-meta {
+  padding-right: 12px;
+}
+.wp-embed-meta button {
+  color: white;
+  font-size: 16px;
+}
+.wp-embed-site-title a {
+  padding-left: 12px;
+}
+div.relbox {
+  padding: 12px 0 0 12px;
+}
+div.embed-c80 {
+  font-family: serif;
+  font-size: 16px;
+}
+div.embed-c80 a:hover {
+  text-decoration: none;
+}
+p.c80-embedcap {
+  color: white;
+  font-family: sans-serif;
+  margin-left: 56px;
+  font-weight: normal;
+  margin-top: 0;
+}

@@ -1,0 +1,89 @@
+// c80 embeds stylesheet
+
+@import 'c80-variables.less';
+@import 'c80-rels.less';
+//@import 'c80-fonts.less';
+
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+
+.wp-embed {
+	padding:0;
+}
+
+.wp-embed-footer {
+	background-color: @azul;
+	padding:8px 5px;
+	border-top:5px solid @azulvega;
+}
+
+.wp-embed-heading a {
+	font-family: 'Oswald', sans-serif;
+	font-weight:normal;
+	color:@azul-titulo;
+	font-size:26px;
+}
+
+.wp-embed-heading,
+.wp-embed-excerpt {
+	padding:0 12px;
+}
+
+.wp-embed-footer a,
+.wp-embed-footer a .dashicons 
+ {
+	color:white;
+}
+
+.embed-footer-title {
+	font-family:'Oswald', sans-serif;
+	font-size:20px;
+	color:white;
+	font-weight:normal;
+	
+	img {
+		width:32px;
+		height:32px;
+		float:left;
+		margin-right:12px;
+	}
+
+}
+
+.wp-embed-comments {
+	display:none;
+}
+
+.wp-embed-meta {
+	padding-right:12px;
+	
+	button  { 
+		color:white;
+		font-size:16px;
+	}
+}
+
+.wp-embed-site-title a {
+	padding-left:12px;
+}
+
+div.relbox {
+	padding:12px 0 0 12px;
+}
+
+div.embed-c80 {
+	font-family:serif;
+	font-size:16px;
+	a:hover {
+		text-decoration:none;
+	}
+}
+
+p.c80-embedcap {
+	color:white;
+	font-family:sans-serif;
+	margin-left:56px;
+	font-weight:normal;
+	margin-top:0;
+}
