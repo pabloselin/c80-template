@@ -6256,7 +6256,8 @@ div.menu-secciones ul li.link-noticias a {
 }
 #main-nav li:nth-child(1),
 #main-nav li:nth-child(2),
-#main-nav li:nth-child(3) {
+#main-nav li:nth-child(3),
+#main-nav li:nth-child(4) {
   border-right: 1px solid white;
 }
 #main-nav a {
@@ -6825,6 +6826,9 @@ div.colabora p {
   margin: 36px -18px -18px -18px;
   padding: 18px;
   background-color: #e1e9ef;
+}
+.page-id-70 .img {
+  margin: 12px -12px;
 }
 .columna-estandar img.avatar {
   float: left;

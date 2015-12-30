@@ -3,6 +3,7 @@
 
 define( 'C80_THEME_VERSION', '0.1.0');
 define( 'C80_TWITTER', 'proyectoC80');
+define( 'C80_FACEBOOK', 'https://www.facebook.com/proyectoC80/');
 
 //theme support
 function c80t_theme_setup() {

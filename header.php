@@ -34,6 +34,9 @@
                     <li>
                         <a href="<?php echo c80t_twitter();?>"><i class="fa fa-twitter"></i> @<?php echo C80_TWITTER;?></a>
                     </li>
+                    <li>
+                        <a href="<?php echo C80_FACEBOOK;?>"><i class="fa fa-facebook-square"></i> Facebook</a>
+                    </li>
                 </ul>
             </div>
 
