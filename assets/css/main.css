@@ -7121,6 +7121,9 @@ section.opinion .opsect {
   margin: 0;
   padding: 12px;
 }
+section.opinion p.cats {
+  font-weight: normal;
+}
 @media (min-width: 992px) {
   section.opinion {
     float: left;
@@ -7446,7 +7449,8 @@ section.opinion article.columna .top-meta p {
   margin-bottom: 0;
 }
 section.opinion article.columna h3 {
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 0;
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
 }

@@ -1,5 +1,11 @@
 <section class="opinion">
-			<h2 class="opsect">Opinión</h2>
+			<h2 class="opsect">
+				<?php if(!is_home()):?>
+					Últimas columnas
+				<?php else:?>
+					Opinión
+				<?php endif;?>
+					</h2>
 			<div class="pad">
 			
 				
