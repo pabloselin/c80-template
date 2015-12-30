@@ -27,7 +27,29 @@
 
 .wp-embed-heading,
 .wp-embed-excerpt {
-	padding:0 12px;
+	padding:12px 12px 0 12px;
+}
+
+body.single-c80_cpt {
+
+	.wp-embed-heading {
+		margin-bottom:0;
+		padding-bottom:0;
+	}
+
+	.wp-embed-excerpt {
+		padding-top:0;
+	}
+
+}
+
+p.c80-embedcap {
+	font-family:serif;
+	font-weight:normal;
+	margin-top:0;
+	margin-bottom:24px;
+	font-family:'Oswald', sans-serif;
+	color:#9a3f0c;
 }
 
 .wp-embed-footer a,
@@ -75,15 +97,10 @@ div.relbox {
 div.embed-c80 {
 	font-family:serif;
 	font-size:16px;
+	max-height:200px;
+	overflow:scroll;
 	a:hover {
 		text-decoration:none;
 	}
 }
 
-p.c80-embedcap {
-	color:white;
-	font-family:sans-serif;
-	margin-left:56px;
-	font-weight:normal;
-	margin-top:0;
-}
