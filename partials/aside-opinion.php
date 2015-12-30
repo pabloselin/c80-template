@@ -1,7 +1,7 @@
 <section class="opinion">
 			<h2 class="opsect">
 				<?php if(!is_home()):?>
-					Últimas columnas
+					Columnas destacadas
 				<?php else:?>
 					Opinión
 				<?php endif;?>
