@@ -31,11 +31,11 @@
                     <li>
                         <a href="<?php echo get_permalink(70);?>">Contacto</a>
                     </li>
-                    <li>
-                        <a href="<?php echo c80t_twitter();?>"><i class="fa fa-twitter"></i> @<?php echo C80_TWITTER;?></a>
+                    <li class="socials">
+                        <a href="<?php echo c80t_twitter();?>" target="_blank"><i class="fa fa-twitter"></i> </a>
                     </li>
-                    <li>
-                        <a href="<?php echo C80_FACEBOOK;?>"><i class="fa fa-facebook-square"></i> Facebook</a>
+                    <li class="socials">
+                        <a href="<?php echo C80_FACEBOOK;?>" target="_blank"><i class="fa fa-facebook-square"></i> </a>
                     </li>
                 </ul>
             </div>

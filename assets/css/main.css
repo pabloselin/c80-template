@@ -6260,6 +6260,9 @@ div.menu-secciones ul li.link-noticias a {
 #main-nav li:nth-child(4) {
   border-right: 1px solid white;
 }
+#main-nav li.socials i {
+  font-size: 24px;
+}
 #main-nav a {
   color: white;
   font-weight: normal;
