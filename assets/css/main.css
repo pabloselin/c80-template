@@ -6770,6 +6770,12 @@ article.columna-estandar div.pad div.contenido h3,
 article.page div.pad div.contenido h3 {
   margin-bottom: 16px;
 }
+article.articulo-estandar div.pad div.contenido h4,
+article.columna-estandar div.pad div.contenido h4,
+article.page div.pad div.contenido h4 {
+  margin-bottom: 12px;
+  line-height: 1.5em;
+}
 article.articulo-estandar div.pad div.contenido img,
 article.columna-estandar div.pad div.contenido img,
 article.page div.pad div.contenido img {
