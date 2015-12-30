@@ -7106,6 +7106,38 @@ a.c80_p.highlight p {
   display: block;
   font-size: 12px;
 }
+section.opinion {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  min-height: 100px;
+}
+section.opinion .opsect {
+  background-color: #9651bc;
+  color: white;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 12px;
+}
+@media (min-width: 992px) {
+  section.opinion {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+section.opinion div.pad {
+  box-shadow: 0 0 3px #dfdfdf;
+  background-color: white;
+}
+section.opinion .excerpt {
+  font-size: 1.5rem;
+}
+section.opinion h3,
+section.opinion .autor {
+  margin-left: 82px;
+}
 .archive-items {
   position: relative;
   min-height: 1px;
@@ -7279,38 +7311,6 @@ h1.archive-title {
 }
 #main .contenedor-home section.noticias > div.rm article.item-4 {
   clear: left;
-}
-#main .contenedor-home section.opinion {
-  position: relative;
-  min-height: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
-  min-height: 100px;
-}
-#main .contenedor-home section.opinion .opsect {
-  background-color: #9651bc;
-  color: white;
-  font-size: 2rem;
-  font-weight: normal;
-  margin: 0;
-  padding: 12px;
-}
-@media (min-width: 992px) {
-  #main .contenedor-home section.opinion {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-#main .contenedor-home section.opinion div.pad {
-  box-shadow: 0 0 3px #dfdfdf;
-  background-color: white;
-}
-#main .contenedor-home section.opinion .excerpt {
-  font-size: 1.5rem;
-}
-#main .contenedor-home section.opinion h3,
-#main .contenedor-home section.opinion .autor {
-  margin-left: 82px;
 }
 section.noticias article {
   margin-bottom: 16px;

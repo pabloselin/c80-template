@@ -45,6 +45,14 @@
 		
 		<?php endif; ?>
 
+		<?php 
+			if(is_page( 516 )):
+
+				get_template_part('partials/aside-opinion');
+
+			endif;
+		?>
+
 	</section>
 </div>
 
