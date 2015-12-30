@@ -6830,7 +6830,8 @@ div.colabora p {
   padding: 18px;
   background-color: #e1e9ef;
 }
-.page-id-70 .img {
+.page-id-70 .img,
+.page-id-68 .img {
   margin: 12px -12px;
 }
 .columna-estandar img.avatar {
