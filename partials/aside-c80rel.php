@@ -10,6 +10,7 @@
 						
 						$artids = array();
 						$plids = array();
+						$finnrel = array();
 						foreach($relpar as $relp) {
 							$ids = explode('-', $relp);
 							$artids[] = array(
@@ -24,12 +25,18 @@
 							//Si $rel no está en $artids es por que está el artículo pelado
 							if(in_array($rel, $plids)) {
 								foreach($artids as $artid) {
-									echo c80t_pquery($artid['parrafo'] . '-' . $artid['articulo']);
+									//Así evito iteraciones repetidas
+									// TODO: hacer que los párrafos relacionados se agrupen en orden por capítulo y artículo
+									if(!in_array($artid['parrafo'] . '-' . $artid['articulo'], $finnrel)):
+										echo c80t_pquery($artid['parrafo'] . '-' . $artid['articulo']);
+										$finnrel[] = $artid['parrafo'] . '-' . $artid['articulo'];
+									endif;
 								}
 							} else {
 								echo c80t_artquery($rel);
 							}
 						}
+
 						
 				?>
 			</div>
