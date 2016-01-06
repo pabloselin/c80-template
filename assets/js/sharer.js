@@ -12,11 +12,11 @@ function singleCounter() {
             jQuery('.sharer__facebook', sharer).append('<span>' + nsh + '</span>');
         });
 
-        jQuery.getJSON('http://cdn.api.twitter.com/1/urls/count.json?url=' + durl + '&callback=?', function(json) {
-            twts = +json.count || 0;
-            ntw = roundNumber(parseInt(twts));
-            jQuery('.sharer__twitter', sharer).append('<span>' + ntw + '</span>');
-        });
+        // jQuery.getJSON('http://cdn.api.twitter.com/1/urls/count.json?url=' + durl + '&callback=?', function(json) {
+        //     twts = +json.count || 0;
+        //     ntw = roundNumber(parseInt(twts));
+        //     jQuery('.sharer__twitter', sharer).append('<span>' + ntw + '</span>');
+        // });
         // //http://www.linkedin.com/countserv/count/share?url=' + url + '&callback=?
 
         // $.getJSON('http://www.linkedin.com/countserv/count/share?url=' + durl + '&callback=?', function(json) {
