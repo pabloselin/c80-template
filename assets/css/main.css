@@ -7147,6 +7147,19 @@ section.opinion h3,
 section.opinion .autor {
   margin-left: 82px;
 }
+li.rel-mini-item {
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+li.rel-mini-item img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-right: 6px;
+}
+li.rel-mini-item .text {
+  margin-left: 66px;
+}
 .archive-items {
   position: relative;
   min-height: 1px;
