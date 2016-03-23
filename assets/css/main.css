@@ -7093,6 +7093,45 @@ a.c80_p {
 a.c80_p.highlight p {
   background-color: rgba(242, 171, 14, 0.2);
 }
+section.contenedor-constitucion-box {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 992px) {
+  section.contenedor-constitucion-box {
+    float: left;
+    width: 100%;
+  }
+}
+section.contenedor-constitucion-box .capitulo-constitucion-box {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 992px) {
+  section.contenedor-constitucion-box .capitulo-constitucion-box {
+    float: left;
+    width: 25%;
+  }
+}
+section.contenedor-constitucion-box .capitulo-constitucion-box div.wrap {
+  padding: 6px 12px 12px;
+  min-height: 200px;
+  background-color: white;
+  border-top: 2px solid #ef7937;
+  margin: 6px 0 6px;
+}
+section.contenedor-constitucion-box .capitulo-constitucion-box .header-capitulo h1 {
+  font-size: 2.2rem;
+  margin-top: 0;
+}
+section.contenedor-constitucion-box .capitulo-constitucion-box .header-capitulo h1 span.titlename {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
 .navegador-relacionados {
   padding: 12px;
 }

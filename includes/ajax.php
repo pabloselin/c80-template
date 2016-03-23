@@ -153,7 +153,7 @@ function c80t_pquery($parid) {
 
 	//Obtengo el Artículo
 	$parrafo = rwmb_meta('c80_parrafo', 'multiple=true', $artid);
-	$parrafocontent = $parrafo[0];
+	$parrafocontent = $parrafo;
 	//Obtengo el Párrafo
 	$html = '';
 
