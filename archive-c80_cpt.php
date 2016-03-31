@@ -28,6 +28,7 @@
 		</section>
 	</div>
 	<?php get_template_part( 'partials/fuente' );?>
+	<?php get_template_part( 'partials/modal-c80link' );?>
 </div>
 
 <?php

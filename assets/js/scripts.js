@@ -34,5 +34,18 @@ jQuery(document).ready(function($) {
 
 	
 	singleCounter();
+
 	
+	
+	//3. Mostrar link para compartir párrafos
+	$('.c80_p').on('click', function() {
+		var rlink = $(this).attr('data-link');
+		var parid = $(this).attr('data-pid');
+		var order = $(this).attr('data-order');
+
+		$('#c80_paragraph_link').modal('show');
+		$('p.linkplaceholder').empty().append(rlink);
+		$('span.c80pno').empty().append(parseInt(order) + 1);
+	})
+
 });

@@ -85,6 +85,17 @@ function c80t_parentname($postid, $en_capitulo = false) {
 	}	
 }
 
+function c80t_top_parentid($postid, $en_capitulo = false) {
+	/**
+	 * Devuelve el ID del parent CAPITULO de un artículo C80
+	 */
+	$ancestors = get_post_ancestors( $postid );
+	if($ancestors && !$en_capitulo) {
+		$root = count($ancestors)-1;
+		return $ancestors[$root];
+	}
+}
+
 function c80t_captitle($postid) {
 	/**
 	 * Devuelve el nombre del capítulo desde un capítulo o desde un artículo
@@ -115,11 +126,38 @@ function c80t_template_loader($template, $data) {
 
 }
 
-function c80t_run_frontpage() {
+function c80t_run_featured() {
 	/**
-	 * Crea un loop para los menús
+	 * Devuelve el primer item del menú
 	 */
 	$items = c80t_getmenus('portada');
+	
+	//Saco el primero y lo guardo
+	$first_item = array_shift($items);
+
+	if($first_item) {
+		
+		
+		$ids[] = $first_item->object_id;
+		
+
+		$args = array(
+			'post__in' => $ids
+			);
+		$query = new WP_Query($args);
+		return $query;
+	}
+}
+
+function c80t_run_frontpage() {
+	/**
+	 * Crea un loop para los menús y excluyo el primero
+	 */
+	$items = c80t_getmenus('portada');
+	
+	//Saco el primero
+	array_shift($items);
+
 	//si tengo items creo un arreglo con los ids
 	if($items) {
 		foreach($items as $item) {

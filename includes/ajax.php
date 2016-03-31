@@ -167,6 +167,29 @@ function c80t_pquery($parid) {
 	return $html;
 }
 
+function c80t_plain_paragraph($parid) {
+	/**
+	 * Devuelve el párrafo pelao según un ID
+	 */
+	//Descompongo el ID
+	$pararr = explode('-', $parid);
+	$parkey = $pararr[0];
+	$parcount = $parkey + 1;
+	$artid = $pararr[1];
+
+	//Obtengo el Artículo
+	$parrafo = rwmb_meta('c80_parrafo', 'multiple=true', $artid);
+	$parrafocontent = $parrafo;
+	//Obtengo el Párrafo
+	$html = '';
+
+	
+	$html .= '<p id="' . $parid . '">' . $parrafocontent[$parkey] . '</p>';
+	
+
+	return $html;
+}
+
 function c80t_countrels($postid) {
 	/**
 	 * Devuelve el número de artículos relacionados

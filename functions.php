@@ -48,6 +48,7 @@ add_action( 'wp_enqueue_scripts', 'c80t_styles' );
 function c80t_imgsizes() {
 	add_image_size( 'main', 754, 405, true );
 	add_image_size( 'secondary', 369, 237, true );
+	add_image_size( 'featured', 369, 369, true );
 }
 
 add_action( 'after_setup_theme', 'c80t_imgsizes' );
