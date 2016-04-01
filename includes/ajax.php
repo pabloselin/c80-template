@@ -182,7 +182,6 @@ function c80t_plain_paragraph($parid) {
 	$parrafocontent = $parrafo[0];
 	//Obtengo el Párrafo
 	$html = '';
-	xdebug_break();
 	//var_dump($parrafocontent);
 	$html .= '<p id="' . $parid . '">' . $parrafocontent[$parkey] . '</p>';
 	
