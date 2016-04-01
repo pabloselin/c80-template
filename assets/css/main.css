@@ -7418,7 +7418,8 @@ h1.archive-title {
     width: 50%;
   }
 }
-#main .contenedor-home section.noticias > div.rm article.item-3 {
+#main .contenedor-home section.noticias > div.rm article.item-3,
+#main .contenedor-home section.noticias > div.rm article.item-5 {
   clear: left;
 }
 section.noticias article,

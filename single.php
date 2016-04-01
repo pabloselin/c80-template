@@ -8,10 +8,8 @@
 		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		
-		<article itemscope itemtype="http://schema.org/Article" <?php post_class('articulo-estandar');?> >
+		<article <?php post_class('articulo-estandar');?> >
 			
-			<meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="<?php bloginfo('url');?>"/>
-
 			<div class="pad">
 				<header>
 					<div class="top-meta">
@@ -25,14 +23,6 @@
 						<?php the_author();?>
 					</p>
 
-					<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-						<meta itemprop="name" content="<?php bloginfo('name');?>">
-						 <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-						    <meta itemprop="url" content="<?php bloginfo('template_url');?>/assets/img/logo-c80-str.png">
-						    <meta itemprop="width" content="183">
-						    <meta itemprop="height" content="60">
-						 </div>
-					</div>
 
 					<div class="img">
 
@@ -45,9 +35,6 @@
 						?>	
 						<div class="imgobj" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
 							<?php the_post_thumbnail( 'main' );?>
-							<meta itemprop="url" content="<?php echo $pthsrc[0];?>">
-    						<meta itemprop="width" content="<?php echo $pthsrc[1];?>">
-    						<meta itemprop="height" content="<?php echo $pthsrc[2];?>">
 						</div>
 					<?php endif;?>
 

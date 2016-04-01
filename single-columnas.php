@@ -8,15 +8,14 @@
 		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
-		<article itemscope itemtype="http://schema.org/Article" class="columna-estandar">
-			<meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="<?php bloginfo('url');?>"/>
+		<article class="columna-estandar">
 			<div class="pad">
 				<header>
 
 					<div class="info-columna">
 						<div class="top-meta">
 							<?php the_category( ', ' );?> |	<span itemprop="datePublished" content="<?php the_date('c'); ?>" pubdate><?php the_time( get_option( 'date_format' ) );?></span>
-							<meta itemprop="dateModified" content="<?php echo get_the_modified_date( 'c' );?>">
+							
 						</div>
 						<h1 itemprop="headline"><?php the_title();?></h1>
 						<div class="autor-card">
@@ -40,15 +39,6 @@
 							</p>
 						</div>
 
-						<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-							<meta itemprop="name" content="<?php bloginfo('name');?>">
-							 <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-							    <meta itemprop="url" content="<?php bloginfo('template_url');?>/assets/img/logo-c80-str.png">
-							    <meta itemprop="width" content="183">
-							    <meta itemprop="height" content="60">
-							 </div>
-						</div>
-
 					</div>
 
 					<?php if(has_post_thumbnail()):
@@ -58,18 +48,12 @@
 
 
 						?>	
-						<div class="imgobj" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+						<div class="imgobj" itemprop="image">
 							<?php the_post_thumbnail( 'main' );?>
-							<meta itemprop="url" content="<?php echo $pthsrc[0];?>">
-    						<meta itemprop="width" content="<?php echo $pthsrc[1];?>">
-    						<meta itemprop="height" content="<?php echo $pthsrc[2];?>">
 						</div>
 					<?php else:?>
-						<div class="imgobj hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+						<div class="imgobj hidden">
 							<img src="<?php echo get_bloginfo('template_url');?>/assets/img/placeholder-main.png">
-							<meta itemprop="url" content="<?php echo get_bloginfo('template_url');?>/assets/img/placeholder-main.png">
-    						<meta itemprop="width" content="754>">
-    						<meta itemprop="height" content="405">
 						</div>
 					<?php endif;?>
 					
