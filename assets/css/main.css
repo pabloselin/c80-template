@@ -7123,9 +7123,25 @@ section.contenedor-constitucion-box .capitulo-constitucion-box {
     width: 25%;
   }
 }
+section.contenedor-constitucion-box .capitulo-constitucion-box a {
+  display: block;
+}
+section.contenedor-constitucion-box .capitulo-constitucion-box a:hover {
+  text-decoration: none;
+}
+section.contenedor-constitucion-box .capitulo-constitucion-box a:hover div.wrap {
+  background-color: #25a8ce;
+  transition: all ease-in 0.2s;
+  transform: scale(1.1);
+  z-index: -1;
+}
+section.contenedor-constitucion-box .capitulo-constitucion-box a:hover div.wrap .header-capitulo h1 {
+  color: white;
+  text-shadow: 1px 1px 1px #333;
+}
 section.contenedor-constitucion-box .capitulo-constitucion-box div.wrap {
   padding: 6px 12px 12px;
-  min-height: 200px;
+  min-height: 130px;
   background-color: white;
   border-top: 2px solid #ef7937;
   margin: 6px 0 6px;
@@ -7133,6 +7149,7 @@ section.contenedor-constitucion-box .capitulo-constitucion-box div.wrap {
 section.contenedor-constitucion-box .capitulo-constitucion-box .header-capitulo h1 {
   font-size: 2.2rem;
   margin-top: 0;
+  text-shadow: 1px 1px 1px white;
 }
 section.contenedor-constitucion-box .capitulo-constitucion-box .header-capitulo h1 span.titlename {
   font-size: 1.6rem;

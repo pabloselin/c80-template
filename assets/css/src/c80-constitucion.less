@@ -194,19 +194,39 @@ section.contenedor-constitucion-box {
 	
 	.capitulo-constitucion-box {
 		.make-md-column(3);
-		
+		a {
+			display:block;
+			
+			&:hover {
+				text-decoration:none;
+				div.wrap {
+					background-color:@azulvega;
+					transition:all ease-in 0.2s;
+					transform:scale(1.1);
+					z-index:-1;
+					.header-capitulo {
+						h1 {
+							color:white;
+							text-shadow:1px 1px 1px #333;
+						}
+					}
+				}
+			}
+		}
 		div.wrap {
 			padding:6px 12px 12px;
-			min-height:200px;
+			min-height:130px;
 			background-color:white;
 			border-top:2px solid @naranjo;
 			margin:6px 0 6px;
+			
 		}
 
 		.header-capitulo {
 			h1 {
 				font-size:2.2rem;
 				margin-top:0;
+				text-shadow:1px 1px 1px white;
 				span.titlename {
 					font-size:1.6rem;
 					text-transform:uppercase;
