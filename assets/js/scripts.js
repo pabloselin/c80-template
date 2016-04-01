@@ -44,8 +44,19 @@ jQuery(document).ready(function($) {
 		var order = $(this).attr('data-order');
 
 		$('#c80_paragraph_link').modal('show');
-		$('p.linkplaceholder').empty().append(rlink);
+		$('textarea.linkplaceholder').empty().append(rlink);
 		$('span.c80pno').empty().append(parseInt(order) + 1);
-	})
+		$('textarea.linkplaceholder').on('click', function() {
+			$(this).select();
+		})
+	});
+
+	//4. Mostrar link embed HTML
+	$('.loadembedhtml').on('click', function() {
+		$('#c80_article_link').modal('show');
+		$('#c80_embedcodetextarea').on('click', function() {
+			$(this).select();
+		})
+	});
 
 });

@@ -7,7 +7,11 @@
 				<?php 
 						$rels = rwmb_meta('c80_artrel', 'multiple=true', $post->ID);
 						$relpar = rwmb_meta('c80_parraforel', 'multiple=true', $post->ID);
+
+						//Necesito tener los capítulos.
+						$relparents = array();
 						
+						//Los artículos también
 						$artids = array();
 						$plids = array();
 						$finnrel = array();
@@ -20,23 +24,38 @@
 							$plids[] = $ids[1];
 						}
 
-						//Cada uno de los $artids tiene un párrafo
-						foreach($rels as $rel) {
-							//Si $rel no está en $artids es por que está el artículo pelado
-							if(in_array($rel, $plids)) {
-								foreach($artids as $artid) {
-									//Así evito iteraciones repetidas
-									// TODO: hacer que los párrafos relacionados se agrupen en orden por capítulo y artículo
-									if(!in_array($artid['parrafo'] . '-' . $artid['articulo'], $finnrel)):
-										echo c80t_pquery($artid['parrafo'] . '-' . $artid['articulo']);
-										$finnrel[] = $artid['parrafo'] . '-' . $artid['articulo'];
-									endif;
-								}
-							} else {
-								echo c80t_artquery($rel);
-							}
-						}
+						$parrarr = array();
 
+						foreach($relpar as $key=>$parrafoitem) {
+							$ids = explode('-', $parrafoitem);
+
+							$parrarr[$ids[1]][] = $ids[0];
+						}
+						
+						foreach($rels as $rel) {
+							//Pueblo capítulos el KEY es el ID del capítulo y el valor es un array de IDS de artículos
+							$relarray[c80t_top_parentid($rel)][] = $rel;
+ 						}
+
+ 						foreach($relarray as $key=>$arts) {
+ 							echo '<h4><span>' . get_the_title($key) . '</span><br> ' . c80t_captitle($key) . '</h4>';
+ 							foreach($arts as $art) {
+ 								echo '<h5><a href="' . get_permalink($art) . '"><i class="fa fa-caret-right"></i> ' . get_the_title($art) . '</a></h5>';
+ 								//Busco el párrafo en el array de párrafos
+ 								$pararts = isset($parrarr[$art]) ? $parrarr[$art] : '';
+ 								if(is_array($pararts)) {
+ 									asort($pararts);
+		 								foreach($pararts as $parart) {
+		 									$vpar = $parart + 1;
+		 									echo c80t_pquery($parart . '-' . $art);
+		 									//echo c80t_pquery($parart . '-' . $art);
+		 								}
+ 								}
+ 								
+ 							}
+ 						}
+
+						
 						
 				?>
 			</div>

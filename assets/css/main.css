@@ -6618,12 +6618,19 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
   }
 }
 .c80-rels h2 {
-  font-size: 2.2rem;
+  font-family: sans-serif;
+  font-size: 1.6rem;
   margin: -12px -8px 12px -8px;
   font-weight: normal;
   background-color: #ef7937;
   padding: 12px;
   color: white;
+}
+.c80-rels h4 {
+  font-family: 'Oswald', sans-serif;
+  color: #25a8ce;
+  font-size: 1.6rem;
+  line-height: 1.4em;
 }
 .c80-rels.enabled {
   left: 0;
@@ -6644,19 +6651,18 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
   overflow: scroll;
 }
 .c80-rels .textos-c80-mini .constarticle {
-  padding-bottom: 12px;
   margin-bottom: 12px;
-  border-bottom: 1px dotted #ccc;
 }
 .c80-rels .textos-c80-mini h3 {
-  font-size: 1.8rem;
-}
-.c80-rels .textos-c80-mini h4 {
   font-size: 1.6rem;
+  line-height: 1.5em;
 }
 .c80-rels .textos-c80-mini .lc {
   font-family: serif;
   font-size: 1.6rem;
+  padding: 6px;
+  background-color: #fcf8e3;
+  margin-bottom: 6px;
 }
 .c80-rels .textos-c80-mini .lc a {
   color: #333333;
@@ -6667,8 +6673,6 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
 }
 .c80-rels .texto-c80-rel .constarticle {
   padding-bottom: 12px;
-  margin-bottom: 12px;
-  border-bottom: 1px dotted #ccc;
 }
 .c80-rels .texto-c80-rel .lc {
   font-family: serif;
@@ -7155,10 +7159,26 @@ section.contenedor-constitucion-box .capitulo-constitucion-box .header-capitulo 
   font-size: 1.6rem;
   text-transform: uppercase;
 }
-p.linkplaceholder {
+textarea.linkplaceholder {
   padding: 6px;
   background-color: #333;
   color: white;
+  border: 0;
+  font-family: monospace;
+  width: 100%;
+}
+textarea#c80_embedcodetextarea {
+  color: white;
+  font-family: monospace;
+  background-color: #333;
+  border: 0;
+  padding: 6px;
+  width: 100%;
+}
+.social-share .sharebutton a.loadembedhtml {
+  background-color: #ef7937;
+  color: white;
+  width: 120px;
 }
 .navegador-relacionados {
   padding: 12px;
@@ -7189,10 +7209,11 @@ section.opinion {
 section.opinion .opsect {
   background-color: #9651bc;
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: normal;
   margin: 0;
-  padding: 12px;
+  padding: 8px;
+  font-family: sans-serif;
 }
 section.opinion p.cats {
   font-weight: normal;
@@ -7527,8 +7548,9 @@ article.featured h1 a {
 }
 .related-featured aside.c80-rels-front h2 {
   color: #ef7937;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   margin-top: 0;
+  font-family: sans-serif;
 }
 .related-featured h4 {
   color: #25a8ce;

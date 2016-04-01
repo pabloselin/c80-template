@@ -15,6 +15,8 @@ global $post;
 							<p class="temas">
 								<?php the_tags('<span class="nrel"><i class="fa fa-tags"></i></span>', ' ');?>
 							</p>
+							
+							<?php get_template_part('partials/modal-c80embed');?>
 						
 					</header>
 								

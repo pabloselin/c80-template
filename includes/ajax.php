@@ -158,7 +158,7 @@ function c80t_pquery($parid) {
 	$html = '';
 
 	$html .= '<div class="constarticle parrafo-article">';
-	$html .= '<h4><a href="' . get_permalink($artid) . '#parrafo-' . $parid . '">' . c80t_parentname($artid) . ' <i class="fa fa-caret-right"></i> ' . get_the_title($artid) . ' (Párrafo #' . $parcount .')</a></h4>';
+	$html .= '<h6><a href="' . get_permalink($artid) . '#parrafo-' . $parid . '"><i class="fa fa-angle-double-right"></i> ' .' Párrafo #' . $parcount .'</a></h6>';
 	$html .= '<div class="lc">';
 	$html .= '<p id="' . $parid . '">' . $parrafocontent[$parkey] . '</p>';
 	$html .= '</div>';

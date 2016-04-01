@@ -1,9 +1,9 @@
 <section class="opinion">
 			<h2 class="opsect">
 				<?php if(!is_home()):?>
-					Columnas destacadas
+					<i class="fa fa-caret-right"></i> Columnas destacadas
 				<?php else:?>
-					Opinión
+					<i class="fa fa-caret-right"></i> Opinión
 				<?php endif;?>
 					</h2>
 			<div class="pad">

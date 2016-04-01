@@ -73,7 +73,7 @@
 					</p>	
 
 					<?php get_template_part('partials/sharer');?>
-					
+
 					<div class="the-content" itemprop="articleBody">
 						<?php the_content();?>
 						<?php get_template_part('partials/inline-newsletter');?>

@@ -32,7 +32,7 @@ add_filter('embed_site_title_html', 'c80t_sitetitle');
 function c80t_sitetitle($site_title) {
 	global $post;
 	$site_title = '<a class="embed-footer-title" href="'.get_bloginfo('url') .'">';
-	$site_title .= '<img src="' . get_site_icon_url(64) . '" alt="' . get_bloginfo('name') . '">';
+	$site_title .= '<img src="' . get_bloginfo('template_url') . '/assets/img/logo-c80-3.png' . '" alt="' . get_bloginfo('name') . '">';
 	$site_title .= get_bloginfo('name') . ' - ' . get_bloginfo('description');
 	$site_title .= '</a>';
 	return $site_title;
@@ -138,4 +138,4 @@ JS;
 	return $output;
 }
 
-add_action('embed_html', 'c80_embed_html', 10, 4);
+//add_action('embed_html', 'c80_embed_html', 10, 4);

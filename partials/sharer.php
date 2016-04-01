@@ -26,5 +26,9 @@
      	<a href="whatsapp://send?text=<?php echo get_permalink();?><?php echo urlencode(' ' . get_the_title($post->ID) );?>" class="sharer__whatsapp">
      		<i class="fa fa-whatsapp"></i>
      	</a>
+     </div>
+
+     <div class="embed-share sharebutton">
+          <?php get_template_part('partials/modal-c80embed');?>
      </div>	
 </div>	

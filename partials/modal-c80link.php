@@ -8,7 +8,7 @@
       <div class="modal-body">
       	<h5>Párrafo Nº<span class="c80pno"><!--Aquí va el número de párrafo--></span></h5>
       	<h6 class="c80section"><!--Aquí va el título de la sección--></h6>
-      	<p class="linkplaceholder"><!--Aquí va el link de párrafo--></p>
+      	<textarea class="linkplaceholder"><!--Aquí va el link de párrafo--></textarea>
       </div>
     
     </div>
