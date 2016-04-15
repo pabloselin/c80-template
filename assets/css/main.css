@@ -7458,6 +7458,7 @@ h1.archive-title {
 }
 .social-share .sharebutton a.sharer__facebook {
   background-color: #3b5998;
+  width: 90px;
 }
 .social-share .sharebutton a.sharer__twitter {
   background-color: #00aced;

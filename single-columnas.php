@@ -68,7 +68,7 @@
 					<p class="related">
 						<?php echo c80t_relink($post->ID);?>
 					</p>	
-					<p class="temas">
+					<p class="temas temas-escritorio">
 						<?php the_tags( '<span class="nrel"><i class="fa fa-tags"></i> </span>', ' ' );?>
 					</p>	
 
@@ -76,6 +76,12 @@
 
 					<div class="the-content" itemprop="articleBody">
 						<?php the_content();?>
+						
+						<p class="temas temas-movil">
+								<?php the_tags( '<span class="nrel"><i class="fa fa-tags"></i> </span>', ' ' );?>
+						</p>
+
+
 						<?php get_template_part('partials/inline-newsletter');?>
 					</div>
 						
