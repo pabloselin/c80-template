@@ -10,7 +10,7 @@ global $post;
 				<div>
 					<header>
 						
-						<h1><i class="fa fa-file-text-o"></i> <?php echo c80t_parentname($post->ID, $en_capitulo);?> <?php the_title();?></h1>
+						<h1 class="article-title"><i class="fa fa-file-text-o"></i> <span class="chaptername"><?php echo c80t_parentname($post->ID, $en_capitulo);?></span> <span class="articlenumber"><?php the_title();?></span></h1>
 						
 							<p class="temas">
 								<?php the_tags('<span class="nrel"><i class="fa fa-tags"></i></span>', ' ');?>
@@ -20,7 +20,7 @@ global $post;
 						
 					</header>
 								
-					<div class="main-content">
+					<div class="main-content article-info-holder" data-chaptername="<?php echo c80t_parentname($post->ID, false);?>" data-articlenumber="<?php the_title();?>">
 								
 						<?php the_content();?>
 						
@@ -39,12 +39,17 @@ global $post;
 								);
 							$subcap = new WP_Query($args);
 							if($subcap->have_posts()):
+								//ancestro para el nombre del capítulo
+								$ancestor = get_post_ancestors( $subcap->ID );
+								$ancestor_title = get_the_title($ancestor[0]) . ': ' . c80t_captitle($ancestor[0]);
+
 								while($subcap->have_posts()):
 									$subcap->the_post();?>
 									
-									<div class="sub-article">
+									<div class="sub-article article-info-holder" data-chaptername="<?php echo $ancestor_title . ' &gt; ' . c80t_parentname($post->ID, false);?>" data-articlenumber="<?php echo get_the_title($post->ID);?>">
 										<header>
 											<h2 class="subtitle"><?php the_title();?></h2>
+											<?php include(locate_template('partials/modal-c80embed.php'));?>
 										</header>
 										<div class="sub-content">
 											<?php the_content();?>

@@ -7167,7 +7167,7 @@ textarea.linkplaceholder {
   font-family: monospace;
   width: 100%;
 }
-textarea#c80_embedcodetextarea {
+textarea.c80_embedcodetextarea {
   color: white;
   font-family: monospace;
   background-color: #333;
@@ -7175,10 +7175,30 @@ textarea#c80_embedcodetextarea {
   padding: 6px;
   width: 100%;
 }
-.social-share .sharebutton a.loadembedhtml {
+textarea.linkplaceholder {
+  height: 100px;
+}
+.social-share .sharebutton a.loadembedhtml,
+.articulo-constitucion a.loadembedhtml,
+.articulo-constitucion a.loadembedhtmlsubarticle {
   background-color: #ef7937;
   color: white;
   width: 120px;
+}
+.articulo-constitucion a.loadembedhtml,
+.articulo-constitucion a.loadembedhtmlsubarticle {
+  display: block;
+  border-radius: 5px;
+  padding: 6px;
+  transition: all ease-in 0.3s;
+  box-shadow: 0 0 3px #333;
+  width: 80px;
+  margin-bottom: 12px;
+}
+.articulo-constitucion a.loadembedhtml:hover,
+.articulo-constitucion a.loadembedhtmlsubarticle:hover {
+  text-decoration: none;
+  border-radius: 0;
 }
 .navegador-relacionados {
   padding: 12px;

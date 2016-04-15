@@ -43,18 +43,36 @@ jQuery(document).ready(function($) {
 		var parid = $(this).attr('data-pid');
 		var order = $(this).attr('data-order');
 
+		//Ver de donde viene el párrafo
+		var closest = $(this).closest('.article-info-holder');
+		console.log(closest);
+		var chapter = closest.data('chaptername');
+		var article = closest.data('articlenumber');
+		var parno = parseInt(order) + 1;
+
 		$('#c80_paragraph_link').modal('show');
-		$('textarea.linkplaceholder').empty().append(rlink);
-		$('span.c80pno').empty().append(parseInt(order) + 1);
+		$('p.urlplaceholder').empty().append(rlink);
+		$('textarea.linkplaceholder').empty().text('<a href="' + rlink + '" title="C80">Constitución 1980: ' + chapter + ' > ' + article + ' > Párrafo Nº ' + parno + '</a>');
+		$('h4#linkparrafomodal').empty().append('<strong>' + chapter + '</strong> &gt; ' + article + ' &gt; Párrafo Nº ' + parno );
 		$('textarea.linkplaceholder').on('click', function() {
 			$(this).select();
 		})
 	});
 
 	//4. Mostrar link embed HTML
+	// $('.loadembedhtml').on('click', function() {
+	// 	$('#c80_article_link').modal('show');
+	// 	$('#c80_embedcodetextarea').on('click', function() {
+	// 		$(this).select();
+	// 	})
+	// });
+
 	$('.loadembedhtml').on('click', function() {
-		$('#c80_article_link').modal('show');
-		$('#c80_embedcodetextarea').on('click', function() {
+		var target = $(this).attr('data-target');
+		var id = $(this).attr('data-id');
+		console.log('target');
+		$(target).modal('show');
+		$('#c80_embedcodetextarea-' + id).on('click', function() {
 			$(this).select();
 		})
 	});
