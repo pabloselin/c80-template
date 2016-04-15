@@ -77,4 +77,11 @@ jQuery(document).ready(function($) {
 		})
 	});
 
+	$('a.btn-showrel').on('click', function(event) {
+		event.preventDefault();
+		var dataid = $(this).attr('data-id');
+		$('ul.lista-articulos-relacionados[data-id="' + dataid + '"]').fadeToggle();
+		$(this).toggleClass('active');
+	});
+
 });

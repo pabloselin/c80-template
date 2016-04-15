@@ -35,6 +35,10 @@
 		
 		<?php endif; ?>
 	
+		<div class="navegador-c80-movil">
+			<?php echo c80t_articulos();?>	
+		</div>
+
 	</section>
 	<?php get_template_part( 'partials/fuente' );?>
 	<?php get_template_part( 'partials/modal-c80link' );?>

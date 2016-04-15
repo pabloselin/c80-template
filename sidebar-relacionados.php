@@ -3,9 +3,10 @@
 		$c80public = new c80_Public('c80', '1.0.0');
 		$relacionados = $c80public->c80_relart($post->ID);
 			if($relacionados) {
-				echo '<aside class="navegador-relacionados">';
+				echo '<aside class="navegador-relacionados" data-id="' . $post->ID . '">';
 				echo '<h4><i class="fa fa-code-fork"></i> Relacionados</h4>';
-				echo '<ul>';
+				echo '<a href="#" class="btn btn-primary btn-showrel" data-id="' . $post->ID . '" ><i class="fa fa-code-fork"></i> Ver contenidos relacionados</a>';
+				echo '<ul class="lista-articulos-relacionados" data-id="' . $post->ID . '">';
 				foreach( $relacionados as $relacionado ) {
 					$ptype = get_post_type($relacionado);
 					$ptypeobj = get_post_type_object( $ptype );

@@ -2,6 +2,11 @@
 .capitulo-constitucion {
 	header.header-capitulo {
 		max-width:75%;
+		
+		@media screen and (max-width:@screen-sm) {
+			max-width:100%;
+		}
+
 		h1 {
 			font-size:2.7rem;
 			font-weight:normal;
@@ -13,6 +18,10 @@
 				display:inline-block;
 				float:left;
 				width:530px;
+				@media screen and (max-width:@screen-sm) {
+					width:auto;
+					display:inline;
+				}
 			}
 
 			span.capsubt {
@@ -96,6 +105,9 @@ div.fuente-constitucion {
 aside.navegador-relacionados {
 	box-shadow: @stdshadow;
 	background-color:white;
+	a.btn-showrel {
+		display:none;
+	}
 	> div {
 		padding:@stdpad;
 	}
@@ -110,14 +122,50 @@ aside.navegador-relacionados {
 	}
 }
 
+@media screen and (max-width:@screen-sm) {
+	aside.navegador-relacionados {
+		
+		margin:12px;
+		
+		h4 {
+			display:none;
+		}
+		
+		a.btn-showrel {
+			display:block;
+		}
+
+		ul {
+			display:none;
+			margin-top:24px;
+		}
+	}
+}
+
 .con-rel {
 	p {
-		.bg-warning;
+		//.bg-warning;
 	}
 }
 
 .navegador-c80 {
+	@media screen and (max-width:@screen-sm) {
+		display:none;
+	}
+}
+
+.navegador-c80-movil {
+	display:none;
+	@media screen and (max-width:@screen-sm) {
+		display:block;
+	}	
+}
+
+.navegador-c80,
+.navegador-c80-movil
+ {
 	.make-md-column(3);
+
 	&.affix {
 		top:60px;
 		position: fixed;
