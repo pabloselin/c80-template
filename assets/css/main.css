@@ -7570,6 +7570,12 @@ article.featured .pad {
   background-size: cover;
   box-shadow: none;
 }
+@media screen and (max-width: 992px) {
+  article.featured .pad {
+    height: auto;
+    min-height: 370px;
+  }
+}
 article.featured .pad div.overlay {
   position: absolute;
   top: 169px;
