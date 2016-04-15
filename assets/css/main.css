@@ -7277,7 +7277,7 @@ textarea.linkplaceholder {
   padding: 6px;
   transition: all ease-in 0.3s;
   box-shadow: 0 0 3px #333;
-  width: 80px;
+  width: 160px;
   margin-bottom: 12px;
 }
 .articulo-constitucion a.loadembedhtml:hover,
