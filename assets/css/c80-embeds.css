@@ -11,6 +11,7 @@ div.relbox a.relart {
   color: white;
   border-radius: 4px;
   margin-right: 4px;
+  margin-bottom: 6px;
 }
 div.relbox a.relart:hover {
   text-decoration: none;

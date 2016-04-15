@@ -6650,6 +6650,11 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
   max-height: 550px;
   overflow: scroll;
 }
+@media screen and (max-width: 768px) {
+  .c80-rels .textos-c80-mini {
+    max-height: inherit;
+  }
+}
 .c80-rels .textos-c80-mini .constarticle {
   margin-bottom: 12px;
 }
@@ -6702,6 +6707,14 @@ article.page {
     width: 66.66666667%;
   }
 }
+@media screen and (max-width: 768px) {
+  article.articulo-estandar,
+  article.columna-estandar,
+  article.page {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 article.articulo-estandar div.pad,
 article.columna-estandar div.pad,
 article.page div.pad {
@@ -6739,6 +6752,13 @@ article.articulo-estandar div.pad header div.img img.post-image,
 article.columna-estandar div.pad header div.img img.post-image,
 article.page div.pad header div.img img.post-image {
   margin: 0 -12px;
+}
+@media screen and (max-width: 768px) {
+  article.articulo-estandar div.pad header div.img img.post-image,
+  article.columna-estandar div.pad header div.img img.post-image,
+  article.page div.pad header div.img img.post-image {
+    margin: 0;
+  }
 }
 article.articulo-estandar div.pad div.contenido,
 article.columna-estandar div.pad div.contenido,
@@ -6820,6 +6840,11 @@ p.autor {
   bottom: 0;
   right: 0;
 }
+@media screen and (max-width: 768px) {
+  .single div.img .in-img-meta {
+    position: static;
+  }
+}
 div.colabora {
   border-radius: 0;
   text-align: right;
@@ -6846,6 +6871,17 @@ div.colabora p {
 .page-id-70 .img,
 .page-id-68 .img {
   margin: 12px -12px;
+}
+.temas-movil {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .temas-escritorio {
+    display: none;
+  }
+  .temas-movil {
+    display: block;
+  }
 }
 .columna-estandar img.avatar {
   float: left;
@@ -7220,9 +7256,19 @@ textarea.linkplaceholder {
 .social-share .sharebutton a.loadembedhtml,
 .articulo-constitucion a.loadembedhtml,
 .articulo-constitucion a.loadembedhtmlsubarticle {
-  background-color: #ef7937;
+  background-color: #949da3;
   color: white;
-  width: 120px;
+  width: 160px;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 4px;
+  clear: both;
+  float: none;
+}
+.social-share .sharebutton a.loadembedhtml i,
+.articulo-constitucion a.loadembedhtml i,
+.articulo-constitucion a.loadembedhtmlsubarticle i {
+  font-size: 12px;
 }
 .articulo-constitucion a.loadembedhtml,
 .articulo-constitucion a.loadembedhtmlsubarticle {
@@ -7397,12 +7443,14 @@ h1.archive-title {
 }
 .social-share .sharebutton a {
   display: block;
-  width: 70px;
-  padding: 6px 12px;
+  width: 50px;
+  padding: 6px;
   color: white;
   margin-right: 6px;
   float: left;
   transition: all ease-in 0.2s;
+  margin-bottom: 6px;
+  border-radius: 10px;
 }
 .social-share .sharebutton a i {
   margin-right: 6px;
@@ -7413,19 +7461,21 @@ h1.archive-title {
 }
 .social-share .sharebutton a.sharer__twitter {
   background-color: #00aced;
+  width: 50px;
+  text-align: center;
 }
 .social-share .sharebutton a.sharer__whatsapp {
   background-color: #34af23;
   text-align: center;
-  width: 50px;
+  width: 40px;
   padding: 5px 3px;
 }
 .social-share .sharebutton a.sharer__whatsapp i {
-  font-size: 22px;
+  font-size: 20px;
 }
 .social-share .sharebutton a:hover {
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 0;
 }
 #main .contenedor-home {
   margin-top: 32px;
@@ -7698,6 +7748,7 @@ p.temas a {
   color: white;
   font-size: 1.3rem;
   border-radius: 3px;
+  margin-bottom: 6px;
 }
 p.temas a:hover {
   text-decoration: none;
@@ -7858,6 +7909,7 @@ div.relbox a.relart {
   color: white;
   border-radius: 4px;
   margin-right: 4px;
+  margin-bottom: 6px;
 }
 div.relbox a.relart:hover {
   text-decoration: none;

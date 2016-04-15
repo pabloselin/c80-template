@@ -7,7 +7,7 @@
 ?>
 
 
-<a href="#" class="loadembedhtml" title="Compartir este contenido en tu sitio web" data-title="<?php the_title();?>" data-target="#c80_article_link-subarticle-<?php echo $post->ID;?>" data-id="<?php echo $post->ID;?>"><i class="fa fa-code"></i> Insertar</a>
+<a href="#" class="loadembedhtml" title="Compartir este contenido en tu sitio web" data-title="<?php the_title();?>" data-target="#c80_article_link-subarticle-<?php echo $post->ID;?>" data-id="<?php echo $post->ID;?>"><i class="fa fa-code"></i> Insertar en mi web</a>
 
 <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="c80_article_link-subarticle-<?php echo $post->ID;?>" id="c80_article_link-subarticle-<?php echo $post->ID;?>">
   <div class="modal-dialog">
@@ -17,7 +17,16 @@
         <h4 class="modal-title" id="myModalLabel">Insertar este contenido en tu sitio</h4>
       </div>
       <div class="modal-body">
-        <h5><?php echo c80t_parentname($post->ID, false);?>: <?php echo get_the_title($post->ID);?></span></h5>
+        <h5>
+        
+        <?php if(get_post_type($post->ID) == 'c80_cpt'):?>
+          <?php echo c80t_parentname($post->ID, false);?>: 
+        <?php endif;?>
+
+        <?php echo get_the_title($post->ID);?></span>
+
+        </h5>
+
         <div class="alert alert-warning">
          <p>Copia el código de abajo e insértalo en tu sitio web para compartir este contenido.</p> 
         </div>
