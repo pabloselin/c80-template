@@ -48,7 +48,7 @@
 
 
 						?>	
-						<div class="imgobj" itemprop="image">
+						<div class="imgobj img" itemprop="image">
 							<?php the_post_thumbnail( 'main' );?>
 						</div>
 					<?php else:?>
