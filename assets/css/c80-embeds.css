@@ -7,7 +7,7 @@ div.relbox a.relart {
   display: inline-block;
   padding: 3px 6px;
   font-size: 12px;
-  background-color: #ef7937;
+  background-color: #EF7937;
   color: white;
   border-radius: 4px;
   margin-right: 4px;
@@ -29,12 +29,12 @@ span.nrel {
 .wp-embed-footer {
   background-color: #094671;
   padding: 8px 5px;
-  border-top: 5px solid #25a8ce;
+  border-top: 5px solid #25A8CE;
 }
 .wp-embed-heading a {
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
-  color: #02476e;
+  color: #02476E;
   font-size: 26px;
 }
 .wp-embed-heading,

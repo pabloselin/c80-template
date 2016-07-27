@@ -7634,7 +7634,7 @@ article.featured .pad div.overlay {
   width: 666px;
   height: 360px;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 12px;
 }
 @media screen and (max-width: 768px) {
@@ -7661,7 +7661,7 @@ article.featured h1 {
   font-size: 34px;
 }
 article.featured h1 a {
-  color: #9edcee;
+  color: #BDEEFC;
   text-shadow: 1px 1px 1px #333;
 }
 .related-featured {
