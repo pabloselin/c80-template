@@ -57,10 +57,13 @@
 				<div class="contenido">
 					
 					
-
+				<?php if(has_excerpt()):?>
 					<div class="excerpt">
-						<?php the_excerpt();?>
+
+						<?php the_excerpt();?>	
+
 					</div>	
+				<?php endif;?>
 
 					<div class="the-content" itemprop="articleBody">
 						<?php the_content();?>
