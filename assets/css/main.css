@@ -6781,9 +6781,12 @@ article.articulo-estandar div.pad div.contenido div.excerpt,
 article.columna-estandar div.pad div.contenido div.excerpt,
 article.page div.pad div.contenido div.excerpt {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #3B0803;
+  margin-bottom: 16px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
 }
 @media screen and (max-width: 768px) {
   article.articulo-estandar div.pad div.contenido div.excerpt,
@@ -7418,6 +7421,12 @@ h1.archive-title {
   font-style: normal;
   font-weight: 700;
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../fonts/Open_Sans/OpenSans-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../fonts/Open_Sans/OpenSans-Semibold.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
