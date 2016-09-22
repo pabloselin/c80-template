@@ -28,7 +28,7 @@ function c80t_articulos() {
 			'numberposts' => 100,
 			'post_parent' => $capitulo->ID,
 			'orderby' => 'menu_order',
-			'order' => 'ASC'
+			'order' => 'DESC'
 			);
 		
 		$articulos = get_posts($args);
