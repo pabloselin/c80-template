@@ -28,7 +28,7 @@ function c80t_articulos() {
 			'numberposts' => 100,
 			'post_parent' => $capitulo->ID,
 			'orderby' => 'menu_order',
-			'order' => 'DESC'
+			'order' => 'ASC'
 			);
 		
 		$articulos = get_posts($args);
@@ -276,7 +276,7 @@ function c80t_temas() {
 		'hide_empty' 	=> 1,
 		'exclude' 		=> 1,
 		'orderby' 		=> 'count',
-		'order' 		=> 'ASC'
+		'order' 		=> 'DESC'
 		);
 	$temas = get_categories( $args );
 	$output = '';
