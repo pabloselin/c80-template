@@ -282,7 +282,7 @@ function c80t_temas() {
 	$output = '';
 	$dropdown = '';
 	foreach($temas as $key => $tema) {
-		if($key < 9):
+		if($key < 7):
 			
 			$output .= '<li><a class="cats" href="' . get_category_link($tema->term_id) .'">' . $tema->name . '</a></li>';
 
