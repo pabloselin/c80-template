@@ -6190,10 +6190,15 @@ header#header-sitio .navegacion-texto .c80-nav .visor-temas {
 }
 header#header-sitio .temas-header {
   background-color: #3FEB9E;
+  transition: all ease-in 0.3s;
+  height: 32px;
+  overflow: hidden;
 }
 header#header-sitio .temas-header ul {
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 header#header-sitio .temas-header ul li {
   list-style: none;
@@ -6206,6 +6211,23 @@ header#header-sitio .temas-header ul li a {
   display: block;
   padding: 6px;
   float: left;
+}
+header#header-sitio .temas-header.expanded {
+  height: 112px;
+}
+header#header-sitio .temas-header ul li ul.dropdown-temas {
+  display: block;
+  clear: both;
+  position: absolute;
+  top: 32px;
+  left: 6px;
+  width: 100%;
+  transition: all ease-in 0.3s;
+  opacity: 0;
+}
+header#header-sitio .temas-header ul li ul.dropdown-temas.visible {
+  display: block;
+  opacity: 1;
 }
 header#header-sitio .breadcrumb {
   color: #aeaeae;
@@ -7779,6 +7801,15 @@ section.noticias article.item-4 .excerpt,
 section.noticias article.item-5 .excerpt,
 section.noticias article.item-6 .excerpt {
   font-size: 1.4rem;
+}
+section.noticias article.item-1 .date,
+section.noticias article.item-2 .date,
+section.noticias article.item-3 .date,
+section.noticias article.item-4 .date,
+section.noticias article.item-5 .date,
+section.noticias article.item-6 .date {
+  color: #F2AB0E;
+  display: block;
 }
 section.opinion header h2 {
   margin: 0;

@@ -84,4 +84,21 @@ jQuery(document).ready(function($) {
 		$(this).toggleClass('active');
 	});
 
+	$('a.toggletemas').on('click', function(event) {
+		event.preventDefault();
+		var temasheader = $('.temas-header');
+		var dropdowntemas = $('.dropdown-temas');
+
+
+		temasheader.toggleClass('expanded');
+		dropdowntemas.toggleClass('visible');
+
+		if($('i', this).hasClass('fa-plus')) {
+			$('i', this).removeClass('fa-plus').addClass('fa-times');
+		} else {
+			$('i', this).removeClass('fa-times').addClass('fa-plus');
+		}
+
+	});
+
 });

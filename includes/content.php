@@ -273,14 +273,29 @@ add_filter('post_thumbnail_html', 'c80t_default_post_thumbnail', 99, 5);
 
 function c80t_temas() {
 	$args = array(
-		'hide_empty' => 1,
-		'exclude' => 1
+		'hide_empty' 	=> 1,
+		'exclude' 		=> 1,
+		'orderby' 		=> 'count',
+		'order' 		=> 'ASC'
 		);
 	$temas = get_categories( $args );
 	$output = '';
-	foreach($temas as $tema) {
-		$output .= '<li><a class="cats" href="' . get_category_link($tema->term_id) .'">' . $tema->name . '</a></li>';
+	$dropdown = '';
+	foreach($temas as $key => $tema) {
+		if($key < 9):
+			
+			$output .= '<li><a class="cats" href="' . get_category_link($tema->term_id) .'">' . $tema->name . '</a></li>';
+
+		else:
+
+			$dropdown .= '<li><a class="cats" href="' . get_category_link($tema->term_id) .'">' . $tema->name . '</a></li>';
+
+		endif;
 	}
+
+		$output .= '<li><a href="#" class="toggletemas"><i class="fa fa-plus"></i></a>';
+		$output .= '<ul class="dropdown-temas">' . $dropdown . '</ul>';
+		$output .= '</li>';
 
 	$html = '<div class="temas-header">
 		<div class="container"><div class="row"><div class="col-md-12"><ul>' . $output . '</ul></div></div></div>

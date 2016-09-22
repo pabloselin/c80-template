@@ -91,9 +91,14 @@ header#header-sitio {
 
 	.temas-header {
 		background-color:@calipso;
+		transition:all ease-in 0.3s;
+		height:32px;
+		overflow:hidden;
 		ul {
 			padding: 0;
 			margin: 0;
+			display:flex;
+			justify-content: space-between;
 			li {
 				list-style:none;
 				margin: 0;
@@ -108,6 +113,28 @@ header#header-sitio {
 			}
 		}
 	}
+
+	.temas-header.expanded {
+		height:112px;
+	}
+
+	.temas-header ul li ul.dropdown-temas {
+		display:block;
+		clear:both;
+		position: absolute;
+		top:32px;
+		left:6px;
+		width:100%;
+		transition:all ease-in 0.3s;
+		opacity:0;
+	}
+
+	.temas-header ul li ul.dropdown-temas.visible {
+		display:block;
+		opacity:1;
+	}
+
+
 
 	.breadcrumb {
 		color:lighten(#555, 35%);
