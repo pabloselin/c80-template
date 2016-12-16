@@ -6,7 +6,7 @@ function singleCounter() {
         var twts = 0;
         console.log('running counter in single');
 
-        jQuery.getJSON('http://graph.facebook.com/?id=' + durl, function(json) {
+        jQuery.getJSON('https://graph.facebook.com/?id=' + durl, function(json) {
             fbshares = +json.share.share_count || 0;
             nsh = roundNumber(parseInt(fbshares));
             jQuery('.sharer__facebook', sharer).append('<span>' + nsh + '</span>');
