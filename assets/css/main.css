@@ -6835,7 +6835,7 @@ article.page div.pad div.contenido img {
   height: auto;
   margin: 12px 0;
 }
-article.page div.img img.post-image {
+article.page div.pad header div.img img.post-image {
   margin: 0;
 }
 article.articulo-estandar .pad {
