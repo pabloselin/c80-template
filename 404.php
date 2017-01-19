@@ -22,7 +22,12 @@
 		
 			<div class="main-content">
 
-                <?php echo apply_filters('the_content', $notfoundpage->post_content);?>
+                <div class="contenido">
+                    <div class="the-content">
+                    <?php echo apply_filters('the_content', $notfoundpage->post_content);?>
+                    </div>
+                </div>
+                
 
             </div>
 		
