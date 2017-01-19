@@ -8,7 +8,7 @@
 		
 		
 		
-		<article class="articulo-constitucion">
+		<article class="articulo-estandar">
         <?php 
             $notfoundpage = get_page(C80_NOTFOUND);
         ?>
@@ -22,9 +22,11 @@
 		
 			<div class="main-content">
 
-                <div class="contenido">
-                    <div class="the-content">
-                    <?php echo apply_filters('the_content', $notfoundpage->post_content);?>
+                <div class="pad">
+                    <div class="contenido">
+                        <div class="the-content">
+                        <?php echo apply_filters('the_content', $notfoundpage->post_content);?>
+                        </div>
                     </div>
                 </div>
                 
