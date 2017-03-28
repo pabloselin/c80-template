@@ -54,3 +54,19 @@ function c80t_imgsizes() {
 }
 
 add_action( 'after_setup_theme', 'c80t_imgsizes' );
+
+function c80_tags() {
+	global $post;
+	$tags = get_the_terms( $post->ID, 'post_tag' );
+	$count = count($tags);
+	
+	foreach($tags as $key=>$tag) {
+		$ckey = ($key+1 == $count)? 'last' : $key;
+		$taglist[] = '<a class="tagp-' . $ckey .  ' tag-' . $key . '" href="' . get_term_link( $tag->term_id, 'post_tag' ) . '">' . $tag->name . '</a>';
+	}
+
+	if($tags) {
+		return '<span class="nrel"><i class="fa fa-tags"></i> </span>' . implode(' ', $taglist);
+	}
+	
+}

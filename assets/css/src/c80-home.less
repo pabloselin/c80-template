@@ -112,7 +112,7 @@ article.featured {
 	.pad div.overlay {
 		position: absolute;
 		top: 10px;
-		left: 8px;
+		left: 16px;
 		width: 666px;
 		height: 360px;
 		z-index:1;
@@ -232,17 +232,55 @@ div.bottom-meta {
 }
 
 p.temas {
+	display:flex;
+	
 	a {
 		display:inline-block;
 		padding:3px 6px;
 		background-color:darken(@calipso, 15%);
 		color:white;
 		font-size:1.3rem;
-		border-radius:3px;
-		margin-bottom:6px;
+		border-radius:0;
+		margin-bottom:0;
+		line-height:20px;
+		&.tag-1 {
+			background-color:darken(@calipso, 20%);
+		}
+		&.tag-2 {
+			background-color:darken(@calipso, 25%);
+		}
+		&.tag-3 {
+			background-color:darken(@calipso, 30%);
+		}
+		&.tag-4 {
+			background-color:darken(@calipso, 35%);
+		}
+		&.tag-5 {
+			background-color:darken(@calipso, 40%);
+		}
+		&.tag-6 {
+			background-color:darken(@calipso, 40%);
+		}
+		&.tagp-last {
+			border-radius:0 5px 5px 0;
+		}
 		&:hover {
 			text-decoration:none;
 			background-color: lighten(@azul, 30%)
+		}
+	}
+}
+
+p.temas {
+	@media screen and (max-width:@screen-sm) {
+		display:block;
+
+		a {
+			border-radius:5px;
+			margin-bottom:5px;
+			&.tagp-last {
+				border-radius:5px;
+			}
 		}
 	}
 }

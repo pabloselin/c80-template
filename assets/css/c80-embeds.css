@@ -2,6 +2,7 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 div.relbox p.hrel {
   font-weight: normal;
+  display: flex;
 }
 div.relbox a.relart {
   display: inline-block;
@@ -9,9 +10,21 @@ div.relbox a.relart {
   font-size: 12px;
   background-color: #EF7937;
   color: white;
-  border-radius: 4px;
-  margin-right: 4px;
-  margin-bottom: 6px;
+  border-radius: 0;
+  line-height: 20px;
+}
+div.relbox a.relart.relart-last {
+  border-radius: 0 4px 4px 0;
+}
+div.relbox a.relart.relart-1,
+div.relbox a.relart.relart-last {
+  background-color: #e15c12;
+}
+div.relbox a.relart.relart-2 {
+  background-color: #b2490e;
+}
+div.relbox a.relart.relart-3 {
+  background-color: #83360a;
 }
 div.relbox a.relart:hover {
   text-decoration: none;
@@ -21,7 +34,10 @@ span.nrel {
   display: inline-block;
   padding: 3px 6px;
   background-color: #f0f0f0;
-  margin-right: 6px;
+  margin-right: 0;
+}
+.hrel span.nrel {
+  margin-right: 0;
 }
 .wp-embed {
   padding: 0;

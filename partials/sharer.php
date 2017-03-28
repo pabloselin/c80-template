@@ -28,6 +28,12 @@
      	</a>
      </div>
 
+      <div class="telegram-share sharebutton hidden-lg hidden-md">
+     	<a href="tg://msg?text=<?php echo get_permalink();?><?php echo urlencode(' ' . get_the_title($post->ID) );?>" class="sharer__telegram">
+     		<i class="fa fa-telegram"></i>
+     	</a>
+     </div>
+
      <div class="embed-share sharebutton">
           <?php get_template_part('partials/modal-c80embed');?>
      </div>	

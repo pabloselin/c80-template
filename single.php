@@ -27,7 +27,6 @@
 					<div class="img">
 
 					<?php if(has_post_thumbnail()):
-						
 						$imgid = get_post_thumbnail_id( $post->ID );
 						$pthsrc = wp_get_attachment_image_src( $imgid, 'main' );
 
@@ -44,7 +43,7 @@
 							</p>
 												
 							<p class="temas temas-escritorio">
-								<?php the_tags( '<span class="nrel"><i class="fa fa-tags"></i> </span>', ' ' );?>
+								<?php echo c80_tags();?>
 							</p>
 						</div>
 					
@@ -70,7 +69,7 @@
 					</div>
 
 					<p class="temas temas-movil">
-								<?php the_tags( '<span class="nrel"><i class="fa fa-tags"></i> </span>', ' ' );?>
+								<?php c80_tags( );?>
 					</p>
 
 					<?php get_template_part('partials/inline-newsletter');?>

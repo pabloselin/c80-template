@@ -9,7 +9,7 @@ function singleCounter() {
         jQuery.getJSON('https://graph.facebook.com/?id=' + durl, function(json) {
             fbshares = +json.share.share_count || 0;
             nsh = roundNumber(parseInt(fbshares));
-            jQuery('.sharer__facebook', sharer).append('<span>' + nsh + '</span>');
+            jQuery('.sharer__facebook', sharer).append('<span>' + nsh + '</span>').addClass('with-shares');
         });
 
         // jQuery.getJSON('http://cdn.api.twitter.com/1/urls/count.json?url=' + durl + '&callback=?', function(json) {

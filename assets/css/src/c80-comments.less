@@ -10,12 +10,20 @@ div.comments {
 	ul.commentlist {
 		margin:0;
 		padding:0;
+		
 		li {
-			padding:0;
+			list-style:none;
+		}
+		
+		li article.comment-body {
+			padding:0 0 12px 0;
 			background-color:white;
 			margin:0 0 12px;
 			list-style:none;
 			box-shadow:@stdshadow;
+			clear:both;
+			overflow:hidden;
+
 			.comment-content {
 				padding:12px;
 			}
@@ -24,9 +32,29 @@ div.comments {
 				padding:12px;
 			}
 			.comment-author {
+				b {
+					font-weight:normal;
+					font-size:18px;
+					color:darken(@calipso, 20%);
+				}
 				img {
 					border-radius:50%;
+					display:none;
 				}
+			}
+
+			time {
+				color:#555;
+				text-transform:uppercase;
+				font-size:12px;
+			}
+
+			div.reply a {
+				display:block;
+				float:right;
+				margin:0 12px 12px;
+				.btn;
+				.btn-success;
 			}
 		}
 	}

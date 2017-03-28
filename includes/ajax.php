@@ -104,15 +104,23 @@ function c80t_capquery($capid) {
 function c80t_relink($postid) {
 	$nrel = c80t_countrels($postid);
 	$rels = c80t_rels($postid);
-	$relink = '<div class="relbox">';
-	$relink .= '<p class="hrel"><span class="nrel"><i class="fa fa-book"></i> ' . $nrel. '</span>';
-	foreach($rels as $rel) {
-		$title = str_replace('Artículo' , 'Art. Nº', get_the_title($rel) );
-		$capinfo = c80t_parentname($rel); 
-		$relink .= '<a data-toggle="tooltip" data-placement="bottom" class="relart" title="' . $capinfo . '" href="' . get_permalink($rel) .'" class="inpagelink"><span><i class="fa fa-file-text-o"></i> ' . $title . '</span></a>';
+	
+	if($nrel > 0 && $rels) {
+		$relink = '<div class="relbox">';
+		$relink .= '<p class="hrel"><span class="nrel"><i class="fa fa-book"></i> ' . $nrel. '</span>';
+		
+		foreach($rels as $key=>$rel) {
+			$title = str_replace('Artículo' , 'Art. Nº', get_the_title($rel) );
+			$capinfo = c80t_parentname($rel); 
+			$ckey = ($nrel == $key+1)? 'last' : $key;
+			$relink .= '<a data-toggle="tooltip" data-placement="bottom" class="relart-' . $ckey . ' relart" title="' . $capinfo . '" href="' . get_permalink($rel) .'" class="inpagelink"><span><i class="fa fa-file-text-o"></i> ' . $title . '</span></a>';
+		
+		}
+		$relink .= '</p></div>';
+
+		return $relink;
 	}
-	$relink .= '</p></div>';
-	return $relink;
+	
 }
 
 function c80t_relfoot($postid) {

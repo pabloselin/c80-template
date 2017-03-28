@@ -13,7 +13,7 @@ global $post;
 						<h1 class="article-title"><i class="fa fa-file-text-o"></i> <span class="chaptername"><?php echo c80t_parentname($post->ID, $en_capitulo);?></span> <span class="articlenumber"><?php the_title();?></span></h1>
 						
 							<p class="temas">
-								<?php the_tags('<span class="nrel"><i class="fa fa-tags"></i></span>', ' ');?>
+								<?php c80_tags();?>
 							</p>
 							
 							<?php get_template_part('partials/modal-c80embed');?>

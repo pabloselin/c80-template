@@ -16,13 +16,16 @@
 			border-radius:10px;
 			
 			i {
-				margin-right:6px;
+				//margin-right:6px;
 				font-size:18px;
 			}
 			
 			&.sharer__facebook {
 				background-color:@fbblue;
-				width:90px;
+				width:50px;
+				&.with-shares {
+					width:98px;
+				}
 			}
 
 			&.sharer__twitter {
@@ -40,6 +43,13 @@
 				i {
 					font-size:20px;
 				}
+			}
+
+			&.sharer__telegram {
+				background-color:@telegram;
+				text-align:center;
+				width:40px;
+				padding:5px 3px;
 			}
 
 			&:hover {

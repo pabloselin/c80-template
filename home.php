@@ -1,7 +1,6 @@
 <?php 
 //frontpage
 	get_header();
-
 ?>
 
 
@@ -108,10 +107,6 @@
 								<p class="related">
 											<?php echo c80t_relink($post->ID);?>
 								</p>
-							
-								<!-- <p class="temas">
-									<?php the_tags( '<span class="nrel"><i class="fa fa-tags"></i> </span>', ' ' );?>
-								</p> -->	
 							
 							</div>
 						</div>
