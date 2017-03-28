@@ -7061,8 +7061,8 @@ header#header-sitio h1 a {
   margin: 12px 12px 6px 0;
 }
 header#header-sitio h1 a img {
-  width: 150px;
-  height: 76px;
+  width: 180px;
+  height: 83px;
 }
 @media screen and (max-width: 768px) {
   header#header-sitio h1 a img {
@@ -8711,7 +8711,10 @@ h1.archive-title {
   width: 50px;
 }
 .social-share .sharebutton a.sharer__facebook.with-shares {
-  width: 98px;
+  width: 68px;
+}
+.social-share .sharebutton a.sharer__facebook.with-shares i {
+  margin-right: 6px;
 }
 .social-share .sharebutton a.sharer__twitter {
   background-color: #00aced;

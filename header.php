@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row">
             <h1>
-                <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_v.svg" alt="<?php bloginfo('name');?>" class="logo"></a>
+                <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_v_01.svg" alt="<?php bloginfo('name');?>" class="logo"></a>
             </h1>
             <h2 class="description"><?php bloginfo('description');?></h2>
             
