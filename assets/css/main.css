@@ -8913,8 +8913,13 @@ article.featured div.top-info .over-title {
 }
 article.featured div.excerpt {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-shadow: 1px 1px 1px #333;
+}
+@media screen and (max-width: 768px) {
+  article.featured div.excerpt {
+    font-size: 1.5rem;
+  }
 }
 article.featured h1 {
   font-size: 34px;
