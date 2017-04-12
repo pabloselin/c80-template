@@ -7964,6 +7964,7 @@ article.columna-estandar div.pad header,
 article.page div.pad header {
   position: relative;
   padding: 12px 12px 0 12px;
+  overflow: hidden;
 }
 article.articulo-estandar div.pad header h1,
 article.columna-estandar div.pad header h1,
@@ -7990,6 +7991,11 @@ article.articulo-estandar div.pad header div.img img.post-image,
 article.columna-estandar div.pad header div.img img.post-image,
 article.page div.pad header div.img img.post-image {
   margin: 0 -12px;
+}
+article.articulo-estandar div.pad header div.img img.post-image img,
+article.columna-estandar div.pad header div.img img.post-image img,
+article.page div.pad header div.img img.post-image img {
+  max-width: 100%;
 }
 @media screen and (max-width: 768px) {
   article.articulo-estandar div.pad header div.img img.post-image,
