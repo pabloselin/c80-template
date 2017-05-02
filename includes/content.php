@@ -101,12 +101,17 @@ function c80t_captitle($postid) {
 	 * Devuelve el nombre del capítulo desde un capítulo o desde un artículo
 	 */
 	$ancestors = get_post_ancestors( $postid );
+
 	if($ancestors) {
-		$subt = get_post_meta($ancestors[0], 'c80_subtartcap', true);
+		$checkmod = c80_Public::c80_checkmod($ancestors[0]);
+		$itemid = ($checkmod)? $checkmod : $ancestors[0];
 	} else {
 		//es de nivel superior o sea está en un capítulo...
-		$subt = get_post_meta($postid, 'c80_subtartcap', true);
+		$checkmod = c80_Public::c80_checkmod($postid);
+		$itemid = ($checkmod)? $checkmod : $postid;
 	}
+
+	$subt = get_post_meta($itemid, 'c80_subtartcap', true);
 
 	return $subt;
 }

@@ -59,13 +59,13 @@ function c80_tags() {
 	global $post;
 	$tags = get_the_terms( $post->ID, 'post_tag' );
 	$count = count($tags);
-	
-	foreach($tags as $key=>$tag) {
-		$ckey = ($key+1 == $count)? 'last' : $key;
-		$taglist[] = '<a class="tagp-' . $ckey .  ' tag-' . $key . '" href="' . get_term_link( $tag->term_id, 'post_tag' ) . '">' . $tag->name . '</a>';
-	}
 
 	if($tags) {
+		foreach($tags as $key=>$tag) {
+			$ckey = ($key+1 == $count)? 'last' : $key;
+			$taglist[] = '<a class="tagp-' . $ckey .  ' tag-' . $key . '" href="' . get_term_link( $tag->term_id, 'post_tag' ) . '">' . $tag->name . '</a>';
+		}
+
 		return '<span class="nrel"><i class="fa fa-tags"></i> </span>' . implode(' ', $taglist);
 	}
 	

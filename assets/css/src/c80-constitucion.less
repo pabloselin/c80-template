@@ -58,6 +58,11 @@ div.fuente-constitucion {
  {
 	box-shadow:@stdshadow;
 	background-color:white;
+	&.modarticle {
+		header:after {
+			content: ''
+		}
+	}
 	header {
 		background-color: fade(@naranjo, 20%);
 		border-top:2px solid @naranjo;
