@@ -8559,6 +8559,9 @@ textarea.linkplaceholder {
   padding-right: 0;
   text-align: right;
 }
+.row-capitulo .mod-capitulo aside.navegador-modificaciones li.rel-mod-item {
+  border-bottom: 0;
+}
 aside.navegador-modificaciones li.rel-mod-item {
   background-color: white;
   border: 1px dotted #555;
