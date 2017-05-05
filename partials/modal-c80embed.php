@@ -7,7 +7,7 @@
 ?>
 
 
-<a href="#" class="loadembedhtml" title="Compartir este contenido en tu sitio web" data-title="<?php the_title();?>" data-target="#c80_article_link-subarticle-<?php echo $post->ID;?>" data-id="<?php echo $post->ID;?>"><i class="fa fa-code"></i> Insertar en mi web</a>
+<a href="#" class="loadembedhtml" title="Compartir este contenido en tu sitio web" data-title="<?php the_title();?>" data-target="#c80_article_link-subarticle-<?php echo $post->ID;?>" data-id="<?php echo $post->ID;?>"><i class="fa fa-code"></i></a>
 
 <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="c80_article_link-subarticle-<?php echo $post->ID;?>" id="c80_article_link-subarticle-<?php echo $post->ID;?>">
   <div class="modal-dialog">

@@ -51,6 +51,7 @@ function c80t_imgsizes() {
 	add_image_size( 'main', 754, 0, false );
 	add_image_size( 'secondary', 369, 237, true );
 	add_image_size( 'featured', 369, 369, true );
+	add_image_size( 'mini-item', 200, 60, true );
 }
 
 add_action( 'after_setup_theme', 'c80t_imgsizes' );

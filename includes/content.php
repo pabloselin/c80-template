@@ -74,6 +74,35 @@ function c80t_capitulos() {
 
 }
 
+
+function c80t_change_post_menu_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Noticias';
+    $submenu['edit.php'][5][0] = 'Noticias';
+    $submenu['edit.php'][10][0] = 'Añadir Noticias';
+    echo '';
+}
+
+function c80t_postlabels() {
+	global $wp_post_types;
+		
+		$labels = &$wp_post_types['post']->labels;
+        $labels->name = 'Noticias';
+        $labels->singular_name = 'Noticia';
+        $labels->add_new = 'Añadir Noticia';
+        $labels->add_new_item = 'Añadir Noticia';
+        $labels->edit_item = 'Editar Noticia';
+        $labels->new_item = 'Nueva Noticia';
+        $labels->view_item = 'Ver Noticia';
+        $labels->search_items = 'Buscar Noticias';
+        $labels->not_found = 'No se encontraron Noticias';
+        $labels->not_found_in_trash = 'No se encontraron noticias en papelera';
+}
+
+add_action( 'init', 'c80t_postlabels' );
+add_action( 'admin_menu', 'c80t_change_post_menu_label' );
+
 function c80t_parentname($postid, $en_capitulo = false) {
 	$ancestors = get_post_ancestors( $postid );
 	if($ancestors && !$en_capitulo) {

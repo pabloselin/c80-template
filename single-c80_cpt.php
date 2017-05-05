@@ -7,12 +7,13 @@
 
 	<section class="contenedor-estandar">
 		
-		<div class="navegador-c80">
+		<div class="navegador-c80 col-md-2">
 			<?php echo c80t_articulos();?>	
 		</div>
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		
+		<div class="col-md-10">
 		<?php 
 			if($post->post_parent == 0) {
 				//es capitulo
@@ -34,6 +35,8 @@
 			</div>
 		
 		<?php endif; ?>
+
+		</div>
 	
 		<div class="navegador-c80-movil">
 			<?php echo c80t_articulos();?>	

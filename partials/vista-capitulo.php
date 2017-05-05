@@ -1,7 +1,19 @@
+<?php 
+global $post;
+$checkmod = c80_Public::c80_checkmod($post->ID);
+$checknew = c80_Public::c80_checknew($post->ID);
+?>
+
 <article class="capitulo-constitucion">
-	<header class="header-capitulo">
-		<h1><i class="fa fa-book"></i> <span class="txt"><span class="titlename"><?php the_title();?></span> <br> <span class="capsubt"><?php echo c80t_captitle($post->ID);?></span> </span></h1>
-	</header>	
+	<div class="row row-capitulo">
+		<header class="header-capitulo col-md-9">
+			<h1><i class="fa fa-book"></i> <span class="txt"><span class="titlename"><?php the_title();?></span> <br> <span class="capsubt"><?php echo c80t_captitle($post->ID);?></span> </span></h1>
+		</header>
+		<div class="col-md-3 mod-capitulo">
+			<?php include( TEMPLATEPATH . '/sidebar-modificaciones.php');?>
+		</div>
+	</div>
+	
 		<?php 
 			$args = array(
 				'post_type' => 'c80_cpt',
@@ -27,6 +39,7 @@
 				<?php endwhile; ?>
 				<!-- post navigation -->
 				</div><!--fin #articulos-capitulo-->
+				
 				<?php else: ?>
 				<!-- no posts found -->
 				<p>No se encontraron contenidos.</p>
