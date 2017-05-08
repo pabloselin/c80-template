@@ -8565,6 +8565,7 @@ textarea.linkplaceholder {
 aside.navegador-modificaciones li.rel-mod-item {
   background-color: white;
   border: 1px dotted #555;
+  margin-bottom: 6px;
 }
 aside.navegador-modificaciones li.rel-mod-item a {
   color: #333;
@@ -8656,10 +8657,20 @@ li.rel-mod-item {
   display: block;
   background-color: #f0f0f0;
 }
+li.rel-mod-item a:hover {
+  text-decoration: none;
+}
 li.rel-mod-item .text {
   padding: 6px;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
+}
+li.rel-mod-item .text strong {
+  display: block;
+}
+li.rel-mod-item .text .modtime {
+  display: block;
+  color: #555;
 }
 .archive-items {
   position: relative;

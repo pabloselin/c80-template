@@ -4,7 +4,7 @@ $checkmod = c80_Public::c80_checkmod($post->ID);
 $checknew = c80_Public::c80_checknew($post->ID);
 ?>
 
-<article id="cpt-id-<?php echo $post->ID;?>" class="articulo-constitucion <?php if($checkmod): echo 'modarticle mod-' . $checkmod; endif;?> <?php if($checknew): echo 'newarticle'; endif;?>">
+<article id="cpt-id-<?php echo $post->ID;?>" class="articulo-constitucion <?php if($checkmod): echo 'modarticle mod-' . $checkmod[0]; endif;?> <?php if($checknew): echo 'newarticle'; endif;?>">
 
     <div class="row">
 			
@@ -24,7 +24,7 @@ $checknew = c80_Public::c80_checknew($post->ID);
 							endif;?>
 
 						<?php if($checkmod):
-								echo '<span class="modinfo"><i class="fa fa-info-circle"></i> Modificado el ' . get_the_time( 'd/m/Y', $checkmod) .'</span>';
+								echo '<span class="modinfo"><i class="fa fa-info-circle"></i> Modificado el ' . get_the_time( 'd/m/Y', $checkmod[0]) .'</span>';
 							endif;?>
 						
 							<p class="temas">
