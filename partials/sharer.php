@@ -34,7 +34,7 @@
      	</a>
      </div>
 
-     <div class="embed-share sharebutton">
-          <?php get_template_part('partials/modal-c80embed');?>
-     </div>	
+     <!--<div class="embed-share sharebutton">
+          <?php //get_template_part('partials/modal-c80embed');?>
+     </div>	-->
 </div>	
