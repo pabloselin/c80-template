@@ -133,11 +133,11 @@ function c80t_captitle($postid) {
 
 	if($ancestors) {
 		$checkmod = c80_Public::c80_checkmod($ancestors[0]);
-		$itemid = ($checkmod)? $checkmod : $ancestors[0];
+		$itemid = ($checkmod)? $checkmod[0] : $ancestors[0];
 	} else {
 		//es de nivel superior o sea está en un capítulo...
 		$checkmod = c80_Public::c80_checkmod($postid);
-		$itemid = ($checkmod)? $checkmod : $postid;
+		$itemid = ($checkmod)? $checkmod[0] : $postid;
 	}
 
 	$subt = get_post_meta($itemid, 'c80_subtartcap', true);
