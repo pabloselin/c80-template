@@ -71,3 +71,12 @@ function c80_tags() {
 	}
 	
 }
+
+function c80_url($id) {
+	if(get_bloginfo('url') != 'https://c80.cl') {
+		$url = str_replace(get_bloginfo('url'), 'https://c80.cl', get_permalink($id));
+		return $url;
+	} else {
+		return get_permalink($id);
+	}
+}

@@ -3,23 +3,9 @@ function singleCounter() {
         var sharer = jQuery('.social-share');
         var durl = sharer.data('url');
         var oldurl = durl.replace('https', 'http');
-        var fbshares = 0;
-        var twts = 0;
-        var nsh = 0;
-        console.log('running counter in single with both urls');
+            
 
-        jQuery.getJSON('https://graph.facebook.com/?id=' + durl, function(json) {
-            fbshares = +json.share.share_count || 0;
-            nsh = roundNumber(parseInt(fbshares));
-        });
-
-        jQuery.getJSON('https://graph.facebook.com/?id=' + oldurl, function(json) {
-            fbshares = +json.share.share_count || 0;
-            nsh += roundNumber(parseInt(fbshares));
-        });
-
-        if(nsh != 0)
-            jQuery('.sharer__facebook', sharer).append('<span>' + nsh + '</span>').addClass('with-shares');
+        getFbJson(durl, sharer);    
 
         // jQuery.getJSON('http://cdn.api.twitter.com/1/urls/count.json?url=' + durl + '&callback=?', function(json) {
         //     twts = +json.count || 0;
@@ -34,6 +20,36 @@ function singleCounter() {
         //     $('.sharer__linkedin', sharer).append('<span>' + nln + '</span>');
         // });
 }
+
+function getFbJson(url, sharer) {
+    var fbshares = 0;
+    var oldurl = url.replace('https', 'http');
+    var nsh = 0,
+        nsh_old = 0,
+        sumsh = 0;
+     
+    jQuery.getJSON('https://graph.facebook.com/?id=' + url, function(json) {
+            //fbshares += json.share.share_count;
+            nsh = roundNumber(parseInt(json.share.share_count));        
+
+            jQuery.getJSON('https://graph.facebook.com/?id=' + oldurl, function(json) {
+                console.log('secondrun');
+                //fbshares += json.share.share_count;
+                nsh_old = roundNumber(parseInt(json.share.share_count));
+                sumsh = nsh + nsh_old;
+                //console.log(nsh_old);
+                jQuery('.sharer__facebook', sharer).append(' ').append(sumsh).addClass('with-shares');
+            });
+
+        });
+}
+
+// function sumCounts(sharer) {
+//     var sharerfb = jQuery('.sharer__facebook', sharer).attr('data-count');
+//     var oldsharerfb = jQuery('.sharer__facebook', sharer).attr('data-oldcount');
+//     var newcount = parseInt(sharerfb, 10) + parseInt(oldsharerfb, 10);
+//     jQuery('.sharer__facebook', sharer).append(' ').append(newcount).addClass('with-shares');
+// }
 
 function roundNumber(number) {
     var nicenumber;

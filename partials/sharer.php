@@ -1,4 +1,4 @@
-<div class="social-share" data-url="<?php echo get_permalink($post->ID);?>" >
+<div class="social-share" data-url="<?php echo c80_url($post->ID);?>" >
 	<div class="twitter-share sharebutton">
 		
           
@@ -7,7 +7,7 @@
 	</div>
 
 	<div class="facebook-share sharebutton" data-href="<?php echo get_permalink();?>">
-          <a title="Compartir en Facebook" target="_blank" href="https://facebook.com/sharer.php?u=<?php echo urlencode( get_permalink($post->ID) );?>" class="sharer__facebook"><i class="fa fa-facebook"></i></a>
+          <a title="Compartir en Facebook" target="_blank" href="https://facebook.com/sharer.php?u=<?php echo urlencode( get_permalink($post->ID) );?>" class="sharer__facebook" data-count="0"><i class="fa fa-facebook"></i></a>
           
 	</div>	
     
