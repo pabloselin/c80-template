@@ -27,6 +27,10 @@ $checknew = c80_Public::c80_checknew($post->ID);
 								echo '<span class="modinfo"><i class="fa fa-info-circle"></i> Modificado el ' . get_the_time( 'd/m/Y', $checkmod[0]) .'</span>';
 							endif;?>
 						
+                        <?php if(get_post_meta($post->ID, 'c80_artderogated', true)):
+                                echo '<span class="modinfo"><i class="fa fa-info-circle"></i> Derogado el ' . get_the_time( 'd/m/Y', $checkmod[0]) .'</span>';
+                            endif;?>
+
 							<p class="temas">
 								<?php c80_tags();?>
 							</p>

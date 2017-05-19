@@ -2,15 +2,24 @@ function singleCounter() {
 	//Toma contador Facebook y twitter
         var sharer = jQuery('.social-share');
         var durl = sharer.data('url');
+        var oldurl = durl.replace('https', 'http');
         var fbshares = 0;
         var twts = 0;
-        console.log('running counter in single');
+        var nsh = 0;
+        console.log('running counter in single with both urls');
 
         jQuery.getJSON('https://graph.facebook.com/?id=' + durl, function(json) {
             fbshares = +json.share.share_count || 0;
             nsh = roundNumber(parseInt(fbshares));
-            jQuery('.sharer__facebook', sharer).append('<span>' + nsh + '</span>').addClass('with-shares');
         });
+
+        jQuery.getJSON('https://graph.facebook.com/?id=' + oldurl, function(json) {
+            fbshares = +json.share.share_count || 0;
+            nsh += roundNumber(parseInt(fbshares));
+        });
+
+        if(nsh != 0)
+            jQuery('.sharer__facebook', sharer).append('<span>' + nsh + '</span>').addClass('with-shares');
 
         // jQuery.getJSON('http://cdn.api.twitter.com/1/urls/count.json?url=' + durl + '&callback=?', function(json) {
         //     twts = +json.count || 0;
