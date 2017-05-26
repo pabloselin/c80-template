@@ -43,6 +43,9 @@ function getFbJson(url, sharer) {
                 //fbshares += json.share.share_count;
                 nsh_old = roundNumber(parseInt(json.share.share_count));
                 sumsh = nsh + nsh_old;
+                if(sumsh === 0) {
+                    sumsh = '';
+                }
                 //console.log(nsh_old);
                 jQuery('.sharer__facebook', sharer).append(' ').append(sumsh).addClass('with-shares');
             });
