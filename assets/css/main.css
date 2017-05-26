@@ -8030,6 +8030,12 @@ article.page div.pad div.contenido div.excerpt {
     font-size: 1.6rem;
   }
 }
+article.articulo-estandar div.pad div.contenido h2,
+article.columna-estandar div.pad div.contenido h2,
+article.page div.pad div.contenido h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 article.articulo-estandar div.pad div.contenido h3,
 article.columna-estandar div.pad div.contenido h3,
 article.page div.pad div.contenido h3 {
