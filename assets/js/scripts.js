@@ -31,14 +31,11 @@ jQuery(document).ready(function($) {
 			moreaside.addClass('disp');
 		}
 	});
-
-	
-	singleCounter();
-
 	
 	
 	//3. Mostrar link para compartir párrafos
-	$('.c80_p').on('click', function() {
+	$('a.c80_p').on('click', function() {
+		console.log('lic');
 		var rlink = $(this).attr('data-link');
 		var parid = $(this).attr('data-pid');
 		var order = $(this).attr('data-order');
@@ -100,5 +97,7 @@ jQuery(document).ready(function($) {
 		}
 
 	});
+
+	singleCounter();
 
 });

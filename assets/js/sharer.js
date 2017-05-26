@@ -2,10 +2,16 @@ function singleCounter() {
 	//Toma contador Facebook y twitter
         var sharer = jQuery('.social-share');
         var durl = sharer.data('url');
-        var oldurl = durl.replace('https', 'http');
-            
+        if(durl){
+            var oldurl = durl.replace('https', 'http');
+            getFbJson(durl, sharer);
+        }
+        
 
-        getFbJson(durl, sharer);    
+        
+        
+    
+            
 
         // jQuery.getJSON('http://cdn.api.twitter.com/1/urls/count.json?url=' + durl + '&callback=?', function(json) {
         //     twts = +json.count || 0;
