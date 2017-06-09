@@ -8136,6 +8136,11 @@ div.colabora p {
   margin-right: 24px;
   border-radius: 50%;
 }
+@media screen and (max-width: 768px) {
+  .columna-estandar .imgobj.img {
+    margin: 0 -12px;
+  }
+}
 .columna-estandar div.info-columna {
   margin: 6px 0 12px 0;
 }
