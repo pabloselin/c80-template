@@ -41,7 +41,8 @@
 			
 				<?php endwhile; ?>
 				<!-- post navigation -->
-			
+				<?php c80_paginator();?>
+
 				<?php else: ?>
 			
 				<div class="error404">

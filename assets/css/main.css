@@ -8737,6 +8737,71 @@ h1.archive-title {
   max-height: 160px;
   border-radius: 80px 0 0 80px;
 }
+.page-numbers {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+  border-radius: 0;
+}
+.page-numbers > li {
+  display: inline;
+}
+.page-numbers > li > a,
+.page-numbers > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: #337ab7;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+}
+.page-numbers > li:first-child > a,
+.page-numbers > li:first-child > span {
+  margin-left: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.page-numbers > li:last-child > a,
+.page-numbers > li:last-child > span {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.page-numbers > li > a:hover,
+.page-numbers > li > span:hover,
+.page-numbers > li > a:focus,
+.page-numbers > li > span:focus {
+  z-index: 2;
+  color: #23527c;
+  background-color: #eeeeee;
+  border-color: #ddd;
+}
+.page-numbers > .active > a,
+.page-numbers > .active > span,
+.page-numbers > .active > a:hover,
+.page-numbers > .active > span:hover,
+.page-numbers > .active > a:focus,
+.page-numbers > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+  cursor: default;
+}
+.page-numbers > .disabled > span,
+.page-numbers > .disabled > span:hover,
+.page-numbers > .disabled > span:focus,
+.page-numbers > .disabled > a,
+.page-numbers > .disabled > a:hover,
+.page-numbers > .disabled > a:focus {
+  color: #777777;
+  background-color: #fff;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;

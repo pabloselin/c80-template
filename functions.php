@@ -1,7 +1,7 @@
 <?php
 //functions.php
 
-define( 'C80_THEME_VERSION', '0.5.08');
+define( 'C80_THEME_VERSION', '0.5.09');
 define( 'C80_TWITTER', 'proyectoC80');
 define( 'C80_FACEBOOK', 'https://www.facebook.com/proyectoC80/');
 define( 'C80_NOTFOUND', 1084);
@@ -79,4 +79,24 @@ function c80_url($id) {
 	} else {
 		return get_permalink($id);
 	}
+}
+
+function c80_paginator($query = NULL) {
+	if(!$query) {
+		global $wp_query;
+	} else {
+		$wp_query = $query;
+	}
+	
+	$big = 999999999; // need an unlikely integer
+	echo '<nav>';
+	echo paginate_links( array(
+		'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+		'format' => '?paged=%#%',
+		'current' => max( 1, get_query_var('paged') ),
+		'total' => $wp_query->max_num_pages,
+		'mid_size' => 3,
+		'type' => 'list'
+	) );
+	echo '</nav>';
 }

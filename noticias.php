@@ -54,7 +54,12 @@ Template Name: Noticias
 			
 				<?php endwhile; ?>
 				<!-- post navigation -->
-			
+
+				
+				<?php c80_paginator($noticias);?>
+				
+
+
 				<?php else: ?>
 			
 				<div class="error404">
