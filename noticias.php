@@ -20,8 +20,7 @@ Template Name: Noticias
 				'paged' => $paged
 			);
 			$noticias = new WP_Query($args);
-
-			?>
+		?>
 
 		<?php if ( $noticias->have_posts() ) : while ( $noticias->have_posts() ) : $noticias->the_post(); ?>
 			<?php 
