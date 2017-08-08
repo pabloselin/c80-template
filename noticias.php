@@ -12,9 +12,12 @@ Template Name: Noticias
 		<h1 class="archive-title">Archivo de Noticias</h1>
 
 		<div class="archive-items">
-		<?php $args = array(
+		<?php 
+		$paged = get_query_var( 'paged' );
+		$args = array(
 				'post_type' => 'post',
-				'posts_per_page' => 20
+				'posts_per_page' => 10,
+				'paged' => $paged
 			);
 			$noticias = new WP_Query($args);
 
