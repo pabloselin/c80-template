@@ -8560,6 +8560,8 @@ textarea.linkplaceholder {
 @media screen and (max-width: 768px) {
   .articulo-constitucion header .modinfo {
     position: relative;
+    top: 0;
+    right: 0;
   }
 }
 .row-capitulo {
