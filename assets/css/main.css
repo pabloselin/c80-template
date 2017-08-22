@@ -8557,6 +8557,11 @@ textarea.linkplaceholder {
   vertical-align: middle;
   line-height: 16px;
 }
+@media screen and (max-width: 768px) {
+  .articulo-constitucion header .modinfo {
+    position: relative;
+  }
+}
 .row-capitulo {
   position: relative;
 }
