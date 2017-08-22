@@ -1,8 +1,7 @@
 
 		<?php 
 		$c80public = new c80_Public('c80', '1.0.0');
-		//$relacionados = $c80public->c80_relart($post->ID);
-		$relacionados = '';
+		$relacionados = $c80public->c80_relart($post->ID);
 			if($relacionados) {
 				echo '<aside class="navegador-relacionados" data-id="' . $post->ID . '">';
 				echo '<h4><i class="fa fa-code-fork"></i> Contenidos Relacionados</h4>';
