@@ -1,13 +1,12 @@
 
 		<?php 
 		$c80public = new c80_Public('c80', '1.0.0');
-		$modificaciones = $c80public->c80_checkmod($post->ID);
-			if($modificaciones) {
+		$modids = $c80public->c80_checkmod($post->ID);
+			if($modids) {
 				echo '<aside class="navegador-modificaciones" data-id="' . $post->ID . '">';
 				echo '<h4><i class="fa fa-code-fork"></i> Modificaciones</h4>';
 				echo '<ul class="lista-articulos-modificados" data-id="' . $post->ID . '">';
-
-				foreach($modificaciones as $modificacion) {
+				foreach($modids as $modificacion) {
 
 					echo '<li class="rel-mod-item" data-id="' . $modificacion . '">';
 

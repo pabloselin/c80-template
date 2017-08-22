@@ -25,7 +25,6 @@ global $post;
 									$subcap->the_post();
 									$checkmod = c80_Public::c80_checkmod($post->ID);
 									$checknew = c80_Public::c80_checknew($post->ID);									
-									
 										echo c80t_template_loader('partials/articulo-content', array('en_capitulo' => $en_capitulo));
 									
 								endwhile;
