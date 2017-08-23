@@ -2526,4 +2526,12 @@ jQuery(document).ready(function($) {
 
 	singleCounter();
 
+});lse {
+			$('i', this).removeClass('fa-times').addClass('fa-plus');
+		}
+
+	});
+
+	singleCounter();
+
 });

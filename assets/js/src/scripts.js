@@ -49,6 +49,10 @@ function roundNumber(number) {
 //Main scripts
 jQuery(document).ready(function($) {
 	//Inicializar
+	var hash = window.location.hash;
+	if(hash.length > 0) {
+		$('a' + hash).addClass('highlight');	
+	}
 
 	//1. Tooltip
 	$('a[data-toggle="tooltip"]').tooltip();
