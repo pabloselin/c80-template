@@ -28,7 +28,7 @@
 
 					<?php if(has_post_thumbnail()):
 						$imgid = get_post_thumbnail_id( $post->ID );
-						$pthsrc = wp_get_attachment_image_src( $imgid, 'main' );
+						$pthsrc = wp_get_attachment_image_src( $imgid, 'large' );
 
 
 						?>	
