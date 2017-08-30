@@ -50,6 +50,7 @@ add_action( 'wp_enqueue_scripts', 'c80t_styles' );
 function c80t_imgsizes() {
 	add_image_size( 'main', 668, 0, false );
 	add_image_size( 'secondary', 360, 231, true );
+	add_image_size( 'single', 730, 0, false );
 	add_image_size( 'featured', 360, 360, true );
 	add_image_size( 'mini-item', 200, 60, true );
 }

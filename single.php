@@ -28,7 +28,7 @@
 
 					<?php if(has_post_thumbnail()):?>	
 						<div class="imgobj" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-							<?php the_post_thumbnail( 'large' );?>
+							<?php the_post_thumbnail( 'single' );?>
 						</div>
 					<?php endif;?>
 
