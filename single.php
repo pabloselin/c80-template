@@ -26,14 +26,9 @@
 
 					<div class="img">
 
-					<?php if(has_post_thumbnail()):
-						$imgid = get_post_thumbnail_id( $post->ID );
-						$pthsrc = wp_get_attachment_image_src( $imgid, 'large' );
-
-
-						?>	
+					<?php if(has_post_thumbnail()):?>	
 						<div class="imgobj" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-							<?php the_post_thumbnail( 'main' );?>
+							<?php the_post_thumbnail( 'large' );?>
 						</div>
 					<?php endif;?>
 
