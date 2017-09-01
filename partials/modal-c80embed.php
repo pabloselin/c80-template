@@ -7,25 +7,25 @@
 ?>
 
 
-<a href="#" class="loadembedhtml" title="Compartir este contenido en tu sitio web" data-title="<?php the_title();?>" data-target="#c80_article_link-subarticle-<?php echo $post->ID;?>" data-id="<?php echo $post->ID;?>"><i class="fa fa-code"></i></a>
+<a href="#" class="loadembedhtml" title="Compartir este contenido en tu sitio web" data-title="<?php the_title();?>" data-target="#c80_article_link-subarticle-<?php echo $post->ID;?>" data-id="<?php echo $post->ID;?>"><i class="fa fa-share-alt"></i></a>
 
-<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="c80_article_link-subarticle-<?php echo $post->ID;?>" id="c80_article_link-subarticle-<?php echo $post->ID;?>">
+<div class="modal fade modal-c80" tabindex="-1" role="dialog" aria-labelledby="c80_article_link-subarticle-<?php echo $post->ID;?>" id="c80_article_link-subarticle-<?php echo $post->ID;?>">
   <div class="modal-dialog">
     <div class="modal-content">
      <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Insertar este contenido en tu sitio</h4>
-      </div>
-      <div class="modal-body">
-        <h5>
-        
-        <?php if(get_post_type($post->ID) == 'c80_cpt'):?>
+        <h4 class="modal-title" id="myModalLabel"> <?php if(get_post_type($post->ID) == 'c80_cpt'):?>
           <?php echo c80t_parentname($post->ID, false);?>: 
         <?php endif;?>
 
-        <?php echo get_the_title($post->ID);?></span>
+        <?php echo get_the_title($post->ID);?></span></h4>
+      </div>
+      <div class="modal-body">
+        <h4>Compartir en redes sociales</h4>
 
-        </h5>
+        <?php get_template_part('partials/sharer');?>
+
+        <h4>Insertar este contenido en tu sitio</h4>
 
         <div class="alert alert-warning">
          <p>Copia el código de abajo e insértalo en tu sitio web para compartir este contenido.</p> 

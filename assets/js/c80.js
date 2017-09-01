@@ -2427,6 +2427,10 @@ function roundNumber(number) {
 //Main scripts
 jQuery(document).ready(function($) {
 	//Inicializar
+	var hash = window.location.hash;
+	if(hash.length > 0) {
+		$('a' + hash).addClass('highlight');	
+	}
 
 	//1. Tooltip
 	$('a[data-toggle="tooltip"]').tooltip();
@@ -2519,14 +2523,6 @@ jQuery(document).ready(function($) {
 		if($('i', this).hasClass('fa-plus')) {
 			$('i', this).removeClass('fa-plus').addClass('fa-times');
 		} else {
-			$('i', this).removeClass('fa-times').addClass('fa-plus');
-		}
-
-	});
-
-	singleCounter();
-
-});lse {
 			$('i', this).removeClass('fa-times').addClass('fa-plus');
 		}
 

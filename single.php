@@ -66,9 +66,6 @@
 					<p class="temas temas-movil">
 								<?php c80_tags( );?>
 					</p>
-
-					<?php get_template_part('partials/inline-newsletter');?>
-
 				</div>
 
 				
@@ -82,7 +79,14 @@
 
 			<!-- comments -->
 				<?php comments_template();?>
-
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<?php get_template_part('partials/inline-newsletter');?>
+						</div>
+					</div>
+				</div>
 			<!-- post navigation -->
 
 			<?php else: ?>

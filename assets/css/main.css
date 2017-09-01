@@ -6638,7 +6638,7 @@ div.colabora p {
   text-align: center;
 }
 #mc_embed_signup.inline {
-  margin: 36px -18px -18px -18px;
+  margin: 12px 20px 12px 0;
   padding: 18px;
   background-color: #e1e9ef;
 }
@@ -6710,9 +6710,6 @@ div.colabora p {
     width: auto;
     display: inline;
   }
-}
-.capitulo-constitucion header.header-capitulo h1 span.capsubt {
-  text-transform: uppercase;
 }
 .capitulo-constitucion header.header-capitulo h1 span.titlename {
   font-size: 2.5rem;
@@ -6991,7 +6988,7 @@ section.contenedor-constitucion-box .capitulo-constitucion-box a:hover div.wrap 
 }
 section.contenedor-constitucion-box .capitulo-constitucion-box div.wrap {
   padding: 6px 12px 12px;
-  min-height: 130px;
+  min-height: 150px;
   background-color: white;
   border-top: 2px solid #EF7937;
   margin: 6px 0 6px;
@@ -7119,6 +7116,16 @@ aside.navegador-modificaciones h4 {
   text-align: right;
   text-transform: uppercase;
   font-size: 12px;
+}
+span.capsubt {
+  text-transform: uppercase;
+  line-height: 1.3em;
+}
+.modal-c80 .modal-body h3,
+.modal-c80 .modal-body h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: $naranjo;
 }
 .navegador-relacionados ul {
   margin: 0;
@@ -7269,6 +7276,10 @@ h1.archive-title {
 .post-type-archive-columnas article.articulo-archivo {
   max-height: 160px;
   border-radius: 80px 0 0 80px;
+}
+.post-type-archive-columnas article.articulo-archivo img {
+  margin-top: 0;
+  border-radius: 50%;
 }
 .page-numbers {
   display: inline-block;
@@ -7561,7 +7572,7 @@ article.featured .excerpt {
 article.featured .pad {
   height: 369px;
   border-top: 10px solid #25A8CE;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: none;

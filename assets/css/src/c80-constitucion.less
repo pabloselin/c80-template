@@ -23,10 +23,6 @@
 					display:inline;
 				}
 			}
-
-			span.capsubt {
-				text-transform:uppercase;
-			}
 			
 			span.titlename {
 				font-size:2.5rem;
@@ -271,7 +267,6 @@ section.contenedor-constitucion-box {
 		.make-md-column(3);
 		a {
 			display:block;
-			
 			&:hover {
 				text-decoration:none;
 				div.wrap {
@@ -290,7 +285,7 @@ section.contenedor-constitucion-box {
 		}
 		div.wrap {
 			padding:6px 12px 12px;
-			min-height:130px;
+			min-height:150px;
 			background-color:white;
 			border-top:2px solid @naranjo;
 			margin:6px 0 6px;
@@ -440,4 +435,19 @@ aside.navegador-modificaciones h4 {
 		text-align:right;
 		text-transform:uppercase;
 		font-size:12px;
+}
+
+span.capsubt {
+	text-transform:uppercase;
+	line-height:1.3em;
+}
+
+.modal-c80 {
+	.modal-body {
+		h3, h4 {
+			margin-top:0;
+			margin-bottom:12px;
+			color:$naranjo;
+		}
+	}
 }

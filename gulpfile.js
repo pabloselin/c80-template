@@ -46,6 +46,6 @@ gulp.task('compress', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch(['assets/css/src/**/*.less', 'assets/js/*.js'], ['less', 'embeds', 'scripts', 'compress']);
+	gulp.watch(['assets/css/src/**/*.less', 'assets/js/*.js'], ['less', 'embeds', 'scripts']);
 });
 

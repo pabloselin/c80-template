@@ -6,7 +6,6 @@
 <body <?php body_class();?> >
 
 <header id="header-sitio">
-    <span class="beta">BETA</span>
     <!-- Navegación principal -->
     <div class="container">
         <div class="row">
@@ -91,6 +90,12 @@
                 <li>
                     <a href="<?php echo get_permalink(70);?>">Contacto</a>
                 </li>
+                <li class="socials">
+                        <a href="<?php echo c80t_twitter();?>" target="_blank"><i class="fa fa-twitter"></i> En Twitter</a>
+                    </li>
+                    <li class="socials">
+                        <a href="<?php echo C80_FACEBOOK;?>" target="_blank"><i class="fa fa-facebook-square"></i> En Facebook</a>
+                    </li>
             </ul>
         </div>
     </nav>

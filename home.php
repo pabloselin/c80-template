@@ -79,7 +79,7 @@
 								
 								<div class="top-info">
 									<div class="over-title">
-										<?php the_category( ', ' );?> <span class="date"><?php the_time( get_option( 'date_format' ) );?></span>
+										<span class="date"><?php the_time( get_option( 'date_format' ) );?></span>
 									</div>
 									<?php echo $hs;?>
 										<a href="<?php the_permalink();?>"><?php the_title();?></a>
