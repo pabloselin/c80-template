@@ -18,10 +18,6 @@
 						<div class="avatar">
 							<?php echo c80t_avatar(70);?>
 						</div>
-
-						<div class="top-meta">
-							<p class="cats"><?php the_category( ', ' );?></p>
-						</div>
 				
 						<h3>
 							<a href="<?php the_permalink();?>"><?php the_title();?></a>
