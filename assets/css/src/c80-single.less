@@ -38,10 +38,17 @@ article.page
 				padding:0;
 			}
 
+			@media screen and (max-width:@screen-sm) {
+				div.img {
+					overflow:hidden;
+				}
+			}
+
 			div.img img.post-image {
 				margin:0 -12px;
 				img {
-					max-width:100%;
+					max-width:110%;
+					height:auto;
 				}
 				@media screen and (max-width:@screen-sm) {
 					margin:0;

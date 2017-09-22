@@ -79,7 +79,7 @@
 
 			<!-- comments -->
 				<?php comments_template();?>
-				
+
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8">
