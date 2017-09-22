@@ -6505,9 +6505,9 @@ article.page div.pad header div.top-meta {
   padding: 0;
 }
 @media screen and (max-width: 768px) {
-  article.articulo-estandar div.pad header div.img,
-  article.columna-estandar div.pad header div.img,
-  article.page div.pad header div.img {
+  article.articulo-estandar div.pad header div.imgobj,
+  article.columna-estandar div.pad header div.imgobj,
+  article.page div.pad header div.imgobj {
     overflow: hidden;
   }
 }
@@ -6515,10 +6515,6 @@ article.articulo-estandar div.pad header div.img img.post-image,
 article.columna-estandar div.pad header div.img img.post-image,
 article.page div.pad header div.img img.post-image {
   margin: 0 -12px;
-}
-article.articulo-estandar div.pad header div.img img.post-image img,
-article.columna-estandar div.pad header div.img img.post-image img,
-article.page div.pad header div.img img.post-image img {
   max-width: 110%;
   height: auto;
 }
