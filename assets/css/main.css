@@ -6445,6 +6445,40 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
 .page #main .contenedor-estandar {
   margin-top: 0;
 }
+article.mitos-sabias-que {
+  width: 66.66%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+article.mitos-sabias-que img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  article.mitos-sabias-que {
+    width: 100%;
+  }
+}
+article.mitos-sabias-que .contenido h1 {
+  font-size: 16px;
+  margin: 0;
+}
+body.single-mitos-sabias-que .contenido,
+body.single-mitos-sabias-que .comments,
+body.single-mitos-sabias-que .inline-newsletter {
+  float: none!important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body.single-mitos-sabias-que .inline-newsletter {
+  max-width: 66.66%;
+}
+@media screen and (max-width: 768px) {
+  body.single-mitos-sabias-que .inline-newsletter {
+    width: 100%;
+  }
+}
 article.articulo-estandar,
 article.columna-estandar,
 article.page {

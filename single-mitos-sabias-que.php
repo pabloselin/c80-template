@@ -8,27 +8,16 @@
 		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		
-		<article <?php post_class('articulo-estandar');?> >
+		<article <?php post_class('mitos-sabias-que');?> >
 			
 			<div class="pad">
 				<header>
-					<div class="top-meta">
-						<?php the_category( ', ' );?> |	<span itemprop="datePublished" content="<?php the_date('c'); ?>" pubdate><?php the_time( get_option( 'date_format' ) );?></span>
-						<meta itemprop="dateModified" content="<?php echo get_the_modified_date( 'c' );?>">
-					</div>
 					
-					<h1 itemprop="headline"><?php the_title();?></h1>
-
-					<p class="autor" itemprop="author">
-						<?php the_author();?>
-					</p>
-
-
 					<div class="img">
 
 					<?php if(has_post_thumbnail()):?>	
 						<div class="imgobj" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-							<?php the_post_thumbnail( 'single' );?>
+							<?php the_post_thumbnail( 'large' );?>
 						</div>
 					<?php endif;?>
 
@@ -49,7 +38,8 @@
 				</header>
 					
 				<div class="contenido">
-					
+				
+				<h1 itemprop="headline"><?php the_title();?></h1>
 					
 				<?php if(has_excerpt()):?>
 					<div class="excerpt">
@@ -74,8 +64,6 @@
 		</article>
 		
 			<?php endwhile; ?>
-
-			<?php get_template_part('partials/aside', 'c80rel');?>
 
 			<!-- comments -->
 				<?php comments_template();?>

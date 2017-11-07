@@ -13,7 +13,11 @@
   "author": "Pablo Selín carrasco",
   "license": "ISC",
   "devDependencies": {
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.0.1"
-  }
+    "accord": "^0.27.3",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-util": "^3.0.8",
+    "gulp-less": "^3.3.2"
+  },
+  "dependencies": {}
 }

@@ -5,6 +5,38 @@
 	}
 }
 
+article.mitos-sabias-que {
+	width:66.66%;
+	img {
+		width:100%;
+	}
+	@media screen and (max-width: @screen-sm) {
+		width:100%;
+	}
+	.center-block();
+	.contenido h1 {
+		font-size:16px;
+		margin:0;
+	}
+}
+
+body.single-mitos-sabias-que .contenido,
+body.single-mitos-sabias-que .comments,
+body.single-mitos-sabias-que .inline-newsletter
+ {
+ 	float:none!important;
+ 	margin-left:auto;
+ 	margin-right:auto;
+	.center-block();
+}
+
+body.single-mitos-sabias-que .inline-newsletter {
+	max-width:66.66%;
+	@media screen and (max-width: @screen-sm) {
+		width:100%;
+	}
+}
+
 article.articulo-estandar,
 article.columna-estandar,
 article.page
