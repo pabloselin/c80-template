@@ -13,11 +13,34 @@
 			<div class="pad">
 				<header>
 					
+					
+					<h1 itemprop="headline"><?php the_title();?></h1>
+
+					
+					<?php get_template_part('partials/sharer');?>
+						
+				</header>
+					
+				<div class="contenido">
+					
+					
+				<?php if(has_excerpt()):?>
+					<div class="excerpt">
+
+						<?php the_excerpt();?>	
+
+					</div>	
+				<?php endif;?>
+
+					<div class="the-content" itemprop="articleBody">
+						<?php the_content();?>
+					</div>
+
 					<div class="img">
 
 					<?php if(has_post_thumbnail()):?>	
 						<div class="imgobj" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-							<?php the_post_thumbnail( 'large' );?>
+							<?php the_post_thumbnail( 'single' );?>
 						</div>
 					<?php endif;?>
 
@@ -32,26 +55,6 @@
 						</div>
 					
 					</div>
-					
-					<?php get_template_part('partials/sharer');?>
-						
-				</header>
-					
-				<div class="contenido">
-				
-				<h1 itemprop="headline"><?php the_title();?></h1>
-					
-				<?php if(has_excerpt()):?>
-					<div class="excerpt">
-
-						<?php the_excerpt();?>	
-
-					</div>	
-				<?php endif;?>
-
-					<div class="the-content" itemprop="articleBody">
-						<?php the_content();?>
-					</div>
 
 					<p class="temas temas-movil">
 								<?php c80_tags( );?>
@@ -64,6 +67,8 @@
 		</article>
 		
 			<?php endwhile; ?>
+
+			<?php get_template_part('partials/aside', 'c80-mitos');?>
 
 			<!-- comments -->
 				<?php comments_template();?>

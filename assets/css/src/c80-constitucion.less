@@ -61,15 +61,15 @@ div.fuente-constitucion {
 		}
 	}
 	header {
-		background-color: fade(@naranjo, 20%);
+		background-color: fade(@calipso, 20%);
 		border-top:2px solid @naranjo;
 		padding:12px 12px 3px 12px;
 		h1, h2 {
-			font-family:@sans;
+			font-family:@serif;
 			font-size:2rem;
 			font-weight:normal;
 			margin-top:0;
-			color:darken(@naranjo, 25%);
+			color:darken(@calipso, 25%);
 			margin-bottom:0;
 			line-height:1.6em;
 			a {
@@ -258,6 +258,8 @@ a.c80_p {
 
 section.contenedor-constitucion-box {
 	.make-md-column(12);
+	display:flex;
+	flex-wrap:wrap;
 	
 	h1.mainc80title {
 		color:@naranjo;
@@ -294,12 +296,14 @@ section.contenedor-constitucion-box {
 
 		.header-capitulo {
 			h1 {
-				font-size:2.2rem;
+				font-size:1.8rem;
 				margin-top:0;
 				text-shadow:1px 1px 1px white;
+				font-weight:700;
 				span.titlename {
 					font-size:1.6rem;
 					text-transform:uppercase;
+					font-weight:300;
 				}
 			}
 		}	

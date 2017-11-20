@@ -21,6 +21,7 @@
 				}
 				div.related-featured {
 					.make-md-column(5);
+					margin-left:-15px;
 				}
 		}
 		
@@ -88,6 +89,7 @@ article.featured
 		padding:@stdpad;
 		font-family:@sans;
 		font-size:1.8rem;
+		font-weight:300;
 	}
 }
 
@@ -98,7 +100,6 @@ article.featured {
 
 	.pad {
 		height:369px;
-		border-top:10px solid @azulvega;
 		background-position:center;
 		background-repeat:no-repeat;
 		background-size:cover;
@@ -111,10 +112,11 @@ article.featured {
 
 	.pad div.overlay {
 		position: absolute;
-		top: 10px;
+		border-top:10px solid @calipso;
+		top:0;
 		left: 16px;
 		width: 666px;
-		height: 360px;
+		height: 370px;
 		z-index:1;
 		background-color:rgba(0,0,0,0.5);
 		padding:12px;
@@ -155,10 +157,10 @@ article.featured {
 
 .related-featured {
 	background-color:white;
-	border-top:10px solid @naranjo;
 	height:369px;
 	overflow:scroll;
 	float:left;
+	border-top:10px solid @naranjo;
 	@media screen and (max-width:@screen-sm) {
 		height:auto;
 		margin-bottom:24px;
@@ -176,7 +178,7 @@ article.featured {
 
 	h4 {
 		color:@azulvega;
-		font-family:'Oswald', sans-serif;
+		font-family:@heading;
 		span {
 			text-transform:uppercase;
 			font-size:1.4rem;
@@ -191,6 +193,7 @@ article.featured {
 		.bg-warning;
 		padding:6px;
 		margin-bottom:6px;
+		font-family:@serif;
 	}
 }
 
@@ -322,7 +325,7 @@ section.noticias {
 			border-top:10px solid @azulvega;	
 		}
 		.excerpt {
-			font-size:1.4rem;
+			font-size:1.6rem;
 		}
 		.date {
 			color:@amarillo;
@@ -339,6 +342,7 @@ section.opinion {
 		h2 {
 			margin:0;
 			font-size:2rem;
+			font-family:@serif;
 		}
 		p.date {
 			font-family:@sans;
@@ -347,6 +351,10 @@ section.opinion {
 			font-size:1.8rem;
 			margin-bottom:0;
 		}
+	}
+
+	.excerpt {
+		font-size:1.6rem;
 	}
 
 	article.columna {

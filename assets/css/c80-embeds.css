@@ -8,7 +8,7 @@ div.relbox a.relart {
   display: inline-block;
   padding: 3px 6px;
   font-size: 12px;
-  background-color: #EF7937;
+  background-color: #F10040;
   color: white;
   border-radius: 0;
   line-height: 20px;
@@ -18,13 +18,13 @@ div.relbox a.relart.relart-last {
 }
 div.relbox a.relart.relart-1,
 div.relbox a.relart.relart-last {
-  background-color: #e15c12;
+  background-color: #be0032;
 }
 div.relbox a.relart.relart-2 {
-  background-color: #b2490e;
+  background-color: #8b0025;
 }
 div.relbox a.relart.relart-3 {
-  background-color: #83360a;
+  background-color: #580017;
 }
 div.relbox a.relart:hover {
   text-decoration: none;

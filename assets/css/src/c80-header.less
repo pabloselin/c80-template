@@ -1,11 +1,11 @@
 //header related rules
 
 header#header-sitio {
-	background-color:@azul-footer;
+	background-color:white;
 	background-repeat:no-repeat;
 	background-position:top center;
 	background-size:cover;
-	font-family:'Open Sans', sans-serif;
+	font-family:@newserif;
 	
 	.row {
 		position: relative;
@@ -29,12 +29,12 @@ header#header-sitio {
 	}
 
 	h2 {
-		font-weight:400;
 		float:left;
-		color:white;
+		color:#555;
 		max-width:600px;
 		margin-top:37px;
 		font-size:2.2rem;
+		font-family:'Bree Serif', sans-serif;
 		@media screen and (max-width:@screen-sm) {
 			margin-top:18px;
 			}
@@ -42,10 +42,12 @@ header#header-sitio {
 
 	.navegacion-principal {
 	.navbar;
-	.navbar-inverse;
-		background-color:#106696;
+		background-color:white;
 		margin-bottom:0;
-		border:0;
+		border-top: 2px solid #E3E3E2;
+		border-bottom:2px solid #E3E3E2;
+		border-right:0;
+		border-left:0;
 		min-height:36px;
 		.c80-dropdown {
 			color:@gris-claro;
@@ -105,32 +107,39 @@ header#header-sitio {
 	}
 
 	.temas-header {
-		background-color:@calipso;
+		background-color:white;
 		transition:all ease-in 0.3s;
 		height:32px;
 		overflow:hidden;
+		position: relative;
+		.col-md-11-5 {
+			width:95%;
+			padding:0 0 0 16px;
+		}
 		ul {
 			padding: 0;
 			margin: 0;
 			display:flex;
 			justify-content: space-between;
+			flex-wrap:wrap;
 			li {
 				list-style:none;
 				margin: 0;
 				padding: 0;
+				flex-shrink:0;
+				//display: block;
+				padding: 6px 8px;
 				a {
-					color:#333;
-					text-transform:uppercase;
-					display: block;
-					padding: 6px;
-					float: left;
+					color:#4E4844;
+					text-transform:uppercase;	
+					letter-spacing:2px;
 				}
 			}
 		}
 	}
 
 	.temas-header.expanded {
-		height:112px;
+		height:162px;
 	}
 
 	.temas-header ul li ul.dropdown-temas {
@@ -149,6 +158,13 @@ header#header-sitio {
 		opacity:1;
 	}
 
+	.toggletemas {
+		position: absolute;
+		right:24px;
+		top:5px;
+		color:#555;
+	}
+
 
 
 	.breadcrumb {
@@ -164,7 +180,7 @@ header#header-sitio {
 
 div.menu-secciones {
 	float:right;
-	height:32px;
+	height:42px;
 	ul {
 		margin:0;
 		padding:0;
@@ -177,11 +193,12 @@ div.menu-secciones {
 				display:block;
 				color:white;
 				text-transform:uppercase;
-				line-height:36px;
+				line-height:42px;
+				letter-spacing:3px;
 				padding:0 12px;
 				color:white;
 				float:right;
-				font-weight:bold;
+				font-weight:300;
 				&:hover {
 					text-decoration:none;
 					background-color:@amarillo;
@@ -194,30 +211,23 @@ div.menu-secciones {
 				background-color:@naranjo;
 			}
 			&.link-noticias a {
-				background-color:@azulvega;
+				background-color:@calipso;
 			}
 		}
 	}
 }
 
-@topnav: 18px;
-
-// .admin-bar {
-// 	#main-nav {
-// 		top:@topnav + 32px;
-// 	}
-// }
-
 #main-nav {
 	position: absolute;
 	right:0;
-	top:@topnav;
+	top:26px;
 	li:nth-child(1),
 	li:nth-child(2),
 	li:nth-child(3),
 	li:nth-child(4),
+	li:nth-child(5)
 	{
-		border-right:1px solid white;	
+		border-right:1px solid @oscuro;	
 	}
 
 	li.socials {
@@ -227,10 +237,12 @@ div.menu-secciones {
 	}
 
 	a {
-		color:white;
-		font-weight:normal;
-		font-family:@sans;
-		font-size:1.6rem;
+		color:@oscuro;
+		text-transform:uppercase;
+		font-weight:400;
+		font-family:@heading;
+		font-size:1.4rem;
+		letter-spacing:2px;
 		&:hover {
 			background-color:transparent;
 		}
