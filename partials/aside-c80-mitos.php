@@ -1,7 +1,7 @@
 <aside class="c80-mitos">
-		<header>
+		<!-- <header>
 			<h2><i class="fa fa-book"></i>  Más mitos</h2>
-		</header>
+		</header> -->
 		
 		<?php 
 			$args = array(
@@ -12,7 +12,7 @@
 			$mitos = get_posts($args);
 			foreach($mitos as $mito) {
 
-				echo c80_smallmito($mito->ID);
+				//echo c80_smallmito($mito->ID);
 
 			}
 		?>

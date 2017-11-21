@@ -23,15 +23,6 @@
 					
 				<div class="contenido">
 					
-					
-				<?php if(has_excerpt()):?>
-					<div class="excerpt">
-
-						<?php the_excerpt();?>	
-
-					</div>	
-				<?php endif;?>
-
 					<div class="the-content" itemprop="articleBody">
 						<?php the_content();?>
 					</div>
@@ -43,8 +34,10 @@
 							<?php the_post_thumbnail( 'single' );?>
 						</div>
 					<?php endif;?>
+					
+					</div>
 
-						<div class="in-img-meta">
+					<div class="in-img-meta">
 							<p class="related">
 								<?php echo c80t_relink($post->ID);?>
 							</p>
@@ -53,8 +46,6 @@
 								<?php echo c80_tags();?>
 							</p>
 						</div>
-					
-					</div>
 
 					<p class="temas temas-movil">
 								<?php c80_tags( );?>

@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <h1>
-                <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_v_01.svg" alt="<?php bloginfo('name');?>" class="logo"></a>
+                <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/img/logoc80_2017_sm.svg" alt="<?php bloginfo('name');?>" class="logo"></a>
             </h1>
             <h2 class="description"><?php bloginfo('description');?></h2>
             
@@ -31,10 +31,13 @@
                         <a href="<?php echo get_permalink(70);?>">Contacto</a>
                     </li>
                     <li class="socials">
-                        <a href="<?php echo c80t_twitter();?>" target="_blank"><i class="fa fa-twitter"></i> </a>
+                        <a href="<?php echo c80t_twitter();?>" target="_blank"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li class="socials">
-                        <a href="<?php echo C80_FACEBOOK;?>" target="_blank"><i class="fa fa-facebook-square"></i> </a>
+                        <a href="<?php echo C80_FACEBOOK;?>" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                    </li>
+                    <li class="socials">
+                        <a href="<?php echo C80_INSTAGRAM;?>" target="_blank"><i class="fa fa-instagram"></i></a>
                     </li>
                 </ul>
             </div>
@@ -95,6 +98,9 @@
                     </li>
                     <li class="socials">
                         <a href="<?php echo C80_FACEBOOK;?>" target="_blank"><i class="fa fa-facebook-square"></i> En Facebook</a>
+                    </li>
+                    <li class="socials">
+                        <a href="<?php echo C80_INSTAGRAM;?>" target="_blank"><i class="fa fa-instagram"></i> En Instagram</a>
                     </li>
             </ul>
         </div>

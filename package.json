@@ -1,24 +1,18 @@
 {
   "name": "c80-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "Wordpress Theme for c80.cl",
+  "main": "style.css",
+  "author": "Pablo Selín Carrasco Armijo <pablo@apie.cl>",
+  "license": "GPL",
   "private": true,
-  "description": "Tema para proyecto Constitución",
-  "main": "index.php",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "bootstrap",
-    "wordpress"
-  ],
-  "author": "Pablo Selín carrasco",
-  "license": "ISC",
   "devDependencies": {
-    "accord": "^0.27.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.2",
+    "gulp-minify": "^2.1.0",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-util": "^3.0.8",
-    "gulp-less": "^3.3.2"
-  },
-  "dependencies": {}
+    "gulp-util": "^3.0.8"
+  }
 }

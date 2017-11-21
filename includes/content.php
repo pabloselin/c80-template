@@ -316,7 +316,7 @@ function c80t_temas() {
 	$output = '';
 	$dropdown = '';
 	foreach($temas as $key => $tema) {
-		if($key < 7):
+		if($key < 5):
 			
 			$output .= '<li><a class="cats" href="' . get_category_link($tema->term_id) .'">' . $tema->name . '</a></li>';
 
@@ -327,12 +327,13 @@ function c80t_temas() {
 		endif;
 	}
 
-		$output .= '<li><a href="#" class="toggletemas"><i class="fa fa-plus"></i></a>';
 		$output .= '<ul class="dropdown-temas">' . $dropdown . '</ul>';
 		$output .= '</li>';
 
+		$toggletemas = '<a href="#" class="toggletemas"><i class="fa fa-plus"></i></a>';
+
 	$html = '<div class="temas-header">
-		<div class="container"><div class="row"><div class="col-md-12"><ul>' . $output . '</ul></div></div></div>
+		<div class="container"><div class="row"><div class="col-md-11-5"><ul>' . $output . '</ul>' . $toggletemas . '</div></div></div>
 	</div>';
 
 	return $html;

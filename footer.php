@@ -4,7 +4,7 @@
 		<div class="footer-content">
 			
 			<div class="footer-column info">
-				<img src="<?php bloginfo('template_url');?>/assets/img/logo-c80-footer.png" alt="<?php bloginfo('name');?>">
+				<img src="<?php bloginfo('template_url');?>/assets/img/logov_sm_blancofondo.png" alt="<?php bloginfo('name');?>">
 				<p>Constitución: <br>Lo que dice, nos afecta</p>	
 
 					<!-- Begin MailChimp Signup Form -->
