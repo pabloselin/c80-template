@@ -5591,9 +5591,10 @@ header#header-sitio h2 {
   float: left;
   color: #555;
   max-width: 600px;
-  margin-top: 37px;
-  font-size: 2.2rem;
-  font-family: 'Bree Serif', sans-serif;
+  margin-top: 40px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  font-family: 'Merriweather';
 }
 @media screen and (max-width: 768px) {
   header#header-sitio h2 {
@@ -5607,8 +5608,8 @@ header#header-sitio .navegacion-principal {
   border: 1px solid transparent;
   background-color: white;
   margin-bottom: 0;
-  border-top: 2px solid #E3E3E2;
-  border-bottom: 2px solid #E3E3E2;
+  border-top: 1px solid #E3E3E2;
+  border-bottom: 1px solid #E3E3E2;
   border-right: 0;
   border-left: 0;
   min-height: 36px;
@@ -5775,12 +5776,13 @@ div.menu-secciones ul li {
 div.menu-secciones ul li a {
   display: block;
   text-transform: uppercase;
-  line-height: 42px;
+  line-height: 44px;
   letter-spacing: 3px;
   padding: 0 12px;
   color: white;
   float: right;
-  font-weight: 300;
+  font-weight: 400;
+  margin: -1px 0;
 }
 div.menu-secciones ul li a:hover {
   text-decoration: none;
@@ -7746,15 +7748,15 @@ section.opinion article.columna div.avatar {
   }
   header#header-sitio .navbar-toggle {
     margin-top: 18px;
-    border-color: #F10040;
+    border-color: #18A094;
     padding: 6px;
   }
   header#header-sitio .navbar-toggle i {
     font-size: 22px;
-    color: #F10040;
+    color: #18A094;
   }
   header#header-sitio .navbar-toggle:hover {
-    background-color: #F10040;
+    background-color: #18A094;
     color: white;
   }
   header#header-sitio .navbar-toggle:hover i {
