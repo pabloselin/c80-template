@@ -75,8 +75,8 @@ article.featured
 		margin:0;
 		padding:0;
 		a {
-			color:@azul-titulo;
-			font-weight:normal;
+			color:@oscuro;
+			font-weight:700;
 			&:hover {
 				text-decoration:none;
 			}
@@ -90,9 +90,9 @@ article.featured
 
 	.excerpt {
 		padding:@stdpad;
-		font-family:@sans;
+		font-family:@serif;
 		font-size:1.8rem;
-		font-weight:300;
+		font-weight:400;
 	}
 }
 
@@ -142,17 +142,19 @@ article.featured {
 	div.excerpt {
 		color:white;
 		font-size:2rem;
-		text-shadow:1px 1px 1px #333;
+		//text-shadow:1px 1px 1px #333;
 		@media screen and (max-width:@screen-sm) {
 			font-size:1.5rem;
 		}
 	}
 
 	h1 {
-		font-size:34px;
+		font-size:2.4rem;
+		font-family:@serif;
+		font-weight:700;
 		a {
-			color:#BDEEFC;
-			text-shadow:1px 1px 1px #333;
+			color:white;
+			//text-shadow:1px 1px 1px #333;
 		}
 		@media screen and (max-width:@screen-sm) {
 			font-size:2.2rem;
@@ -249,36 +251,24 @@ p.temas {
 	a {
 		display:inline-block;
 		padding:3px 6px;
-		background-color:darken(@calipso, 15%);
-		color:white;
+		background-color:white;
+		border-width:1px 0 1px 1px;
+		border-style:solid;
+		border-color:@calipso;
+		color:@calipso;
 		font-size:1.3rem;
 		border-radius:0;
 		margin-bottom:0;
 		line-height:20px;
-		&.tag-1 {
-			background-color:darken(@calipso, 20%);
-		}
-		&.tag-2 {
-			background-color:darken(@calipso, 25%);
-		}
-		&.tag-3 {
-			background-color:darken(@calipso, 30%);
-		}
-		&.tag-4 {
-			background-color:darken(@calipso, 35%);
-		}
-		&.tag-5 {
-			background-color:darken(@calipso, 40%);
-		}
-		&.tag-6 {
-			background-color:darken(@calipso, 40%);
-		}
+		
 		&.tagp-last {
 			border-radius:0 5px 5px 0;
+			border-right-width: 1px;
 		}
 		&:hover {
 			text-decoration:none;
-			background-color: lighten(@azul, 30%)
+			background-color:@calipso;
+			color:white;
 		}
 	}
 }
@@ -334,8 +324,10 @@ section.noticias {
 			font-size:1.6rem;
 		}
 		.date {
-			color:@amarillo;
+			color:@oscuro;
 			display:block;
+			font-size:1.2rem;
+			font-family:@serif;
 		}
 
 }
@@ -350,17 +342,11 @@ section.opinion {
 			font-size:2rem;
 			font-family:@serif;
 		}
-		p.date {
-			font-family:@sans;
-			font-weight:700;
-			color:#666666;
-			font-size:1.8rem;
-			margin-bottom:0;
-		}
 	}
 
 	.excerpt {
 		font-size:1.6rem;
+		font-family:@serif;
 	}
 
 	article.columna {
@@ -379,9 +365,9 @@ section.opinion {
 			margin-bottom:0;
 			margin-top:0;
 			font-family:@heading;
-			font-weight:normal;
+			font-weight:700;
 				a {
-					color:#02476e;
+					color:@oscuro;
 				}
 			}
 

@@ -8,7 +8,7 @@
 <header id="header-sitio">
     <!-- Navegación principal -->
     <div class="container">
-        <div class="row">
+        <div class="row first-header-section">
             <h1>
                 <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/img/logoc80_2017_sm.svg" alt="<?php bloginfo('name');?>" class="logo"></a>
             </h1>

@@ -8,27 +8,23 @@ div.relbox a.relart {
   display: inline-block;
   padding: 3px 6px;
   font-size: 12px;
-  background-color: #F10040;
-  color: white;
+  background-color: white;
+  color: #f4033c;
+  border-color: #f4033c;
+  border-width: 1px 0 1px 1px;
+  font-family: 'Merriweather', serif;
+  border-style: solid;
   border-radius: 0;
   line-height: 20px;
 }
 div.relbox a.relart.relart-last {
   border-radius: 0 4px 4px 0;
-}
-div.relbox a.relart.relart-1,
-div.relbox a.relart.relart-last {
-  background-color: #be0032;
-}
-div.relbox a.relart.relart-2 {
-  background-color: #8b0025;
-}
-div.relbox a.relart.relart-3 {
-  background-color: #580017;
+  border-right-width: 1px;
 }
 div.relbox a.relart:hover {
   text-decoration: none;
-  background-color: #0d63a0;
+  background-color: #f4033c;
+  color: white;
 }
 span.nrel {
   display: inline-block;

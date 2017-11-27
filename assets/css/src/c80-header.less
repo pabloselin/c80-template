@@ -11,6 +11,14 @@ header#header-sitio {
 		position: relative;
 	}
 
+	.first-header-section {
+		@media screen and (min-width:@screen-md) {
+			min-height:120px;
+			padding-top:12px;	
+		}
+		
+	}
+
 	h1 {
 		margin:0;
 		a {
@@ -18,8 +26,8 @@ header#header-sitio {
 			float:left;
 			margin:12px 12px 6px 0;
 			img {
-				width:180px;
-				height:83px;
+				width:150px;
+				height:74px;
 				@media screen and (max-width:@screen-sm) {
 					width:100px;
 					height:51px;
@@ -181,7 +189,7 @@ header#header-sitio {
 
 div.menu-secciones {
 	float:right;
-	height:42px;
+	height:34px;
 	ul {
 		margin:0;
 		padding:0;
@@ -194,12 +202,13 @@ div.menu-secciones {
 				display:block;
 				color:white;
 				text-transform:uppercase;
-				line-height:44px;
+				line-height:36px;
 				letter-spacing:3px;
 				padding:0 12px;
 				color:white;
 				float:right;
 				font-weight:400;
+				font-size:1.3rem;
 				margin:-1px 0;
 				&:hover {
 					text-decoration:none;
@@ -222,14 +231,14 @@ div.menu-secciones {
 #main-nav {
 	position: absolute;
 	right:0;
-	top:26px;
+	top:40px;
 	li:nth-child(1),
 	li:nth-child(2),
 	li:nth-child(3),
 	li:nth-child(4),
 	li:nth-child(5)
 	{
-		border-right:1px solid @oscuro;	
+		border-right:1px solid fade(@oscuro, 20%);	
 	}
 
 	li.socials {
@@ -242,7 +251,7 @@ div.menu-secciones {
 		color:@oscuro;
 		text-transform:uppercase;
 		font-weight:400;
-		font-family:@heading;
+		font-family:@serif;
 		font-size:1.4rem;
 		letter-spacing:2px;
 		&:hover {

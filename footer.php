@@ -41,6 +41,9 @@
 					<li>
 						<a href="<?php echo C80_FACEBOOK;?>" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
 					</li>
+					<li>
+						<a href="<?php echo C80_INSTAGRAM;?>" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+					</li>
 				</ul>
 			</div>
 
