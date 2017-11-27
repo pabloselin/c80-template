@@ -16,14 +16,14 @@
 
 		.navbar-toggle {
 			margin-top:18px;
-			border-color:@calipso;
+			border-color:fade(@oscuro, 15%);
 			padding:6px;
 				i {
 					font-size:22px;
-					color:@calipso;
+					color:fade(@oscuro, 15%);
 				}
 			&:hover {
-				background-color:@calipso;
+				background-color:fade(@oscuro, 15%);
 				color:white;
 				i {
 					color:white;
@@ -37,15 +37,15 @@
 
 
 #nav-mobile {
-	background-color:@azul;
-	color:white;
+	background-color:white;
+	color:@texto;
 	display:none;
 		a, i {
-			color:white;
+			color:@oscuro;
 		}
 
 	a {
-		border-bottom:1px solid fade(@azulvega, 60%);
+		border-bottom:1px solid gainsboro;
 	}
 
 	a:hover {

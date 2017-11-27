@@ -7748,15 +7748,15 @@ section.opinion article.columna div.avatar {
   }
   header#header-sitio .navbar-toggle {
     margin-top: 18px;
-    border-color: #18A094;
+    border-color: rgba(45, 35, 28, 0.15);
     padding: 6px;
   }
   header#header-sitio .navbar-toggle i {
     font-size: 22px;
-    color: #18A094;
+    color: rgba(45, 35, 28, 0.15);
   }
   header#header-sitio .navbar-toggle:hover {
-    background-color: #18A094;
+    background-color: rgba(45, 35, 28, 0.15);
     color: white;
   }
   header#header-sitio .navbar-toggle:hover i {
@@ -7764,16 +7764,16 @@ section.opinion article.columna div.avatar {
   }
 }
 #nav-mobile {
-  background-color: #094671;
-  color: white;
+  background-color: white;
+  color: #2c231c;
   display: none;
 }
 #nav-mobile a,
 #nav-mobile i {
-  color: white;
+  color: #2D231C;
 }
 #nav-mobile a {
-  border-bottom: 1px solid rgba(37, 168, 206, 0.6);
+  border-bottom: 1px solid gainsboro;
 }
 #nav-mobile a:hover {
   background-color: transparent;
