@@ -7452,6 +7452,7 @@ section.noticias article h2,
 article.featured h2 {
   margin: 0;
   padding: 0;
+  line-height: 1.2em;
 }
 section.noticias article h1 a,
 article.featured h1 a,
@@ -7468,7 +7469,7 @@ article.featured h2 a:hover {
 }
 section.noticias article h2,
 article.featured h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 6px;
 }
 section.noticias article .excerpt,
@@ -7684,8 +7685,10 @@ section.noticias article.item-6 .date {
 }
 section.opinion header h2 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-family: 'Merriweather', serif;
+  line-height: 1.2em;
+  font-weight: 700;
 }
 section.opinion .excerpt {
   font-size: 1.6rem;
@@ -7704,6 +7707,8 @@ section.opinion article.columna h3 {
   margin-top: 0;
   font-family: 'Merriweather', serif;
   font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.2em;
 }
 section.opinion article.columna h3 a {
   color: #2D231C;
