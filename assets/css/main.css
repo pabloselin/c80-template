@@ -6322,7 +6322,7 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
 }
 .c80-rels .textos-c80-mini {
   max-height: 550px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 @media screen and (max-width: 768px) {
   .c80-rels .textos-c80-mini {
@@ -6348,7 +6348,7 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
 }
 .c80-rels .texto-c80-rel {
   max-height: 550px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .c80-rels .texto-c80-rel .constarticle {
   padding-bottom: 12px;
@@ -7335,7 +7335,7 @@ h1.archive-title {
 }
 @media screen and (max-width: 768px) {
   #main .contenedor-home {
-    margin-top: 12px;
+    margin-top: 0;
   }
 }
 #main .contenedor-home .featured-section {
@@ -7366,12 +7366,16 @@ h1.archive-title {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: -15px;
 }
 @media (min-width: 992px) {
   #main .contenedor-home .featured-section div.related-featured {
     float: left;
     width: 41.66666667%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #main .contenedor-home .featured-section div.related-featured {
+    margin-left: -15px;
   }
 }
 #main .contenedor-home section.noticias {
@@ -7493,7 +7497,7 @@ article.featured .pad div.overlay {
   article.featured .pad div.overlay {
     position: static;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     top: 0;
     left: 0;
   }
@@ -7521,6 +7525,11 @@ article.featured h1 a {
   color: #BDEEFC;
   text-shadow: 1px 1px 1px #333;
 }
+@media screen and (max-width: 768px) {
+  article.featured h1 {
+    font-size: 2.2rem;
+  }
+}
 .related-featured {
   background-color: white;
   height: 369px;
@@ -7531,7 +7540,7 @@ article.featured h1 a {
 @media screen and (max-width: 768px) {
   .related-featured {
     height: auto;
-    margin-bottom: 24px;
+    margin: 0 15px 12px 15px;
   }
 }
 .related-featured aside.c80-rels-front {
@@ -7731,20 +7740,25 @@ section.opinion article.columna div.avatar {
   }
   header#header-sitio h2 {
     float: left;
-    max-width: 180px;
-    font-size: 1.6rem;
+    max-width: 120px;
+    font-size: 1.3rem;
+    margin-top: 16px;
   }
   header#header-sitio .navbar-toggle {
     margin-top: 18px;
-    border-color: white;
+    border-color: #F10040;
     padding: 6px;
   }
   header#header-sitio .navbar-toggle i {
     font-size: 22px;
-    color: white;
+    color: #F10040;
   }
   header#header-sitio .navbar-toggle:hover {
-    background-color: #031a2a;
+    background-color: #F10040;
+    color: white;
+  }
+  header#header-sitio .navbar-toggle:hover i {
+    color: white;
   }
 }
 #nav-mobile {
