@@ -9026,7 +9026,7 @@ article.featured div.excerpt {
   }
 }
 article.featured h1 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-family: 'Merriweather', serif;
   font-weight: 700;
   margin-top: 24px;
@@ -9058,13 +9058,15 @@ article.featured h1 a {
 }
 .related-featured aside.c80-rels-front h2 {
   color: #f4033c;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-top: 0;
   font-family: 'Merriweather', serif;
+  font-weight: 700;
 }
 .related-featured aside.c80-rels-front h2 i {
   font-size: 2.4rem;
   vertical-align: text-bottom;
+  margin-right: 12px;
 }
 .related-featured aside.c80-rels-front h4.title-rel-chap {
   color: #2D231C;
@@ -9076,16 +9078,17 @@ article.featured h1 a {
 .related-featured aside.c80-rels-front h4.title-rel-chap span {
   font-size: 1.4rem;
   color: #f4033c;
-  font-weight: 400;
+  font-weight: 700;
   display: block;
   margin-bottom: 8px;
 }
 .related-featured aside.c80-rels-front .textos-c80-mini {
-  margin-left: 26px;
+  margin-left: 38px;
 }
 .related-featured h5 a {
   color: #f4033c;
   font-family: 'Merriweather', serif;
+  font-weight: 700;
 }
 .related-featured div.frontp {
   padding: 6px;
