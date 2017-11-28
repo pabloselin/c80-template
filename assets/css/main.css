@@ -9065,7 +9065,7 @@ article.featured h1 a {
 }
 .related-featured aside.c80-rels-front h2 i {
   font-size: 2.4rem;
-  vertical-align: text-bottom;
+  vertical-align: middle;
   margin-right: 12px;
 }
 .related-featured aside.c80-rels-front h4.title-rel-chap {
@@ -9175,6 +9175,7 @@ section.opinion .opsect {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 1.4rem;
+  font-weight: 700;
 }
 section.opinion header h2 {
   margin: 0;
