@@ -12,7 +12,7 @@
 			font-weight:normal;
 			margin-bottom:18px;
 			overflow:hidden;
-			color:darken(@naranjo, 10%);
+			color:@constitucion;
 			line-height:1.4em;
 			.txt {
 				display:inline-block;
@@ -26,6 +26,7 @@
 			
 			span.titlename {
 				font-size:2.5rem;
+				font-weight:700;
 			}
 
 			i {
@@ -61,19 +62,19 @@ div.fuente-constitucion {
 		}
 	}
 	header {
-		background-color: fade(@calipso, 20%);
-		border-top:2px solid @naranjo;
+		background-color: #f0f0f0;
+		border-top:2px solid @constitucion;
 		padding:12px 12px 3px 12px;
 		h1, h2 {
 			font-family:@serif;
 			font-size:2rem;
 			font-weight:normal;
 			margin-top:0;
-			color:darken(@calipso, 25%);
+			color:@constitucion;
 			margin-bottom:0;
 			line-height:1.6em;
 			a {
-				color:darken(@naranjo, 25%);
+				color:@constitucion;
 				&:hover {
 					text-decoration:none;
 				}
@@ -262,17 +263,18 @@ section.contenedor-constitucion-box {
 	flex-wrap:wrap;
 	
 	h1.mainc80title {
-		color:@naranjo;
+		color:@constitucion;
 	}
 	
 	.capitulo-constitucion-box {
 		.make-md-column(3);
 		a {
 			display:block;
+			color:@oscuro;
 			&:hover {
 				text-decoration:none;
 				div.wrap {
-					background-color:@azulvega;
+					background-color:@constitucion;
 					transition:all ease-in 0.2s;
 					transform:scale(1.1);
 					z-index:-1;

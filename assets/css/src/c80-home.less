@@ -167,9 +167,9 @@ article.featured {
 .related-featured {
 	background-color:white;
 	height:369px;
-	overflow:scroll;
+	overflow-y:scroll;
 	float:left;
-	border-top:10px solid @naranjo;
+	border-top:10px solid @constitucion;
 	@media screen and (max-width:@screen-sm) {
 		height:auto;
 		margin:0 15px 12px 15px;
@@ -178,19 +178,26 @@ article.featured {
 	aside.c80-rels-front {
 		padding:@stdpad;
 		h2 {
-			color:@naranjo;
+			color:@constitucion;
 			font-size:1.8rem;
 			margin-top:0;
-			font-family:sans-serif;
+			font-family:@serif;
 		}
 	}
 
 	h4 {
-		color:@azulvega;
+		color:@constitucion;
 		font-family:@heading;
 		span {
 			text-transform:uppercase;
 			font-size:1.4rem;
+		}
+	}
+
+	h5 {
+		a {
+			color:@constitucion;
+			font-family:@serif;
 		}
 	}
 	
@@ -199,7 +206,7 @@ article.featured {
 		h6 {
 			margin-top:0;
 		}
-		.bg-warning;
+		//.bg-warning;
 		padding:6px;
 		margin-bottom:6px;
 		font-family:@serif;
@@ -246,47 +253,6 @@ div.bottom-meta {
 	padding:@stdpad;
 }
 
-p.temas {
-	display:flex;
-	
-	a {
-		display:inline-block;
-		padding:3px 6px;
-		background-color:white;
-		border-width:1px 0 1px 1px;
-		border-style:solid;
-		border-color:@calipso;
-		color:@calipso;
-		font-size:1.3rem;
-		border-radius:0;
-		margin-bottom:0;
-		line-height:20px;
-		
-		&.tagp-last {
-			border-radius:0 5px 5px 0;
-			border-right-width: 1px;
-		}
-		&:hover {
-			text-decoration:none;
-			background-color:@calipso;
-			color:white;
-		}
-	}
-}
-
-p.temas {
-	@media screen and (max-width:@screen-sm) {
-		display:block;
-
-		a {
-			border-radius:5px;
-			margin-bottom:5px;
-			&.tagp-last {
-				border-radius:5px;
-			}
-		}
-	}
-}
 
 //Estilo artículo principal
 

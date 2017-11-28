@@ -35,6 +35,55 @@ span.nrel {
 .hrel span.nrel {
   margin-right: 0;
 }
+p.temas {
+  display: flex;
+}
+p.temas a {
+  display: inline-block;
+  padding: 3px 6px;
+  background-color: white;
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+  border-color: #18A094;
+  color: #18A094;
+  font-size: 1.3rem;
+  border-radius: 0;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+p.temas a.tagp-last {
+  border-radius: 0 5px 5px 0;
+  border-right-width: 1px;
+}
+p.temas a:hover {
+  text-decoration: none;
+  background-color: #18A094;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  p.temas {
+    display: block;
+  }
+  p.temas a {
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border-width: 1px;
+  }
+  p.temas a.tagp-0 {
+    margin-left: 5px;
+  }
+  p.temas a.tagp-last {
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .in-img-meta p.temas a {
+    border-width: 0 0 0 1px;
+  }
+  .in-img-meta div.relbox a.relart {
+    border-width: 0 0 0 1px;
+  }
+}
 .wp-embed {
   padding: 0;
 }

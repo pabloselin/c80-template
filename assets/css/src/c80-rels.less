@@ -41,3 +41,61 @@ span.nrel {
 .hrel span.nrel {
 	margin-right:0;
 }
+
+
+p.temas {
+	display:flex;
+	
+	a {
+		display:inline-block;
+		padding:3px 6px;
+		background-color:white;
+		border-width:1px 0 1px 1px;
+		border-style:solid;
+		border-color:@calipso;
+		color:@calipso;
+		font-size:1.3rem;
+		border-radius:0;
+		margin-bottom:0;
+		line-height:20px;
+		
+		&.tagp-last {
+			border-radius:0 5px 5px 0;
+			border-right-width: 1px;
+		}
+		&:hover {
+			text-decoration:none;
+			background-color:@calipso;
+			color:white;
+		}
+	}
+}
+
+p.temas {
+	@media screen and (max-width:@screen-sm) {
+		display:block;
+		a {
+			border-radius:5px;
+			margin-bottom:5px;
+			border-width:1px;
+			&.tagp-0 {
+				margin-left:5px;
+			}
+			&.tagp-last {
+				border-radius:5px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width:@screen-md) {
+	.in-img-meta {
+		p.temas a {
+			border-width:0 0 0 1px;
+		}
+
+		div.relbox a.relart {
+			border-width:0 0 0 1px;
+		}
+	}	
+}

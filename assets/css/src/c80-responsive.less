@@ -68,6 +68,37 @@
 	
 	#nav-mobile {
 		display:block;
+		ul.navbar-nav {
+			margin-top:0;
+		}
+		li.link-noticias,
+		li.link-opinion,
+		li.link-constitucion {
+			i {
+				color:white;
+			}
+			a {
+				color:white;
+				border-bottom:0;
+				text-transform:uppercase;
+				letter-spacing:2px;
+			}
+		}
+		li.link-noticias {
+			a {
+				background-color:@noticia;
+			}
+		}
+		li.link-opinion {
+			a {
+				background-color:@opinion;
+			}
+		}
+		li.link-constitucion {
+			a {
+				background-color:@constitucion;
+			}
+		}
 	}
 
 	section.noticias article.item-1 {

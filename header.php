@@ -73,13 +73,13 @@
         <div class="collapse navbar-collapse" id="menu-movil">
             <ul class="nav navbar-nav">
                 <li class="link-noticias">
-                    <a href="<?php echo get_bloginfo('url');?>/noticias">Noticias</a>
+                    <a href="<?php echo get_bloginfo('url');?>/noticias"> <i class="fa fa-newspaper-o fa-fw"></i> Noticias</a>
                 </li>
                 <li class="link-opinion">
-                    <a href="<?php echo get_post_type_archive_link('columnas');?>">Opinión</a>
+                    <a href="<?php echo get_post_type_archive_link('columnas');?>"><i class="fa fa-commenting-o fa-fw"></i> Opinión</a>
                 </li>
                  <li class="link-constitucion">
-                    <a href="<?php echo get_post_type_archive_link('c80_cpt');?>"><i class="fa fa-book"></i> Constitución 1980</a>
+                    <a href="<?php echo get_post_type_archive_link('c80_cpt');?>"><i class="fa fa-book fa-fw"></i> Constitución 1980</a>
                 </li>
                 <li class="separator">
                     <span></span>
