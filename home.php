@@ -33,6 +33,7 @@
 
 							<div class="excerpt">
 									<?php the_excerpt();?>
+									<a href="<?php the_permalink();?>" class="readmore">LEER +</a>
 							</div>
 
 						</div>

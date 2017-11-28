@@ -53,6 +53,13 @@
 	}
 }
 
+a.readmore {
+	color:white;
+	font-family:@sans;
+	letter-spacing:3px;
+	font-size:1.2rem;
+}
+
 //Estilo artículo home
 
 section.noticias article,
@@ -69,6 +76,10 @@ article.featured
 
 	div.top-info {
 		padding:12px 12px 0 12px;
+	}
+
+	.date {
+		font-family:@serif;
 	}
 
 	h1, h2 {
@@ -91,7 +102,7 @@ article.featured
 
 	.excerpt {
 		padding:@stdpad;
-		font-family:@serif;
+		font-family:@sans;
 		font-size:1.8rem;
 		font-weight:400;
 	}
@@ -123,7 +134,7 @@ article.featured {
 		height: 370px;
 		z-index:1;
 		background-color:rgba(0,0,0,0.5);
-		padding:12px;
+		padding:48px 24px 12px 24px;
 		@media screen and (max-width:@screen-sm) {
 			position:static;
 			width:100%;
@@ -137,12 +148,13 @@ article.featured {
 		padding: 0 12px;
 		.over-title {
 			color:white;
+			font-family:@serif;
 		}
 	}
 
 	div.excerpt {
 		color:white;
-		font-size:2rem;
+		font-size:1.6rem;
 		//text-shadow:1px 1px 1px #333;
 		@media screen and (max-width:@screen-sm) {
 			font-size:1.5rem;
@@ -153,6 +165,8 @@ article.featured {
 		font-size:2.4rem;
 		font-family:@serif;
 		font-weight:700;
+		margin-top:24px;
+		margin-bottom:8px;
 		a {
 			color:white;
 			//text-shadow:1px 1px 1px #333;
@@ -182,15 +196,27 @@ article.featured {
 			font-size:1.8rem;
 			margin-top:0;
 			font-family:@serif;
+			i {
+				font-size:2.4rem;
+				vertical-align:text-bottom;
+			}
+		}
+
+		.textos-c80-mini {
+			margin-left:26px;
 		}
 	}
 
 	h4 {
-		color:@constitucion;
+		color:@oscuro;
 		font-family:@heading;
+		font-weight:700;
+		fony-size:2.4rem;
 		span {
 			text-transform:uppercase;
 			font-size:1.4rem;
+			color:@constitucion;
+			font-weight:400;
 		}
 	}
 
@@ -288,7 +314,8 @@ section.noticias {
 			border-top:10px solid @noticia;	
 		}
 		.excerpt {
-			font-size:1.6rem;
+			font-size:1.5rem;
+			font-family:@sans;
 		}
 		.date {
 			color:@oscuro;
@@ -314,8 +341,8 @@ section.opinion {
 	}
 
 	.excerpt {
-		font-size:1.6rem;
-		font-family:@serif;
+		font-size:1.7rem;
+		font-family:@sans;
 	}
 
 	article.columna {
