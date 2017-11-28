@@ -154,7 +154,7 @@ article.featured {
 
 	div.excerpt {
 		color:white;
-		font-size:1.6rem;
+		font-size:1.7rem;
 		//text-shadow:1px 1px 1px #333;
 		@media screen and (max-width:@screen-sm) {
 			font-size:1.5rem;
@@ -207,10 +207,13 @@ article.featured {
 			font-family:@heading;
 			font-weight:700;
 			font-size:2.4rem;
+			margin-top:3px;
 			span {
 				font-size:1.4rem;
 				color:@constitucion;
 				font-weight:400;
+				display:block;
+				margin-bottom:8px;
 			}
 		}
 
@@ -230,6 +233,7 @@ article.featured {
 	div.frontp {
 		h6 {
 			margin-top:0;
+			font-size:1.4rem;
 		}
 		//.bg-warning;
 		padding:6px;
@@ -309,6 +313,9 @@ section.noticias {
 	article.item-4,
 	article.item-5,
 	article.item-6 {
+		h2 {
+			margin-top:12px;
+		}
 		.img {
 			border-top:10px solid @noticia;	
 		}
@@ -329,6 +336,13 @@ section.noticias {
 //Estilo columna de columnas
 
 section.opinion {
+
+	.opsect {
+		text-transform:uppercase;
+		letter-spacing:3px;
+		font-size:1.4rem;
+	}
+
 	header {
 		h2 {
 			margin:0;

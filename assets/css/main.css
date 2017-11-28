@@ -9018,7 +9018,7 @@ article.featured div.top-info .over-title {
 }
 article.featured div.excerpt {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 @media screen and (max-width: 768px) {
   article.featured div.excerpt {
@@ -9071,11 +9071,14 @@ article.featured h1 a {
   font-family: 'Merriweather', serif;
   font-weight: 700;
   font-size: 2.4rem;
+  margin-top: 3px;
 }
 .related-featured aside.c80-rels-front h4.title-rel-chap span {
   font-size: 1.4rem;
   color: #f4033c;
   font-weight: 400;
+  display: block;
+  margin-bottom: 8px;
 }
 .related-featured aside.c80-rels-front .textos-c80-mini {
   margin-left: 26px;
@@ -9091,6 +9094,7 @@ article.featured h1 a {
 }
 .related-featured div.frontp h6 {
   margin-top: 0;
+  font-size: 1.4rem;
 }
 section.opinion article {
   padding: 12px;
@@ -9128,6 +9132,14 @@ div.bottom-meta {
   font-family: 'Lato', sans-serif;
   padding: 12px;
 }
+section.noticias article.item-1 h2,
+section.noticias article.item-2 h2,
+section.noticias article.item-3 h2,
+section.noticias article.item-4 h2,
+section.noticias article.item-5 h2,
+section.noticias article.item-6 h2 {
+  margin-top: 12px;
+}
 section.noticias article.item-1 .img,
 section.noticias article.item-2 .img,
 section.noticias article.item-3 .img,
@@ -9155,6 +9167,11 @@ section.noticias article.item-6 .date {
   display: block;
   font-size: 1.2rem;
   font-family: 'Merriweather', serif;
+}
+section.opinion .opsect {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.4rem;
 }
 section.opinion header h2 {
   margin: 0;

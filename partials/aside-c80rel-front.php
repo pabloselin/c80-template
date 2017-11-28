@@ -38,7 +38,7 @@
  						}
 
  						foreach($relarray as $key=>$arts) {
- 							echo '<h4 class="title-rel-chap"><span>' . get_the_title($key) . '</span><br> ' . c80t_captitle($key) . '</h4>';
+ 							echo '<h4 class="title-rel-chap"><span>' . get_the_title($key) . '</span>' . c80t_captitle($key) . '</h4>';
  							foreach($arts as $art) {
  								echo '<h5><a href="' . get_permalink($art) . '"><i class="fa fa-caret-right"></i> ' . get_the_title($art) . '</a></h5>';
  								//Busco el párrafo en el array de párrafos
