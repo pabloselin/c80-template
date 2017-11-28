@@ -16,6 +16,7 @@
 @import 'c80-home.less';
 @import 'c80-responsive.less';
 @import 'c80-rels.less';
+@import 'footer.less';
 
 body {
 	background-color:@gris-encabezado;
@@ -105,61 +106,6 @@ h1, h2, h3
 
 
 
-#footer-sitio {
-	min-height:200px;
-	background-color:@azul-footer;
-	border-top:10px solid @naranjo;
-	color:white;
-	font-family:@heading;
-	padding-bottom:24px;
-	overflow:hidden;
-	.footer-content {
-		.make-row();
-		.footer-column {
-			padding-top:48px;
-		}
-		.footer-column.info {
-			.make-md-column(4);
-			font-size:2.3rem;
-		}
-		.footer-column.menu {
-			.make-md-column(4);
-			font-size:1.8rem;
-			font-family:@sans;
-			li {
-				a {
-					font-weight:normal;
-				}
-			}
-		}	
-		.footer-column.auspicios {
-			.make-md-column(4);
-			text-align:right;
-			p {
-				text-align:center;
-			}
-		}
-		.footer-licencia {
-			clear:both;
-			text-align:right;
-			width:100%;
-			font-family:@sans;
-			padding-top:24px;
-			font-size:1.3rem;
-			
-		}
-	}
-		a {
-			color:white;
-		}
-
-		ul {
-			li {
-				list-style:none;
-				margin-bottom:6px;
-			}
-		}
-}
 
 
 

@@ -9351,22 +9351,10 @@ p.temas a:hover {
     border-width: 0 0 0 1px;
   }
 }
-body {
-  background-color: #F5F5F5;
-}
-h1,
-h2,
-h3 {
-  font-family: 'Merriweather', serif;
-  font-weight: 400;
-}
-.afterp {
-  display: none;
-}
 #footer-sitio {
   min-height: 200px;
-  background-color: #253746;
-  border-top: 10px solid #F10040;
+  background-color: #1d1712;
+  border-top: 10px solid #f4033c;
   color: white;
   font-family: 'Merriweather', serif;
   padding-bottom: 24px;
@@ -9439,6 +9427,18 @@ h3 {
 #footer-sitio ul li {
   list-style: none;
   margin-bottom: 6px;
+}
+body {
+  background-color: #F5F5F5;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}
+.afterp {
+  display: none;
 }
 aside.standard {
   position: relative;
