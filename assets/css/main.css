@@ -7236,6 +7236,8 @@ header#header-sitio .breadcrumb {
   border-radius: 0;
   font-size: 12px;
   margin-bottom: 0;
+  font-family: 'Lato', sans-serif;
+  margin-left: 16px;
 }
 header#header-sitio .breadcrumb a {
   color: #aeaeae;
@@ -7954,7 +7956,7 @@ div.pad header {
   overflow: hidden;
 }
 div.pad header h1 {
-  margin-top: 0;
+  margin: 18px 0;
   font-weight: 700;
   color: #2D231C;
   font-size: 3.6rem;
@@ -7986,13 +7988,13 @@ div.pad header div.img img.post-image {
 div.contenido {
   padding: 18px;
   font-family: 'Lato', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 div.contenido div.the-content {
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 div.contenido div.the-content p {
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
 }
 div.contenido div.excerpt {
   font-family: 'Merriweather', serif;
@@ -8057,14 +8059,14 @@ div.contenido img {
 }
 .columna-estandar .autor-card {
   padding: 12px;
-  background-color: #fdf2d9;
   overflow: hidden;
   margin: 0 -12px -12px -12px;
 }
 .columna-estandar .autor-card p.autor {
   font-size: 1.6rem;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0;
+  font-family: 'Merriweather', serif;
 }
 .capitulo-constitucion header.header-capitulo {
   max-width: 75%;
