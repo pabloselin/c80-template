@@ -1,7 +1,7 @@
 <?php
 //functions.php
 
-define( 'C80_THEME_VERSION', '0.5.31');
+define( 'C80_THEME_VERSION', '0.5.32');
 define( 'C80_TWITTER', 'proyectoC80');
 define( 'C80_FACEBOOK', 'https://www.facebook.com/proyectoC80/');
 define( 'C80_INSTAGRAM', 'proyectoc80');
@@ -41,10 +41,6 @@ include( TEMPLATEPATH . '/includes/bootstrap-menu.php' );
 include( TEMPLATEPATH . '/includes/author.php' );
 include( TEMPLATEPATH . '/includes/content-embeds.php' );
 include( TEMPLATEPATH . '/includes/json-microdata.php' );
-
-//actions
-add_action( 'wp_enqueue_scripts', 'c80t_scripts' );
-add_action( 'wp_enqueue_scripts', 'c80t_styles' );
 
 
 //Image sizes

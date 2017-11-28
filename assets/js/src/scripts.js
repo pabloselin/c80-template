@@ -20,7 +20,6 @@ function getFbJson(url, sharer) {
             nsh = roundNumber(parseInt(json.share.share_count));        
 
             jQuery.getJSON('https://graph.facebook.com/?id=' + oldurl, function(json) {
-                console.log('secondrun');
                 //fbshares += json.share.share_count;
                 nsh_old = roundNumber(parseInt(json.share.share_count));
                 sumsh = nsh + nsh_old;
@@ -49,6 +48,7 @@ function roundNumber(number) {
 //Main scripts
 jQuery(document).ready(function($) {
 	//Inicializar
+
 	var hash = window.location.hash;
 	if(hash.length > 0) {
 		$('a' + hash).addClass('highlight');	
@@ -65,9 +65,9 @@ jQuery(document).ready(function($) {
 
 	var c80p = $('a.c80_p');
 
-	c80p.on('click', function() {
-		event.preventDefault();
-	})
+	// c80p.on('click', function() {
+	// 	event.preventDefault();
+	// })
 
 	c80Rel.on('click', function() {
 		if($(this).hasClass('active')) {
@@ -87,14 +87,14 @@ jQuery(document).ready(function($) {
 	
 	//3. Mostrar link para compartir párrafos
 	$('a.c80_p').on('click', function() {
-		console.log('lic');
+		
 		var rlink = $(this).attr('data-link');
 		var parid = $(this).attr('data-pid');
 		var order = $(this).attr('data-order');
 
 		//Ver de donde viene el párrafo
 		var closest = $(this).closest('.article-info-holder');
-		console.log(closest);
+		
 		var chapter = closest.data('chaptername');
 		var article = closest.data('articlenumber');
 		var parno = parseInt(order) + 1;
@@ -119,7 +119,6 @@ jQuery(document).ready(function($) {
 	$('.loadembedhtml').on('click', function() {
 		var target = $(this).attr('data-target');
 		var id = $(this).attr('data-id');
-		console.log('target');
 		$(target).modal('show');
 		$('#c80_embedcodetextarea-' + id).on('click', function() {
 			$(this).select();

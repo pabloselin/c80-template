@@ -17,7 +17,14 @@ function c80t_scripts() {
 	if(!is_admin()) {
 		wp_deregister_script( 'jquery' );
 		wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '3.2.1', false);
-		wp_register_script('c80js', get_bloginfo('template_url') . '/assets/js/c80.min.js#asyncload', array('jquery'), C80_THEME_VERSION, true);
+		
+		if(WP_ENV == 'development') {
+			$c80script = 'c80.js';	
+		} else {
+			$c80script = 'c80.min.js';
+		}
+
+		wp_register_script('c80js', get_bloginfo('template_url') . '/assets/js/' . $c80script , array('jquery'), C80_THEME_VERSION, false);
 		
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('c80js');
@@ -32,8 +39,12 @@ function c80t_styles() {
 	wp_enqueue_style( 'c80-theme', get_bloginfo('template_url') . '/assets/css/main.css', array(), C80_THEME_VERSION, 'screen' );
 	
 	// //tipografías
-	wp_enqueue_style( 'c80-tipografias', 'https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700|Lato:400,400i,700|Bree+Serif', array(), false, 'screen' );
+	wp_enqueue_style( 'c80-tipografias', 'https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Lato:400,400i,700', array(), false, 'screen' );
 
 	//iconos
 	//wp_enqueue_style( 'c80-iconos', get_bloginfo('template_url') . '/assets/vendor/font-awesome/css/font-awesome.min.css', C80_THEME_VERSION, 'screen' );
 }
+
+//actions
+add_action( 'wp_enqueue_scripts', 'c80t_scripts' );
+add_action( 'wp_enqueue_scripts', 'c80t_styles' );
