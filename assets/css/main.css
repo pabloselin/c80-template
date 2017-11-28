@@ -7328,6 +7328,7 @@ div.comments {
 }
 div.comments h3 {
   margin-top: 0;
+  font-family: 'Merriweather', serif;
 }
 div.comments ul.commentlist {
   margin: 0;
@@ -7344,6 +7345,10 @@ div.comments ul.commentlist li article.comment-body {
   box-shadow: 0 0 3px #DFDFDF;
   clear: both;
   overflow: hidden;
+  font-family: 'Lato', sans-serif;
+}
+div.comments ul.commentlist li article.comment-body a.url {
+  font-family: 'Merriweather', serif;
 }
 div.comments ul.commentlist li article.comment-body .comment-content {
   padding: 12px;
@@ -7388,9 +7393,8 @@ div.comments ul.commentlist li article.comment-body div.reply a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #4f9cde;
+  color: white;
 }
 div.comments ul.commentlist li article.comment-body div.reply a:focus,
 div.comments ul.commentlist li article.comment-body div.reply a:active:focus,
@@ -7426,58 +7430,6 @@ fieldset[disabled] div.comments ul.commentlist li article.comment-body div.reply
 adiv.comments ul.commentlist li article.comment-body div.reply a.disabled,
 fieldset[disabled] adiv.comments ul.commentlist li article.comment-body div.reply a {
   pointer-events: none;
-}
-div.comments ul.commentlist li article.comment-body div.reply a:focus,
-div.comments ul.commentlist li article.comment-body div.reply a.focus {
-  color: #fff;
-  background-color: #449d44;
-  border-color: #255625;
-}
-div.comments ul.commentlist li article.comment-body div.reply a:hover {
-  color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
-}
-div.comments ul.commentlist li article.comment-body div.reply a:active,
-div.comments ul.commentlist li article.comment-body div.reply a.active,
-.open > .dropdown-togglediv.comments ul.commentlist li article.comment-body div.reply a {
-  color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
-}
-div.comments ul.commentlist li article.comment-body div.reply a:active:hover,
-div.comments ul.commentlist li article.comment-body div.reply a.active:hover,
-.open > .dropdown-togglediv.comments ul.commentlist li article.comment-body div.reply a:hover,
-div.comments ul.commentlist li article.comment-body div.reply a:active:focus,
-div.comments ul.commentlist li article.comment-body div.reply a.active:focus,
-.open > .dropdown-togglediv.comments ul.commentlist li article.comment-body div.reply a:focus,
-div.comments ul.commentlist li article.comment-body div.reply a:active.focus,
-div.comments ul.commentlist li article.comment-body div.reply a.active.focus,
-.open > .dropdown-togglediv.comments ul.commentlist li article.comment-body div.reply a.focus {
-  color: #fff;
-  background-color: #398439;
-  border-color: #255625;
-}
-div.comments ul.commentlist li article.comment-body div.reply a:active,
-div.comments ul.commentlist li article.comment-body div.reply a.active,
-.open > .dropdown-togglediv.comments ul.commentlist li article.comment-body div.reply a {
-  background-image: none;
-}
-div.comments ul.commentlist li article.comment-body div.reply a.disabled:hover,
-div.comments ul.commentlist li article.comment-body div.reply a[disabled]:hover,
-fieldset[disabled] div.comments ul.commentlist li article.comment-body div.reply a:hover,
-div.comments ul.commentlist li article.comment-body div.reply a.disabled:focus,
-div.comments ul.commentlist li article.comment-body div.reply a[disabled]:focus,
-fieldset[disabled] div.comments ul.commentlist li article.comment-body div.reply a:focus,
-div.comments ul.commentlist li article.comment-body div.reply a.disabled.focus,
-div.comments ul.commentlist li article.comment-body div.reply a[disabled].focus,
-fieldset[disabled] div.comments ul.commentlist li article.comment-body div.reply a.focus {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
-}
-div.comments ul.commentlist li article.comment-body div.reply a .badge {
-  color: #5cb85c;
-  background-color: #fff;
 }
 div#respond {
   background-color: white;
@@ -7658,9 +7610,8 @@ div#respond input#submit {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #f4033c;
+  color: white;
 }
 div#respond input#submit:focus,
 div#respond input#submit:active:focus,
@@ -7696,58 +7647,6 @@ fieldset[disabled] div#respond input#submit {
 adiv#respond input#submit.disabled,
 fieldset[disabled] adiv#respond input#submit {
   pointer-events: none;
-}
-div#respond input#submit:focus,
-div#respond input#submit.focus {
-  color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
-}
-div#respond input#submit:hover {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
-}
-div#respond input#submit:active,
-div#respond input#submit.active,
-.open > .dropdown-togglediv#respond input#submit {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
-}
-div#respond input#submit:active:hover,
-div#respond input#submit.active:hover,
-.open > .dropdown-togglediv#respond input#submit:hover,
-div#respond input#submit:active:focus,
-div#respond input#submit.active:focus,
-.open > .dropdown-togglediv#respond input#submit:focus,
-div#respond input#submit:active.focus,
-div#respond input#submit.active.focus,
-.open > .dropdown-togglediv#respond input#submit.focus {
-  color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
-}
-div#respond input#submit:active,
-div#respond input#submit.active,
-.open > .dropdown-togglediv#respond input#submit {
-  background-image: none;
-}
-div#respond input#submit.disabled:hover,
-div#respond input#submit[disabled]:hover,
-fieldset[disabled] div#respond input#submit:hover,
-div#respond input#submit.disabled:focus,
-div#respond input#submit[disabled]:focus,
-fieldset[disabled] div#respond input#submit:focus,
-div#respond input#submit.disabled.focus,
-div#respond input#submit[disabled].focus,
-fieldset[disabled] div#respond input#submit.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
-}
-div#respond input#submit .badge {
-  color: #337ab7;
-  background-color: #fff;
 }
 body.single .contenedor-estandar {
   position: relative;
@@ -7822,10 +7721,24 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
   font-size: 1.6rem;
   line-height: 1.5em;
 }
+.c80-rels .textos-c80-mini h4,
+.c80-rels .textos-c80-mini h5,
+.c80-rels .textos-c80-mini h6 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+}
+.c80-rels .textos-c80-mini h4 a,
 .c80-rels .textos-c80-mini h5 a,
 .c80-rels .textos-c80-mini h6 a {
   color: #f4033c;
-  font-family: 'Merriweather', serif;
+}
+.c80-rels .textos-c80-mini h4 {
+  color: #2D231C;
+}
+.c80-rels .textos-c80-mini h4 span {
+  display: block;
+  color: #f4033c;
 }
 .c80-rels .textos-c80-mini .lc {
   font-family: 'Merriweather', serif;
@@ -8010,12 +7923,19 @@ div.contenido div.excerpt {
     font-size: 1.6rem;
   }
 }
+div.contenido h2,
+div.contenido h3,
+div.contenido h4 {
+  font-weight: 700;
+  line-height: 1.4em;
+}
 div.contenido h2 {
   margin-top: 30px;
   margin-bottom: 20px;
 }
 div.contenido h3 {
   margin-bottom: 16px;
+  font-size: 2.1rem;
 }
 div.contenido h4 {
   margin-bottom: 12px;
@@ -8787,7 +8707,8 @@ h1.archive-title {
   float: left;
   transition: all ease-in 0.2s;
   margin-bottom: 6px;
-  border-radius: 10px;
+  border-radius: 4px;
+  font-size: 1.2rem;
 }
 .social-share .sharebutton a i {
   font-size: 18px;

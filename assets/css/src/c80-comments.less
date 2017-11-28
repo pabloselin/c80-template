@@ -6,7 +6,9 @@ div.comments {
 	
 	h3 {
 		margin-top:0;
+		font-family:@serif;
 	}
+
 	ul.commentlist {
 		margin:0;
 		padding:0;
@@ -23,6 +25,11 @@ div.comments {
 			box-shadow:@stdshadow;
 			clear:both;
 			overflow:hidden;
+			font-family:@sans;
+
+			a.url {
+				font-family:@serif;
+			}
 
 			.comment-content {
 				padding:12px;
@@ -54,7 +61,8 @@ div.comments {
 				float:right;
 				margin:0 12px 12px;
 				.btn;
-				.btn-success;
+				background-color:@opinion;
+				color:white;
 			}
 		}
 	}
@@ -98,6 +106,7 @@ div#respond {
 
 	input#submit {
 		.btn;
-		.btn-primary;
+		background-color:@constitucion;
+		color:white;
 	} 
 }
