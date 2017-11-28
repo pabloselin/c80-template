@@ -6,7 +6,7 @@ h1.archive-title {
 	margin-bottom:24px;
 	margin-top:0;
 	@media screen and (max-width:@screen-sm) {
-		font-size:2rem;
+		font-size:1.8rem;
 		margin:12px 0 12px 12px;
 	}
 }
@@ -28,10 +28,15 @@ h1.archive-title {
 
 	h2 {
 		font-family:@heading;
-		font-weight:normal;
-		margin:0;
+		font-weight:700;
+		margin:12px 0;
+		font-size:2.2rem;
+		line-height:1.4em;
 		@media screen and (max-width:@screen-sm) {
-			font-size:1.8rem;
+			font-size:1.6rem;
+		}
+		a {
+			color:@oscuro;
 		}
 	}
 
@@ -43,11 +48,14 @@ h1.archive-title {
 
 .post-type-archive-columnas {
 	article.articulo-archivo {
-		max-height:160px;
-		border-radius:80px 0 0 80px;
+		//max-height:160px;
+		//border-radius:80px 0 0 80px;
 		img {
 			margin-top:0;
 			border-radius:50%;
+			max-width:120px;
+			height:auto;
+			margin:12px;
 		}
 	}
 }

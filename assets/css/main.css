@@ -7231,14 +7231,16 @@ header#header-sitio .toggletemas {
   top: 5px;
   color: #555;
 }
+header#header-sitio .c80-breadcrumb,
 header#header-sitio .breadcrumb {
   color: #aeaeae;
   border-radius: 0;
-  font-size: 12px;
+  font-size: 1.4rem;
   margin-bottom: 0;
   font-family: 'Lato', sans-serif;
-  margin-left: 16px;
+  padding-left: 16px;
 }
+header#header-sitio .c80-breadcrumb a,
 header#header-sitio .breadcrumb a {
   color: #aeaeae;
 }
@@ -8553,7 +8555,7 @@ h1.archive-title {
 }
 @media screen and (max-width: 768px) {
   h1.archive-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 12px 0 12px 12px;
   }
 }
@@ -8574,24 +8576,28 @@ h1.archive-title {
 }
 .articulo-archivo h2 {
   font-family: 'Merriweather', serif;
-  font-weight: normal;
-  margin: 0;
+  font-weight: 700;
+  margin: 12px 0;
+  font-size: 2.2rem;
+  line-height: 1.4em;
 }
 @media screen and (max-width: 768px) {
   .articulo-archivo h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
+}
+.articulo-archivo h2 a {
+  color: #2D231C;
 }
 .articulo-archivo p.top-meta {
   margin: 12px 0 0 0;
 }
-.post-type-archive-columnas article.articulo-archivo {
-  max-height: 160px;
-  border-radius: 80px 0 0 80px;
-}
 .post-type-archive-columnas article.articulo-archivo img {
   margin-top: 0;
   border-radius: 50%;
+  max-width: 120px;
+  height: auto;
+  margin: 12px;
 }
 .page-numbers {
   display: inline-block;
