@@ -8387,8 +8387,8 @@ section.contenedor-constitucion-box .capitulo-constitucion-box .header-capitulo 
 }
 section.contenedor-constitucion-box .capitulo-constitucion-box .header-capitulo h1 span.titlename {
   font-size: 1.6rem;
-  text-transform: uppercase;
   font-weight: 300;
+  color: #f4033c;
 }
 textarea.linkplaceholder {
   padding: 6px;
@@ -9054,7 +9054,7 @@ article.featured h1 a {
   }
 }
 .related-featured aside.c80-rels-front {
-  padding: 12px;
+  padding: 32px 12px 12px 12px;
 }
 .related-featured aside.c80-rels-front h2 {
   color: #f4033c;
@@ -9066,20 +9066,19 @@ article.featured h1 a {
   font-size: 2.4rem;
   vertical-align: text-bottom;
 }
-.related-featured aside.c80-rels-front .textos-c80-mini {
-  margin-left: 26px;
-}
-.related-featured h4 {
+.related-featured aside.c80-rels-front h4.title-rel-chap {
   color: #2D231C;
   font-family: 'Merriweather', serif;
   font-weight: 700;
-  fony-size: 2.4rem;
+  font-size: 2.4rem;
 }
-.related-featured h4 span {
-  text-transform: uppercase;
+.related-featured aside.c80-rels-front h4.title-rel-chap span {
   font-size: 1.4rem;
   color: #f4033c;
   font-weight: 400;
+}
+.related-featured aside.c80-rels-front .textos-c80-mini {
+  margin-left: 26px;
 }
 .related-featured h5 a {
   color: #f4033c;
@@ -9165,7 +9164,7 @@ section.opinion header h2 {
   font-weight: 700;
 }
 section.opinion .excerpt {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-family: 'Lato', sans-serif;
 }
 section.opinion article.columna .top-meta {
@@ -9177,7 +9176,7 @@ section.opinion article.columna .top-meta p {
   margin-bottom: 0;
 }
 section.opinion article.columna h3 {
-  margin-bottom: 0;
+  margin-bottom: 12px;
   margin-top: 0;
   font-family: 'Merriweather', serif;
   font-weight: 700;
