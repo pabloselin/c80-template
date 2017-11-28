@@ -6443,14 +6443,16 @@ p.autor {
 div.colabora {
   border-radius: 0;
   text-align: right;
-  background-color: rgba(150, 81, 188, 0.3);
+  background-color: white;
+  border: 1px solid #4f9cde;
 }
 div.colabora h5 {
   margin-top: 0;
   font-size: 2.2rem;
+  color: #4f9cde;
 }
 div.colabora a {
-  color: #9651BC;
+  color: #4f9cde;
 }
 div.colabora p {
   font-size: 1.8rem;
@@ -7494,10 +7496,10 @@ article.featured .pad {
 }
 article.featured .pad div.overlay {
   position: absolute;
-  border-top: 10px solid #18A094;
+  border-top: 10px solid #009f94;
   top: 0;
   left: 16px;
-  width: 666px;
+  width: 652px;
   height: 370px;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
@@ -7662,7 +7664,7 @@ section.noticias article.item-3 .img,
 section.noticias article.item-4 .img,
 section.noticias article.item-5 .img,
 section.noticias article.item-6 .img {
-  border-top: 10px solid #25A8CE;
+  border-top: 10px solid #009f94;
 }
 section.noticias article.item-1 .excerpt,
 section.noticias article.item-2 .excerpt,
