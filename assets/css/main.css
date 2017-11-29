@@ -8941,7 +8941,7 @@ article.featured .pad div.overlay {
     min-height: 100%;
     top: 0;
     left: 0;
-    padding-top: 12px;
+    padding: 12px 6px;
   }
 }
 article.featured div.top-info {
