@@ -7208,6 +7208,10 @@ header#header-sitio .temas-header ul li a {
   letter-spacing: 2px;
   font-weight: 700;
 }
+header#header-sitio .temas-header ul li a:hover {
+  text-decoration: none;
+  border-bottom: 1px dashed #2D231C;
+}
 header#header-sitio .temas-header.expanded {
   height: 162px;
 }
@@ -7261,7 +7265,7 @@ div.menu-secciones ul li {
 div.menu-secciones ul li a {
   display: block;
   text-transform: uppercase;
-  line-height: 36px;
+  line-height: 34px;
   letter-spacing: 3px;
   padding: 0 12px;
   color: white;
@@ -7272,16 +7276,33 @@ div.menu-secciones ul li a {
 }
 div.menu-secciones ul li a:hover {
   text-decoration: none;
-  background-color: #F2AB0E;
 }
 div.menu-secciones ul li.link-opinion a {
-  background-color: #549BD9;
+  background-color: #4f9cde;
+  border-top: 1px solid #4f9cde;
+  border-bottom: 1px solid #4f9cde;
+}
+div.menu-secciones ul li.link-opinion a:hover {
+  color: #4f9cde;
+  background-color: white;
 }
 div.menu-secciones ul li.link-constitucion a {
-  background-color: #F10040;
+  background-color: #f4033c;
+  border-top: 1px solid #f4033c;
+  border-bottom: 1px solid #f4033c;
+}
+div.menu-secciones ul li.link-constitucion a:hover {
+  color: #f4033c;
+  background-color: white;
 }
 div.menu-secciones ul li.link-noticias a {
-  background-color: #18A094;
+  background-color: #009f94;
+  border-top: 1px solid #009f94;
+  border-bottom: 1px solid #009f94;
+}
+div.menu-secciones ul li.link-noticias a:hover {
+  color: #009f94;
+  background-color: white;
 }
 #main-nav {
   position: absolute;
@@ -7305,9 +7326,13 @@ div.menu-secciones ul li.link-noticias a {
   font-family: 'Merriweather', serif;
   font-size: 1.4rem;
   letter-spacing: 2px;
+  padding-bottom: 0;
+  margin: 0 12px 10px 12px;
+  padding: 12px 0 5px 5px;
 }
 #main-nav a:hover {
   background-color: transparent;
+  border-bottom: 1px dashed #2D231C;
 }
 .beta {
   position: absolute;
@@ -7723,20 +7748,17 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
   font-size: 1.6rem;
   line-height: 1.5em;
 }
-.c80-rels .textos-c80-mini h4,
 .c80-rels .textos-c80-mini h5,
 .c80-rels .textos-c80-mini h6 {
   font-size: 1.45rem;
   font-weight: 700;
   font-family: 'Merriweather', serif;
 }
-.c80-rels .textos-c80-mini h4 a,
 .c80-rels .textos-c80-mini h5 a,
 .c80-rels .textos-c80-mini h6 a {
   color: #f4033c;
 }
 @media screen and (max-width: 768px) {
-  .c80-rels .textos-c80-mini h4,
   .c80-rels .textos-c80-mini h5,
   .c80-rels .textos-c80-mini h6 {
     font-size: 1.6rem;
@@ -7744,6 +7766,12 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
 }
 .c80-rels .textos-c80-mini h4 {
   color: #2D231C;
+  font-size: 1.8rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+.c80-rels .textos-c80-mini h4 span {
+  font-size: 1.45rem;
 }
 .c80-rels .textos-c80-mini h4 span {
   display: block;
@@ -7929,7 +7957,7 @@ div.contenido div.excerpt {
 }
 @media screen and (max-width: 768px) {
   div.contenido div.excerpt {
-    font-size: 2rem;
+    font-size: 21.rem;
   }
 }
 div.contenido h2,
@@ -8114,6 +8142,9 @@ div.fuente-constitucion div.wrap .alert-link {
 .articulo-constitucion header h1 a:hover,
 .articulo-constitucion header h2 a:hover {
   text-decoration: none;
+}
+.articulo-constitucion a.c80_p p {
+  margin-bottom: 22px;
 }
 .articulo-constitucion p.afterp {
   display: none;
@@ -8440,6 +8471,8 @@ aside.navegador-modificaciones h4 {
 span.capsubt {
   text-transform: uppercase;
   line-height: 1.3em;
+  font-weight: 700;
+  color: #2D231C;
 }
 .modal-c80 .modal-body h3,
 .modal-c80 .modal-body h4 {

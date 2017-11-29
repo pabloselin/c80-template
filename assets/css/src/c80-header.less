@@ -143,6 +143,10 @@ header#header-sitio {
 					text-transform:uppercase;	
 					letter-spacing:2px;
 					font-weight:700;
+					&:hover {
+						text-decoration:none;
+						border-bottom:1px dashed @oscuro;
+					}
 				}
 			}
 		}
@@ -205,7 +209,7 @@ div.menu-secciones {
 				display:block;
 				color:white;
 				text-transform:uppercase;
-				line-height:36px;
+				line-height:34px;
 				letter-spacing:3px;
 				padding:0 12px;
 				color:white;
@@ -215,17 +219,36 @@ div.menu-secciones {
 				margin:-1px 0;
 				&:hover {
 					text-decoration:none;
-					background-color:@amarillo;
 				}
 			}
 			&.link-opinion a {
-				background-color:@morado;
+				background-color:@opinion;
+				border-top:1px solid @opinion;
+				border-bottom:1px solid @opinion;
+				&:hover {
+					color:@opinion;
+					background-color:white;
+				}
 			}
 			&.link-constitucion a {
-				background-color:@naranjo;
+				background-color:@constitucion;
+				border-top:1px solid @constitucion;
+				border-bottom:1px solid @constitucion;
+				&:hover {
+					color:@constitucion;
+					background-color:white;
+					
+				}
 			}
 			&.link-noticias a {
-				background-color:@calipso;
+				background-color:@noticia;
+				border-top:1px solid @noticia;
+				border-bottom:1px solid @noticia;
+				&:hover {
+					color:@noticia;
+					background-color:white;
+					
+				}
 			}
 		}
 	}
@@ -257,8 +280,12 @@ div.menu-secciones {
 		font-family:@serif;
 		font-size:1.4rem;
 		letter-spacing:2px;
+		padding-bottom:0;
+		margin:0 12px 10px 12px;
+		padding:12px 0 5px 5px;
 		&:hover {
 			background-color:transparent;
+			border-bottom:1px dashed @oscuro;
 		}
 	}
 }
