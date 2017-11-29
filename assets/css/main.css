@@ -7726,7 +7726,7 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
 .c80-rels .textos-c80-mini h4,
 .c80-rels .textos-c80-mini h5,
 .c80-rels .textos-c80-mini h6 {
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   font-weight: 700;
   font-family: 'Merriweather', serif;
 }
@@ -7734,6 +7734,13 @@ body.single .contenedor-estandar.con-c80-rel .deslizable {
 .c80-rels .textos-c80-mini h5 a,
 .c80-rels .textos-c80-mini h6 a {
   color: #f4033c;
+}
+@media screen and (max-width: 768px) {
+  .c80-rels .textos-c80-mini h4,
+  .c80-rels .textos-c80-mini h5,
+  .c80-rels .textos-c80-mini h6 {
+    font-size: 1.6rem;
+  }
 }
 .c80-rels .textos-c80-mini h4 {
   color: #2D231C;
@@ -7874,7 +7881,7 @@ div.pad header h1 {
   margin: 18px 0;
   font-weight: 700;
   color: #2D231C;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   line-height: 1.35em;
 }
 @media screen and (max-width: 768px) {
@@ -7922,7 +7929,7 @@ div.contenido div.excerpt {
 }
 @media screen and (max-width: 768px) {
   div.contenido div.excerpt {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 div.contenido h2,
