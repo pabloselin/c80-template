@@ -94,7 +94,7 @@ div.fuente-constitucion {
 	.sub-content
 	 {
 		font-family:@serif;
-		font-size:1.8rem;
+		font-size:1.6rem;
 		padding:@stdpad;
 		a {
 			color:@gris-oscuro;
@@ -276,12 +276,15 @@ section.contenedor-constitucion-box {
 				div.wrap {
 					background-color:@constitucion;
 					transition:all ease-in 0.2s;
-					transform:scale(1.1);
+					transform:scale(1.04);
 					z-index:-1;
 					.header-capitulo {
 						h1 {
 							color:white;
-							text-shadow:1px 1px 1px #333;
+							//text-shadow:1px 1px 1px #333;
+							span.titlename {
+								color:@oscuro;
+							}
 						}
 					}
 				}
@@ -300,11 +303,11 @@ section.contenedor-constitucion-box {
 			h1 {
 				font-size:1.8rem;
 				margin-top:0;
-				text-shadow:1px 1px 1px white;
+				//text-shadow:1px 1px 1px white;
 				font-weight:700;
 				span.titlename {
 					font-size:1.6rem;
-					font-weight:300;
+					font-weight:700;
 					color:@constitucion;
 				}
 			}

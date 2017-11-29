@@ -8124,7 +8124,7 @@ div.fuente-constitucion div.wrap .alert-link {
 .articulo-constitucion .main-content,
 .articulo-constitucion .sub-content {
   font-family: 'Merriweather', serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 12px;
 }
 .articulo-constitucion .main-content a,
@@ -8296,12 +8296,14 @@ section.contenedor-constitucion-box .capitulo-constitucion-box a:hover {
 section.contenedor-constitucion-box .capitulo-constitucion-box a:hover div.wrap {
   background-color: #f4033c;
   transition: all ease-in 0.2s;
-  transform: scale(1.1);
+  transform: scale(1.04);
   z-index: -1;
 }
 section.contenedor-constitucion-box .capitulo-constitucion-box a:hover div.wrap .header-capitulo h1 {
   color: white;
-  text-shadow: 1px 1px 1px #333;
+}
+section.contenedor-constitucion-box .capitulo-constitucion-box a:hover div.wrap .header-capitulo h1 span.titlename {
+  color: #2D231C;
 }
 section.contenedor-constitucion-box .capitulo-constitucion-box div.wrap {
   padding: 6px 12px 12px;
@@ -8313,12 +8315,11 @@ section.contenedor-constitucion-box .capitulo-constitucion-box div.wrap {
 section.contenedor-constitucion-box .capitulo-constitucion-box .header-capitulo h1 {
   font-size: 1.8rem;
   margin-top: 0;
-  text-shadow: 1px 1px 1px white;
   font-weight: 700;
 }
 section.contenedor-constitucion-box .capitulo-constitucion-box .header-capitulo h1 span.titlename {
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 700;
   color: #f4033c;
 }
 textarea.linkplaceholder {
@@ -8513,7 +8514,8 @@ li.rel-mini-item img {
 li.rel-mini-item h5 {
   margin-bottom: 4px;
   font-family: 'Merriweather', serif;
-  font-size: 18px;
+  font-size: 1.7rem;
+  line-height: 1.3em;
 }
 li.rel-mini-item h5 a {
   color: #2D231C;
