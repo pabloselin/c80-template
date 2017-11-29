@@ -8905,6 +8905,11 @@ article.featured .excerpt {
   font-size: 1.8rem;
   font-weight: 400;
 }
+@media screen and (max-width: 768px) {
+  article.featured {
+    margin-bottom: 0;
+  }
+}
 article.featured .pad {
   height: 369px;
   background-position: center;
@@ -8936,6 +8941,7 @@ article.featured .pad div.overlay {
     min-height: 100%;
     top: 0;
     left: 0;
+    padding-top: 12px;
   }
 }
 article.featured div.top-info {
@@ -8958,7 +8964,7 @@ article.featured h1 {
   font-size: 3rem;
   font-family: 'Merriweather', serif;
   font-weight: 700;
-  margin-top: 24px;
+  margin-top: 6px;
   margin-bottom: 8px;
 }
 article.featured h1 a {
@@ -8979,11 +8985,17 @@ article.featured h1 a {
 @media screen and (max-width: 768px) {
   .related-featured {
     height: auto;
-    margin: 0 15px 12px 15px;
+    margin: 0 0 12px 0;
+    padding: 0;
   }
 }
 .related-featured aside.c80-rels-front {
   padding: 32px 12px 12px 12px;
+}
+@media screen and (max-width: 768px) {
+  .related-featured aside.c80-rels-front {
+    padding: 12px 0;
+  }
 }
 .related-featured aside.c80-rels-front h2 {
   color: #f4033c;
@@ -8996,6 +9008,12 @@ article.featured h1 a {
   font-size: 2.4rem;
   vertical-align: middle;
   margin-right: 12px;
+}
+@media screen and (max-width: 768px) {
+  .related-featured aside.c80-rels-front h2 i {
+    margin-right: 0;
+    font-size: 1.8rem;
+  }
 }
 .related-featured aside.c80-rels-front h4.title-rel-chap {
   color: #2D231C;
@@ -9013,6 +9031,11 @@ article.featured h1 a {
 }
 .related-featured aside.c80-rels-front .textos-c80-mini {
   margin-left: 38px;
+}
+@media screen and (max-width: 768px) {
+  .related-featured aside.c80-rels-front .textos-c80-mini {
+    margin-left: 6px;
+  }
 }
 .related-featured h5 a {
   color: #f4033c;
