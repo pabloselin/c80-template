@@ -62,7 +62,13 @@
 				while( $homeitems->have_posts() ): $homeitems->the_post();
 					$key++;
 					
-					$size = 'secondary';
+					if(get_post_type($post->ID) == 'mitos-sabias-que') {
+						$size = 'main';
+					} else {
+						$size = 'secondary';	
+					}
+					
+
 					$hs = '<h2>';
 					$he = '</h2>';
 					
@@ -86,19 +92,16 @@
 										<a href="<?php the_permalink();?>"><?php the_title();?></a>
 									<?php echo $he;?>
 									
-									<!-- <p class="autor">
-										<?php the_author( );?>
-									</p> -->
-
+									
 								</div>
 							</div>
 							
 							
-								
+							<?php if(get_post_type($post->ID) != 'mitos-sabias-que'):?>	
 								<div class="excerpt">
 									<?php the_excerpt();?>
 								</div>
-
+							<?php endif;?>
 							
 							
 							
