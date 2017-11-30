@@ -12,7 +12,7 @@ function c80t_columnimg() {
 		$avatarsrc = get_wp_user_avatar_src( get_the_author_meta('ID'), 'large' );
 		echo '<meta property="og:image" content="' . $avatarsrc . '">';
 	} elseif(is_page( ) || is_home() ) {
-		$defaultimg = get_bloginfo('template_url') . '/assets/img/placeholder-main.png';
+		$defaultimg = get_bloginfo('template_url') . '/assets/img/placeholder-main_2017.png';
 		echo '<meta property="og:image" content="' . $defaultimg . '">';
 	}
 }
