@@ -1,7 +1,7 @@
 <?php
 //functions.php
 
-define( 'C80_THEME_VERSION', '1.0.0');
+define( 'C80_THEME_VERSION', '1.0.1');
 define( 'C80_TWITTER', 'proyectoC80');
 define( 'C80_FACEBOOK', 'https://www.facebook.com/proyectoC80/');
 define( 'C80_INSTAGRAM', 'https://www.instagram.com/proyectoc80/');
@@ -98,3 +98,17 @@ function c80_paginator($query = NULL) {
 	) );
 	echo '</nav>';
 }
+
+function append_browsersync() {
+	if(WP_ENV == 'development') {
+		?>
+			
+			<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+		<?php
+	}
+}
+
+add_action('wp_footer', 'append_browsersync');

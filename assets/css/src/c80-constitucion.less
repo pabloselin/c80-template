@@ -1,4 +1,12 @@
 //Contenidos
+@media screen and (max-width:@screen-sm) {
+	body.single-c80_cpt {
+		.contenedor-estandar .col-md-10 {
+			padding:0;
+		}
+	}
+}
+
 .capitulo-constitucion {
 	header.header-capitulo {
 		max-width:75%;
@@ -34,6 +42,17 @@
 				font-size:4.6rem;
 				margin-right:12px;
 				margin-top:12px;
+			}
+			@media screen and (max-width:@screen-sm) {
+				font-size:2rem;
+				span.titlename {
+					font-size:1.6rem;
+				}
+				i {
+					font-size:1.6rem;
+					display:block;
+					float:left;
+				}
 			}
 		}
 	}
@@ -118,6 +137,9 @@ aside.navegador-relacionados,
 aside.navegador-modificaciones {
 	margin-bottom:24px;
 	padding-right:12px;
+	@media screen and (max-width:@screen-sm) {
+		padding-right:0;
+	}
 	a.btn-showrel {
 		display:none;
 	}
@@ -268,10 +290,17 @@ section.contenedor-constitucion-box {
 	
 	h1.mainc80title {
 		color:@constitucion;
+		@media screen and (max-width:@screen-sm) {
+				font-size:2rem;
+			}
 	}
 	
 	.capitulo-constitucion-box {
 		.make-md-column(3);
+		@media screen and (max-width:@screen-sm) {
+			padding:0;
+			width:100%;
+		}
 		a {
 			display:block;
 			color:@oscuro;
@@ -300,6 +329,9 @@ section.contenedor-constitucion-box {
 			background-color:white;
 			border-top:2px solid @naranjo;
 			margin:6px 0 6px;
+			@media screen and (max-width:@screen-sm) {
+				min-height:0;
+			}
 			
 		}
 

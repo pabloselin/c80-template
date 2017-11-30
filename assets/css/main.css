@@ -7983,6 +7983,11 @@ div.contenido img {
   height: auto;
   margin: 12px 0;
 }
+@media screen and (max-width: 768px) {
+  div.contenido h2 {
+    font-size: 2rem;
+  }
+}
 .page-id-70 .img,
 .page-id-68 .img {
   margin: 12px -12px;
@@ -8025,6 +8030,11 @@ div.contenido img {
   margin: 0;
   font-family: 'Merriweather', serif;
 }
+@media screen and (max-width: 768px) {
+  body.single-c80_cpt .contenedor-estandar .col-md-10 {
+    padding: 0;
+  }
+}
 .capitulo-constitucion header.header-capitulo {
   max-width: 75%;
 }
@@ -8061,6 +8071,19 @@ div.contenido img {
   font-size: 4.6rem;
   margin-right: 12px;
   margin-top: 12px;
+}
+@media screen and (max-width: 768px) {
+  .capitulo-constitucion header.header-capitulo h1 {
+    font-size: 2rem;
+  }
+  .capitulo-constitucion header.header-capitulo h1 span.titlename {
+    font-size: 1.6rem;
+  }
+  .capitulo-constitucion header.header-capitulo h1 i {
+    font-size: 1.6rem;
+    display: block;
+    float: left;
+  }
 }
 div.fuente-constitucion {
   margin-left: -15px;
@@ -8174,6 +8197,12 @@ aside.navegador-relacionados,
 aside.navegador-modificaciones {
   margin-bottom: 24px;
   padding-right: 12px;
+}
+@media screen and (max-width: 768px) {
+  aside.navegador-relacionados,
+  aside.navegador-modificaciones {
+    padding-right: 0;
+  }
 }
 aside.navegador-relacionados a.btn-showrel,
 aside.navegador-modificaciones a.btn-showrel {
@@ -8305,6 +8334,11 @@ section.contenedor-constitucion-box {
 section.contenedor-constitucion-box h1.mainc80title {
   color: #f4033c;
 }
+@media screen and (max-width: 768px) {
+  section.contenedor-constitucion-box h1.mainc80title {
+    font-size: 2rem;
+  }
+}
 section.contenedor-constitucion-box .capitulo-constitucion-box {
   position: relative;
   min-height: 1px;
@@ -8315,6 +8349,12 @@ section.contenedor-constitucion-box .capitulo-constitucion-box {
   section.contenedor-constitucion-box .capitulo-constitucion-box {
     float: left;
     width: 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.contenedor-constitucion-box .capitulo-constitucion-box {
+    padding: 0;
+    width: 100%;
   }
 }
 section.contenedor-constitucion-box .capitulo-constitucion-box a {
@@ -8342,6 +8382,11 @@ section.contenedor-constitucion-box .capitulo-constitucion-box div.wrap {
   background-color: white;
   border-top: 2px solid #F10040;
   margin: 6px 0 6px;
+}
+@media screen and (max-width: 768px) {
+  section.contenedor-constitucion-box .capitulo-constitucion-box div.wrap {
+    min-height: 0;
+  }
 }
 section.contenedor-constitucion-box .capitulo-constitucion-box .header-capitulo h1 {
   font-size: 1.8rem;
@@ -8530,6 +8575,14 @@ section.opinion h3,
 section.opinion .autor {
   margin-left: 82px;
 }
+@media screen and (max-width: 768px) {
+  section.opinion {
+    padding: 0;
+  }
+  section.opinion article.columna h3 {
+    font-size: 1.8rem;
+  }
+}
 li.rel-mini-item {
   overflow: hidden;
   margin-bottom: 6px;
@@ -8544,6 +8597,11 @@ li.rel-mini-item img {
   height: 60px;
   margin-bottom: 6px;
 }
+@media screen and (max-width: 768px) {
+  li.rel-mini-item img {
+    display: none;
+  }
+}
 li.rel-mini-item h5 {
   margin-bottom: 4px;
   font-family: 'Merriweather', serif;
@@ -8554,11 +8612,16 @@ li.rel-mini-item h5 a {
   color: #2D231C;
   font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+  li.rel-mini-item h5 {
+    font-size: 1.4rem;
+  }
+}
 li.rel-mini-item span.mini-autor {
   display: block;
   text-align: right;
   font-size: 12px;
-  color: #ccc;
+  color: #4f9cde;
 }
 li.rel-mod-item {
   display: block;
@@ -8613,7 +8676,7 @@ h1.archive-title {
 }
 @media screen and (max-width: 768px) {
   .articulo-archivo img {
-    margin-left: -36px;
+    margin-left: -96px;
   }
 }
 .articulo-archivo h2 {
@@ -8705,6 +8768,15 @@ h1.archive-title {
   background-color: #fff;
   border-color: #ddd;
   cursor: not-allowed;
+}
+@media screen and (max-width: 768px) {
+  .archive-items {
+    padding: 0;
+  }
+  .archive-items .autor,
+  .archive-items .top-meta {
+    display: none;
+  }
 }
 @font-face {
   font-family: 'Open Sans';
@@ -9347,6 +9419,11 @@ div.relbox a.relart {
   border-style: solid;
   border-radius: 0;
   line-height: 20px;
+}
+@media screen and (max-width: 768px) {
+  div.relbox a.relart {
+    font-size: 10px;
+  }
 }
 div.relbox a.relart.relart-last {
   border-radius: 0 4px 4px 0;

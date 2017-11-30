@@ -21,7 +21,7 @@ h1.archive-title {
 		float:left;
 		margin-right:12px;
 		@media screen and (max-width:@screen-sm) {
-			margin-left:-36px;
+			margin-left:-96px;
 		}
 		
 	}
@@ -63,4 +63,13 @@ h1.archive-title {
 .page-numbers {
 	.pagination;
 	border-radius:0;
+}
+
+@media screen and (max-width:@screen-sm) {
+	.archive-items {
+		padding:0;
+		.autor, .top-meta {
+			display:none;
+		}
+	}
 }

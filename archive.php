@@ -20,7 +20,7 @@
 				<?php if(has_post_thumbnail( ) && $ptype == 'post'):?>
 					<?php the_post_thumbnail( 'thumbnail' );?>
 				<?php else:?>
-					<?php echo c80t_avatar(160);?>
+					<?php echo c80t_avatar(150);?>
 				<?php endif;?>
 			
 				<p class="top-meta">

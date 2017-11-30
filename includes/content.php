@@ -200,7 +200,8 @@ function c80t_run_frontpage() {
 	
 	$args = array(
 		'post__in' => $ids,
-		'orderby' => 'post__in'
+		'orderby' => 'post__in',
+		'post_type' => 'any'
 		);
 	$query = new WP_Query($args);
 	return $query;

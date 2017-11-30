@@ -17,6 +17,11 @@ div.relbox a.relart {
   border-radius: 0;
   line-height: 20px;
 }
+@media screen and (max-width: 768px) {
+  div.relbox a.relart {
+    font-size: 10px;
+  }
+}
 div.relbox a.relart.relart-last {
   border-radius: 0 4px 4px 0;
   border-right-width: 1px;
