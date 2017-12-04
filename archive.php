@@ -16,13 +16,14 @@
 				$ptypename = $ptypeobj->labels->name;
 			?>
 			<article class="articulo-archivo">
-			
+				<div class="img-in-archive">	
 				<?php if(has_post_thumbnail( ) && $ptype == 'post'):?>
 					<?php the_post_thumbnail( 'thumbnail' );?>
 				<?php else:?>
 					<?php echo c80t_avatar(150);?>
 				<?php endif;?>
-			
+				</div>
+				<div class="text-in-archive">	
 				<p class="top-meta">
 					<?php echo $ptypename;?> | <?php the_time(get_option('date_format'));?>
 				</p>
@@ -36,7 +37,7 @@
 				<p class="related">
 					<?php echo c80t_relink($post->ID);?>
 				</p>	
-			
+		</div>	
 			</article>
 			
 				<?php endwhile; ?>

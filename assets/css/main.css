@@ -8669,6 +8669,7 @@ h1.archive-title {
   margin-bottom: 12px;
   background-color: white;
   box-shadow: 0 0 3px #DFDFDF;
+  display: flex;
 }
 .articulo-archivo img {
   float: left;

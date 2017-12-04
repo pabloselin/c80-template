@@ -53,7 +53,7 @@
 						</div>
 					<?php else:?>
 						<div class="imgobj hidden">
-							<img src="<?php echo get_bloginfo('template_url');?>/assets/img/placeholder-main.png">
+							<img src="<?php echo get_bloginfo('template_url');?>/assets/img/placeholder-main_2017.png">
 						</div>
 					<?php endif;?>
 					
