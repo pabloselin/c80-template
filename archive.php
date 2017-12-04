@@ -18,7 +18,7 @@
 			<article class="articulo-archivo">
 				<div class="img-in-archive">	
 				<?php if(has_post_thumbnail( ) && $ptype == 'post'):?>
-					<?php the_post_thumbnail( 'thumbnail' );?>
+					<?php the_post_thumbnail( 'alt-thumbnail' );?>
 				<?php else:?>
 					<?php echo c80t_avatar(150);?>
 				<?php endif;?>

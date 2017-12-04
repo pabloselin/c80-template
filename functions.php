@@ -50,6 +50,7 @@ function c80t_imgsizes() {
 	add_image_size( 'single', 730, 0, false );
 	add_image_size( 'featured', 360, 360, true );
 	add_image_size( 'mini-item', 200, 60, true );
+	add_image_size( 'alt-thumbnail', 150, 200, true);
 }
 
 add_action( 'after_setup_theme', 'c80t_imgsizes' );

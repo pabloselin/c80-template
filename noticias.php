@@ -31,7 +31,7 @@ Template Name: Noticias
 			<article class="articulo-archivo">
 			<div class="in-img-archive">				
 				<?php if(has_post_thumbnail( ) && $ptype == 'post'):?>
-					<?php the_post_thumbnail( 'thumbnail' );?>
+					<?php the_post_thumbnail( 'alt-thumbnail' );?>
 				<?php else:?>
 					<?php echo c80t_avatar(160);?>
 				<?php endif;?>
