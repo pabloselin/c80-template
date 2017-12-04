@@ -29,14 +29,15 @@ Template Name: Noticias
 				$ptypename = $ptypeobj->labels->name;
 			?>
 			<article class="articulo-archivo">
-			
+			<div class="in-img-archive">				
 				<?php if(has_post_thumbnail( ) && $ptype == 'post'):?>
 					<?php the_post_thumbnail( 'thumbnail' );?>
 				<?php else:?>
 					<?php echo c80t_avatar(160);?>
 				<?php endif;?>
-			
-				<p class="top-meta">
+			</div>	
+			<div class="in-txt-archive">			
+			<p class="top-meta">
 					<?php echo $ptypename;?> | <?php the_time(get_option('date_format'));?>
 				</p>
 
@@ -51,7 +52,7 @@ Template Name: Noticias
 				</p>	
 				
 				
-			
+		</div>	
 			</article>
 			
 				<?php endwhile; ?>
