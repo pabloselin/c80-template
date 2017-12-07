@@ -8966,6 +8966,10 @@ a.readmore {
   letter-spacing: 3px;
   font-size: 1.2rem;
 }
+a.readmore:hover {
+  text-decoration: none;
+  border-bottom: 1px dashed #f0f0f0;
+}
 section.noticias article,
 article.featured {
   margin-bottom: 16px;
@@ -9085,6 +9089,9 @@ article.featured h1 {
 article.featured h1 a {
   color: white;
 }
+article.featured h1 a:hover {
+  border-bottom: 1px dashed #f0f0f0;
+}
 @media screen and (max-width: 768px) {
   article.featured h1 {
     font-size: 2.2rem;
@@ -9112,6 +9119,11 @@ article.featured h1 a {
     padding: 12px 0;
   }
 }
+.related-featured aside.c80-rels-front h4 a,
+.related-featured aside.c80-rels-front h5 a,
+.related-featured aside.c80-rels-front h6 a {
+  color: #f4033c;
+}
 .related-featured aside.c80-rels-front h2 {
   color: #f4033c;
   font-size: 1.4rem;
@@ -9131,7 +9143,6 @@ article.featured h1 a {
   }
 }
 .related-featured aside.c80-rels-front h4.title-rel-chap {
-  color: #2D231C;
   font-family: 'Merriweather', serif;
   font-weight: 700;
   font-size: 2.4rem;
@@ -9143,6 +9154,15 @@ article.featured h1 a {
   font-weight: 700;
   display: block;
   margin-bottom: 8px;
+}
+.related-featured aside.c80-rels-front h4.title-rel-chap span.captitle {
+  color: #2D231C;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.related-featured aside.c80-rels-front h4.title-rel-chap a:hover {
+  border-bottom: 0;
+  text-decoration: none;
 }
 .related-featured aside.c80-rels-front .textos-c80-mini {
   margin-left: 38px;

@@ -175,6 +175,15 @@ function c80t_pquery($parid) {
 	return $html;
 }
 
+function c80t_plink($parid) {
+  $pararr = explode('-', $parid);
+  $parkey = $pararr[0];
+  $parcount = $parkey + 1;
+  $artid = $pararr[1];
+
+  return get_permalink($artid) . '#parrafo-' . $parid;
+}
+
 function c80t_plain_paragraph($parid) {
 	/**
 	 * Devuelve el párrafo pelao según un ID
