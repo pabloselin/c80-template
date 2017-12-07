@@ -9594,6 +9594,11 @@ p.temas a:hover {
 body {
   background-color: #F5F5F5;
 }
+a:hover {
+  text-decoration: none;
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+}
 h1,
 h2,
 h3 {
