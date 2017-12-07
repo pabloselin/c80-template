@@ -8867,6 +8867,7 @@ h1.archive-title {
 .social-share .sharebutton a:hover {
   text-decoration: none;
   border-radius: 0;
+  border-bottom-width: 0;
 }
 #main .contenedor-home {
   margin-top: 32px;
@@ -9586,6 +9587,10 @@ p.temas a:hover {
 }
 #footer-sitio a {
   color: white;
+}
+#footer-sitio a:hover {
+  text-decoration: none;
+  border-bottom: 1px dashed #f0f0f0;
 }
 #footer-sitio ul li {
   list-style: none;
