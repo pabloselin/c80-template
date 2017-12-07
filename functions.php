@@ -1,13 +1,13 @@
 <?php
 //functions.php
 
-define( 'C80_THEME_VERSION', '1.0.4');
+define( 'C80_THEME_VERSION', '1.0.5');
 define( 'C80_TWITTER', 'proyectoC80');
 define( 'C80_FACEBOOK', 'https://www.facebook.com/proyectoC80/');
 define( 'C80_INSTAGRAM', 'https://www.instagram.com/proyectoc80/');
 define( 'C80_NOTFOUND', 1084);
 
-//theme support
+  //theme support
 function c80t_theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'title-tag' );

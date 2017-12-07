@@ -9594,7 +9594,8 @@ p.temas a:hover {
 body {
   background-color: #F5F5F5;
 }
-a:hover {
+.contenedor-estandar a:hover,
+.contenedor-home a:hover {
   text-decoration: none;
   border-bottom-style: dashed;
   border-bottom-width: 1px;
