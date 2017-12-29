@@ -82,13 +82,11 @@
 						</p>
 
 
-						<?php get_template_part('partials/inline-newsletter');?>
 					</div>
 						
 				</div>
 			</div>
 			
-			<?php get_template_part('partials/colabora');?>
 		</article>
 		
 			<?php endwhile; ?>
@@ -109,7 +107,10 @@
 			</div>
 		
 		<?php endif; ?>
-
+          <div class="opinion-footer clearfix col-md-8">			     
+           <?php get_template_part('partials/colabora');?>
+						<?php get_template_part('partials/inline-newsletter');?>
+           </div>
 	</section>
 </div>
 

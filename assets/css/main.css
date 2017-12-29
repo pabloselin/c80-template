@@ -7836,7 +7836,7 @@ article.page div.pad header div.img img.post-image {
   margin: 0;
 }
 article.articulo-estandar .pad {
-  border-top: 10px solid #25A8CE;
+  border-top: 10px solid #009f94;
 }
 article.columna-estandar .pad {
   border-top: 10px solid #549BD9;
@@ -8029,6 +8029,9 @@ div.contenido img {
   font-weight: 700;
   margin: 0;
   font-family: 'Merriweather', serif;
+}
+.opinion-footer #mc_embed_signup.inline {
+  margin: 0 0 12px 0;
 }
 @media screen and (max-width: 768px) {
   body.single-c80_cpt .contenedor-estandar .col-md-10 {
