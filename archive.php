@@ -15,14 +15,25 @@
 				$ptypeobj = get_post_type_object( $ptype );
 				$ptypename = $ptypeobj->labels->name;
 			?>
-			<article class="articulo-archivo">
-				<div class="img-in-archive">	
+        <article class="articulo-archivo <?php echo $ptype;?>">
+				<div class="img-in-archive hidden-xs">	
 				<?php if(has_post_thumbnail( ) && $ptype == 'post'):?>
 					<?php the_post_thumbnail( 'alt-thumbnail' );?>
 				<?php else:?>
 					<?php echo c80t_avatar(150);?>
 				<?php endif;?>
 				</div>
+<?php if(has_post_thumbnail( ) && $ptype == 'post'):?>
+      <div class="mobile-img-archive visible-xs">
+									<?php the_post_thumbnail( 'single' );?>
+			</div>
+	<?php elseif($ptype == 'columnas'):?>
+  <div class="mobile-avatar-archive visible-xs">
+  <?php echo c80t_avatar(80);?>
+        </div>
+				<?php endif;?>
+
+
 				<div class="text-in-archive">	
 				<p class="top-meta">
 					<?php echo $ptypename;?> | <?php the_time(get_option('date_format'));?>

@@ -8679,8 +8679,32 @@ h1.archive-title {
   margin-right: 12px;
 }
 @media screen and (max-width: 768px) {
+  .articulo-archivo {
+    display: block;
+  }
+  .articulo-archivo.columnas {
+    display: flex;
+  }
+  .articulo-archivo.columnas .text-in-archive {
+    padding-right: 12px;
+  }
+  .articulo-archivo .mobile-img-archive {
+    max-height: 120px;
+    overflow: hidden;
+  }
+  .articulo-archivo .mobile-avatar-archive {
+    float: left;
+    width: 60px;
+    margin: 0 6px 0 12px;
+  }
+  .articulo-archivo .in-txt-archive {
+    padding: 0 12px;
+  }
   .articulo-archivo img {
-    margin-left: -96px;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 }
 .articulo-archivo h2 {
@@ -8707,6 +8731,12 @@ h1.archive-title {
   max-width: 140px;
   height: auto;
   margin: 12px;
+}
+@media screen and (max-width: 768px) {
+  .archive article.articulo-archivo img.avatar {
+    max-width: 100%;
+    margin: 12px 0 0 0px;
+  }
 }
 .page-numbers {
   display: inline-block;

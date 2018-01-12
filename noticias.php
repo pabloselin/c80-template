@@ -29,13 +29,18 @@ Template Name: Noticias
 				$ptypename = $ptypeobj->labels->name;
 			?>
 			<article class="articulo-archivo">
-			<div class="in-img-archive">				
+			<div class="in-img-archive hidden-xs">				
 				<?php if(has_post_thumbnail( ) && $ptype == 'post'):?>
 					<?php the_post_thumbnail( 'alt-thumbnail' );?>
 				<?php else:?>
 					<?php echo c80t_avatar(160);?>
 				<?php endif;?>
 			</div>	
+        <div class="mobile-img-archive visible-xs">
+            <?php if(has_post_thumbnail() && $ptype == 'post'):?>
+                <?php the_post_thumbnail( 'single');?>
+            <?php endif;?>
+        </div>
 			<div class="in-txt-archive">			
 			<p class="top-meta">
 					<?php echo $ptypename;?> | <?php the_time(get_option('date_format'));?>

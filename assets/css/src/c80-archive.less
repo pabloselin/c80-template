@@ -20,12 +20,34 @@ h1.archive-title {
 	img {
 		float:left;
 		margin-right:12px;
-		@media screen and (max-width:@screen-sm) {
-			margin-left:-96px;
-		}
-		
 	}
-
+  @media screen and (max-width:@screen-sm) {
+    display:block;
+    &.columnas {
+   display:flex; 
+   .text-in-archive {
+    padding-right:12px;
+   }
+    }
+    .mobile-img-archive {
+        max-height:120px;
+        overflow:hidden;
+    }
+    .mobile-avatar-archive {
+        float:left;
+        width:60px;
+        margin:0 6px 0 12px;
+        }
+    .in-txt-archive {
+        padding:0 12px;
+    }
+    img {
+        float:none;
+        width:100%;
+        max-width:100%;
+        height:auto;
+    }
+  }  
 	h2 {
 		font-family:@heading;
 		font-weight:700;
@@ -56,6 +78,10 @@ h1.archive-title {
 			max-width:140px;
 			height:auto;
 			margin:12px;
+      @media screen and (max-width:@screen-sm) {
+        max-width:100%;
+        margin:12px 0 0 0px;
+      }
 		}
 	}
 }
