@@ -8735,7 +8735,7 @@ h1.archive-title {
 @media screen and (max-width: 768px) {
   .archive article.articulo-archivo img.avatar {
     width: 60px;
-    margin: 12px 0 0 0px;
+    margin: 12px 0 6px 0;
   }
 }
 .page-numbers {
