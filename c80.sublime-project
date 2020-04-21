@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/plugins/c80-plugin"
 		}
 	]
 }

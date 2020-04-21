@@ -1,3 +1,5 @@
+<?php if(c80t_countrels($post->ID) > 0):?>
+
 <aside class="c80-rels">
 		<header>
 			<h2><i class="fa fa-book"></i>  <?php echo c80t_countrels($post->ID);?> Artículos de la constitución relacionados</h2>
@@ -64,3 +66,5 @@
 				?>
 			</div>
 </aside>
+
+<?php endif;?>

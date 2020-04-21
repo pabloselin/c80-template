@@ -118,7 +118,16 @@ function c80t_top_parentid($postid, $en_capitulo = false) {
 	/**
 	 * Devuelve el ID del parent CAPITULO de un artículo C80
 	 */
-	$ancestors = get_post_ancestors( $postid );
+	//Hay que chequear que el post sea una modificacion
+	$ismod = get_post_type($postid);
+
+	if($ismod == 'c80_cptrev') {
+		$baseid = get_post_meta( $postid, 'c80_artselect', true);
+	} else {
+		$baseid = $postid;
+	}
+
+	$ancestors = get_post_ancestors( $baseid );
 	if($ancestors && !$en_capitulo) {
 		$root = count($ancestors)-1;
 		return $ancestors[$root];
