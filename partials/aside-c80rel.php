@@ -45,9 +45,16 @@
 	 								echo '<h4><span>' . get_the_title($key) . '</span>' . c80t_captitle($key) . '</h4>';
 	 							endif;
 	 							foreach($arts as $art) {
+
+	 								if(get_post_type($art) == 'c80_cptrev') {
+	 									$art = get_post_meta($art, 'c80_artselect', true);
+	 								}
+
 	 								echo '<h5><a href="' . get_permalink($art) . '"><i class="fa fa-caret-right"></i> ' . get_the_title($art) . '</a></h5>';
+	 								
 	 								//Busco el párrafo en el array de párrafos
 	 								$pararts = isset($parrarr[$art]) ? $parrarr[$art] : '';
+	 								
 	 								if(is_array($pararts)) {
 	 									asort($pararts);
 			 								foreach($pararts as $parart) {

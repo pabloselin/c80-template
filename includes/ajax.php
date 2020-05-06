@@ -113,6 +113,9 @@ function c80t_relink($postid) {
 			$title = str_replace('Artículo' , 'Art. Nº', get_the_title($rel) );
 			$capinfo = c80t_parentname($rel); 
 			$ckey = ($nrel == $key+1)? 'last' : $key;
+			if(get_post_type($rel) == 'c80_cptrev') {
+				$rel = get_post_meta($rel, 'c80_artselect', true);
+			}
 			$relink .= '<a data-toggle="tooltip" data-placement="bottom" class="relart-' . $ckey . ' relart" title="' . $capinfo . '" href="' . get_permalink($rel) .'" class="inpagelink"><span><i class="fa fa-file-text-o"></i> ' . $title . '</span></a>';
 		
 		}
@@ -166,7 +169,7 @@ function c80t_pquery($parid) {
 	$html = '';
 
 	$html .= '<div class="constarticle parrafo-article">';
-	$html .= '<h6><a href="' . get_permalink($artid) . '#parrafo-' . $parid . '"><i class="fa fa-angle-double-right"></i> ' .' Párrafo #' . $parcount .'</a></h6>';
+	$html .= '<h6><a href="' . c80t_plink($parid) . '"><i class="fa fa-angle-double-right"></i> ' .' Párrafo #' . $parcount .'</a></h6>';
 	$html .= '<div class="lc">';
 	$html .= '<p id="' . $parid . '">' . $parrafocontent[$parkey] . '</p>';
 	$html .= '</div>';
@@ -180,6 +183,11 @@ function c80t_plink($parid) {
   $parkey = $pararr[0];
   $parcount = $parkey + 1;
   $artid = $pararr[1];
+  
+  if(get_post_type($artid) == 'c80_cptrev') {
+  	$artid = get_post_meta($artid, 'c80_artselect', true);
+
+  }
 
   return get_permalink($artid) . '#parrafo-' . $parid;
 }
