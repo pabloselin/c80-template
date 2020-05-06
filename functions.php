@@ -41,7 +41,7 @@ include( TEMPLATEPATH . '/includes/bootstrap-menu.php' );
 include( TEMPLATEPATH . '/includes/author.php' );
 include( TEMPLATEPATH . '/includes/content-embeds.php' );
 include( TEMPLATEPATH . '/includes/json-microdata.php' );
-include( TEMPLATEPATH . '/includes/timeline.php' );
+include( TEMPLATEPATH . '/includes/timeline-functions.php' );
 
 
 //Image sizes

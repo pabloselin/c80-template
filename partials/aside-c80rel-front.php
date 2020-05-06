@@ -8,6 +8,8 @@
 						$rels = rwmb_meta('c80_artrel', 'multiple=true', $post->ID);
 						$relpar = rwmb_meta('c80_parraforel', 'multiple=true', $post->ID);
 
+
+
 						//Necesito tener los capítulos.
 						$relparents = array();
 						
@@ -37,6 +39,8 @@
 							$relarray[c80t_top_parentid($rel)][] = $rel;
  						}
 
+ 						
+
  						foreach($relarray as $key=>$arts) {
  							foreach($arts as $art) {
  								//Busco el párrafo en el array de párrafos
@@ -45,16 +49,18 @@
  									asort($pararts);
 		 								foreach($pararts as $parart) {
 		 									$vpar = $parart + 1;
-                      $parid = $parart . '-' . $art;
-                      $parlink = c80t_plink($parid);
- 							        echo '<h4 class="title-rel-chap"><a href="' . $parlink . '"><span>' . get_the_title($key) . '</span><span class="captitle">' . c80t_captitle($key) . '</span></a></h4>';
-                      echo '<h5><a href="' . $parlink . '"><i class="fa fa-caret-right"></i> ' . get_the_title($art) . '</a></h5>';
-		 									//echo '<div class="frontp">';
-		 									//echo '<h6>Párrafo #' . $vpar . '</h6>';
-		 									//echo '<p>' . c80t_plain_paragraph($parart . '-' . $art) .'</p>';
-                      //echo '</div>';
-		 									echo c80t_pquery($parid);
+                      				$parid = $parart . '-' . $art;
+                      				$parlink = c80t_plink($parid);
+ 					
+
+
+ 									echo '<h4 class="title-rel-chap"><a href="' . $parlink . '"><span>' . get_the_title($key) . '</span><span class="captitle">' . c80t_captitle($key) . '</span></a></h4>';
+                      				echo '<h5><a href="' . $parlink . '"><i class="fa fa-caret-right"></i> ' . get_the_title($art) . '</a></h5>';
+		 							
+		 							echo c80t_pquery($parid);
 		 								}
+ 								} else {
+ 									echo '<h5 class="title-rel-chap"><a href="' . $art. '">' . get_the_title($art) . '</a></h5>';
  								}
  								
  							}

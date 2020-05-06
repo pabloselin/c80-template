@@ -2530,3 +2530,6 @@ jQuery(document).ready(function($) {
 	singleCounter();
 
 });
+jQuery(document).ready(function($) {
+	console.log('init timeline functions');
+})

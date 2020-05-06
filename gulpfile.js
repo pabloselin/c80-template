@@ -30,7 +30,7 @@ gulp.task('embeds', function() {
 });
 
 gulp.task('scripts', function() {
-	return gulp.src(['./assets/js/src/bootstrap.js', './assets/js/src/scripts.js'])
+	return gulp.src(['./assets/js/src/bootstrap.js', './assets/js/src/scripts.js', './assets/js/src/timeline.js'])
 			.pipe(concat('c80.js'))
 			.pipe(gulp.dest('./assets/js/'));
 });

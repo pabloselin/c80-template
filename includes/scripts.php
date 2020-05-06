@@ -17,7 +17,7 @@ function c80t_scripts() {
 	if(!is_admin()) {
 		wp_deregister_script( 'jquery' );
 		wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '3.2.1', false);
-		if(is_page_template('page-template-timeline.php')):
+		if(is_page_template('c80-timeline.php')):
 			wp_enqueue_script( 'timelinejs', 'https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js', array(), '3.6.5', false );
 		endif;
 		if(WP_ENV == 'development') {
@@ -31,6 +31,9 @@ function c80t_scripts() {
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('c80js');
 		wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/269614ad84.js#asyncload', array(), '4.7.0', true);
+		wp_localize_script( 'c80js', 'c80', array(
+												'timelineurl' => get_bloginfo('url') . '/wp-json/constitucion1980/v1/linea-de-tiempo'
+											) );		
 	}
 	
 	
@@ -45,7 +48,7 @@ function c80t_styles() {
 
 	//iconos
 	//wp_enqueue_style( 'c80-iconos', get_bloginfo('template_url') . '/assets/vendor/font-awesome/css/font-awesome.min.css', C80_THEME_VERSION, 'screen' );
-	if(is_page_template('page-template-timeline.php')):
+	if(is_page_template('c80-timeline.php')):
 		wp_enqueue_style( 'timelinecss', 'https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css', array( ), false, 'screen' );
 	endif;
 }

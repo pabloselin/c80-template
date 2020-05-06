@@ -9548,6 +9548,97 @@ p.temas a:hover {
     border-width: 0 0 0 1px;
   }
 }
+@media (min-width: 992px) {
+  .contenedor-timeline article.page {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .contenedor-timeline article.page {
+    float: left;
+    width: 100%;
+  }
+}
+#main-timeline {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-timeline:before {
+  background: #020024;
+  background: -webkit-linear-gradient(left, rgba(2, 0, 36, 0) 0%, #424f63 60%);
+  background: -o-linear-gradient(left, rgba(2, 0, 36, 0) 0%, #424f63 60%);
+  background: linear-gradient(to right, rgba(2, 0, 36, 0) 0%, #424f63 60%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+  z-index: 10;
+}
+#main-timeline .content-wrap {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 64px 64px 64px;
+}
+#main-timeline .text-content {
+  color: white;
+  max-width: 360px;
+}
+#main-timeline .text-content h1 {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 12px 0;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+#main-timeline .text-content p.aligncenter {
+  text-align: center;
+  margin: 24px 0;
+}
+#main-timeline .text-content .btn-enter-timeline {
+  padding: 6px 36px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 0;
+}
+#main-timeline .fases {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  z-index: 20;
+  width: 100%;
+  text-align: center;
+  margin: 32px 0;
+}
+#main-timeline .fases h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+#main-timeline .fases h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+#main-timeline .fases img {
+  margin: 24px 0;
+}
+#main-timeline .fases .fase_2 {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
 #footer-sitio {
   min-height: 200px;
   background-color: #414E62;

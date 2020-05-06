@@ -132,3 +132,42 @@ function c80t_hitos() {
 
 }
 add_action( 'init', 'c80t_hitos', 0 );
+
+// Register Custom Taxonomy
+function c80_tipohitos() {
+
+	$labels = array(
+		'name'                       => _x( 'Tipos de hito', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Tipo de hito', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Tipos de hito', 'text_domain' ),
+		'all_items'                  => __( 'Todos', 'text_domain' ),
+		'parent_item'                => __( 'Parent Item', 'text_domain' ),
+		'parent_item_colon'          => __( 'Parent Item:', 'text_domain' ),
+		'new_item_name'              => __( 'Nuevo tipo de hito', 'text_domain' ),
+		'add_new_item'               => __( 'Añadir nuevo tipo de hito', 'text_domain' ),
+		'edit_item'                  => __( 'Editar tipo de hito', 'text_domain' ),
+		'update_item'                => __( 'Actualizar tipo de hito', 'text_domain' ),
+		'view_item'                  => __( 'Ver tipo de hito', 'text_domain' ),
+		'separate_items_with_commas' => __( '', 'text_domain' ),
+		'add_or_remove_items'        => __( 'Añadir o quitar tipos de hito', 'text_domain' ),
+		'choose_from_most_used'      => __( 'Escoger entre los más usados', 'text_domain' ),
+		'popular_items'              => __( 'Popular Items', 'text_domain' ),
+		'search_items'               => __( 'Search Items', 'text_domain' ),
+		'not_found'                  => __( 'Not Found', 'text_domain' ),
+		'no_terms'                   => __( 'No items', 'text_domain' ),
+		'items_list'                 => __( 'Items list', 'text_domain' ),
+		'items_list_navigation'      => __( 'Items list navigation', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'tipo_hito', array( 'hitos' ), $args );
+
+}
+add_action( 'init', 'c80_tipohitos', 0 );
