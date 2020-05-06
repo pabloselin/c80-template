@@ -60,7 +60,7 @@
 		 							echo c80t_pquery($parid);
 		 								}
  								} else {
- 									echo '<h5 class="title-rel-chap"><a href="' . $art. '">' . get_the_title($art) . '</a></h5>';
+ 									echo '<h5 class="title-rel-chap"><a href="' . get_permalink($art) . '">' . get_the_title($art) . '</a></h5>';
  								}
  								
  							}
