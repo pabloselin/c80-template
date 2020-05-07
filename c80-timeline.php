@@ -70,6 +70,11 @@ Template Name: Linea de tiempo
 		</div>
 		
 	</section>
+	<div class="fases-presentadas">
+		<?php foreach($fases as $curfase) {
+			c80_presentacion_fase($curfase);
+		}?>
+	</div>
 </div>
 
 <?php else: ?>

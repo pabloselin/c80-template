@@ -2538,6 +2538,15 @@ jQuery(document).ready(function($) {
 		$('.contenedor-timeline').addClass('active');
 		$('.presentacion-fase').addClass('hidden');
 
+        if(!$('.fases-main').hasClass('hidden')) {
+                $(window).on('scroll', function(){
+                        $('.fases-main').fadeOut(300, function() {
+                                $(this).addClass('hidden');
+                        });
+                });        
+        }
+        
+
         $.getJSON(c80.timelineurl, function(data) {
         	
         	timeline = new TL.Timeline('timeline-' + fase, data[fase], {
@@ -2547,6 +2556,6 @@ jQuery(document).ready(function($) {
         	
         	
         	});
-	})
+	});
 
 })

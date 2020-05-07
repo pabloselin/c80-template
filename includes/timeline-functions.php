@@ -71,7 +71,8 @@ function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent ) {
 							'text'		=> apply_filters( 'post_content', $hitocontent ),
 							),
 				'start_date' => $start_date,
-				'group'		=> $grupoid
+				'group'		=> $grupo[0]->name,
+				'evclass'	=> $grupoid
 			);
 			//Main fields
 			
@@ -262,3 +263,28 @@ function c80_register_options_submenu_appearance_menu() {
 
 }
 add_action( 'cmb2_admin_init', 'c80_register_options_submenu_appearance_menu' );
+
+
+function c80_presentacion_fase($fase) {
+	global $post;
+	$fasestart = parse_field_date_for_json(get_post_meta($timeline_options['hito_inicial_' . $fase], 'c80_lt_start_date', true));
+	$faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final_' . $fase], 'c80_lt_start_date', true));
+	$timeline_options = get_option('c80_timeline_options');
+
+	?>
+	
+	<section class="presentacion-fase" style="background-image: url(<?php echo $timeline_options['imagen_' . $fase];?>);">
+	<div class="content-wrap">
+		<div class="text-content">
+			<h2><?php echo $timeline_options['titulo_' . $fase];?></h2>
+			<h3><?php echo $fasestart['year'] . '-' . $faseend['year'];?></h3>
+			<div class="fase-intro">
+				<?php echo apply_filters( 'the_content', $timeline_options['intro_' . $fase] );?>
+			</div>
+			<p><a href="<?php echo add_query_arg( array('fase' => $fase ), get_permalink($post->ID) );?>" class="btn btn-enter-timeline" data-fase="<?php echo $fase;?>">Entrar</a></p>
+		</div>
+	</div>
+	</section>
+
+	<?php
+}
