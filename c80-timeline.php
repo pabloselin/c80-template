@@ -10,7 +10,7 @@ Template Name: Linea de tiempo
 	$fase = get_query_var('fase');
 	$imageid = get_post_thumbnail_id( $post->ID );
 	$image = wp_get_attachment_image_src( $imageid, 'full', false );
-	$fases = array('fase_1', 'fase_2', 'fase_3');
+	$fases = array('fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5');
 	$fasedata = array();
 	$timeline_options = get_option('c80_timeline_options');
 	
@@ -38,23 +38,25 @@ Template Name: Linea de tiempo
 
 	
 		<div class="fases">
-			<div class="row">
+			<div class="fases-main">
 				<?php 
 					foreach($fases as $fase) {
 					
 						$fasedata[$fase] = array(
 							'title' => $timeline_options['titulo_' . $fase],
-							'start' => parse_field_date_for_json(get_post_meta($timeline_options['hito_inicial_' . $fase], 'c80_tl_start_date', true)),
-							'end'	=> parse_field_date_for_json(get_post_meta($timeline_options['hito_final_' . $fase], 'c80_tl_start_date', true)),
+							'start' => parse_field_date_for_json(get_post_meta($timeline_options['hito_inicial_' . $fase], 'c80_lt_start_date', true)),
+							'end'	=> parse_field_date_for_json(get_post_meta($timeline_options['hito_final_' . $fase], 'c80_lt_start_date', true)),
 							);
 
 
 						?>
 
-						<div class="col-md-4 <?php echo $fase;?>">
+						<div class="fase-arrow <?php echo $fase;?>">
 							<h1><?php echo $fasedata[$fase]['start']['year'];?> - <?php echo $fasedata[$fase]['end']['year'];?></h1>
 							<h2><?php echo $fasedata[$fase]['title'];?></h2>
-							<img src="<?php bloginfo('template_url');?>/assets/img/tl/arrow_down.svg" alt="">
+							<a href="<?php echo add_query_arg( array('fase' => $fase ), get_permalink($post->ID) );?>">
+								<img src="<?php bloginfo('template_url');?>/assets/img/tl/arrow_down.svg" alt="">
+							</a>
 						</div>
 
 						<?php

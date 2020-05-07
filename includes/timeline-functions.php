@@ -15,25 +15,21 @@ function c80_get_main_timeline_events( WP_REST_Request $request ) {
 	
 	$options = get_option('c80_timeline_options');
 
-	$fases = array('fase_1', 'fase_2', 'fase_3');
+	$fases = array('fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5');
 
 	foreach($fases as $fase) {
 		$hito_start = $options['hito_inicial_' . $fase];
 		$hito_end = $options['hito_final_' . $fase];
 
-		$fecha_start = get_post_meta($hito_start, 'c80_tl_start_date', true);
-		$fecha_end = get_post_meta($hito_end, 'c80_tl_start_date', true);
-
-		if($fase == 'fase3'):
-			$fecha_start;
-		endif;
+		$fecha_start = get_post_meta($hito_start, 'c80_lt_start_date', true);
+		$fecha_end = get_post_meta($hito_end, 'c80_lt_start_date', true);
 		
 		$range = array(
 			'post_type' => 'hitos',
 			'numberposts' => -1,
 			'meta_query' => array(
 				array(
-					'key' 		=> 'c80_tl_start_date',
+					'key' 		=> 'c80_lt_start_date',
 					'value' 	=> array($fecha_start, $fecha_end),
 					'compare' 	=> 'BETWEEN'
 				),
@@ -54,8 +50,8 @@ function c80_get_main_timeline_events( WP_REST_Request $request ) {
 
 function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent ) {
 
-			$start_date_field 	= get_post_meta( $hitoid, 'c80_tl_start_date', true );
-			$end_date_field 	= get_post_meta( $hitoid, 'c80_tl_end_date', true );
+			$start_date_field 	= get_post_meta( $hitoid, 'c80_lt_start_date', true );
+			$end_date_field 	= get_post_meta( $hitoid, 'c80_lt_end_date', true );
 			$media_field		= get_the_post_thumbnail_url( $hitoid, 'medium' );
 
 			$start_date 		= parse_field_date_for_json( $start_date_field );
@@ -89,8 +85,8 @@ function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent ) {
 
 			if(has_post_thumbnail( $hitoid)):
 				$event['media']['url'] = get_the_post_thumbnail_url( $hitoid, 'medium' );
-				$event['media']['caption'] = get_post_meta($hitoid, 'c80_tl_media_caption', true);
-				$event['media']['credito'] = get_post_meta($hitoid, 'c80_tl_media_credit', true);
+				$event['media']['caption'] = get_post_meta($hitoid, 'c80_lt_media_caption', true);
+				$event['media']['credito'] = get_post_meta($hitoid, 'c80_lt_media_credit', true);
 			endif;
 
 			return $event;
@@ -169,88 +165,51 @@ function c80_register_options_submenu_for_page_post_type() {
 	$hitos_options = array();
 	
 	foreach($hitos as $hito) {
-		$fecha = get_post_meta($hito->ID, 'c80_tl_start_date', true);
+		$fecha = get_post_meta($hito->ID, 'c80_lt_start_date', true);
 		$hitos_options[$hito->ID] = '[' . $fecha . '] ' . $hito->post_title;
 	}
 
-	$cmb->add_field( array(
-		'name' => __( 'Título Fase 1', 'c80' ),
-		'id' => 'titulo_fase_1',
+	$fases = array(
+		'fase_1' => 'Fase 1',
+		'fase_2' => 'Fase 2',
+		'fase_3' => 'Fase 3',
+		'fase_4' => 'Fase 4',
+		'fase_5' => 'Fase 5'
+	);
+
+	foreach($fases as $key=>$fase) {
+		$cmb->add_field( array(
+		'name' => __( 'Título ' . $fase, 'c80' ),
+		'id' => 'titulo_' . $key,
 		'type' => 'text'
-	) );
+		) );
 
-	$cmb->add_field( array(
-		'name' => __( 'Texto introducción Fase 1', 'c80' ),
-		'id' => 'intro_fase_1',
-		'type' => 'textarea'
-	) );
+		$cmb->add_field( array(
+			'name' => __( 'Texto introducción ' . $fase , 'c80' ),
+			'id' => 'intro_' . $key,
+			'type' => 'textarea'
+		) );
 
-	$cmb->add_field( array(
-		'name' => __( 'Hito inicial fase 1', 'c80' ),
-		'id' => 'hito_inicial_fase_1',
-		'type' => 'select',
-		'options' => $hitos_options,
-	) );
+		$cmb->add_field( array(
+			'name' => __( 'Imagen ' . $fase, 'c80' ),
+			'id' => 'imagen_' . $key,
+			'type' => 'file'
+		) );
 
-	$cmb->add_field( array(
-		'name' => __( 'Hito final fase 1', 'c80' ),
-		'id' => 'hito_final_fase_1',
-		'type' => 'select',
-		'options' => $hitos_options,
-	) );
+		$cmb->add_field( array(
+			'name' => __( 'Hito inicial ' . $fase, 'c80' ),
+			'id' => 'hito_inicial_' . $key,
+			'type' => 'select',
+			'options' => $hitos_options,
+		) );
 
-	$cmb->add_field( array(
-		'name' => __( 'Título Fase 2', 'c80' ),
-		'id' => 'titulo_fase_2',
-		'type' => 'text'
-	) );
-
-	$cmb->add_field( array(
-		'name' => __( 'Texto introducción Fase 2', 'c80' ),
-		'id' => 'intro_fase_2',
-		'type' => 'textarea'
-	) );
-
-	$cmb->add_field( array(
-		'name' => __( 'Hito inicial fase 2', 'c80' ),
-		'id' => 'hito_inicial_fase_2',
-		'type' => 'select',
-		'options' => $hitos_options,
-	) );
-
-	$cmb->add_field( array(
-		'name' => __( 'Hito final fase 2', 'c80' ),
-		'id' => 'hito_final_fase_2',
-		'type' => 'select',
-		'options' => $hitos_options,
-	) );
-
-	$cmb->add_field( array(
-		'name' => __( 'Título Fase 3', 'c80' ),
-		'id' => 'titulo_fase_3',
-		'type' => 'text'
-	) );
-
-	$cmb->add_field( array(
-		'name' => __( 'Texto introducción Fase 3', 'c80' ),
-		'id' => 'intro_fase_3',
-		'type' => 'textarea'
-	) );
-
-	$cmb->add_field( array(
-		'name' => __( 'Hito inicial fase 3', 'c80' ),
-		'id' => 'hito_inicial_fase_3',
-		'type' => 'select',
-		'options' => $hitos_options,
-	) );
-
-	$cmb->add_field( array(
-		'name' => __( 'Hito final fase 3', 'c80' ),
-		'id' => 'hito_final_fase_3',
-		'type' => 'select',
-		'options' => $hitos_options,
-	) );
-
+		$cmb->add_field( array(
+			'name' => __( 'Hito final ' . $fase, 'c80' ),
+			'id' => 'hito_final_' . $key,
+			'type' => 'select',
+			'options' => $hitos_options,
+		) );
+	}
 
 }
 

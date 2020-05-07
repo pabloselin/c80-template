@@ -41,30 +41,29 @@
 	 						}
 
 	 						foreach($relarray as $key=>$arts) {
-	 							if(get_post_type($key) == 'c80_cpt'):
-	 								echo '<h4><span>' . get_the_title($key) . '</span>' . c80t_captitle($key) . '</h4>';
-	 							endif;
 	 							foreach($arts as $art) {
+ 								//Busco el párrafo en el array de párrafos
+ 								$pararts = isset($parrarr[$art]) ? $parrarr[$art] : '';
+ 								if(is_array($pararts)) {
+ 									asort($pararts);
+		 								foreach($pararts as $parart) {
+		 									$vpar = $parart + 1;
+                      				$parid = $parart . '-' . $art;
+                      				$parlink = c80t_plink($parid);
+ 					
 
-	 								if(get_post_type($art) == 'c80_cptrev') {
-	 									$art = get_post_meta($art, 'c80_artselect', true);
-	 								}
 
-	 								echo '<h5><a href="' . get_permalink($art) . '"><i class="fa fa-caret-right"></i> ' . get_the_title($art) . '</a></h5>';
-	 								
-	 								//Busco el párrafo en el array de párrafos
-	 								$pararts = isset($parrarr[$art]) ? $parrarr[$art] : '';
-	 								
-	 								if(is_array($pararts)) {
-	 									asort($pararts);
-			 								foreach($pararts as $parart) {
-			 									$vpar = $parart + 1;
-			 									echo c80t_pquery($parart . '-' . $art);
-			 									//echo c80t_pquery($parart . '-' . $art);
-			 								}
-	 								}
-	 								
-	 							}
+ 									echo '<h4><span>' . get_the_title($key) . '</span>
+ 											<a href="' . $parlink . '">' . c80t_captitle($key) . '</a></h4>';
+                      				echo '<h5><a href="' . $parlink . '"><i class="fa fa-caret-right"></i> ' . get_the_title($art) . '</a></h5>';
+		 							
+		 							echo c80t_pquery($parid);
+		 								}
+ 								} else {
+ 									echo '<h5 class="title-rel-chap"><a href="' . get_permalink($art) . '">' . get_the_title($art) . '</a></h5>';
+ 								}
+ 								
+ 							}
 	 						}
 	 					//fin comprobador si hay rels
 	 					endif;
