@@ -6,7 +6,7 @@ $fasestart = parse_field_date_for_json(get_post_meta($timeline_options['hito_ini
 $faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final_' . $fase], 'c80_lt_start_date', true))
 ?>
 
-<section class="presentacion-fase" style="background-image: url(<?php echo $timeline_options['imagen_' . $fase];?>);">
+<section class="presentacion-fase" style="background-image: url(<?php echo $timeline_options['imagen_' . $fase];?>);" data-fase="<?php echo $fase;?>" data-started="<?php echo get_query_var('started');?>">
 	<div class="content-wrap">
 		<div class="text-content">
 			<h2><?php echo $timeline_options['titulo_' . $fase];?></h2>
@@ -20,11 +20,16 @@ $faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final
 </section>
 <section class="contenedor-timeline">
 	<div class="top-timeline-section">
-		<div id="timeline-<?php echo $fase;?>" style="height:70vh;">
+		<div id="timeline-<?php echo $fase;?>" class="c80-timeline-insert">
 
 		</div>
 	</div>
 </section>
+
+<div class="visible-xs">
+	<?php get_template_part('partials/timeline-nav');?>
+</div>
+
 <div class="container-fluid">
 <div class="row navegador-fases hidden-xs">
 	<?php 
@@ -36,7 +41,16 @@ $faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final
 			'end'	=> parse_field_date_for_json(get_post_meta($timeline_options['hito_final_' . $faseitem], 'c80_lt_start_date', true)),
 		);
 
+			$startyear = $faseitemdata[$faseitem]['start']['year'];
+			$endyear = $faseitemdata[$faseitem]['end']['year'];
+			$period = range($startyear, $endyear);
 
+			if(count($period) > 6) {
+				$middle = intdiv(count($period), 2);
+				//var_dump($period[$middle]);
+				$period = array_slice($period, $middle, 6);
+				//var_dump($period);
+			}
 		?>
 
 		<div class="<?php echo $faseitem;?> navegador-fase-item <?php echo ($fase == $faseitem)? 'active' : '';?>">
@@ -48,10 +62,16 @@ $faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final
 					}?>
 				</div>
 				<span class="startyear">
-					<?php echo $faseitemdata[$faseitem]['start']['year'];?>
+					<?php echo $startyear;?>
 				</span>
+				<div class="middleyears">
+					<?php foreach($period as $year) {
+						$decade = substr($year, 2);
+						echo '<span class="middleyear">' . $decade . '</span>';
+					}?>
+				</div>
 				<span class="endyear">
-					<?php echo $faseitemdata[$faseitem]['end']['year'];?>
+					<?php echo $endyear;?>
 				</span>
 			</div>
 			<?php 

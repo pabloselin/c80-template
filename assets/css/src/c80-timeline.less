@@ -1,4 +1,7 @@
 
+html {
+	scroll-behavior: smooth;
+}
 
 @import "timeline/TL.Timeline.less";
 
@@ -77,8 +80,9 @@
 
 		
 	}
+}
 
-	.fases {
+.fases-nav-home {
 		color: white;
 		position: fixed;
 		bottom: 0;
@@ -86,6 +90,14 @@
 		width: 100%;
 		text-align: center;
 		margin: 32px 0;
+
+		a {
+			display: block;
+			color: white;
+			&:hover {
+				text-decoration: none;
+			}
+		}
 
 		h1 {
 			font-size: 22px;
@@ -116,7 +128,6 @@
 			flex-grow: 1;
 		}
 	}
-}
 
 .btn-enter-timeline {
 	padding: 6px 36px;
@@ -205,20 +216,31 @@
 			width: 100%;
 			font-family: @serif;
 			margin: 0;
+			transition: all linear 0.15s;
 		}
 	}
 
 	.navegador-fase-item.active,
-	.navegador-fase-item a:hover
+	.navegador-fase-item a:hover,
+	.navegador-fase-item:hover
 	 {
-		h3 {
+
+		h3,
+		a h3 {
 			background-color: #666666;
 		}
 		.yearscale:before {
 			border-color: #666;
+			color: #666;
 		}
+
+		.yearscale, .middleyear {
+			color: #666;
+		}
+
 		.yearscale .yearmarkers span {
 			border-color: #666;
+			color: #666;
 		}
 	}
 }
@@ -237,6 +259,7 @@
 			margin: 40px 2px 30px 2px;
 			border-right: 1px solid #eee;
 			flex-grow: 1;
+			transition: all linear 0.15s;
 		}
 	}
 	&:before {
@@ -248,6 +271,7 @@
 		position: absolute;
 		border-left: 3px solid #eee;
 		border-right: 3px solid #eee;
+		transition: all linear 0.15s;
 	}
 	.startyear,
 	.endyear {
@@ -261,6 +285,7 @@
 		font-weight: normal;
 		color: #666;
 		padding: 0 5px;
+		transition: all linear 0.15s;
 	}
 
 	.startyear {
@@ -269,6 +294,25 @@
 
 	.endyear {
 		right: -25px;
+	}
+
+	.middleyears {
+		width: 100%;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		height: 100%;
+		top: -14px;
+
+		span.middleyear {
+			display: inline-block;
+			padding: 2px;
+			background-color: #f5f5f5;
+			height: 20px;
+			color: #eee;
+			transition: all linear 0.15s;
+		}
 	}
 }
 
@@ -286,8 +330,67 @@
 	.presentacion-fase {
 		position: relative;
 		border-bottom: 1px solid #666;
+		height: 100vh;
 		.content-wrap {
 			justify-content: center;
+		}
+	}
+}
+
+.fixedtoplogo {
+	position: fixed;
+	top: 48px;
+	left: 64px;
+	z-index: 100;
+	img {
+		max-width: 80px;
+	}
+}
+
+.c80-timeline-insert {
+	height: 70vh;
+}
+
+@media screen and (max-width: @screen-md) {
+	
+	.c80-timeline-insert,
+	.presentacion-fase
+	 {
+		height: 80vh;
+	}
+
+
+	.fixedtoplogo {
+		top: 24px;
+		left: 24px;
+	}
+
+	.fases-nav-home {
+		margin: 0;
+		&.in-timeline {
+			a {
+				color: #333;
+			}
+		}
+		.fases-main {
+			.fase-arrow {
+				h1 {
+					font-size: 16px;
+					font-weight: normal;
+					.hyphen {
+						display: block;
+						line-height: 1em;
+					}
+
+				}
+				h2 {
+					margin: 6px 0;
+					font-size: 14px;
+				}
+				img {
+					margin: 12px 0;
+				}
+			}
 		}
 	}
 }

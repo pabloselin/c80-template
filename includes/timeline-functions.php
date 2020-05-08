@@ -123,6 +123,7 @@ add_filter( 'query_vars', 'c80_timeline_queryvars' );
 function c80_timeline_queryvars($vars) {
 	$vars[] = 'fase';
 	$vars[] = 'timeline';
+	$vars[] = 'started';
 	return $vars;
 }
 
@@ -273,7 +274,7 @@ function c80_presentacion_fase($fase) {
 
 	?>
 	
-	<section class="presentacion-fase" style="background-image: url(<?php echo $timeline_options['imagen_' . $fase];?>);">
+	<section id="<?php echo $fase;?>" class="presentacion-fase" style="background-image: url(<?php echo $timeline_options['imagen_' . $fase];?>);">
 	<div class="content-wrap">
 		<div class="text-content">
 			<h2><?php echo $timeline_options['titulo_' . $fase];?></h2>
@@ -281,7 +282,7 @@ function c80_presentacion_fase($fase) {
 			<div class="fase-intro">
 				<?php echo apply_filters( 'the_content', $timeline_options['intro_' . $fase] );?>
 			</div>
-			<p><a href="<?php echo add_query_arg( array('fase' => $fase ), get_permalink($post->ID) );?>" class="btn btn-enter-timeline" data-fase="<?php echo $fase;?>">Entrar</a></p>
+			<p><a href="<?php echo add_query_arg( array('fase' => $fase, 'started' => true ), get_permalink($post->ID) );?>" class="btn btn-enter-timeline" data-fase="<?php echo $fase;?>">Entrar</a></p>
 		</div>
 	</div>
 	</section>

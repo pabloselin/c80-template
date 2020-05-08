@@ -9742,6 +9742,9 @@ p.temas a:hover {
     border-width: 0 0 0 1px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 /*!
 	Timeline JS 3 
 	
@@ -13057,7 +13060,7 @@ p.temas a:hover {
   text-align: center;
   margin: 24px 0;
 }
-#main-timeline .fases {
+.fases-nav-home {
   color: white;
   position: fixed;
   bottom: 0;
@@ -13066,26 +13069,33 @@ p.temas a:hover {
   text-align: center;
   margin: 32px 0;
 }
-#main-timeline .fases h1 {
+.fases-nav-home a {
+  display: block;
+  color: white;
+}
+.fases-nav-home a:hover {
+  text-decoration: none;
+}
+.fases-nav-home h1 {
   font-size: 22px;
   font-weight: bold;
 }
-#main-timeline .fases h2 {
+.fases-nav-home h2 {
   font-size: 18px;
   font-weight: normal;
 }
-#main-timeline .fases img {
+.fases-nav-home img {
   margin: 24px 0;
 }
-#main-timeline .fases .fase_2,
-#main-timeline .fases .fase_4 {
+.fases-nav-home .fase_2,
+.fases-nav-home .fase_4 {
   border-right: 1px solid white;
   border-left: 1px solid white;
 }
-#main-timeline .fases-main {
+.fases-main {
   display: flex;
 }
-#main-timeline .fases-main .fase-arrow {
+.fases-main .fase-arrow {
   width: 25%;
   flex-grow: 1;
 }
@@ -13169,18 +13179,35 @@ p.temas a:hover {
   width: 100%;
   font-family: 'Merriweather', serif;
   margin: 0;
+  transition: all linear 0.15s;
 }
 .navegador-fases .navegador-fase-item.active h3,
-.navegador-fases .navegador-fase-item a:hover h3 {
+.navegador-fases .navegador-fase-item a:hover h3,
+.navegador-fases .navegador-fase-item:hover h3,
+.navegador-fases .navegador-fase-item.active a h3,
+.navegador-fases .navegador-fase-item a:hover a h3,
+.navegador-fases .navegador-fase-item:hover a h3 {
   background-color: #666666;
 }
 .navegador-fases .navegador-fase-item.active .yearscale:before,
-.navegador-fases .navegador-fase-item a:hover .yearscale:before {
+.navegador-fases .navegador-fase-item a:hover .yearscale:before,
+.navegador-fases .navegador-fase-item:hover .yearscale:before {
   border-color: #666;
+  color: #666;
+}
+.navegador-fases .navegador-fase-item.active .yearscale,
+.navegador-fases .navegador-fase-item a:hover .yearscale,
+.navegador-fases .navegador-fase-item:hover .yearscale,
+.navegador-fases .navegador-fase-item.active .middleyear,
+.navegador-fases .navegador-fase-item a:hover .middleyear,
+.navegador-fases .navegador-fase-item:hover .middleyear {
+  color: #666;
 }
 .navegador-fases .navegador-fase-item.active .yearscale .yearmarkers span,
-.navegador-fases .navegador-fase-item a:hover .yearscale .yearmarkers span {
+.navegador-fases .navegador-fase-item a:hover .yearscale .yearmarkers span,
+.navegador-fases .navegador-fase-item:hover .yearscale .yearmarkers span {
   border-color: #666;
+  color: #666;
 }
 .yearscale a {
   display: block;
@@ -13195,6 +13222,7 @@ p.temas a:hover {
   margin: 40px 2px 30px 2px;
   border-right: 1px solid #eee;
   flex-grow: 1;
+  transition: all linear 0.15s;
 }
 .yearscale:before {
   content: '';
@@ -13205,6 +13233,7 @@ p.temas a:hover {
   position: absolute;
   border-left: 3px solid #eee;
   border-right: 3px solid #eee;
+  transition: all linear 0.15s;
 }
 .yearscale .startyear,
 .yearscale .endyear {
@@ -13218,12 +13247,30 @@ p.temas a:hover {
   font-weight: normal;
   color: #666;
   padding: 0 5px;
+  transition: all linear 0.15s;
 }
 .yearscale .startyear {
   left: -27px;
 }
 .yearscale .endyear {
   right: -25px;
+}
+.yearscale .middleyears {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  top: -14px;
+}
+.yearscale .middleyears span.middleyear {
+  display: inline-block;
+  padding: 2px;
+  background-color: #f5f5f5;
+  height: 20px;
+  color: #eee;
+  transition: all linear 0.15s;
 }
 .navegador-fase-item.fase_3 .yearscale .endyear {
   right: -26px;
@@ -13237,9 +13284,53 @@ p.temas a:hover {
 #main-timeline .fases-presentadas .presentacion-fase {
   position: relative;
   border-bottom: 1px solid #666;
+  height: 100vh;
 }
 #main-timeline .fases-presentadas .presentacion-fase .content-wrap {
   justify-content: center;
+}
+.fixedtoplogo {
+  position: fixed;
+  top: 48px;
+  left: 64px;
+  z-index: 100;
+}
+.fixedtoplogo img {
+  max-width: 80px;
+}
+.c80-timeline-insert {
+  height: 70vh;
+}
+@media screen and (max-width: 992px) {
+  .c80-timeline-insert,
+  .presentacion-fase {
+    height: 80vh;
+  }
+  .fixedtoplogo {
+    top: 24px;
+    left: 24px;
+  }
+  .fases-nav-home {
+    margin: 0;
+  }
+  .fases-nav-home.in-timeline a {
+    color: #333;
+  }
+  .fases-nav-home .fases-main .fase-arrow h1 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .fases-nav-home .fases-main .fase-arrow h1 .hyphen {
+    display: block;
+    line-height: 1em;
+  }
+  .fases-nav-home .fases-main .fase-arrow h2 {
+    margin: 6px 0;
+    font-size: 14px;
+  }
+  .fases-nav-home .fases-main .fase-arrow img {
+    margin: 12px 0;
+  }
 }
 #footer-sitio {
   min-height: 200px;
