@@ -13,12 +13,9 @@ $image = wp_get_attachment_image_src( $imageid, 'full', false );
 $fases = array('fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5');
 $fasedata = array();
 $timeline_options = get_option('c80_timeline_options');
-
-
-
 ?>
 
-<div class="fixedtoplogo">
+<div class="fixedtoplogo <?php echo(empty($fase) ? 'timeline-home' : 'timeline-inside');?>">
 	<a title="<?php bloginfo('name');?>" href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_blanco.svg" alt="<?php bloginfo('name');?>"></a>
 </div>
 

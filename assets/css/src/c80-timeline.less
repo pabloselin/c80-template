@@ -113,9 +113,17 @@ html {
 			margin: 24px 0;
 		}
 
-		.fase_2, .fase_4 {
+		#nav-fase_2, #nav-fase_4 {
 			border-right: 1px solid white;
 			border-left: 1px solid white;
+		}
+
+		.in-timeline {
+			#nav-fase_2,
+			#nav-fase_4 {
+				border-right: 1px solid #333;
+				border-left: 1px solid #333;
+			}
 		}
 
 	}
@@ -344,6 +352,10 @@ html {
 	z-index: 100;
 	img {
 		max-width: 80px;
+	}
+
+	&.timeline-inside {
+		display: none;
 	}
 }
 

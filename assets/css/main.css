@@ -13087,10 +13087,15 @@ html {
 .fases-nav-home img {
   margin: 24px 0;
 }
-.fases-nav-home .fase_2,
-.fases-nav-home .fase_4 {
+.fases-nav-home #nav-fase_2,
+.fases-nav-home #nav-fase_4 {
   border-right: 1px solid white;
   border-left: 1px solid white;
+}
+.fases-nav-home .in-timeline #nav-fase_2,
+.fases-nav-home .in-timeline #nav-fase_4 {
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
 }
 .fases-main {
   display: flex;
@@ -13297,6 +13302,9 @@ html {
 }
 .fixedtoplogo img {
   max-width: 80px;
+}
+.fixedtoplogo.timeline-inside {
+  display: none;
 }
 .c80-timeline-insert {
   height: 70vh;

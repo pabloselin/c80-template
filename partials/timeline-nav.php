@@ -22,7 +22,7 @@
 
 				?>
 
-				<div class="fase-arrow" id="fase-nav-id<?php echo $fase;?>">
+				<div class="fase-arrow" id="nav-<?php echo $faseitem;?>">
 					<a href="<?php echo $link;?>">
 					<h1><?php echo $fasedata[$faseitem]['start']['year'];?> <span class="hyphen">-</span> <?php echo $fasedata[$faseitem]['end']['year'];?></h1>
 					<h2><?php echo $fasedata[$faseitem]['title'];?></h2>
