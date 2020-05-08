@@ -65,6 +65,12 @@ function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent ) {
 				$end_date 			= parse_field_date_for_json( $end_date_field );
 			endif;
 
+			$mediatype = get_post_meta($hitoid, 'c80_lt_media_type', true);
+
+			if($mediatype == 'doc' || $mediatype == 'html') {
+				$hitocontent .= '<p><a target="_blank" href="' . get_post_meta($hitoid, 'c80_lt_media', true) .'">[+]</a></p>';
+			}
+
 			$event = array(
 				'text' => array(
 							'headline' 	=> $hitotitle,
@@ -82,13 +88,22 @@ function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent ) {
 			if($end_date_field):
 				$event['end_date'] = $end_date;
 			endif;
+			
 
+			if($mediatype == 'jpg') {
+				if(has_post_thumbnail( $hitoid)):
+					$event['media']['url'] = get_the_post_thumbnail_url( $hitoid, 'medium' );
+					$event['media']['caption'] = get_post_meta($hitoid, 'c80_lt_media_caption', true);
+					$event['media']['credit'] = get_post_meta($hitoid, 'c80_lt_media_credit', true);
+				endif;	
+			} elseif($mediatype == 'video') {
+					$event['media']['url'] = get_post_meta($hitoid, 'c80_lt_media', true);
+					$event['media']['caption'] = get_post_meta($hitoid, 'c80_lt_media_caption', true);
+					$event['media']['credit'] = get_post_meta($hitoid, 'c80_lt_media_credit', true);
+			}
 
-			if(has_post_thumbnail( $hitoid)):
-				$event['media']['url'] = get_the_post_thumbnail_url( $hitoid, 'medium' );
-				$event['media']['caption'] = get_post_meta($hitoid, 'c80_lt_media_caption', true);
-				$event['media']['credito'] = get_post_meta($hitoid, 'c80_lt_media_credit', true);
-			endif;
+			
+
 
 			return $event;
 }
