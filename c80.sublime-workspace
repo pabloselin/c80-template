@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"int",
+				"intdiv"
+			],
+			[
+				"space",
+				"space-around\tjustify-content"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"start",
+				"startyear"
+			],
+			[
+				"nave",
+				"navegador-fase-item"
+			],
+			[
 				"c80_art",
 				"c80_artselect"
 			],
@@ -100,136 +120,19 @@
 	"buffers":
 	[
 		{
-			"file": "partials/articulo-content.php",
-			"settings":
-			{
-				"buffer_size": 2615,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sidebar-modificaciones.php",
-			"settings":
-			{
-				"buffer_size": 1705,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 21,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "home.php",
-			"settings":
-			{
-				"buffer_size": 2868,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "partials/aside-c80rel-front.php",
-			"settings":
-			{
-				"buffer_size": 2163,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "partials/aside-c80rel.php",
-			"settings":
-			{
-				"buffer_size": 2260,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "single.php",
-			"settings":
-			{
-				"buffer_size": 2230,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "includes/ajax.php",
-			"settings":
-			{
-				"buffer_size": 6581,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 70 files for \"modartid\"\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/ajax.php:\n  183  \n  184    if(get_post_type($artid) == 'c80_cptrev') {\n  185:   \t$artid = get_post_meta($artid, 'parent_modartid', true);\n  186    }\n  187  \n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/plugins/c80-plugin/admin/class-c80-admin.php:\n  473  \t\t\t//artículo que modifica\n  474  \t\t\t$meta_boxes[] = array(\n  475: \t\t\t\t'id' => 'parent_modartid',\n  476  \t\t\t\t'title' => 'Artículo que modifica',\n  477  \t\t\t\t'pages' => array('c80_cptrev'),\n\n2 matches across 2 files\n",
-			"settings":
-			{
-				"buffer_size": 633,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "includes/timeline-functions.php",
-			"settings":
-			{
-				"buffer_size": 9068,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "<?php"
-			}
-		},
-		{
-			"file": "includes/post-types.php",
-			"settings":
-			{
-				"buffer_size": 7825,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "c80-timeline.php",
 			"settings":
 			{
-				"buffer_size": 1851,
+				"buffer_size": 1508,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/css/src/c80-comments.less",
+			"file": "partials/timeline-nav.php",
 			"settings":
 			{
-				"buffer_size": 1456,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/css/src/main.less",
-			"settings":
-			{
-				"buffer_size": 2865,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/css/src/c80-single.less",
-			"settings":
-			{
-				"buffer_size": 2927,
+				"buffer_size": 1615,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -238,70 +141,7 @@
 			"file": "assets/css/src/c80-timeline.less",
 			"settings":
 			{
-				"buffer_size": 1610,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 1288,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/js/src/timeline.js",
-			"settings":
-			{
-				"buffer_size": 80,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "includes/scripts.php",
-			"settings":
-			{
-				"buffer_size": 2282,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-config.php",
-			"settings":
-			{
-				"buffer_size": 3012,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/debug.log",
-			"settings":
-			{
-				"buffer_size": 9907912,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "phploy.ini",
-			"settings":
-			{
-				"buffer_size": 543,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/plugins/c80-plugin/public/class-c80-public.php",
-			"settings":
-			{
-				"buffer_size": 17486,
+				"buffer_size": 6168,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -310,16 +150,61 @@
 			"file": "partials/timeline-fase.php",
 			"settings":
 			{
-				"buffer_size": 987,
+				"buffer_size": 3223,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/css/src/c80-asides.less",
+			"file": "includes/timeline-functions.php",
 			"settings":
 			{
-				"buffer_size": 1641,
+				"buffer_size": 9905,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/pabloselin/Documents/GameDev/cryojelly_2020/code/cryojelly_test_01/data/dialogue.json",
+			"settings":
+			{
+				"buffer_size": 494,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "{"
+			}
+		},
+		{
+			"file": "/home/pabloselin/Documents/GameDev/cryojelly_2020/code/cryojelly_test_01/scenes/Main.gd",
+			"settings":
+			{
+				"buffer_size": 2015,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 3308,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "includes/scripts.php",
+			"settings":
+			{
+				"buffer_size": 2449,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/src/timeline.js",
+			"settings":
+			{
+				"buffer_size": 941,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -337,12 +222,32 @@
 		"selected_items":
 		[
 			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
 				"rein",
 				"Indentation: Reindent Lines"
 			],
 			[
 				"comm",
 				"Toggle Comment"
+			],
+			[
+				"diff",
+				"Diffy Compare"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"sava",
+				"File: Save All"
 			],
 			[
 				"ren",
@@ -397,10 +302,6 @@
 				"Emmet: Wrap With Abbreviation"
 			],
 			[
-				"ww",
-				"Word Wrap: Toggle"
-			],
-			[
 				"install package",
 				"Package Control: Install Package"
 			],
@@ -439,14 +340,45 @@
 	[
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/img",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/img/tl",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/src",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/plugins/c80-plugin"
 	],
 	"file_history":
 	[
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/slider/TL.Slide.less",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-timeline.less",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/c80-timeline.js",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/timenav/TL.TimeGroup.less",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/timenav/TL.TimeMarker.less",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/scripts.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/timeline-functions.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/Variables.less",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/Typography.less",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/sanitize-title.js",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/c80-timeline-mod.js",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/timeline-fase.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-asides.less",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-single.less",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/aside-c80rel-front.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/articulo-content.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/sidebar-modificaciones.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/.gitignore",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/home.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/aside-c80rel.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/single.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/ajax.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/post-types.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/c80-timeline.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-comments.less",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/main.less",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/src/timeline.js",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/reunion_07052020.txt",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-config.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/debug.log",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/phploy.ini",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/plugins/c80-plugin/public/class-c80-public.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/functions.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/archive-c80_cpt.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/footer.php",
@@ -454,13 +386,9 @@
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/header-timeline.php",
 		"/home/pabloselin/Documents/GameDev/coherent/assets/room/room4.dae",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/footer-timeline.php",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/aside-c80rel-front.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/content.php",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/post-types.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/single-columnas.php",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/aside-c80rel.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/package.json",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/plugins/c80-plugin/public/class-c80-public.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/json-microdata.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/dploy.yaml",
 		"/home/pabloselin/Documents/WebDev/local_sites/itrend/app/public/wp-content/plugins/itrend_custom_content/css/scss/_buttons.scss",
@@ -508,7 +436,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -524,6 +452,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$fase",
+			"ease-in 0.3s",
+			"c80",
+			"setalternaterowcolor",
+			"data.ev",
+			"setActive",
+			"fase-item",
+			"66,79,99",
+			"$fase",
+			"c80_tl_start_date",
 			"modartid",
 			"function c80t_plink",
 			"c80_parrafore",
@@ -550,6 +488,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"c80_lt_start_date"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -560,54 +499,53 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "partials/articulo-content.php",
+					"file": "c80-timeline.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2615,
+						"buffer_size": 1508,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								498,
+								498
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 51.0,
+						"translation.y": 539.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 32,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "sidebar-modificaciones.php",
+					"file": "partials/timeline-nav.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1705,
+						"buffer_size": 1615,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1057,
-								1057
+								1024,
+								1024
 							]
 						],
 						"settings":
@@ -617,112 +555,55 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 30,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 21,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								21,
-								21
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 29,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "home.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2868,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1082,
-								1082
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "partials/aside-c80rel-front.php",
+					"buffer": 2,
+					"file": "assets/css/src/c80-timeline.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2163,
+						"buffer_size": 6168,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								859,
-								859
+								5086,
+								5086
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 255.0,
+						"translation.y": 5454.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "partials/aside-c80rel.php",
+					"buffer": 3,
+					"file": "partials/timeline-fase.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2260,
+						"buffer_size": 3223,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1715,
-								1715
+								2364,
+								2364
 							]
 						],
 						"settings":
@@ -731,27 +612,114 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 408.0,
+						"translation.y": 495.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "single.php",
+					"buffer": 4,
+					"file": "includes/timeline-functions.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2230,
+						"buffer_size": 9905,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1077,
-								1077
+								1942,
+								1942
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 816.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/pabloselin/Documents/GameDev/cryojelly_2020/code/cryojelly_test_01/data/dialogue.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								239
+							]
+						],
+						"settings":
+						{
+							"auto_name": "{",
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/pabloselin/Documents/GameDev/cryojelly_2020/code/cryojelly_test_01/scenes/Main.gd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2015,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								759,
+								759
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GDScript (Godot Engine)/GDScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 255.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59,
+								59
 							]
 						],
 						"settings":
@@ -761,35 +729,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "includes/ajax.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6581,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2551,
-								2551
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1304.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -797,685 +736,19 @@
 				},
 				{
 					"buffer": 8,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 633,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										256,
-										264
-									],
-									[
-										506,
-										514
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "includes/timeline-functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9068,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2357,
-								2357
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<?php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 714.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "includes/post-types.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7825,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7825,
-								7825
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2460.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "c80-timeline.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1851,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1817,
-								1817
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 204.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "assets/css/src/c80-comments.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1456,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								393,
-								393
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 25,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "assets/css/src/main.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2865,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								535,
-								535
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "assets/css/src/c80-single.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2927,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								169,
-								169
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 26,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "assets/css/src/c80-timeline.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1610,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								35,
-								35
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1288,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1154,
-								1154
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "assets/js/src/timeline.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 80,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								80,
-								80
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
 					"file": "includes/scripts.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2282,
+						"buffer_size": 2449,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2008,
-								2008
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-config.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3012,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2606,
-								2606
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 384.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 31,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/debug.log",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9907912,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 398.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "phploy.ini",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 543,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								543,
-								543
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/INI/INI.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 28,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/plugins/c80-plugin/public/class-c80-public.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 17486,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10115,
-								10115
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 692.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 27,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "c80-timeline.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1851,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1722,
-								1722
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "c80-timeline.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1851,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								874,
-								874
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 102.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "partials/timeline-fase.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 987,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "assets/css/src/c80-timeline.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1610,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								555,
-								555
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 102.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "includes/timeline-functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9068,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3002,
-								3002
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<?php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1746.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "includes/timeline-functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9068,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1958,
-								1958
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<?php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1367.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "assets/css/src/c80-timeline.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1610,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								289,
-								289
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 2,
-			"sheets":
-			[
-				{
-					"buffer": 4,
-					"file": "partials/aside-c80rel-front.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2163,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								490,
-								490
+								937,
+								937
 							]
 						],
 						"settings":
@@ -1491,61 +764,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": "assets/css/src/c80-single.less",
+					"buffer": 9,
+					"file": "assets/js/src/timeline.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2927,
+						"buffer_size": 941,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								162,
-								162
+								941,
+								941
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 8,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "assets/css/src/c80-asides.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1641,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1638,
-								1638
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1561.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -1568,18 +813,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -1607,16 +845,88 @@
 		"selected_items":
 		[
 			[
+				"scrip",
+				"c80-template/includes/scripts.php"
+			],
+			[
+				"func",
+				"c80-template/functions.php"
+			],
+			[
+				"timeline.j",
+				"c80-template/assets/js/src/timeline.js"
+			],
+			[
+				"c80-timeline.l",
+				"c80-template/assets/css/src/c80-timeline.less"
+			],
+			[
+				"timeline-f",
+				"c80-template/includes/timeline-functions.php"
+			],
+			[
+				"timelinefa",
+				"c80-template/partials/timeline-fase.php"
+			],
+			[
+				"c80",
+				"c80-template/c80-timeline.php"
+			],
+			[
+				"slide",
+				"c80-template/assets/css/src/timeline/slider/TL.Slide.less"
+			],
+			[
+				"timeline.le",
+				"c80-template/assets/css/src/c80-timeline.less"
+			],
+			[
+				"script",
+				"c80-template/includes/scripts.php"
+			],
+			[
+				"timelinefun",
+				"c80-template/includes/timeline-functions.php"
+			],
+			[
+				"c80-timeline",
+				"c80-template/assets/js/c80-timeline.js"
+			],
+			[
+				"c80tim",
+				"c80-template/c80-timeline.php"
+			],
+			[
+				"",
+				"c80-template/partials/timeline-fase.php"
+			],
+			[
+				"fase",
+				"c80-template/partials/timeline-fase.php"
+			],
+			[
+				"time",
+				"c80-template/assets/js/src/timeline.js"
+			],
+			[
+				"tiefun",
+				"c80-template/includes/timeline-functions.php"
+			],
+			[
+				"timelin",
+				"c80-template/partials/timeline-fase.php"
+			],
+			[
+				"timeline-fun",
+				"c80-template/includes/timeline-functions.php"
+			],
+			[
 				"aside",
 				"c80-template/assets/css/src/c80-asides.less"
 			],
 			[
 				"singl",
 				"c80-template/assets/css/src/c80-single.less"
-			],
-			[
-				"",
-				"c80-template/partials/aside-c80rel.php"
 			],
 			[
 				"aja",
@@ -1635,19 +945,7 @@
 				"c80-template/home.php"
 			],
 			[
-				"timeline.le",
-				"c80-template/assets/css/src/c80-timeline.less"
-			],
-			[
-				"timelin",
-				"c80-template/includes/timeline-functions.php"
-			],
-			[
 				"c80-t",
-				"c80-template/c80-timeline.php"
-			],
-			[
-				"c80",
 				"c80-template/c80-timeline.php"
 			],
 			[
@@ -1667,20 +965,8 @@
 				"c80-template/assets/css/src/main.less"
 			],
 			[
-				"time",
-				"c80-template/c80-timeline.php"
-			],
-			[
-				"scrip",
-				"c80-template/includes/scripts.php"
-			],
-			[
 				"timeline-fu",
 				"c80-template/includes/timeline-functions.php"
-			],
-			[
-				"func",
-				"c80-template/functions.php"
 			],
 			[
 				"fun",
@@ -2035,14 +1321,14 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 287.0,
 	"status_bar_visible": true,
 	"template_settings":

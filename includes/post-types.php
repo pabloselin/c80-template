@@ -126,7 +126,7 @@ function c80t_hitos() {
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'post',
-		'rewrite'			  => array('slug' => 'sabias-que')
+		'rewrite'			  => array('slug' => 'hito')
 	);
 	register_post_type( 'hitos', $args );
 
