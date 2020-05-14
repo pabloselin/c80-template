@@ -12,7 +12,7 @@ $faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final
 		<div class="text-content">
 			<h2><?php echo $timeline_options['titulo_' . $fase];?></h2>
 			<h3><?php echo $fasestart['year'] . '-' . $faseend['year'];?></h3>
-			<div class="fase-intro">
+			<div class="fase-intro hidden-xs">
 				<?php echo apply_filters( 'the_content', $timeline_options['intro_' . $fase] );?>
 			</div>
 			<?php get_template_part('partials/sharer-timeline');?>
