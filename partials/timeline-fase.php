@@ -4,7 +4,7 @@ $timeline_options = get_option('c80_timeline_options');
 $fase = get_query_var('fase');
 $started = get_query_var('started');
 $fasestart = parse_field_date_for_json(get_post_meta($timeline_options['hito_inicial_' . $fase], 'c80_lt_start_date', true));
-$faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final_' . $fase], 'c80_lt_start_date', true))
+$faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final_' . $fase], 'c80_lt_start_date', true));
 ?>
 
 <section class="presentacion-fase" style="background-image: url(<?php echo $timeline_options['imagen_' . $fase];?>);" data-fase="<?php echo $fase;?>" data-started="<?php echo get_query_var('started');?>">
