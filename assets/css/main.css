@@ -13123,6 +13123,16 @@ html {
   background-size: cover;
   position: relative;
 }
+.presentacion-fase .show-timeline-zone {
+  position: absolute;
+  right: 12px;
+  top: 30vh;
+  font-size: 48px;
+  cursor: pointer;
+}
+.presentacion-fase .show-timeline-zone a {
+  color: white;
+}
 .presentacion-fase .content-wrap {
   display: flex;
   position: absolute;
@@ -13339,6 +13349,24 @@ html {
   .fases-nav-home .fases-main .fase-arrow img {
     margin: 12px 0;
   }
+}
+.sharer-timeline .sharebutton {
+  display: inline-block;
+  text-align: center;
+  padding: 6px;
+}
+.sharer-timeline a {
+  color: white;
+  font-size: 24px;
+}
+.scrollind {
+  color: #999999;
+  padding: 6px 0 6px 48px;
+  background-image: url(../img/tl/scroll_down.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  font-size: 13px;
+  max-width: 160px;
 }
 #footer-sitio {
   min-height: 200px;

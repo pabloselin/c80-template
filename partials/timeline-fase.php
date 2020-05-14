@@ -2,6 +2,7 @@
 $fases = array('fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5');
 $timeline_options = get_option('c80_timeline_options');
 $fase = get_query_var('fase');
+$started = get_query_var('started');
 $fasestart = parse_field_date_for_json(get_post_meta($timeline_options['hito_inicial_' . $fase], 'c80_lt_start_date', true));
 $faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final_' . $fase], 'c80_lt_start_date', true))
 ?>
@@ -14,7 +15,8 @@ $faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final
 			<div class="fase-intro">
 				<?php echo apply_filters( 'the_content', $timeline_options['intro_' . $fase] );?>
 			</div>
-			<p><a class="btn btn-enter-timeline toggle-timeline" data-fase="<?php echo $fase;?>">Entrar</a></p>
+			<?php get_template_part('partials/sharer-timeline');?>
+			<div class="show-timeline-zone"><a class="toggle-timeline" data-fase="<?php echo $fase;?>"><i class="fa fa-chevron-right"></i></a></div>
 		</div>
 	</div>
 </section>

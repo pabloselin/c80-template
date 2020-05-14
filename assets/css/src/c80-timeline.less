@@ -158,6 +158,17 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	
+	.show-timeline-zone {
+		position: absolute;
+		right: 12px;
+		top: 30vh;
+		font-size: 48px;
+		cursor: pointer;
+		a {
+			color: white;
+		}
+	}
 
 	.content-wrap {
 		display: flex;
@@ -405,4 +416,27 @@ html {
 			}
 		}
 	}
+}
+
+.sharer-timeline {
+	.sharebutton {
+		display: inline-block;
+		text-align: center;
+		padding: 6px;
+	}
+
+	a {
+		color: white;
+		font-size: 24px;
+	}
+}
+
+.scrollind {
+	color: #999999;
+	padding: 6px 0 6px 48px;
+	background-image: url(../img/tl/scroll_down.svg);
+	background-repeat: no-repeat;
+	background-position: center left;
+	font-size: 13px;
+	max-width: 160px;
 }

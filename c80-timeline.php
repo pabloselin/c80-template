@@ -15,7 +15,7 @@ $fasedata = array();
 $timeline_options = get_option('c80_timeline_options');
 ?>
 
-<div class="fixedtoplogo <?php echo(empty($fase) ? 'timeline-home' : 'timeline-inside');?>">
+<div class="fixedtoplogo <?php echo(empty($fase) ? 'timeline-home' : 'timeline-inside');?> <?php echo(empty($started) ? 'not-started' : 'started');?>">
 	<a title="<?php bloginfo('name');?>" href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_blanco.svg" alt="<?php bloginfo('name');?>"></a>
 </div>
 
@@ -29,9 +29,9 @@ $timeline_options = get_option('c80_timeline_options');
 					<div class="content">
 						<?php the_content();?>
 					</div>
-					<p class="aligncenter">
-						<a href="<?php the_permalink();?>?fase=1" class="btn btn-enter-timeline">Entrar</a>
-					</p>
+					<div class="scrollind">
+						Haz scroll para explorar cronológicamente
+					</div>
 				</div>
 
 			</div>
