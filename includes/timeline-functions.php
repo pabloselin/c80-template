@@ -300,6 +300,13 @@ function c80_presentacion_fase($fase) {
 		</div>
 	</div>
 	</section>
+	<section class="contenedor-timeline">
+	<div class="top-timeline-section">
+		<div id="timeline-<?php echo $fase;?>" class="c80-timeline-insert">
+
+		</div>
+	</div>
+	</section>
 
 	<?php
 }
