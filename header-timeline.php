@@ -3,7 +3,7 @@
 <head>
 	<?php wp_head();?>
 </head>
-<body <?php body_class();?> >
+<body <?php body_class();?> data-spy="scroll" data-target="#timeline-nav" data-offset="0">
 
 <header id="header-sitio" class="hidden">
     <!-- Navegación principal -->

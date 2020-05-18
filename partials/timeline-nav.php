@@ -8,8 +8,8 @@
 	$timeline_options = get_option('c80_timeline_options');
 ?>
 
-	<div class="fases-nav-home <?php echo (!empty($fase)? 'in-timeline' : 'in-home');?>">
-		<div class="fases-main">
+	<nav id="timeline-nav" class="navbar fases-nav-home in-home">
+		<ul class="fases-main nav">
 			<?php 
 			foreach($fases as $faseitem) {
 				$link = (!empty($fase) ? add_query_arg( array('fase' => $faseitem ), get_permalink($post->ID)) : '#' . $faseitem );
@@ -22,17 +22,17 @@
 
 				?>
 
-				<div class="fase-arrow">
-					<a class="faselink" href="<?php echo $link;?>">
+				<li class="fase-arrow nav-item" id="navfase-<?php echo $faseitem;?>">
+					<a class="faselink nav-link" href="<?php echo $link;?>">
 					<h1><?php echo $fasedata[$faseitem]['start']['year'];?> <span class="hyphen">-</span> <?php echo $fasedata[$faseitem]['end']['year'];?></h1>
 					<h2><?php echo $fasedata[$faseitem]['title'];?></h2>
 						<?php if(!empty($fase)):?>
 							<img src="<?php bloginfo('template_url');?>/assets/img/tl/arrow_down_black.svg" alt="">
 						<?php else:?>
-							<img src="<?php bloginfo('template_url');?>/assets/img/tl/arrow_down.svg" alt="">
+							<img src="<?php bloginfo('template_url');?>/assets/img/tl/arrow_down_black.svg" alt="">
 						<?php endif;?>
 					</a>
-				</div>
+				</li>
 
 				<?php
 
@@ -41,5 +41,5 @@
 
 
 			?>
-		</div>
-	</div>
+		</ul>
+	</nav>

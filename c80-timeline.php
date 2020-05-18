@@ -20,7 +20,8 @@ $timeline_options = get_option('c80_timeline_options');
 </div>
 
 	<div id="main-timeline" class="container-fluid">
-		<section class="timeline-presentation" style="background-image: url(<?php echo $image[0];?>);">
+		
+		<section class="timeline-presentation" id="presentacion-general" style="background-image: url(<?php echo $image[0];?>);">
 			<div class="content-wrap">
 				<div class="text-content">
 					<h1><?php the_title();?></h1>
