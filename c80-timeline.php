@@ -19,10 +19,8 @@ $timeline_options = get_option('c80_timeline_options');
 	<a title="<?php bloginfo('name');?>" href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_blanco.svg" alt="<?php bloginfo('name');?>"></a>
 </div>
 
-<?php if(!$fase):?>
-
-	<div id="main-timeline" class="container-fluid" style="background-image: url(<?php echo $image[0];?>);">
-		<section class="timeline-presentation">
+	<div id="main-timeline" class="container-fluid">
+		<section class="timeline-presentation" style="background-image: url(<?php echo $image[0];?>);">
 			<div class="content-wrap">
 				<div class="text-content">
 					<h1><?php the_title();?></h1>
@@ -41,20 +39,24 @@ $timeline_options = get_option('c80_timeline_options');
 
 
 		</section>
-		<div class="fases-presentadas">
-			<?php foreach($fases as $curfase) {
-				c80_presentacion_fase($curfase);
-			}?>
-		</div>
+		
+		<?php foreach($fases as $curfase) {
+			c80_presentacion_fase($curfase);
+		}?>
+		
+	</div>
+
+	<div id="timeline-active">
+	
+	<div id="timeline-js-container">
+		<!-- here goes the timeline lol -->
+	</div>
+	
+	<?php get_template_part('partials/timeline-nav');?>
+
 	</div>
 
 	<?php get_template_part('partials/timeline-nav');?>
-
-	<?php else: ?>
-
-		<?php get_template_part('partials/timeline-fase');?>
-
-	<?php endif;?>
 
 	<?php
 	get_footer('timeline');

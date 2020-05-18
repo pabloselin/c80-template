@@ -40,7 +40,14 @@ function c80_get_main_timeline_events( WP_REST_Request $request ) {
 
 		if($hitos_posts) {
 			foreach($hitos_posts as $hito_post) {
-				$hitos[$fase]['events'][] = c80_prepare_hito($hito_post->ID, $hito_post->post_title, $hito_post->post_content);
+				
+				$islast = false;
+
+				if($hito_post->ID == $hito_end) {
+					$islast = true;
+				}
+
+				$hitos[$fase]['events'][] = c80_prepare_hito($hito_post->ID, $hito_post->post_title, $hito_post->post_content, $islast, $fase);
 			}
 		}
 	}
@@ -48,7 +55,7 @@ function c80_get_main_timeline_events( WP_REST_Request $request ) {
 	return $hitos;
 }
 
-function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent ) {
+function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent, $islast, $fase ) {
 
 			$start_date_field 	= get_post_meta( $hitoid, 'c80_lt_start_date', true );
 			$end_date_field 	= get_post_meta( $hitoid, 'c80_lt_end_date', true );
@@ -56,6 +63,7 @@ function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent ) {
 
 			$start_date 		= parse_field_date_for_json( $start_date_field );
 			$grupo 				= get_the_terms( $hitoid, 'tipo_hito' );
+			$fases = array('fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5');
 
 			if($grupo) {
 				$grupoid = $grupo[0]->slug;
@@ -68,7 +76,19 @@ function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent ) {
 			$mediatype = get_post_meta($hitoid, 'c80_lt_media_type', true);
 
 			if($mediatype == 'doc' || $mediatype == 'html') {
-				$hitocontent .= '<p><a target="_blank" href="' . get_post_meta($hitoid, 'c80_lt_media', true) .'">[+]</a></p>';
+				$hitocontent .= '<p><a target="_blank" href="' . get_post_meta($hitoid, 'c80_lt_media', true) .'">[+ ver link]</a></p>';
+			}
+
+			for($i = 0; $i < count($fases); $i++) {
+				if($fases[$i] == $fase) {
+					if(array_key_exists($i + 1, $fases)) {
+						$nextphase = $fases[$i+1];
+					}
+				}
+			}
+
+			if($islast && $nextphase) {
+				$hitocontent .= '<p><a class="btn-nextphase" data-toggle="nextphase" href="#' . $nextphase . '">Ir a la siguiente fase <i class="fa fa-chevron-right"></i></a></p>';
 			}
 
 			$event = array(
@@ -296,17 +316,9 @@ function c80_presentacion_fase($fase) {
 			<div class="fase-intro hidden-xs">
 				<?php echo apply_filters( 'the_content', $timeline_options['intro_' . $fase] );?>
 			</div>
-			<p><a href="<?php echo add_query_arg( array('fase' => $fase, 'started' => true ), get_permalink($post->ID) );?>" class="btn btn-enter-timeline" data-fase="<?php echo $fase;?>">Entrar</a></p>
+			<p><span class="btn btn-enter-timeline toggle-timeline" data-fase="<?php echo $fase;?>">Entrar</span></p>
 		</div>
 	</div>
 	</section>
-	<section class="contenedor-timeline">
-	<div class="top-timeline-section">
-		<div id="timeline-<?php echo $fase;?>" class="c80-timeline-insert">
-
-		</div>
-	</div>
-	</section>
-
 	<?php
 }

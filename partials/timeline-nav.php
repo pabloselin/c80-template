@@ -22,8 +22,8 @@
 
 				?>
 
-				<div class="fase-arrow" id="nav-<?php echo $faseitem;?>">
-					<a href="<?php echo $link;?>">
+				<div class="fase-arrow">
+					<a class="faselink" href="<?php echo $link;?>">
 					<h1><?php echo $fasedata[$faseitem]['start']['year'];?> <span class="hyphen">-</span> <?php echo $fasedata[$faseitem]['end']['year'];?></h1>
 					<h2><?php echo $fasedata[$faseitem]['title'];?></h2>
 						<?php if(!empty($fase)):?>
