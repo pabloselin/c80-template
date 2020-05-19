@@ -339,15 +339,15 @@ function c80_tlfields() {
 	$cmb->add_field( array(
 		'name' => __( 'Fecha Inicio', 'c80' ),
 		'id' => $prefix . 'start_date',
-		'type' => 'text_date',
-		'date_format' => 'y-m-d',
+		'type' => 'text',
+		'desc'	=> 'Formato: AAAA-MM-DD'
 	) );
 
 	$cmb->add_field( array(
 		'name' => __( 'Fecha Fin', 'c80' ),
 		'id' => $prefix . 'end_date',
-		'type' => 'text_date',
-		'date_format' => 'y-m-d',
+		'type' => 'text',
+		'desc'	=> 'Formato: AAAA-MM-DD'
 	) );
 
 	$cmb->add_field( array(
