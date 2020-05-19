@@ -322,3 +322,57 @@ function c80_presentacion_fase($fase) {
 	</section>
 	<?php
 }
+
+add_action( 'cmb2_init', 'c80_tlfields' );
+function c80_tlfields() {
+
+	$prefix = 'c80_lt_';
+
+	$cmb = new_cmb2_box( array(
+		'id'           => $prefix . 'tlfields',
+		'title'        => __( 'Campos línea de tiempo', 'c80' ),
+		'object_types' => array( 'hitos' ),
+		'context'      => 'normal',
+		'priority'     => 'high',
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'Fecha Inicio', 'c80' ),
+		'id' => $prefix . 'start_date',
+		'type' => 'text_date',
+		'date_format' => 'y-m-d',
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'Fecha Fin', 'c80' ),
+		'id' => $prefix . 'end_date',
+		'type' => 'text_date',
+		'date_format' => 'y-m-d',
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'Tipo de media', 'c80' ),
+		'id' => $prefix . 'media_type',
+		'type' => 'text',
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'Media URL', 'c80' ),
+		'id' => $prefix . 'media',
+		'type' => 'text',
+		'desc' => 'Se utiliza para videos o enlaces. En caso de imagen utilizar imagen destacada.'
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'Pie de foto o video', 'c80' ),
+		'id' => $prefix . 'media_caption',
+		'type' => 'text',
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'Crédito de foto o video', 'c80' ),
+		'id' => $prefix . 'media_credit',
+		'type' => 'text',
+	) );
+
+}
