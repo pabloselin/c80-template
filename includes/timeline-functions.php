@@ -39,6 +39,9 @@ function c80_get_main_timeline_events( WP_REST_Request $request ) {
 		$hitos_posts = get_posts($range);
 
 		if($hitos_posts) {
+
+			$hitos[$fase]['lastevent'] = get_post_field( 'post_name', $hito_end);
+
 			foreach($hitos_posts as $hito_post) {
 				
 				$islast = false;
@@ -79,17 +82,11 @@ function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent, $islast, $fase ) {
 				$hitocontent .= '<p><a target="_blank" href="' . get_post_meta($hitoid, 'c80_lt_media', true) .'">[+ ver link]</a></p>';
 			}
 
-			for($i = 0; $i < count($fases); $i++) {
-				if($fases[$i] == $fase) {
-					if(array_key_exists($i + 1, $fases)) {
-						$nextphase = $fases[$i+1];
-					}
-				}
-			}
+			
 
-			if($islast && $nextphase) {
-				$hitocontent .= '<p><a class="btn-nextphase" data-toggle="nextphase" href="#' . $nextphase . '">Ir a la siguiente fase <i class="fa fa-chevron-right"></i></a></p>';
-			}
+			// if($islast && $nextphase) {
+			// 	$hitocontent .= '<p><a class="btn-nextphase" data-toggle="nextphase" href="#' . $nextphase . '"><i class="fa fa-angle-right"></i></a></p>';
+			// }
 
 			$event = array(
 				'text' => array(
@@ -98,7 +95,8 @@ function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent, $islast, $fase ) {
 							),
 				'start_date' => $start_date,
 				'group'		=> $grupo[0]->name,
-				'evclass'	=> $grupoid
+				'evclass'	=> $grupoid,
+				'unique_id'		=> get_post_field( 'post_name', $hitoid )
 			);
 			//Main fields
 			
@@ -311,14 +309,15 @@ function c80_presentacion_fase($fase) {
 	<section id="<?php echo $fase;?>" class="presentacion-fase" style="background-image: url(<?php echo $timeline_options['imagen_' . $fase];?>);">
 	<div class="content-wrap">
 		<div class="presentacion-fase-text-content">
-			<h2><?php echo $timeline_options['titulo_' . $fase];?></h2>
+			<h2>Período <?php //echo $timeline_options['titulo_' . $fase];?></h2>
 			<h3><?php echo $fasestart['year'] . '-' . $faseend['year'];?></h3>
 			<div class="fase-intro hidden-xs">
 				<?php echo apply_filters( 'the_content', $timeline_options['intro_' . $fase] );?>
 			</div>
-			<p><span class="btn btn-enter-timeline toggle-timeline" data-fase="<?php echo $fase;?>">Entrar</span></p>
+			<!--<p><span class="btn btn-enter-timeline toggle-timeline" data-fase="<?php echo $fase;?>">Entrar</span></p>-->
 		</div>
 	</div>
+	<a class="gotophase" data-fase="<?php echo $fase;?>"><i class="fa fa-angle-right"></i></a>
 	</section>
 	<?php
 }

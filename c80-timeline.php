@@ -21,15 +21,19 @@ $timeline_options = get_option('c80_timeline_options');
 
 	<div id="main-timeline" class="container-fluid">
 		
-		<section class="timeline-presentation" id="presentacion-general" style="background-image: url(<?php echo $image[0];?>);">
+		<section class="timeline-presentation" id="inicio" style="background-image: url(<?php echo $image[0];?>);">
 			<div class="content-wrap">
-				<div class="text-content">
-					<h1><?php the_title();?></h1>
-					<div class="content">
-						<?php the_content();?>
+				<div class="intro-stuff">
+					<div class="text-header">
+						<h1><?php the_title();?></h1>
 					</div>
-					<div class="scrollind">
-						Haz scroll para explorar cronológicamente
+					<div class="text-content">
+						<div class="content">
+							<?php the_content();?>
+						</div>
+						<div class="scrollind">
+							Haz scroll para explorar cronológicamente
+						</div>
 					</div>
 				</div>
 

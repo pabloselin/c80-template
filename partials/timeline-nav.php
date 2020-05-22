@@ -10,6 +10,9 @@
 
 	<nav id="timeline-nav" class="navbar fases-nav-home in-home">
 		<ul class="fases-main nav">
+			<li class="fase-arrow nav-item nav-item-home" id="navfase-inicio">
+				<a href="#inicio" class="faselink nav-link"><i class="fa fa-home"></i></a>
+			</li>
 			<?php 
 			foreach($fases as $faseitem) {
 				$link = (!empty($fase) ? add_query_arg( array('fase' => $faseitem ), get_permalink($post->ID)) : '#' . $faseitem );
@@ -24,13 +27,9 @@
 
 				<li class="fase-arrow nav-item" id="navfase-<?php echo $faseitem;?>">
 					<a class="faselink nav-link" href="<?php echo $link;?>">
+					<h2>Período<?php //echo $fasedata[$faseitem]['title'];?></h2>
 					<h1><?php echo $fasedata[$faseitem]['start']['year'];?> <span class="hyphen">-</span> <?php echo $fasedata[$faseitem]['end']['year'];?></h1>
-					<h2><?php echo $fasedata[$faseitem]['title'];?></h2>
-						<?php if(!empty($fase)):?>
-							<img src="<?php bloginfo('template_url');?>/assets/img/tl/arrow_down_black.svg" alt="">
-						<?php else:?>
-							<img src="<?php bloginfo('template_url');?>/assets/img/tl/arrow_down_black.svg" alt="">
-						<?php endif;?>
+					
 					</a>
 				</li>
 

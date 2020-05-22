@@ -10594,7 +10594,6 @@ TL.TimeNav = TL.Class.extend({
 	================================================== */
 	_createGroups: function() {
 		var group_labels = this.timescale.getGroupLabels();
-
 		if (group_labels) {
 			this.options.has_groups = true;
 			for (var i = 0; i < group_labels.length; i++) {

@@ -11154,18 +11154,37 @@ TL.TimeNav = TL.Class.extend({
 	},
 
 	/*	Groups
+	* Modificado con la opcion para ordenar los grupos
 	================================================== */
 	_createGroups: function() {
 		this._groups = [];
 		var group_labels = this.timescale.getGroupLabels();
-
 		if (group_labels) {
 			this.options.has_groups = true;
-			for (var i = 0; i < group_labels.length; i++) {
-				this._createGroup(group_labels[i]);
+			var groupCounter = 0;
+			if(this.options.group_order) {
+						var groupOrder = this.options.group_order;
+						
+						for(var j = 0; j < groupOrder.length; j++) {
+							for(var h = 0; h < group_labels.length; h ++) {
+								if(group_labels[h].label == groupOrder[j]) {
+									if(groupCounter < group_labels.length) {
+										console.log(group_labels[h].label, groupOrder[j]);
+										this._createGroup(group_labels[h]);	
+										groupCounter = groupCounter + 1;	
+									}
+									
+								}
+							}
+						}
+							
+			} else {
+				for (var i = 0; i < group_labels.length; i++) {
+						this._createGroup(group_labels[i]);
+				}
 			}
+				
 		}
-
 	},
 
 	_createGroup: function(group_label) {

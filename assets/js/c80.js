@@ -2530,21 +2530,23 @@ jQuery(document).ready(function($) {
 	singleCounter();
 
 });
+var timeline;
+var timelineObj;
+var fases = ['fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5'];
+
 jQuery(document).ready(function($) {
-	var timeline;
-    var timelineObj;
-    var fases = ['fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5'];
+    
 
     $('body').scrollspy({ target: '#timeline-nav'});
 
-    $('.toggle-timeline').on('click', function(e) {
+    $('.toggle-timeline, .gotophase').on('click', function(e) {
       e.preventDefault();
       var fase = $(this).attr('data-fase');  
       jQuery('body').addClass('timeline-on');
       $('#timeline-js-container').empty().append('<div class="loadingZone"><i class="fa fa-spin fa-circle-o-notch"></i></div>');
-      var timeline = window.setTimeout(function(){ timelineObj = startTimeline(fase); }, 1000);
-    
-        $('#timeline-active ul.fases-main li#navfase-' + fase).addClass('running');    
+      var timeline = window.setTimeout(function(){ startTimeline(fase); }, 1000);
+      $('#timeline-active ul.fases-main li#navfase-' + fase).addClass('running');    
+
     });
 
     $('#timeline-active .fase-arrow a').on('click', function(e) {
@@ -2561,13 +2563,32 @@ jQuery(document).ready(function($) {
 });
 
 function startTimeline(fase) {
+    var last;
     jQuery.getJSON(c80.timelineurl, function(data) {
-        timeline = new TL.Timeline('timeline-js-container', data[fase], {
+        timelineObj = new TL.Timeline('timeline-js-container', data[fase], {
             language: 'es',
-            hash_bookmark: false
-        });       
+            hash_bookmark: false,
+            group_order: ['Constitucional', 'Político social', 'Presidencial']
+        });
+        //console.log(data);
+        var events = data[fase].events;
+        var lastSlide = timelineObj.getSlide(events.length - 1);
+        console.log(lastSlide.data);
+        
+        last = data[fase].lastevent;
+        timelineObj.on("change", function(data) {
+           
+            if(data.unique_id == lastSlide.data.unique_id) {
+                console.log('the last slide');
+                var next = nextPhase(fases, fase);
 
-        return timeline;
+                if(next) {
+                    jQuery('.tl-storyslider').append('<a class="btn-nextphase" data-toggle="nextphase" href="#' + next + '"><i class="fa fa-angle-right"></i></a>')
+                }
+            } else {
+                jQuery('.tl-storyslider .btn-nextphase').remove();
+            }
+       });
     });
 }
 
@@ -2579,4 +2600,17 @@ function closest(array, number) {
         }
     }
     return array[num].element;
+}
+
+function nextPhase(fases, fase) {
+    nextphase = false;
+
+    for(var i = 0; i < fases.length; i++) {
+                if(fases[i] == fase) {
+                    if(fases[i + 1] !== undefined) {
+                        nextphase = fases[i+1];
+                    }
+                } 
+            }
+    return nextphase;
 }
