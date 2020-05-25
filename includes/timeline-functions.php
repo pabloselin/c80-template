@@ -62,7 +62,7 @@ function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent, $islast, $fase ) {
 
 			$start_date_field 	= get_post_meta( $hitoid, 'c80_lt_start_date', true );
 			$end_date_field 	= get_post_meta( $hitoid, 'c80_lt_end_date', true );
-			$media_field		= get_the_post_thumbnail_url( $hitoid, 'medium' );
+			$media_field		= get_the_post_thumbnail_url( $hitoid, 'large' );
 
 			$start_date 		= parse_field_date_for_json( $start_date_field );
 			$grupo 				= get_the_terms( $hitoid, 'tipo_hito' );
