@@ -2538,6 +2538,11 @@ jQuery(document).ready(function($) {
     
 
     $('body').scrollspy({ target: '#timeline-nav'});
+    
+    $(window).on('activate.bs.scrollspy', function (e) {
+        history.replaceState({}, "", $("a[href^='#']", e.target).attr("href"));
+    });
+
 
     $('.toggle-timeline, .gotophase, .gotophase-mobile').on('click', function(e) {
       e.preventDefault();

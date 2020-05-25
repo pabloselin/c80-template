@@ -1,7 +1,7 @@
 <?php
 //functions.php
 
-define( 'C80_THEME_VERSION', '1.0.15.1');
+define( 'C80_THEME_VERSION', '1.0.15.2');
 define( 'C80_TWITTER', 'proyectoC80');
 define( 'C80_FACEBOOK', 'https://www.facebook.com/proyectoC80/');
 define( 'C80_INSTAGRAM', 'https://www.instagram.com/proyectoc80/');
