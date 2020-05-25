@@ -93,6 +93,8 @@ html {
 		.text-content {
 			color: white;
 			max-width: 660px;
+			font-family: @sans;
+			font-size: 17px;
 			
 
 			p.aligncenter {
@@ -120,7 +122,7 @@ html {
 	.fase-arrow.active a {
 		text-decoration: none;
 		color: white;
-		background-color: rgb(65, 78, 98);
+		background-color: #797979;
 	}
 
 	.fase-arrow.nav-item-home {
@@ -137,7 +139,7 @@ html {
 	}
 
 	.fase-arrow.running a {
-		background-color: #505050;
+		background-color: #797979;
 		color: white;
 	}
 
@@ -159,9 +161,9 @@ html {
 	}
 
 	h2 {
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: normal;
-		margin: 6px 0;
+		margin: 0;
 	}
 
 	img {
@@ -243,7 +245,7 @@ html {
 		.fase-intro {
 			max-width: 820px;
 			margin: 24px 0;
-			font-size: 16px;
+			font-size: 17px;
 			font-family: @sans;
 		}
 	}
@@ -266,17 +268,17 @@ html {
 		height: 100vh;
 		right: 0;
 		width: 100px;
-		background-color: rgba(255, 255, 255, 0.6);
+		background-color: rgba(255, 255, 255, 0.4);
 		z-index:20;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		color: #333;
+		color: white;
 		cursor: pointer;
 
 		i {
-			font-size: 64px;
+			font-size: 94px;
 		}
 		&:hover, &:focus {
 			text-decoration: none;
@@ -481,6 +483,7 @@ html {
 }
 
 body.timeline-on {
+	overflow: hidden;
 
 	#timeline-active {
 		position: fixed;

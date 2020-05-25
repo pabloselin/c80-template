@@ -15,7 +15,7 @@ $fasedata = array();
 $timeline_options = get_option('c80_timeline_options');
 ?>
 
-<div class="fixedtoplogo <?php echo(empty($fase) ? 'timeline-home' : 'timeline-inside');?> <?php echo(empty($started) ? 'not-started' : 'started');?> hidden-xs">
+<div class="fixedtoplogo hidden-xs">
 	<a title="<?php bloginfo('name');?>" href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_blanco.svg" alt="<?php bloginfo('name');?>"></a>
 </div>
 
@@ -56,11 +56,17 @@ $timeline_options = get_option('c80_timeline_options');
 		<!-- here goes the timeline lol -->
 	</div>
 	
-	<?php get_template_part('partials/timeline-nav');?>
+	<?php 
+	$id = 'inside-timeline-nav';
+	include( locate_template( 'partials/timeline-nav.php', false, false ) );
+	?>
 
 	</div>
-
-	<?php get_template_part('partials/timeline-nav');?>
+	
+	<?php 
+	$id = 'timeline-nav';
+	include( locate_template( 'partials/timeline-nav.php', false, false ) );
+	?>
 
 	<?php
 	get_footer('timeline');

@@ -11098,7 +11098,7 @@ html {
   overflow: hidden;
   font-weight: normal;
   margin: 0;
-  color: #bfbfbf;
+  color: #595959;
   position: relative;
 }
 .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline.tl-headline-fadeout:after,
@@ -11147,7 +11147,7 @@ html {
 .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container [class*=" tl-icon-"] {
   display: block;
   font-size: 24px;
-  color: #bfbfbf;
+  color: #595959;
   margin-top: 0px;
 }
 .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container .tl-icon-wikipedia {
@@ -11163,10 +11163,10 @@ html {
   font-size: 12px;
 }
 .tl-timemarker:hover .tl-timemarker-timespan {
-  background-color: rgba(191, 191, 191, 0.15);
+  background-color: rgba(89, 89, 89, 0.15);
 }
 .tl-timemarker:hover .tl-timemarker-timespan .tl-timemarker-timespan-content {
-  background-color: #bfbfbf;
+  background-color: #595959;
 }
 .tl-timemarker:hover .tl-timemarker-timespan .tl-timemarker-line-left,
 .tl-timemarker:hover .tl-timemarker-timespan .tl-timemarker-line-right {
@@ -11791,7 +11791,7 @@ html {
   width: 50%;
   max-width: 50%;
   min-width: 120px;
-  padding: 0 20px 0 20px;
+  padding: 0 0 0 20px;
   display: table-cell;
   vertical-align: middle;
   text-align: left;
@@ -12062,12 +12062,12 @@ html {
 	       -ms-hyphens: auto;
 	           hyphens: auto;
 		*/
-  opacity: 15;
-  filter: alpha(opacity=1500);
-  filter: alpha(opacity=15);
-  -khtml-opacity: 0.15;
-  -moz-opacity: 0.15;
-  opacity: 0.15;
+  opacity: 50;
+  filter: alpha(opacity=5000);
+  filter: alpha(opacity=50);
+  -khtml-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .tl-slidenav-previous .tl-slidenav-title small,
 .tl-slidenav-next .tl-slidenav-title small,
@@ -12102,8 +12102,8 @@ html {
 .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-title,
 .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description,
 .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {
-  text-shadow: 1px 1px 1px #FFF;
-  color: #333;
+  text-shadow: none;
+  color: white;
 }
 .tl-slidenav-previous .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-icon,
 .tl-slidenav-next .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-icon,
@@ -12112,13 +12112,13 @@ html {
 .tl-slidenav-previous .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-description,
 .tl-slidenav-next .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-description {
   color: #f2f2f2;
-  text-shadow: 1px 1px 1px #333;
+  text-shadow: none;
 }
 /* ICONS
 ================================================== */
 .tl-slidenav-next .tl-slidenav-icon,
 .tl-slidenav-previous .tl-slidenav-icon {
-  font-family: 'tl-icons';
+  font-family: 'FontAwesome';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -12143,7 +12143,8 @@ html {
   margin-left: 76px;
 }
 .tl-slidenav-next .tl-slidenav-icon:before {
-  content: "\e64f";
+  content: "\f105";
+  font-size: 72px;
 }
 .tl-slidenav-previous {
   text-align: left;
@@ -12153,7 +12154,8 @@ html {
   margin-left: 0px;
 }
 .tl-slidenav-previous .tl-slidenav-icon:before {
-  content: "\e650";
+  content: "\f104";
+  font-size: 72px;
 }
 /* NAVIGATION HOVER
 ================================================== */
@@ -12353,7 +12355,7 @@ html {
   height: 100%;
   position: relative;
   z-index: 5;
-  background-color: #9A9A9A;
+  background-color: #797979;
 }
 .tl-storyslider .tl-slider-container-mask .tl-slider-container {
   position: absolute;
@@ -12568,6 +12570,8 @@ html {
   border-bottom: 1px solid white;
   padding: 5px 0 12px 0;
   text-align: center;
+  line-height: 1.1em;
+  font-size: 24px;
 }
 .tl-text .tl-headline-date,
 .tl-text h3.tl-headline-date {
@@ -13078,6 +13082,8 @@ html {
 #main-timeline .timeline-presentation .text-content {
   color: white;
   max-width: 660px;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
 }
 #main-timeline .timeline-presentation .text-content p.aligncenter {
   text-align: center;
@@ -13097,7 +13103,7 @@ html {
 .fases-nav-home .fase-arrow.active a {
   text-decoration: none;
   color: white;
-  background-color: #414e62;
+  background-color: #797979;
 }
 .fases-nav-home .fase-arrow.nav-item-home {
   width: 160px;
@@ -13111,7 +13117,7 @@ html {
   font-size: 36px;
 }
 .fases-nav-home .fase-arrow.running a {
-  background-color: #505050;
+  background-color: #797979;
   color: white;
 }
 .fases-nav-home a {
@@ -13130,9 +13136,9 @@ html {
   margin: 0;
 }
 .fases-nav-home h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
-  margin: 6px 0;
+  margin: 0;
 }
 .fases-nav-home img {
   margin: 12px 0;
@@ -13202,7 +13208,7 @@ html {
 .presentacion-fase .content-wrap .fase-intro {
   max-width: 820px;
   margin: 24px 0;
-  font-size: 16px;
+  font-size: 17px;
   font-family: 'Lato', sans-serif;
 }
 .presentacion-fase:before {
@@ -13220,17 +13226,17 @@ html {
   height: 100vh;
   right: 0;
   width: 100px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #333;
+  color: white;
   cursor: pointer;
 }
 .presentacion-fase .gotophase i {
-  font-size: 64px;
+  font-size: 94px;
 }
 .presentacion-fase .gotophase:hover,
 .presentacion-fase .gotophase:focus {
@@ -13409,6 +13415,9 @@ html {
 }
 #timeline-active #timeline-js-container {
   height: 90vh;
+}
+body.timeline-on {
+  overflow: hidden;
 }
 body.timeline-on #timeline-active {
   position: fixed;

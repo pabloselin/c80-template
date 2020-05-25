@@ -32,7 +32,7 @@
 	       -ms-hyphens: auto;
 	           hyphens: auto;
 		*/
-		.opacity(15);
+		.opacity(50);
 		a {
 			
 		}
@@ -62,14 +62,14 @@
 .tl-slidenav-previous, .tl-slidenav-next {
 	.tl-slidenav-content-container {
 		.tl-slidenav-icon, .tl-slidenav-title, .tl-slidenav-description {
-			text-shadow: 1px 1px 1px @color-background;
-			color: @color-foreground;
+			text-shadow: none;
+			color: white;
 		}
 	}
 	.tl-slidenav-content-container.tl-slidenav-inverted {
 		.tl-slidenav-icon, .tl-slidenav-title, .tl-slidenav-description {
 			color:@color-text-inverted;
-			text-shadow: 1px 1px 1px @color-foreground;
+			text-shadow: none;
 		}
 	}
 }
@@ -78,7 +78,7 @@
 ================================================== */
 .tl-slidenav-next, .tl-slidenav-previous {
 	.tl-slidenav-icon {
-		font-family: 'tl-icons';
+		font-family: 'FontAwesome';
 		speak: none;
 		font-style: normal;
 		font-weight: normal;
@@ -103,7 +103,8 @@
 		margin-left: 100 - 24px;
 	}
 	.tl-slidenav-icon:before {
-		content: "\e64f";
+		content: "\f105";
+		font-size: 72px;
 	}
 }
 .tl-slidenav-previous {
@@ -113,7 +114,8 @@
 		margin-left: 0px;
 	}
 	.tl-slidenav-icon:before {
-		content: "\e650";
+		content: "\f104";
+		font-size: 72px;
 	}
 }
 

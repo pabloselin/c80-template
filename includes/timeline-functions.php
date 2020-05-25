@@ -315,7 +315,7 @@ function c80_presentacion_fase($fase, $nextfase) {
 					<h2>Período <?php //echo $timeline_options['titulo_' . $fase];?></h2>
 					<h3><?php echo $fasestart['year'] . '-' . $faseend['year'];?></h3>
 				</div>
-				<a class="gotophase-mobile" data-nextfase="<?php echo $nextfase;?>" data-fase="<?php echo $fase;?>"><i class="fa fa-angle-right"></i></a>
+				<a class="gotophase-mobile visible-xs" data-nextfase="<?php echo $nextfase;?>" data-fase="<?php echo $fase;?>"><i class="fa fa-angle-right"></i></a>
 			</div>
 
 			<div class="fase-intro">

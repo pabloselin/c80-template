@@ -1,5 +1,4 @@
 <?php 
-	$timeline = get_query_var('timeline');
 	$imageid = get_post_thumbnail_id( $post->ID );
 	$image = wp_get_attachment_image_src( $imageid, 'full', false );
 	$fases = array('fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5');
@@ -13,7 +12,7 @@
 			<a href="#" class="toggle-timeline-nav"><i class="fa fa-bars"></i></a>
 		</div>
 	</nav>
-	<nav id="timeline-nav" class="navbar fases-nav-home in-home">
+	<nav id="<?php echo $id;?>" class="navbar fases-nav-home in-home">
 		<ul class="fases-main nav">
 			<li class="fase-arrow nav-item nav-item-home" id="navfase-inicio">
 				<a href="#inicio" class="faselink nav-link"><i class="fa fa-home"></i></a>
