@@ -1,6 +1,5 @@
 <?php 
 	$timeline = get_query_var('timeline');
-	$fase = get_query_var('fase');
 	$imageid = get_post_thumbnail_id( $post->ID );
 	$image = wp_get_attachment_image_src( $imageid, 'full', false );
 	$fases = array('fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5');
@@ -8,6 +7,12 @@
 	$timeline_options = get_option('c80_timeline_options');
 ?>
 
+	<nav class="timeline-nav-mobile visible-xs">
+		<div class="navwrap">
+			<img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_blanco.svg" alt="<?php bloginfo('name');?>">
+			<a href="#" class="toggle-timeline-nav"><i class="fa fa-bars"></i></a>
+		</div>
+	</nav>
 	<nav id="timeline-nav" class="navbar fases-nav-home in-home">
 		<ul class="fases-main nav">
 			<li class="fase-arrow nav-item nav-item-home" id="navfase-inicio">
@@ -15,7 +20,9 @@
 			</li>
 			<?php 
 			foreach($fases as $faseitem) {
-				$link = (!empty($fase) ? add_query_arg( array('fase' => $faseitem ), get_permalink($post->ID)) : '#' . $faseitem );
+				
+				$link = c80_faselink($faseitem);
+
 				$fasedata[$faseitem] = array(
 					'title' => $timeline_options['titulo_' . $faseitem],
 					'start' => parse_field_date_for_json(get_post_meta($timeline_options['hito_inicial_' . $faseitem], 'c80_lt_start_date', true)),

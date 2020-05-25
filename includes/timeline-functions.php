@@ -299,25 +299,32 @@ function c80_register_options_submenu_appearance_menu() {
 add_action( 'cmb2_admin_init', 'c80_register_options_submenu_appearance_menu' );
 
 
-function c80_presentacion_fase($fase) {
+function c80_presentacion_fase($fase, $nextfase) {
 	global $post;
 	$timeline_options = get_option('c80_timeline_options');
 	$fasestart = parse_field_date_for_json(get_post_meta($timeline_options['hito_inicial_' . $fase], 'c80_lt_start_date', true));
 	$faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final_' . $fase], 'c80_lt_start_date', true));
 	?>
 	
-	<section id="<?php echo $fase;?>" class="presentacion-fase" style="background-image: url(<?php echo $timeline_options['imagen_' . $fase];?>);">
+	<section data-fase="<?php echo $fase;?>" id="<?php echo c80_faselink($fase, false);?>" class="presentacion-fase" style="background-image: url(<?php echo $timeline_options['imagen_' . $fase];?>);">
 	<div class="content-wrap">
 		<div class="presentacion-fase-text-content">
-			<h2>Período <?php //echo $timeline_options['titulo_' . $fase];?></h2>
-			<h3><?php echo $fasestart['year'] . '-' . $faseend['year'];?></h3>
-			<div class="fase-intro hidden-xs">
+			
+			<div class="header-presentacion-fase">
+				<div>
+					<h2>Período <?php //echo $timeline_options['titulo_' . $fase];?></h2>
+					<h3><?php echo $fasestart['year'] . '-' . $faseend['year'];?></h3>
+				</div>
+				<a class="gotophase-mobile" data-nextfase="<?php echo $nextfase;?>" data-fase="<?php echo $fase;?>"><i class="fa fa-angle-right"></i></a>
+			</div>
+
+			<div class="fase-intro">
 				<?php echo apply_filters( 'the_content', $timeline_options['intro_' . $fase] );?>
 			</div>
 			<!--<p><span class="btn btn-enter-timeline toggle-timeline" data-fase="<?php echo $fase;?>">Entrar</span></p>-->
 		</div>
 	</div>
-	<a class="gotophase" data-fase="<?php echo $fase;?>"><i class="fa fa-angle-right"></i></a>
+	<a class="gotophase" data-nextfase="<?php echo $nextfase;?>" data-fase="<?php echo $fase;?>"><i class="fa fa-angle-right"></i></a>
 	</section>
 	<?php
 }
@@ -374,4 +381,18 @@ function c80_tlfields() {
 		'type' => 'text',
 	) );
 
+}
+
+function c80_faselink($fase, $withlink = true) {
+	$timeline_options = get_option('c80_timeline_options');
+	$fasestart = parse_field_date_for_json(get_post_meta($timeline_options['hito_inicial_' . $fase], 'c80_lt_start_date', true));
+	$faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final_' . $fase], 'c80_lt_start_date', true));
+	
+	if($withlink):
+		$link = get_permalink($post->ID) . '#' . $fasestart['year'] . '-' . $faseend['year'];
+	else: 
+		$link = $fasestart['year'] . '-' . $faseend['year'];
+	endif;
+
+	return $link;
 }

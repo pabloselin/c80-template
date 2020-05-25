@@ -13376,40 +13376,6 @@ html {
 .c80-timeline-insert {
   height: 70vh;
 }
-@media screen and (max-width: 992px) {
-  .c80-timeline-insert,
-  .presentacion-fase {
-    height: 80vh;
-  }
-  .fixedtoplogo {
-    top: 24px;
-    left: 24px;
-  }
-  .fases-nav-home {
-    margin: 0;
-  }
-  .fases-nav-home.in-timeline a {
-    color: #333;
-  }
-  .fases-nav-home .fases-main {
-    height: 22vh;
-  }
-  .fases-nav-home .fases-main .fase-arrow h1 {
-    font-size: 16px;
-    font-weight: normal;
-  }
-  .fases-nav-home .fases-main .fase-arrow h1 .hyphen {
-    display: block;
-    line-height: 1em;
-  }
-  .fases-nav-home .fases-main .fase-arrow h2 {
-    margin: 6px 0;
-    font-size: 14px;
-  }
-  .fases-nav-home .fases-main .fase-arrow img {
-    margin: 12px 0;
-  }
-}
 .sharer-timeline .sharebutton {
   display: inline-block;
   text-align: center;
@@ -13482,6 +13448,118 @@ body.timeline-on #timeline-active div.loadingZone i {
   color: white;
   font-size: 72px;
   vertical-align: text-bottom;
+}
+@media screen and (max-width: 992px) {
+  .c80-timeline-insert,
+  .presentacion-fase {
+    height: 80vh;
+  }
+  .presentacion-fase .content-wrap .fase-intro {
+    max-height: 60vh;
+    overflow: hidden;
+  }
+  .timeline-nav-mobile {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #414C64;
+    color: white;
+    padding: 12px;
+    z-index: 20;
+    text-align: center;
+    font-size: 32px;
+  }
+  .timeline-nav-mobile .navwrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .timeline-nav-mobile .navwrap img {
+    max-height: 40px;
+    height: auto;
+  }
+  .timeline-nav-mobile .navwrap a {
+    color: white;
+  }
+  .fixedtoplogo {
+    top: 24px;
+    left: 24px;
+  }
+  .fases-nav-home {
+    margin: 0;
+    display: none;
+  }
+  .fases-nav-home .fase-arrow {
+    width: 100%;
+  }
+  .fases-nav-home.in-timeline a {
+    color: #333;
+  }
+  .fases-nav-home .fases-main {
+    display: block;
+  }
+  .fases-nav-home .fases-main .fase-arrow.nav-item-home {
+    width: 100%;
+  }
+  .fases-nav-home .fases-main .fase-arrow.nav-item-home i {
+    font-size: 24px;
+  }
+  .fases-nav-home .fases-main .fase-arrow {
+    border-bottom: 1px solid #ccc;
+  }
+  .fases-nav-home .fases-main .fase-arrow h1 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .fases-nav-home .fases-main .fase-arrow h1 .hyphen {
+    display: inline-block;
+    line-height: 1em;
+  }
+  .fases-nav-home .fases-main .fase-arrow h2 {
+    margin: 6px 0;
+    font-size: 14px;
+  }
+  .fases-nav-home .fases-main .fase-arrow img {
+    margin: 12px 0;
+  }
+  .fases-nav-home.active {
+    display: block;
+    height: auto;
+  }
+  #main-timeline .timeline-presentation .intro-stuff {
+    display: block;
+  }
+  #main-timeline .presentacion-fase .gotophase {
+    display: none;
+  }
+  #main-timeline .presentacion-fase .header-presentacion-fase {
+    display: flex;
+  }
+  #main-timeline .presentacion-fase .header-presentacion-fase .gotophase-mobile {
+    display: block;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 6px 24px;
+    font-size: 36px;
+    margin-left: 24px;
+  }
+  #main-timeline .presentacion-fase .content-wrap {
+    padding: 12px;
+  }
+  #main-timeline .presentacion-fase .content-wrap h2 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  #main-timeline .presentacion-fase .content-wrap h3 {
+    font-size: 24px;
+  }
+  #timeline-js-container .btn-nextphase {
+    height: 36px;
+    width: 40px;
+  }
+  #timeline-js-container .btn-nextphase i {
+    font-size: 12px;
+  }
 }
 #footer-sitio {
   min-height: 200px;
