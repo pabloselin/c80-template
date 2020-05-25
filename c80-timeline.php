@@ -31,9 +31,7 @@ $timeline_options = get_option('c80_timeline_options');
 						<div class="content">
 							<?php the_content();?>
 						</div>
-						<div class="scrollind">
-							Haz scroll para explorar cronológicamente
-						</div>
+						
 					</div>
 				</div>
 
