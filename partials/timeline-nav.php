@@ -21,7 +21,7 @@
 			<?php 
 			foreach($fases as $faseitem) {
 				
-				$link = c80_faselink($faseitem);
+				$link = '#' . c80_faselink($faseitem, false);
 
 				$fasedata[$faseitem] = array(
 					'title' => $timeline_options['titulo_' . $faseitem],
