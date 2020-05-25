@@ -11873,13 +11873,6 @@ html {
   text-decoration: underline;
   color: #c34528;
 }
-.tl-slide.tl-full-image-background .tl-caption,
-.tl-slide.tl-full-color-background .tl-caption,
-.tl-slide.tl-full-image-background .tl-credit,
-.tl-slide.tl-full-color-background .tl-credit {
-  color: #FFF !important;
-  text-shadow: 1px 1px 1px #000 !important;
-}
 .tl-slide.tl-full-image-background .tl-media-twitter blockquote,
 .tl-slide.tl-full-color-background .tl-media-twitter blockquote,
 .tl-slide.tl-full-image-background .tl-media-blockquote blockquote,
@@ -13415,6 +13408,10 @@ html {
 }
 #timeline-active #timeline-js-container {
   height: 90vh;
+}
+#timeline-active #timeline-js-container .tl-caption {
+  color: white;
+  font-size: 12px;
 }
 body.timeline-on {
   overflow: hidden;
