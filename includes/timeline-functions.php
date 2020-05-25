@@ -110,7 +110,7 @@ function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent, $islast, $fase ) {
 
 			if($mediatype == 'jpg') {
 				if(has_post_thumbnail( $hitoid)):
-					$event['media']['url'] = get_the_post_thumbnail_url( $hitoid, 'medium' );
+					$event['media']['url'] = get_the_post_thumbnail_url( $hitoid, 'large' );
 					$event['media']['caption'] = get_post_meta($hitoid, 'c80_lt_media_caption', true);
 					$event['media']['credit'] = get_post_meta($hitoid, 'c80_lt_media_credit', true);
 				endif;	
