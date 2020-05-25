@@ -26,7 +26,7 @@ html {
 	
 	&:before {
 		//background: linear-gradient(to bottom,rgba(233,49,59,.9) 0,  rgba(233,49,59,0.6) 10%, rgba(66,79,99,.8) 75%, rgba(66,79,99,1) 97%);
-		background: linear-gradient(to bottom,rgba(199,36,36,.9) 0,  rgba(199,36,36,0.6) 10%, rgba(66,85,148,.8) 75%, rgba(66,85,148,1) 97%);
+		background: linear-gradient(to bottom,rgba(199,36,36,.9) 0,  rgba(199,36,36,0.8) 10%, rgba(66,85,148,.8) 75%, rgba(66,85,148,.8) 100%);
 		position: absolute;
 			top: 0;
 			left: 0;
@@ -48,6 +48,7 @@ html {
 			// background: -webkit-linear-gradient(right, rgba(2,0,36,0) 0%, rgba(66,79,99,1) 80%);
 			// background: -o-linear-gradient(right, rgba(2,0,36,0) 0%, rgba(66,79,99,1) 80%);
 			// background: linear-gradient(to left, rgba(2,0,36,0) 0%, rgba(66,79,99,1) 80%);
+			background-color: rgba(0, 0, 0, 0.3);
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -67,7 +68,7 @@ html {
 			z-index: 20;
 			align-items: center;
 			justify-content: flex-start;
-			padding: 0 64px 64px 64px;
+			padding: 64px;
 
 			@media screen and (max-width: @screen-md) {
 				padding: 0 12px 12px 12px;
@@ -85,9 +86,10 @@ html {
 				border-bottom: 1px solid white;
 				padding: 12px 0;
 				margin-bottom: 24px;
-				margin-top: 0;
+				margin-top: 8px;
 				font-weight: bold;
 				color: white;
+				line-height: 1.3em;
 			}
 		}
 
@@ -112,7 +114,8 @@ html {
 .fases-nav-home {
 	color: white;
 	position: fixed;
-	background-color: white;
+	background-color: rgba(247, 247, 247, 1);
+	border-top: 1px solid #f0f0f0;
 	bottom: 0;
 	z-index: 20;
 	width: 100%;
@@ -254,6 +257,7 @@ html {
 	&:before {
 		//background: rgb(2,0,36);
 		//background: linear-gradient(to bottom, rgba(65, 78, 98, .8) 0%, rgba(233,49,59,1) 86%);
+		background-color: rgba(0, 0, 0, 0.2);
 		position: absolute;
 		top: 0;
 		left: 0;
