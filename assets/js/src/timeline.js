@@ -36,7 +36,23 @@ jQuery(document).ready(function($) {
 
     $('.toggle-timeline-nav, a.faselink').on('click', function(e) {
         $('.fases-nav-home').toggleClass('active');
-    })
+    });
+
+    $(document).keydown(function(e) {
+        if(e.which == 39) {
+             var next = $('body a.btn-nextphase').attr('href');
+             if(next) {
+                console.log(next);
+                $('body').removeClass('timeline-on');
+                $('#timeline-active ul.fases-main li').removeClass('running');
+                $('html, body').animate({
+                    'scrollTop':   $(next).offset().top
+                    }, 500);
+                }
+        }
+    });
+
+
 
 });
 
@@ -61,7 +77,7 @@ function startTimeline(fase, nextfase) {
                 var next = $('section.presentacion-fase[data-fase="' + nextfase + '"]').attr('id');
 
                 if(next) {
-                    jQuery('.tl-storyslider').append('<a class="btn-nextphase" data-toggle="nextphase" href="#' + next + '"><i class="fa fa-angle-right"></i></a>')
+                    jQuery('.tl-storyslider').append('<a class="btn-nextphase" data-toggle="nextphase" href="#' + next + '"><i class="fa fa-angle-right"></i></a>');
                 }
             } else {
                 jQuery('.tl-storyslider .btn-nextphase').remove();

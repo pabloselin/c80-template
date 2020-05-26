@@ -65,6 +65,12 @@ function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent, $islast, $fase ) {
 			$media_field		= get_the_post_thumbnail_url( $hitoid, 'large' );
 
 			$start_date 		= parse_field_date_for_json( $start_date_field );
+			$time_start_date 	= c80_parsehour(get_post_meta($hitoid, 'c80_lt_time_date', true));
+
+			if($time_start_date) {
+				$start_date = array_merge($start_date, $time_start_date);
+			}
+
 			$grupo 				= get_the_terms( $hitoid, 'tipo_hito' );
 			$fases = array('fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5');
 
@@ -74,6 +80,9 @@ function c80_prepare_hito( $hitoid, $hitotitle, $hitocontent, $islast, $fase ) {
 			
 			if($end_date_field):
 				$end_date 			= parse_field_date_for_json( $end_date_field );
+				if($time_start_date) {
+					$end_date = array_merge($end_date, $time_start_date);
+				}
 			endif;
 
 			$mediatype = get_post_meta($hitoid, 'c80_lt_media_type', true);
@@ -151,13 +160,12 @@ function c80_timeline_endpoint() {
 		);
 }
 
-add_filter( 'query_vars', 'c80_timeline_queryvars' );
+function c80_parsehour($hour) {
+	$hourarr = explode(':', $hour);
+	$hourformat['hour'] = $hourarr[0];
+	$hourformat['minute'] = $hourarr[1];
 
-function c80_timeline_queryvars($vars) {
-	$vars[] = 'fase';
-	$vars[] = 'timeline';
-	$vars[] = 'started';
-	return $vars;
+	return $hourformat;
 }
 
 /**
@@ -354,6 +362,14 @@ function c80_tlfields() {
 		'id' => $prefix . 'end_date',
 		'type' => 'text',
 		'desc'	=> 'Formato: AAAA-MM-DD'
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'Hora hito', 'c80' ),
+		'id' => $prefix . 'time_date',
+		'type' => 'text_time',
+		'time_format' => 'H:i',
+		'desc'	=> 'Solo si es necesario para reordenar eventos que ocurren el mismo día'
 	) );
 
 	$cmb->add_field( array(
