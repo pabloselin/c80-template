@@ -11299,6 +11299,27 @@ TL.TimeNav = TL.Class.extend({
 
 		this._calculated_row_height = this._calculateRowHeight(available_height);
 
+		//Ajustes para c80
+		if(this.options.group_order) {
+				var groupOrder = this.options.group_order;
+				var groupRows = this.timescale.getGroupLabels();
+				var rowOffset = [];
+				var rowMem = [];
+				var rowCount = 0;
+
+				for(var i = 0; i < groupRows.length; i++) {
+					rowMem[groupRows[i].label] = groupRows[i].rows;
+				}
+
+				for(var x = 0; x < groupOrder.length; x++) {
+					if(groupRows[x]) {
+						//console.log(groupRows[x].rows, groupRows[x].label);
+						rowOffset[groupOrder[x]] = rowCount;	
+						rowCount += rowMem[groupOrder[x]];
+					}
+				}
+		}
+
 		for (var i = 0; i < this._markers.length; i++) {
 
 			// Set Height
@@ -11307,8 +11328,20 @@ TL.TimeNav = TL.Class.extend({
 			//Position by Row
 			var row = this.timescale.getPositionInfo(i).row;
 
-			var marker_y = Math.floor(row * (marker_height + this.options.marker_padding)) + this.options.marker_padding;
+			//Patch C80 ajustes para ordenar los grupos
+			if(this.options.group_order) {
 
+				var group = this._markers[i].data.group;
+				var groupIndex = this.options.group_order.indexOf(group);
+				
+				row = rowOffset[group];
+				
+
+				//row = rowOffset[groupIndex];
+				
+			}
+
+			var marker_y = Math.floor(row * (marker_height + this.options.marker_padding)) + this.options.marker_padding;
 			var remainder_height = available_height - marker_y + this.options.marker_padding;
 			this._markers[i].setRowPosition(marker_y, remainder_height);
 		};
@@ -12605,6 +12638,7 @@ TL.TimeScale = TL.Class.extend({
             if(slides[i].group) {
                 if(groups.indexOf(slides[i].group) < 0) {
                     groups.push(slides[i].group);
+                    console.log(slides[i], groups);
                 }
             } else {
                 empty_group = true;

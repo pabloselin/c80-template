@@ -156,10 +156,28 @@
 	"buffers":
 	[
 		{
-			"file": "/home/pabloselin/Documents/WebDev/local_sites/bitacora/app/public/wp-content/themes/prompt/.nvmrc",
+			"file": "assets/css/src/c80-timeline.less",
 			"settings":
 			{
-				"buffer_size": 1,
+				"buffer_size": 10913,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 3308,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "includes/timeline-functions.php",
+			"settings":
+			{
+				"buffer_size": 13128,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -313,6 +331,7 @@
 	],
 	"file_history":
 	[
+		"/home/pabloselin/Documents/WebDev/local_sites/bitacora/app/public/wp-content/themes/prompt/.nvmrc",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/functions.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/slider/TL.Slide.less",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/media/types/TL.Media.Text.less",
@@ -421,7 +440,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -438,6 +457,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fases-nav-home",
 			"tl-credit",
 			"credit",
 			"makelink",
@@ -540,32 +560,91 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/home/pabloselin/Documents/WebDev/local_sites/bitacora/app/public/wp-content/themes/prompt/.nvmrc",
+					"file": "assets/css/src/c80-timeline.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1,
+						"buffer_size": 10913,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1,
-								1
+								2949,
+								2949
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2445.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								315,
+								315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "includes/timeline-functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 102.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -623,8 +702,16 @@
 		"selected_items":
 		[
 			[
+				"timeline",
+				"c80-template/includes/timeline-functions.php"
+			],
+			[
 				"func",
 				"c80-template/functions.php"
+			],
+			[
+				"timeline.l",
+				"c80-template/assets/css/src/c80-timeline.less"
 			],
 			[
 				"tl.slide",
@@ -653,10 +740,6 @@
 			[
 				"mediatex",
 				"c80-template/assets/css/src/timeline/media/types/TL.Media.Text.less"
-			],
-			[
-				"timeline",
-				"c80-template/includes/timeline-functions.php"
 			],
 			[
 				"medi",
@@ -769,10 +852,6 @@
 			[
 				"phpl",
 				"c80-template/phploy.ini"
-			],
-			[
-				"timeline.l",
-				"c80-template/assets/css/src/c80-timeline.less"
 			],
 			[
 				"sharer",
@@ -1148,11 +1227,11 @@
 				"~/Documents/WebDev/local_sites/bitacora/app/public/wp-content/themes/prompt/prompt.sublime-project"
 			],
 			[
-				"prompt",
+				"pro",
 				"~/Documents/WebDev/local_sites/bitacora/app/public/wp-content/themes/prompt/prompt.sublime-project"
 			],
 			[
-				"pro",
+				"prompt",
 				"~/Documents/WebDev/local_sites/bitacora/app/public/wp-content/themes/prompt/prompt.sublime-project"
 			],
 			[

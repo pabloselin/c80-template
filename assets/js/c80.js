@@ -2594,7 +2594,8 @@ function startTimeline(fase, nextfase) {
         timelineObj = new TL.Timeline('timeline-js-container', data[fase], {
             language: 'es',
             hash_bookmark: false,
-            group_order: ['Constitucional', 'Político social', 'Presidencial']
+            group_order: ['Constitucional', 'Político social', 'Presidencial'],
+            max_rows: 3
         });
         //console.log(data);
         var events = data[fase].events;
