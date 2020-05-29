@@ -332,7 +332,7 @@ function c80_presentacion_fase($fase, $nextfase) {
 			<!--<p><span class="btn btn-enter-timeline toggle-timeline" data-fase="<?php echo $fase;?>">Entrar</span></p>-->
 		</div>
 	</div>
-	<a class="gotophase" data-nextfase="<?php echo $nextfase;?>" data-fase="<?php echo $fase;?>"><i class="fa fa-angle-right"></i></a>
+	<a class="gotophase" data-nextfase="<?php echo $nextfase;?>" data-fase="<?php echo $fase;?>"><i class="fa fa-angle-right"></i> <p>Ver hitos</p></a>
 	</section>
 	<?php
 }

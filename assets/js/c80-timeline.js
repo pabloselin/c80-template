@@ -11336,6 +11336,14 @@ TL.TimeNav = TL.Class.extend({
 				
 				row = rowOffset[group];
 				
+				if(rowMem[group] > 1) {
+					console.log(rowMem[group]);	
+					var max = rowOffset[group] + rowMem[group];
+					var min = rowOffset[group];
+					row = Math.floor(Math.random() * (max - min)) + min;;
+				}
+				
+				
 
 				//row = rowOffset[groupIndex];
 				

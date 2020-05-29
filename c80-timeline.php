@@ -36,8 +36,16 @@ $timeline_options = get_option('c80_timeline_options');
 				</div>
 
 			</div>
-
-
+			
+			<div class="intro-indicator">
+				
+				<a href="#<?php echo c80_faselink($fases[0], false);?>" class="intro-arrow" title="Comenzar">
+					
+					<i class="fa fa-angle-down"></i>
+					<p>empezar</p>
+				</a>
+			</div>
+	
 
 
 

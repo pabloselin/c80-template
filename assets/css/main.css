@@ -13072,6 +13072,7 @@ html {
 }
 #main-timeline .timeline-presentation .intro-stuff {
   display: flex;
+  margin-top: -60px;
 }
 #main-timeline .timeline-presentation .text-header {
   padding: 0 24px 0 0;
@@ -13095,6 +13096,34 @@ html {
 #main-timeline .timeline-presentation .text-content p.aligncenter {
   text-align: center;
   margin: 24px 0;
+}
+.intro-indicator {
+  position: absolute;
+  bottom: 80px;
+  z-index: 100;
+  text-align: center;
+  width: 100%;
+}
+.intro-indicator .intro-arrow {
+  display: block;
+  color: white;
+  margin: 0 auto;
+  max-width: 160px;
+  height: 160px;
+  opacity: 0.6;
+}
+.intro-indicator .intro-arrow i {
+  font-size: 160px;
+  line-height: 90px;
+}
+.intro-indicator .intro-arrow p {
+  font-size: 16px;
+}
+.intro-indicator .intro-arrow:hover {
+  margin-top: 12px;
+  height: 150px;
+  text-decoration: none;
+  opacity: 1;
 }
 .fases-nav-home {
   color: white;
@@ -13241,19 +13270,24 @@ html {
   position: absolute;
   height: 100vh;
   right: 0;
-  width: 100px;
+  width: 300px;
   background-color: rgba(255, 255, 255, 0.4);
   transition: all ease-in 0.3s;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
   color: white;
   cursor: pointer;
 }
 .presentacion-fase .gotophase i {
-  font-size: 94px;
+  font-size: 174px;
+}
+.presentacion-fase .gotophase p {
+  font-size: 16px;
+  text-transform: lowercase;
 }
 .presentacion-fase .gotophase:hover,
 .presentacion-fase .gotophase:focus {
@@ -13398,7 +13432,7 @@ html {
 }
 .fixedtoplogo {
   position: fixed;
-  top: 48px;
+  top: 24px;
   left: 64px;
   z-index: 100;
 }
