@@ -13113,7 +13113,7 @@ html {
   opacity: 0.6;
 }
 .intro-indicator .intro-arrow i {
-  font-size: 160px;
+  font-size: 100px;
   line-height: 90px;
 }
 .intro-indicator .intro-arrow p {
@@ -13124,6 +13124,11 @@ html {
   height: 150px;
   text-decoration: none;
   opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .intro-indicator {
+    display: none;
+  }
 }
 .fases-nav-home {
   color: white;
