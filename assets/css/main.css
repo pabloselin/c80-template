@@ -12554,7 +12554,7 @@ html {
   min-width: 120px;
   padding: 12px 20px 0 20px;
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
   text-align: left;
   text-shadow: none;
   color: white;
