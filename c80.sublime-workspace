@@ -159,6 +159,32 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "assets/css/src/c80-timeline.less",
+			"settings":
+			{
+				"buffer_size": 11583,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/src/timeline/timenav/TL.TimeMarker.less",
+			"settings":
+			{
+				"buffer_size": 13592,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 3308,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -544,8 +570,96 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "assets/css/src/c80-timeline.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/css/src/timeline/timenav/TL.TimeMarker.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13592,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5502,
+								5502
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3641.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								340,
+								340
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -598,6 +712,18 @@
 		"selected_items":
 		[
 			[
+				"func",
+				"c80-template/functions.php"
+			],
+			[
+				"timemakr",
+				"c80-template/assets/css/src/timeline/timenav/TL.TimeMarker.less"
+			],
+			[
+				"c80timeline.l",
+				"c80-template/assets/css/src/c80-timeline.less"
+			],
+			[
 				"timemark",
 				"c80-template/assets/css/src/timeline/timenav/TL.TimeMarker.less"
 			],
@@ -616,10 +742,6 @@
 			[
 				"timegrou",
 				"c80-template/assets/css/src/timeline/timenav/TL.TimeGroup.less"
-			],
-			[
-				"func",
-				"c80-template/functions.php"
 			],
 			[
 				"slide",
@@ -1100,14 +1222,6 @@
 			[
 				"itrend-fronte",
 				"itrend_custom_content/templates/itrend-filters-frontend.php"
-			],
-			[
-				"publ",
-				"itrend_custom_content/itrend-public.php"
-			],
-			[
-				"itrend-filt",
-				"itrend_custom_content/js/itrend-filters-scripts.js"
 			]
 		],
 		"width": 0.0
@@ -1115,9 +1229,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "luc",
+		"last_filter": "auto",
 		"selected_items":
 		[
+			[
+				"auto",
+				"~/Documents/WebDev/local_sites/automark/app/public/wp-content/themes/automark/automark.sublime-project"
+			],
 			[
 				"luc",
 				"~/Documents/WebDev/local_sites/luciaegana/app/public/wp-content/themes/ler/luciaegana.sublime-project"

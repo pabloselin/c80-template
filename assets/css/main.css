@@ -13520,6 +13520,9 @@ body.timeline-on #timeline-active div.loadingZone {
 body.timeline-on #timeline-active div.loadingZone i {
   font-style: normal !important;
 }
+body.timeline-on #timeline-active .tl-timenav .tl-attribution {
+  display: none;
+}
 #timeline-js-container .btn-nextphase {
   padding: 6px 12px;
   border: 2px solid #333;
