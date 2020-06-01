@@ -7,7 +7,6 @@
 	position:absolute;
 	top:0;
 	left:0;
-	
 	background-color:@ui-background-color;
 	
 	display: -ms-flexbox;
@@ -24,9 +23,34 @@
 		//z-index:30;
 		color:@active-timemarker-background-color;
 		text-shadow: none;
-		margin-left:80px;
+		margin-left: 80px;
 		text-transform: uppercase;
 		//background-color:@ui-background-color;
+		
+	}
+
+	@media screen and (min-width: @screen-md) {
+		.tl-timegroup {
+			margin-left: 180px;
+		}
+		
+		.tl-timegroup-message {
+			width:180px;
+			height: 94%;
+			background-color: #ccc;
+			z-index:100;
+			margin-left: 0;
+			padding-left: 12px;
+			display: flex;
+			align-items: center;
+			justify-content: left;
+			background: linear-gradient( to right, @ui-background-color 0%, @ui-background-color 85%, fade(@ui-background-color, 0) 100%);
+		}
+
+		&.tl-timegroup-alternate .tl-timegroup-message {
+			background: linear-gradient( to right, lighten(@ui-background-color,3) 0%, lighten(@ui-background-color,3) 80%, fade(lighten(@ui-background-color,3), 0) 100%);	
+		}
+
 		
 	}
 	

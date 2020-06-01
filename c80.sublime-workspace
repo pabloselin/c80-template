@@ -172,7 +172,7 @@
 			"file": "assets/css/src/timeline/timenav/TL.TimeMarker.less",
 			"settings":
 			{
-				"buffer_size": 13592,
+				"buffer_size": 13525,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -181,7 +181,25 @@
 			"file": "functions.php",
 			"settings":
 			{
-				"buffer_size": 3308,
+				"buffer_size": 3309,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/plugins/c80-plugin/admin/class-c80-admin.php",
+			"settings":
+			{
+				"buffer_size": 20646,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/src/timeline/timenav/TL.TimeAxis.less",
+			"settings":
+			{
+				"buffer_size": 3500,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -460,6 +478,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"line-left",
 			"content-container",
 			"tl-timeline",
 			"vertical-align",
@@ -579,7 +598,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -608,7 +627,7 @@
 						"translation.y": 9265.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -617,15 +636,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13592,
+						"buffer_size": 13525,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5502,
-								5502
+								10074,
+								10074
 							]
 						],
 						"settings":
@@ -634,10 +653,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3641.0,
+						"translation.y": 6814.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -646,15 +665,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3308,
+						"buffer_size": 3309,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								816,
-								816
+								481,
+								481
 							]
 						],
 						"settings":
@@ -666,11 +685,69 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"file": "/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/plugins/c80-plugin/admin/class-c80-admin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20646,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19221,
+								19221
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10061.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/css/src/timeline/timenav/TL.TimeAxis.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3500,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								367,
+								367
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "c80-timeline.php",
 					"semi_transient": false,
 					"settings":
@@ -695,7 +772,7 @@
 						"translation.y": 489.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -740,7 +817,7 @@
 	"project": "c80.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -749,6 +826,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"admin",
+				"c80-plugin/admin/class-c80-admin.php"
+			],
+			[
+				"timemark",
+				"c80-template/assets/css/src/timeline/timenav/TL.TimeMarker.less"
+			],
+			[
+				"timeaxi",
+				"c80-template/assets/css/src/timeline/timenav/TL.TimeAxis.less"
+			],
 			[
 				"c80",
 				"c80-template/c80-timeline.php"
@@ -768,10 +857,6 @@
 			[
 				"c80timeline.l",
 				"c80-template/assets/css/src/c80-timeline.less"
-			],
-			[
-				"timemark",
-				"c80-template/assets/css/src/timeline/timenav/TL.TimeMarker.less"
 			],
 			[
 				"timeaxis",
@@ -1252,14 +1337,6 @@
 			[
 				"cu",
 				"itrend_custom_content/itrend-custom-fields.php"
-			],
-			[
-				"itrend-filte",
-				"itrend_custom_content/templates/itrend-filters.php"
-			],
-			[
-				"itrend-fronte",
-				"itrend_custom_content/templates/itrend-filters-frontend.php"
 			]
 		],
 		"width": 0.0
@@ -1267,16 +1344,20 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "le",
+		"last_filter": "autom",
 		"selected_items":
 		[
 			[
-				"le",
-				"~/Documents/WebDev/local_sites/luciaegana/app/public/wp-content/themes/ler/luciaegana.sublime-project"
-			],
-			[
 				"autom",
 				"~/Documents/WebDev/local_sites/automark/app/public/wp-content/themes/automark/automark.sublime-project"
+			],
+			[
+				"c80",
+				"~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/c80.sublime-project"
+			],
+			[
+				"le",
+				"~/Documents/WebDev/local_sites/luciaegana/app/public/wp-content/themes/ler/luciaegana.sublime-project"
 			],
 			[
 				"auto",

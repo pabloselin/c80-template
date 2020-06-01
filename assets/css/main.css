@@ -10543,11 +10543,11 @@ html {
   text-align: center;
   color: #333;
   overflow: hidden;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
   top: 100%;
-  left: 50%;
-  left: 0;
+  right: 50%;
+  right: 0;
 }
 /* Skinny
 ================================================== */
@@ -11556,6 +11556,26 @@ html {
   text-shadow: none;
   margin-left: 80px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 992px) {
+  .tl-timegroup .tl-timegroup {
+    margin-left: 180px;
+  }
+  .tl-timegroup .tl-timegroup-message {
+    width: 180px;
+    height: 94%;
+    background-color: #ccc;
+    z-index: 100;
+    margin-left: 0;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 85%, rgba(242, 242, 242, 0) 100%);
+  }
+  .tl-timegroup.tl-timegroup-alternate .tl-timegroup-message {
+    background: linear-gradient(to right, #fafafa 0%, #fafafa 80%, rgba(250, 250, 250, 0) 100%);
+  }
 }
 .tl-timegroup.tl-timegroup-alternate {
   background-color: #fafafa;
@@ -12579,7 +12599,7 @@ html {
 }
 .tl-text p {
   color: white;
-  font-size: 17px;
+  font-size: 16px;
 }
 .tl-text h2.tl-headline-title,
 .tl-text h2.tl-headline {
