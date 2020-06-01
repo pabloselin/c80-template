@@ -11024,7 +11024,7 @@ html {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  box-shadow: 1px 1px 1px #FFF;
+  box-shadow: 0;
 }
 .tl-timemarker .tl-timemarker-line-left:after,
 .tl-timemarker .tl-timemarker-line-right:after {
@@ -11264,7 +11264,7 @@ html {
   border-color: #ED2F39;
   border-width: 1px;
   z-index: 8;
-  box-shadow: 0px 1px 3px rgba(145, 145, 145, 0.5);
+  box-shadow: none;
 }
 .tl-timemarker.tl-timemarker-active .tl-timemarker-line-left:after,
 .tl-timemarker.tl-timemarker-active .tl-timemarker-line-right:after {
@@ -11676,6 +11676,9 @@ html {
   line-height: 18px;
   margin-bottom: 2px;
   margin-left: 50px;
+}
+.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor {
+  display: none;
 }
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick {
   font-size: 11px;

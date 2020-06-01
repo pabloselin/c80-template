@@ -163,7 +163,8 @@
 			"file": "assets/css/src/c80-timeline.less",
 			"settings":
 			{
-				"buffer_size": 11583,
+				"buffer_size": 11638,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -182,6 +183,14 @@
 			{
 				"buffer_size": 3308,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "c80-timeline.php",
+			"settings":
+			{
+				"buffer_size": 1876,
 				"line_ending": "Unix"
 			}
 		}
@@ -434,7 +443,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -579,15 +588,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11583,
+						"buffer_size": 11638,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								9232,
+								9232
 							]
 						],
 						"settings":
@@ -596,7 +605,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 9265.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -628,7 +637,7 @@
 						"translation.y": 3641.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -644,8 +653,8 @@
 						"selection":
 						[
 							[
-								340,
-								340
+								816,
+								816
 							]
 						],
 						"settings":
@@ -658,6 +667,35 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "c80-timeline.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1876,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1876,
+								1876
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 489.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -712,6 +750,14 @@
 		"selected_items":
 		[
 			[
+				"c80",
+				"c80-template/c80-timeline.php"
+			],
+			[
+				"timeline.l",
+				"c80-template/assets/css/src/c80-timeline.less"
+			],
+			[
 				"func",
 				"c80-template/functions.php"
 			],
@@ -758,14 +804,6 @@
 			[
 				"timelinan",
 				"c80-template/partials/timeline-nav.php"
-			],
-			[
-				"c80",
-				"c80-template/c80-timeline.php"
-			],
-			[
-				"timeline.l",
-				"c80-template/assets/css/src/c80-timeline.less"
 			],
 			[
 				"tmeline.js",
@@ -1229,9 +1267,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "auto",
+		"last_filter": "le",
 		"selected_items":
 		[
+			[
+				"le",
+				"~/Documents/WebDev/local_sites/luciaegana/app/public/wp-content/themes/ler/luciaegana.sublime-project"
+			],
+			[
+				"autom",
+				"~/Documents/WebDev/local_sites/automark/app/public/wp-content/themes/automark/automark.sublime-project"
+			],
 			[
 				"auto",
 				"~/Documents/WebDev/local_sites/automark/app/public/wp-content/themes/automark/automark.sublime-project"
@@ -1271,10 +1317,6 @@
 			[
 				"bitac",
 				"~/Documents/WebDev/local_sites/bitacora/app/public/wp-content/themes/prompt/prompt.sublime-project"
-			],
-			[
-				"le",
-				"~/Documents/WebDev/local_sites/luciaegana/app/public/wp-content/themes/ler/luciaegana.sublime-project"
 			],
 			[
 				"pal",
