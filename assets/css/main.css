@@ -12517,10 +12517,6 @@ html {
   font-size: 10px;
   line-height: 13px;
 }
-.tl-credit:before {
-  content: 'Créditos: ';
-  color: #f0f0f0;
-}
 .tl-credit a.tl-makelink {
   color: white;
 }
@@ -13515,10 +13511,46 @@ html {
 #timeline-active #timeline-js-container {
   height: 90vh;
 }
+#timeline-active #timeline-js-container .tl-caption,
+#timeline-active #timeline-js-container .tl-credit {
+  width: auto;
+  text-align: left;
+}
 #timeline-active #timeline-js-container .tl-caption {
   color: white;
   font-size: 12px;
   line-height: 1.2em;
+}
+#timeline-active #timeline-js-container .tl-credit {
+  opacity: .7;
+  margin: 12px 0 0 0;
+  display: inline-block;
+  font-style: italic;
+  font-size: 12px;
+  color: #000;
+}
+#timeline-active #timeline-js-container .tl-credit a.tl-makelink {
+  color: #000;
+}
+#timeline-active #timeline-js-container .tl-credit:before {
+  content: 'créditos: ';
+}
+#timeline-active #timeline-js-container .tl-altcredit,
+#timeline-active #timeline-js-container .tl-altcredit a {
+  opacity: .7;
+  font-style: italic;
+  font-size: 12px;
+  color: #000;
+}
+#timeline-active #timeline-js-container .tl-altcredit {
+  display: inline-block;
+  margin-left: 6px;
+  padding-left: 4px;
+  border-left: 1px solid #000;
+  line-height: 9px;
+}
+#timeline-active #timeline-js-container .tl-altcredit:before {
+  content: 'créditos: ';
 }
 body.timeline-on {
   overflow: hidden;

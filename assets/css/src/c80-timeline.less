@@ -546,10 +546,50 @@ html {
 	position: fixed;
 	#timeline-js-container {
 		height: 90vh;
+		
+		.tl-caption, .tl-credit {
+			width: auto;
+			text-align: left;
+		}
+
 		.tl-caption {
 			color: white;
 			font-size: 12px;
 			line-height: 1.2em;
+		}
+		.tl-credit {
+			//text-transform: uppercase;
+			opacity: .7;
+			margin: 12px 0 0 0;
+			display: inline-block;
+			font-style: italic;
+			font-size: 12px;
+			color: #000;
+			a.tl-makelink {
+				color: #000;
+			}
+			&:before {
+				content: 'créditos: ';
+			}
+		}
+
+		.tl-altcredit, .tl-altcredit a {
+			//text-transform: uppercase;
+			opacity: .7;
+			font-style: italic;
+			font-size: 12px;
+			color: #000;
+		}
+
+		.tl-altcredit {
+			display: inline-block;
+			margin-left: 6px;
+			padding-left: 4px;
+			border-left: 1px solid #000;
+			line-height: 9px;
+			&:before {
+				content: 'créditos: ';
+			}
 		}
 	}
 }

@@ -7523,19 +7523,36 @@ TL.Media = TL.Class.extend({
 
 	showMeta: function(credit, caption) {
 		this._state.show_meta = true;
-		// Credit
-		if (this.data.credit && this.data.credit != "") {
-			this._el.credit					= TL.Dom.create("div", "tl-credit", this._el.content_container);
-			this._el.credit.innerHTML		= this.options.autolink == true ? TL.Util.linkify(this.data.credit) : this.data.credit;
-			this.options.credit_height 		= this._el.credit.offsetHeight;
-		}
-
-		// Caption
-		if (this.data.caption && this.data.caption != "") {
+		
+		//Ajuste para c80
+		if(this.data.caption && this.data.caption != "" && this.data.credit && this.data.credit != "") {
+			
 			this._el.caption				= TL.Dom.create("div", "tl-caption", this._el.content_container);
 			this._el.caption.innerHTML		= this.options.autolink == true ? TL.Util.linkify(this.data.caption) : this.data.caption;
+			var tmpcreditinfo				= this.options.autolink == true ? TL.Util.linkify(this.data.credit) : this.data.credit;
+			this._el.caption.innerHTML		+= '<span class="tl-altcredit">' + tmpcreditinfo + '</span>';
 			this.options.caption_height 	= this._el.caption.offsetHeight;
+
+		} else {
+
+			// Caption
+			if (this.data.caption && this.data.caption != "") {
+				this._el.caption				= TL.Dom.create("div", "tl-caption", this._el.content_container);
+				this._el.caption.innerHTML		= this.options.autolink == true ? TL.Util.linkify(this.data.caption) : this.data.caption;
+				this.options.caption_height 	= this._el.caption.offsetHeight;
+			}
+			// Credit
+			if (this.data.credit && this.data.credit != "") {
+				this._el.credit					= TL.Dom.create("div", "tl-credit", this._el.content_container);
+				this._el.credit.innerHTML		= this.options.autolink == true ? TL.Util.linkify(this.data.credit) : this.data.credit;
+				this.options.credit_height 		= this._el.credit.offsetHeight;
+			}
+
 		}
+
+		
+
+		
 
 		if (!this.data.caption || !this.data.credit) {
 			this.getMeta();
