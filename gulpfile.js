@@ -4,6 +4,7 @@ var plumber = require( 'gulp-plumber' );
 var notify = require( 'gulp-notify' );
 var minify = require( 'gulp-minify' );
 var concat = require( 'gulp-concat' );
+var browserSync = require('browser-sync').create();
 
 var plumberErrorHandler = { errorHandler: notify.onError({
     
@@ -19,7 +20,8 @@ gulp.task('less', function() {
 	return gulp.src('assets/css/src/main.less')
 		.pipe(plumber(plumberErrorHandler))
 		.pipe(less())
-		.pipe(gulp.dest('assets/css'));	
+		.pipe(gulp.dest('assets/css'))
+		.pipe(browserSync.stream());	
 });
 
 gulp.task('embeds', function() {
@@ -33,6 +35,7 @@ gulp.task('scripts', function() {
 	return gulp.src(['./assets/js/src/bootstrap.js', './assets/js/src/scripts.js', './assets/js/src/timeline.js'])
 			.pipe(concat('c80.js'))
 			.pipe(gulp.dest('./assets/js/'));
+			
 });
 
 gulp.task('compress', function() {
@@ -45,7 +48,20 @@ gulp.task('compress', function() {
 		.pipe(gulp.dest('./assets/js/'));
 });
 
-gulp.task('watch', function() {
-	gulp.watch(['assets/css/src/**/*.less', 'assets/js/src/*.js'], ['less', 'embeds', 'scripts']);
+gulp.task('browser-sync', function() {
+	browserSync.init({
+		proxy: "c80.local"
+	});
 });
+
+gulp.task('watch', function() {
+	
+	browserSync.init({
+		proxy: "c80.local"
+	});
+
+	gulp.watch(['assets/css/src/**/*.less', 'assets/js/src/*.js'], ['less', 'embeds', 'scripts']);
+	gulp.watch(['assets/css/*.css', 'assets/js/**/*.js', '**/*.php']).on('change', browserSync.reload);
+});
+
 

@@ -2544,7 +2544,7 @@ jQuery(document).ready(function($) {
     });
 
 
-    $('.toggle-timeline, .gotophase, .gotophase-mobile').on('click', function(e) {
+    $('.toggle-timeline, .gotophase, .gotophase-mobile, .header-presentacion-fase').on('click', function(e) {
       e.preventDefault();
       var fase = $(this).attr('data-fase');
       var nextfase = $(this).attr('data-nextfase');  
@@ -2584,7 +2584,24 @@ jQuery(document).ready(function($) {
         }
     });
 
-
+    // var zt = new ZingTouch.Region(document.body); 
+    
+    // $('.presentacion-fase').each( function(e) {    
+    //     zt.bind(this, 'swipe', function(e) {
+            
+    //         console.log(e.detail.data[0].currentDirection);
+                      
+    //        var fase = $(this).attr('data-fase');
+    //        var nextfase = $(this).attr('data-nextfase');
+    //        jQuery('body').addClass('timeline-on');
+            
+    //         $('#timeline-js-container').empty().append('<div class="loadingZone"><i class="fa fa-spin fa-circle-o-notch"></i></div>');
+            
+    //         var timeline = window.setTimeout(function(){ startTimeline(fase, nextfase); }, 1000);
+            
+    //         $('#timeline-active ul.fases-main li#navfase-' + fase).addClass('running');
+    //     });
+    // });
 
 });
 
@@ -2595,7 +2612,9 @@ function startTimeline(fase, nextfase) {
             language: 'es',
             hash_bookmark: false,
             group_order: ['Constitucional', 'Político social', 'Presidencial'],
-            max_rows: 3
+            max_rows: 3,
+            timenav_mobile_height_percentage: 10,
+            timenav_height_min: 10
         });
         //console.log(data);
         var events = data[fase].events;

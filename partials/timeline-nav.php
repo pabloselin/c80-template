@@ -6,12 +6,12 @@
 	$timeline_options = get_option('c80_timeline_options');
 ?>
 
-	<nav class="timeline-nav-mobile visible-xs">
+	<!-- <nav class="timeline-nav-mobile visible-xs">
 		<div class="navwrap">
 			<img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_blanco.svg" alt="<?php bloginfo('name');?>">
 			<a href="#" class="toggle-timeline-nav"><i class="fa fa-bars"></i></a>
 		</div>
-	</nav>
+	</nav> -->
 	<nav id="<?php echo $id;?>" class="navbar fases-nav-home in-home">
 		<ul class="fases-main nav">
 			<li class="fase-arrow nav-item nav-item-home" id="navfase-inicio">

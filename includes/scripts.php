@@ -18,7 +18,8 @@ function c80t_scripts() {
 		wp_deregister_script( 'jquery' );
 		wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '3.2.1', false);
 		if(is_page_template('c80-timeline.php')):
-			wp_enqueue_script( 'timelinejs', get_bloginfo('template_url') . '/assets/js/c80-timeline.js', array('sanitize-title'), '3.6.5?mod=c80', false );
+			wp_enqueue_script( 'timelinejs', get_bloginfo('template_url') . '/assets/js/c80-timeline.js', array('sanitize-title', 'zingtouch'), '3.6.5?mod=c80', false );
+			wp_enqueue_script( 'zingtouch', 'https://cdnjs.cloudflare.com/ajax/libs/zingtouch/1.0.6/zingtouch.min.js', array(), '1.0.6', false);
 			wp_enqueue_script('sanitize-title', get_bloginfo('template_url') . '/assets/js/sanitize-title.js ', array(), C80_THEME_VERSION, false);
 		endif;
 		if(WP_ENV == 'development') {

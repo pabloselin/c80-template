@@ -93,6 +93,14 @@ html {
 				color: white;
 				line-height: 1.3em;
 			}
+
+			@media screen and (max-width: @screen-sm) {
+				padding: 0;
+				h1 {
+					font-size: 28px;
+					border-top: 0;
+				}
+			}
 		}
 
 		.text-content {
@@ -105,6 +113,10 @@ html {
 			p.aligncenter {
 				text-align: center;
 				margin: 24px 0;
+			}
+
+			@media screen and (max-width: @screen-sm) {
+				font-size: 15px;
 			}
 
 
@@ -148,7 +160,11 @@ html {
 
 @media screen and (max-width: @screen-sm) {
 	.intro-indicator {
-		display: none;
+		//display: none;
+		bottom: 0;
+		.intro-arrow {
+			opacity: .8;
+		}
 	}
 }
 
@@ -545,8 +561,28 @@ html {
 	opacity: 0;
 	transition: all ease-in .5s;
 	position: fixed;
+
+	@media screen and (max-width: @screen-sm) {
+		top: 0;
+		right: -100vw;
+
+		.closetimeline {
+			color: white;
+			font-size: 36px;
+			z-index: 1000;
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding: 12px;
+		}
+	}
+
 	#timeline-js-container {
 		height: 90vh;
+
+		@media screen and(max-width: @screen-sm) {
+			height: 100vh;
+		}
 		
 		.tl-caption, .tl-credit {
 			width: auto;
@@ -607,6 +643,11 @@ body.timeline-on {
 		z-index: 2000;
 		opacity: 1;
 
+		@media screen and (max-width: @screen-sm) {
+			top: 0;
+			right: 0;
+		}
+
 		div.loadingZone {
 			font-size: 36px;
 			text-align: center;
@@ -663,7 +704,8 @@ body.timeline-on {
 	.presentacion-fase {
 		.content-wrap {
 			.fase-intro {
-				max-height: 60vh;
+				max-height: 70vh;
+				font-size: 15px;
 				overflow: hidden;
 			}
 		}
@@ -762,12 +804,14 @@ body.timeline-on {
 
 			.header-presentacion-fase {
 				display: flex;
+				align-items: center;
 				.gotophase-mobile {
 					display: block;
-					color: #333;
-					background-color: rgba(255, 255, 255, 0.5);
+					color: white;
+					//background-color: rgba(255, 255, 255, 0.5);
 					padding: 6px 24px;
-					font-size: 36px;
+					font-size: 72px;
+					line-height: 72px;
 					margin-left: 24px;
 				}
 			}

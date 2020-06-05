@@ -60,6 +60,10 @@ $timeline_options = get_option('c80_timeline_options');
 
 	<div id="timeline-active">
 	
+	<!-- <span class="closetimeline visible-xs">
+		<i class="fa fa-times"></i>
+	</span> -->
+
 	<div id="timeline-js-container">
 		<!-- here goes the timeline lol -->
 	</div>

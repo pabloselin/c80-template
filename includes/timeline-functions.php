@@ -314,11 +314,11 @@ function c80_presentacion_fase($fase, $nextfase) {
 	$faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final_' . $fase], 'c80_lt_start_date', true));
 	?>
 	
-	<section data-fase="<?php echo $fase;?>" id="<?php echo c80_faselink($fase, false);?>" class="presentacion-fase" style="background-image: url(<?php echo $timeline_options['imagen_' . $fase];?>);">
+	<section data-fase="<?php echo $fase;?>" id="<?php echo c80_faselink($fase, false);?>" class="presentacion-fase" style="background-image: url(<?php echo $timeline_options['imagen_' . $fase];?>);" data-nextfase="<?php echo $nextfase;?>">
 	<div class="content-wrap">
 		<div class="presentacion-fase-text-content">
 			
-			<div class="header-presentacion-fase">
+			<div class="header-presentacion-fase" data-nextfase="<?php echo $nextfase;?>" data-fase="<?php echo $fase;?>"> 
 				<div>
 					<h2>Período <?php //echo $timeline_options['titulo_' . $fase];?></h2>
 					<h3><?php echo $fasestart['year'] . '-' . $faseend['year'];?></h3>
