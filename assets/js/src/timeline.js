@@ -13,14 +13,13 @@ jQuery(document).ready(function($) {
 
 
     $('.toggle-timeline, .gotophase, .gotophase-mobile, .header-presentacion-fase').on('click', function(e) {
-      e.preventDefault();
-      var fase = $(this).attr('data-fase');
-      var nextfase = $(this).attr('data-nextfase');  
-      jQuery('body').addClass('timeline-on');
-      $('#timeline-js-container').empty().append('<div class="loadingZone"><i class="fa fa-spin fa-circle-o-notch"></i></div>');
-      var timeline = window.setTimeout(function(){ startTimeline(fase, nextfase); }, 1000);
-      $('#timeline-active ul.fases-main li#navfase-' + fase).addClass('running');    
-
+          e.preventDefault();
+          var fase = $(this).attr('data-fase');
+          var nextfase = $(this).attr('data-nextfase');  
+          jQuery('body').addClass('timeline-on');
+          $('#timeline-js-container').empty().append('<div class="loadingZone"><i class="fa fa-spin fa-circle-o-notch"></i></div>');
+          var timeline = window.setTimeout(function(){ startTimeline(fase, nextfase); }, 1000);
+          $('#timeline-active ul.fases-main li#navfase-' + fase).addClass('running');
     });
 
     $('#timeline-active .fase-arrow a').on('click', function(e) {
@@ -29,9 +28,8 @@ jQuery(document).ready(function($) {
 
     });
 
-    $('body').on('click', 'a.btn-nextphase', function(e) {
-        $('body').removeClass('timeline-on');
-        $('#timeline-active ul.fases-main li').removeClass('running');
+    $('body').on('click', 'a.btn-nextphase, span.closetimeline', function(e) {
+        closeTimeline();
     });
 
     $('.toggle-timeline-nav, a.faselink').on('click', function(e) {
@@ -73,17 +71,43 @@ jQuery(document).ready(function($) {
 
 });
 
+function closeTimeline() {
+    jQuery('body').removeClass('timeline-on');
+    jQuery('#timeline-active ul.fases-main li').removeClass('running');
+    restoreMobileTLHeader();
+}
+
+function restoreMobileTLHeader() {
+    jQuery('div.timeline-mobile-header').removeClass('shownext');
+    jQuery('div.mobile-interaction').empty().append('<span class="closetimeline"><i class="fa fa-times"></i></span>');
+}
+
 function startTimeline(fase, nextfase) {
     var last;
     jQuery.getJSON(c80.timelineurl, function(data) {
-        timelineObj = new TL.Timeline('timeline-js-container', data[fase], {
+        
+        if(isMobile()) {
+            console.log(isMobile());
+            var tloptions = {
+                language: 'es',
+                hash_bookmark: false,
+                group_order: ['Constitucional', 'Político social', 'Presidencial'],
+                max_rows: 3,
+                timenav_mobile_height_percentage: 25,
+                timenav_height_min: 160,
+                marker_height_min: 14
+            }
+
+        } else {
+            var tloptions = {
             language: 'es',
             hash_bookmark: false,
             group_order: ['Constitucional', 'Político social', 'Presidencial'],
-            max_rows: 3,
-            timenav_mobile_height_percentage: 10,
-            timenav_height_min: 10
-        });
+            max_rows: 3
+            }
+        }
+
+        timelineObj = new TL.Timeline('timeline-js-container', data[fase], tloptions);
         //console.log(data);
         var events = data[fase].events;
         var lastSlide = timelineObj.getSlide(events.length - 1);
@@ -91,16 +115,24 @@ function startTimeline(fase, nextfase) {
         
         last = data[fase].lastevent;
         timelineObj.on("change", function(data) {
+
+            //console.log(data);
            
             if(data.unique_id == lastSlide.data.unique_id) {
                 console.log(nextfase);
                 var next = $('section.presentacion-fase[data-fase="' + nextfase + '"]').attr('id');
 
                 if(next) {
-                    jQuery('.tl-storyslider').append('<a class="btn-nextphase" data-toggle="nextphase" href="#' + next + '"><i class="fa fa-angle-right"></i></a>');
+                    if(isMobile()) {
+                        jQuery('div.timeline-mobile-header').addClass('shownext');
+                        jQuery('div.mobile-interaction').empty().append('<a class="btn-nextphase" data-toggle="nextphase" href="#' + next + '"><span class="msg">Próximo período</span> <i class="fa fa-angle-right"></i></a>');
+                    } else {
+                        jQuery('.tl-storyslider').append('<a class="btn-nextphase" data-toggle="nextphase" href="#' + next + '"><i class="fa fa-angle-right"></i></a>');
+                    }
                 }
             } else {
                 jQuery('.tl-storyslider .btn-nextphase').remove();
+                restoreMobileTLHeader();
             }
        });
     });

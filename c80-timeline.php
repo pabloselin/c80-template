@@ -60,10 +60,18 @@ $timeline_options = get_option('c80_timeline_options');
 
 	<div id="timeline-active">
 	
-	<!-- <span class="closetimeline visible-xs">
-		<i class="fa fa-times"></i>
-	</span> -->
+	<div class="timeline-mobile-header visible-xs">
+		<img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_blanco.svg" alt="<?php bloginfo('name');?>">
+		
+		<div class="mobiledatecontainer"></div>
 
+		<div class="mobile-interaction">
+			<span class="closetimeline"><i class="fa fa-times"></i></span>
+		</div>
+
+	</div>
+
+	
 	<div id="timeline-js-container">
 		<!-- here goes the timeline lol -->
 	</div>

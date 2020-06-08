@@ -565,23 +565,13 @@ html {
 	@media screen and (max-width: @screen-sm) {
 		top: 0;
 		right: -100vw;
-
-		.closetimeline {
-			color: white;
-			font-size: 36px;
-			z-index: 1000;
-			position: absolute;
-			right: 0;
-			top: 0;
-			padding: 12px;
-		}
 	}
 
 	#timeline-js-container {
 		height: 90vh;
 
 		@media screen and(max-width: @screen-sm) {
-			height: 100vh;
+			height: 92vh;
 		}
 		
 		.tl-caption, .tl-credit {
@@ -835,6 +825,67 @@ body.timeline-on {
 		width: 40px;
 		i {
 			font-size: 12px;
+		}
+	}
+}
+
+@media screen and (max-width: @screen-sm) {
+	.tl-menubar {
+		display: none;
+	}
+
+	.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content {
+		display: none;
+	}
+}
+
+.timeline-mobile-header {
+	height: 8vh;
+	position: relative;
+	transition: background ease-in 0.3s;
+
+	img {
+		max-height: 6vh;
+		width: auto;
+		margin: 6px 0 0 6px;
+	}
+
+	&.shownext {
+		background-color: #333;
+	}
+
+	div.mobile-interaction {
+		position: absolute;
+		right: 6px;
+		top: 6px;
+		color: white;
+		font-size: 24px;
+		padding: 4px;
+		a {
+			color: white;
+			span.msg {
+				font-size: 14px;
+				line-height: 24px;
+				vertical-align: middle;
+				text-transform: lowercase;
+			}
+			i {
+				vertical-align: middle;
+				line-height: 24px;
+			}
+		}
+	}
+
+	div.mobiledatecontainer {
+		position: absolute;
+		left: 70px;
+		top: 6px;
+		width: 250px;
+		h3, h3 small {
+			color: white;
+			font-size: 14px;
+			text-align: center;
+			margin: 0;
 		}
 	}
 }
