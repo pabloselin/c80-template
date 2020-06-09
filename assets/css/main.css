@@ -11169,8 +11169,8 @@ html {
 }
 .tl-timemarker.c80-grupo-presidencial .tl-timemarker-content-container,
 .tl-timemarker.c80-grupo-presidencial:hover .tl-timemarker-content-container {
-  background-color: #8A9AB2;
-  border: 1px solid #8A9AB2;
+  background-color: rgba(83, 112, 201, 0.8);
+  border: 1px solid rgba(83, 112, 201, 0.8);
 }
 .tl-timemarker.c80-grupo-politico-social .tl-timemarker-content-container,
 .tl-timemarker.c80-grupo-politico-social:hover .tl-timemarker-content-container {
@@ -11308,8 +11308,8 @@ html {
   border-color: #333;
 }
 .tl-timemarker.tl-timemarker-active.c80-grupo-presidencial .tl-timemarker-content-container {
-  background-color: #414e62;
-  border-color: #414e62;
+  background-color: #5370C9;
+  border-color: #5370C9;
 }
 .tl-timemarker.tl-timemarker-active.c80-grupo-constitucional .tl-timemarker-content-container {
   background-color: #009F94;
@@ -11600,7 +11600,7 @@ html {
   color: #ED2F39;
 }
 .tl-timegroup.tl-timegroup-presidencial .tl-timegroup-message {
-  color: #414e62;
+  color: #5370C9;
 }
 .tl-timegroup.tl-timegroup-constitucional .tl-timegroup-message {
   color: #009F94;

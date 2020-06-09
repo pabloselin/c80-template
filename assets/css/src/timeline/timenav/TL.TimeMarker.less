@@ -242,8 +242,8 @@
 
 	&.c80-grupo-presidencial, &.c80-grupo-presidencial:hover {
 		.tl-timemarker-content-container {
-			background-color: #8A9AB2;
-			border: 1px solid #8A9AB2;
+			background-color: fade(@presidencial, 80%); //#8A9AB2;
+			border: 1px solid fade(@presidencial, 80%); //#8A9AB2;
 		}
 	}
 
@@ -430,8 +430,8 @@
 			}
 
 			.tl-timemarker-content-container {
-				background-color: rgb(65,78,98);
-				border-color: rgb(65,78,98);
+				background-color: @presidencial; //rgb(65,78,98);
+				border-color: @presidencial; //rgb(65,78,98);
 			}
 
 		}
