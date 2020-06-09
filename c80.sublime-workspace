@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"vertical",
+				"vertical-align"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
 				"presentac",
 				"presentacion-fase"
 			],
@@ -167,16 +175,16 @@
 			"file": "c80-timeline.php",
 			"settings":
 			{
-				"buffer_size": 1966,
+				"buffer_size": 2204,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "includes/timeline-functions.php",
+			"file": "partials/timeline-nav.php",
 			"settings":
 			{
-				"buffer_size": 13258,
+				"buffer_size": 1693,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -185,7 +193,7 @@
 			"file": "assets/css/src/c80-timeline.less",
 			"settings":
 			{
-				"buffer_size": 13334,
+				"buffer_size": 14041,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -194,7 +202,7 @@
 			"file": "assets/css/src/timeline/timenav/TL.TimeGroup.less",
 			"settings":
 			{
-				"buffer_size": 2845,
+				"buffer_size": 3021,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -212,7 +220,16 @@
 			"file": "assets/js/src/timeline.js",
 			"settings":
 			{
-				"buffer_size": 4669,
+				"buffer_size": 5851,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/src/scripts.js",
+			"settings":
+			{
+				"buffer_size": 7052,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -223,14 +240,6 @@
 			{
 				"buffer_size": 412702,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/pabloselin/Dropbox/cryojelly_2020/code/cryojelly_test_01/GameVars.gd",
-			"settings":
-			{
-				"buffer_size": 257,
 				"line_ending": "Unix"
 			}
 		},
@@ -260,6 +269,10 @@
 				"Toggle Comment"
 			],
 			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
 				"com",
 				"Toggle Comment"
 			],
@@ -274,10 +287,6 @@
 			[
 				"insta",
 				"Package Control: Install Package"
-			],
-			[
-				"ww",
-				"Word Wrap: Toggle"
 			],
 			[
 				"diff",
@@ -379,11 +388,13 @@
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js"
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/src"
 	],
 	"file_history":
 	[
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/timeline-functions.php",
+		"/home/pabloselin/Dropbox/cryojelly_2020/code/cryojelly_test_01/GameVars.gd",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-timeline.less",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/timenav/TL.TimeMarker.less",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/functions.php",
@@ -500,7 +511,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -517,6 +528,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"timeline-nav",
+			"closetime",
+			"closetimeline",
+			"timeline-js",
+			"timeline-js-conta",
 			"menubar",
 			"timeline-js-container",
 			"gotophase-mob",
@@ -652,7 +668,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -661,15 +677,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1966,
+						"buffer_size": 2204,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1323,
-								1323
+								1828,
+								1828
 							]
 						],
 						"settings":
@@ -678,27 +694,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 540.0,
+						"translation.y": 663.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "includes/timeline-functions.php",
+					"file": "partials/timeline-nav.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13258,
+						"buffer_size": 1693,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10445,
-								10445
+								531,
+								531
 							]
 						],
 						"settings":
@@ -707,10 +723,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5100.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -719,15 +735,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13334,
+						"buffer_size": 14041,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13157,
-								13157
+								11786,
+								11786
 							]
 						],
 						"settings":
@@ -736,10 +752,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 13805.0,
+						"translation.y": 11965.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -748,15 +764,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2845,
+						"buffer_size": 3021,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								636,
-								636
+								676,
+								676
 							]
 						],
 						"settings":
@@ -765,10 +781,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 255.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -797,7 +813,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -806,32 +822,61 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4669,
+						"buffer_size": 5851,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3217,
-								3217
+								138,
+								138
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 867.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
+					"file": "assets/js/src/scripts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2839,
+								2839
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1683.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "assets/js/c80-timeline.js",
 					"semi_transient": false,
 					"settings":
@@ -855,35 +900,7 @@
 						"translation.y": 190575.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/home/pabloselin/Dropbox/cryojelly_2020/code/cryojelly_test_01/GameVars.gd",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 257,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								257,
-								257
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/GDScript (Godot Engine)/GDScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -899,8 +916,8 @@
 						"selection":
 						[
 							[
-								60,
-								60
+								423,
+								423
 							]
 						],
 						"settings":
@@ -912,7 +929,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -967,20 +984,28 @@
 		"selected_items":
 		[
 			[
-				"c80time",
-				"c80-template/assets/js/c80-timeline.js"
+				"",
+				"c80-template/assets/js/src/timeline.js"
 			],
 			[
-				"timeline",
-				"c80-template/assets/js/src/timeline.js"
+				"func",
+				"c80-template/functions.php"
+			],
+			[
+				"timelinen",
+				"c80-template/partials/timeline-nav.php"
 			],
 			[
 				"timegrou",
 				"c80-template/assets/css/src/timeline/timenav/TL.TimeGroup.less"
 			],
 			[
-				"func",
-				"c80-template/functions.php"
+				"c80time",
+				"c80-template/assets/js/c80-timeline.js"
+			],
+			[
+				"timeline",
+				"c80-template/assets/js/src/timeline.js"
 			],
 			[
 				"timeline.j",
@@ -1048,10 +1073,6 @@
 			],
 			[
 				"c80ti",
-				"c80-template/assets/css/src/c80-timeline.less"
-			],
-			[
-				"",
 				"c80-template/assets/css/src/c80-timeline.less"
 			],
 			[
@@ -1473,10 +1494,6 @@
 			[
 				"custom-mate",
 				"itrend_custom_content/css/custom-materialize.css"
-			],
-			[
-				"customtyp",
-				"itrend_custom_content/css/scss/_custom-typography.scss"
 			]
 		],
 		"width": 0.0
@@ -1484,9 +1501,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "pro",
+		"last_filter": "bita",
 		"selected_items":
 		[
+			[
+				"bita",
+				"~/Documents/WebDev/local_sites/bitacora/app/public/wp-content/themes/prompt/prompt.sublime-project"
+			],
+			[
+				"plu",
+				"~/Documents/WebDev/local_sites/pluralismotv/app/public/wp-content/themes/plutv/pluralismotv.sublime-project"
+			],
 			[
 				"pro",
 				"~/Documents/WebDev/local_sites/bitacora/app/public/wp-content/themes/prompt/prompt.sublime-project"
@@ -1497,10 +1522,6 @@
 			],
 			[
 				"pliu",
-				"~/Documents/WebDev/local_sites/pluralismotv/app/public/wp-content/themes/plutv/pluralismotv.sublime-project"
-			],
-			[
-				"plu",
 				"~/Documents/WebDev/local_sites/pluralismotv/app/public/wp-content/themes/plutv/pluralismotv.sublime-project"
 			],
 			[
@@ -1562,10 +1583,6 @@
 			[
 				"itr",
 				"~/Documents/WebDev/local_sites/itrend/app/public/wp-content/plugins/itrend_custom_content/itrend.sublime-project"
-			],
-			[
-				"bita",
-				"~/Documents/WebDev/local_sites/bitacora/app/public/wp-content/themes/prompt/prompt.sublime-project"
 			],
 			[
 				"pab",
