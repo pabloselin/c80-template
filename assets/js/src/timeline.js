@@ -37,6 +37,10 @@ jQuery(document).ready(function($) {
         $('.fases-nav-home#timeline-nav').toggleClass('active');
     });
 
+    $('a.faselink').on('click', function(e) {
+        closeTimeline();
+    });
+
     $(document).keydown(function(e) {
         if(e.which == 39) {
            var next = $('body a.btn-nextphase').attr('href');
