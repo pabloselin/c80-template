@@ -13688,7 +13688,7 @@ body.timeline-on #timeline-active .tl-timenav .tl-attribution {
   .timeline-nav-mobile {
     position: absolute;
     top: 1px;
-    left: 50px;
+    left: 56px;
     height: 48px;
     width: 48px;
     background-color: transparent;
@@ -13811,7 +13811,8 @@ body.timeline-on #timeline-active .tl-timenav .tl-attribution {
   display: block;
 }
 .timeline-mobile-header {
-  height: 8vh;
+  height: 50px;
+  max-height: 50px;
   position: fixed;
   top: 0;
   left: 0;
@@ -13821,7 +13822,7 @@ body.timeline-on #timeline-active .tl-timenav .tl-attribution {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .timeline-mobile-header img {
-  max-height: 6vh;
+  max-height: 40px;
   width: auto;
   margin: 6px 0 0 6px;
 }
