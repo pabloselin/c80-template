@@ -11169,8 +11169,8 @@ html {
 }
 .tl-timemarker.c80-grupo-presidencial .tl-timemarker-content-container,
 .tl-timemarker.c80-grupo-presidencial:hover .tl-timemarker-content-container {
-  background-color: rgba(83, 112, 201, 0.8);
-  border: 1px solid rgba(83, 112, 201, 0.8);
+  background-color: rgba(83, 112, 201, 0.6);
+  border: 1px solid #95A7DC;
 }
 .tl-timemarker.c80-grupo-politico-social .tl-timemarker-content-container,
 .tl-timemarker.c80-grupo-politico-social:hover .tl-timemarker-content-container {
@@ -11567,6 +11567,7 @@ html {
     right: 0;
     padding: 2px;
     background-color: white;
+    font-weight: bold;
     z-index: 100;
   }
 }
@@ -13565,7 +13566,7 @@ html {
   #timeline-active {
     top: 0;
     right: -100vw;
-    padding-top: 8vh;
+    padding-top: 50px;
   }
 }
 #timeline-active #timeline-js-container {

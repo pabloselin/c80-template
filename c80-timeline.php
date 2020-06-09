@@ -16,11 +16,11 @@ $timeline_options = get_option('c80_timeline_options');
 ?>
 
 <div class="fixedtoplogo hidden-xs">
-	<a title="<?php bloginfo('name');?>" href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_blanco.svg" alt="<?php bloginfo('name');?>"></a>
+	<a title="<?php bloginfo('name');?>" href="#inicio" onClick="closeTimeline();"><img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_blanco.svg" alt="<?php bloginfo('name');?>"></a>
 </div>
 
 <div class="timeline-mobile-header visible-xs">
-		<img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_blanco.svg" alt="<?php bloginfo('name');?>">
+		<a class="gotohome" href="#inicio" onClick="closeTimeline();"><img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_blanco.svg" alt="<?php bloginfo('name');?>"></a>
 		
 		<nav class="timeline-nav-mobile visible-xs">
 		<div class="navwrap">
