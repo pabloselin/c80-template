@@ -13160,6 +13160,8 @@ html {
     font-size: 28px;
     border-top: 0;
     margin-bottom: 12px;
+    margin-top: 0;
+    padding-top: 0;
   }
 }
 #main-timeline .timeline-presentation .text-content {
@@ -13207,7 +13209,7 @@ html {
 }
 @media screen and (max-width: 768px) {
   .intro-indicator {
-    bottom: 40px;
+    bottom: 50px;
   }
   .intro-indicator i {
     line-height: 70px;
