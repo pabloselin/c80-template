@@ -11169,8 +11169,8 @@ html {
 }
 .tl-timemarker.c80-grupo-presidencial .tl-timemarker-content-container,
 .tl-timemarker.c80-grupo-presidencial:hover .tl-timemarker-content-container {
-  background-color: rgba(83, 112, 201, 0.6);
-  border: 1px solid #95A7DC;
+  background-color: #C9CDED;
+  border: 1px solid #C9CDED;
 }
 .tl-timemarker.c80-grupo-politico-social .tl-timemarker-content-container,
 .tl-timemarker.c80-grupo-politico-social:hover .tl-timemarker-content-container {
@@ -13159,6 +13159,7 @@ html {
   #main-timeline .timeline-presentation .text-header h1 {
     font-size: 28px;
     border-top: 0;
+    margin-bottom: 12px;
   }
 }
 #main-timeline .timeline-presentation .text-content {
@@ -13206,10 +13207,17 @@ html {
 }
 @media screen and (max-width: 768px) {
   .intro-indicator {
-    bottom: 0;
+    bottom: 40px;
+  }
+  .intro-indicator i {
+    line-height: 70px;
+  }
+  .intro-indicator p {
+    margin-bottom: 0;
   }
   .intro-indicator .intro-arrow {
     opacity: .8;
+    height: 120px;
   }
 }
 .fases-nav-home {
@@ -13689,12 +13697,12 @@ body.timeline-on #timeline-active .tl-timenav .tl-attribution {
   .timeline-nav-mobile {
     position: absolute;
     top: 1px;
-    left: 56px;
+    left: 46px;
     height: 48px;
     width: 48px;
     background-color: transparent;
     color: white;
-    padding: 6px;
+    padding: 3px 6px 6px 6px;
     z-index: 200;
     text-align: center;
     font-size: 24px;
@@ -13823,7 +13831,7 @@ body.timeline-on #timeline-active .tl-timenav .tl-attribution {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .timeline-mobile-header img {
-  max-height: 40px;
+  max-height: 30px;
   width: auto;
   margin: 6px 0 0 6px;
 }
