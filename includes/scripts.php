@@ -18,9 +18,9 @@ function c80t_scripts() {
 		wp_deregister_script( 'jquery' );
 		wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '3.2.1', false);
 		if(is_page_template('c80-timeline.php')):
-			wp_enqueue_script( 'timelinejs', get_bloginfo('template_url') . '/assets/js/c80-timeline.js', array('sanitize-title', 'zingtouch'), '3.6.5?mod=c80', false );
+			wp_enqueue_script( 'timelinejs', get_bloginfo('template_url') . '/assets/js/c80-timeline.js', array('zingtouch'), '3.6.6?mod=c80', false );
 			wp_enqueue_script( 'zingtouch', 'https://cdnjs.cloudflare.com/ajax/libs/zingtouch/1.0.6/zingtouch.min.js', array(), '1.0.6', false);
-			wp_enqueue_script('sanitize-title', get_bloginfo('template_url') . '/assets/js/sanitize-title.js ', array(), C80_THEME_VERSION, false);
+			//wp_enqueue_script('sanitize-title', get_bloginfo('template_url') . '/assets/js/sanitize-title.js ', array(), C80_THEME_VERSION, false);
 		endif;
 		if(WP_ENV == 'development') {
 			$c80script = 'c80.js';	
@@ -34,7 +34,8 @@ function c80t_scripts() {
 		wp_enqueue_script('c80js');
 		wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/269614ad84.js#asyncload', array(), '4.7.0', true);
 		wp_localize_script( 'c80js', 'c80', array(
-												'timelineurl' => get_bloginfo('url') . '/wp-json/constitucion1980/v1/linea-de-tiempo'
+												'timelineurl' => get_bloginfo('url') . '/wp-json/constitucion1980/v1/linea-de-tiempo',
+												'timelinehitosfases' => c80_timelinehitosfases()
 											) );		
 	}
 	

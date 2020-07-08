@@ -13790,11 +13790,11 @@ TL.Timeline = TL.Class.extend({
 
 	// Update hashbookmark in the url bar
 	_updateHashBookmark: function(id) {
-		var hash = "#" + "event-" + id.toString();
+		var hash = "#" + id.toString();
 		if (window.location.protocol != 'file:') {
 			window.history.replaceState(null, "Browsing TimelineJS", hash);
 		}
-		this.fire("hash_updated", {unique_id:this.current_id, hashbookmark:"#" + "event-" + id.toString()}, this);
+		this.fire("hash_updated", {unique_id:this.current_id, hashbookmark:"#" + id.toString()}, this);
 	},
 
 	/*  Init
@@ -14101,7 +14101,7 @@ TL.Timeline = TL.Class.extend({
 			this.fire("loaded", this.config);
 			// Go to proper slide
 			if (this.options.hash_bookmark && window.location.hash != "") {
-				this.goToId(window.location.hash.replace("#event-", ""));
+				this.goToId(window.location.hash.replace("#", ""));
 			} else {
 				if( TL.Util.isTrue(this.options.start_at_end) || this.options.start_at_slide > this.config.events.length ) {
 					this.goToEnd();

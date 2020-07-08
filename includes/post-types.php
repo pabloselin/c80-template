@@ -171,3 +171,59 @@ function c80_tipohitos() {
 
 }
 add_action( 'init', 'c80_tipohitos', 0 );
+
+// Register Custom Post Type
+function c80t_visualizaciones() {
+
+	$labels = array(
+		'name'                  => _x( 'Visualizaciones', 'Post Type General Name', 'c80' ),
+		'singular_name'         => _x( 'Visualización', 'Post Type Singular Name', 'c80' ),
+		'menu_name'             => __( 'Visualizaciones', 'c80' ),
+		'name_admin_bar'        => __( 'Visualizaciones', 'c80' ),
+		'archives'              => __( 'Archivo de visualizaciones', 'c80' ),
+		'attributes'            => __( 'Item Attributes', 'c80' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'c80' ),
+		'all_items'             => __( 'All Items', 'c80' ),
+		'add_new_item'          => __( 'Add New Item', 'c80' ),
+		'add_new'               => __( 'Nueva', 'c80' ),
+		'new_item'              => __( 'Nueva Visualización', 'c80' ),
+		'edit_item'             => __( 'Editar Visualización', 'c80' ),
+		'update_item'           => __( 'Actualizar Visualización', 'c80' ),
+		'view_item'             => __( 'Ver Visualización', 'c80' ),
+		'view_items'            => __( 'Ver Visualizaciones', 'c80' ),
+		'search_items'          => __( 'Buscar Visualizaciones', 'c80' ),
+		'not_found'             => __( 'Not found', 'c80' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'c80' ),
+		'featured_image'        => __( 'Featured Image', 'c80' ),
+		'set_featured_image'    => __( 'Set featured image', 'c80' ),
+		'remove_featured_image' => __( 'Remove featured image', 'c80' ),
+		'use_featured_image'    => __( 'Use as featured image', 'c80' ),
+		'insert_into_item'      => __( 'Insert into item', 'c80' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'c80' ),
+		'items_list'            => __( 'Items list', 'c80' ),
+		'items_list_navigation' => __( 'Items list navigation', 'c80' ),
+		'filter_items_list'     => __( 'Filter items list', 'c80' ),
+	);
+	$args = array(
+		'label'                 => __( 'Visualización', 'c80' ),
+		'description'           => __( 'Visualizaciones', 'c80' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'excerpt' ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'visualizaciones', $args );
+
+}
+add_action( 'init', 'c80t_visualizaciones', 0 );

@@ -28,13 +28,13 @@
      </div> -->
 
      <div class="whatsapp-share sharebutton hidden-lg hidden-md">
-     	<a href="whatsapp://send?text=<?php echo $link;?><?php echo urlencode(' ' . get_the_title($post->ID) );?>" class="sharer__whatsapp">
+     	<a href="whatsapp://send?text=<?php echo $link;?><?php echo urlencode(' ' . get_the_title($post->ID) );?>" target="_blank" class="sharer__whatsapp">
      		<i class="fa fa-whatsapp"></i>
      	</a>
      </div>
 
       <div class="telegram-share sharebutton hidden-lg hidden-md">
-     	<a href="tg://msg?text=<?php echo $link;?><?php echo urlencode(' ' . get_the_title($post->ID) );?>" class="sharer__telegram">
+     	<a href="https://telegram.me/share/url?url=<URL>&text=<?php echo $link;?><?php echo urlencode(' ' . get_the_title($post->ID) );?>" target="_blank" class="sharer__telegram">
      		<i class="fa fa-telegram"></i>
      	</a>
      </div>

@@ -12,6 +12,7 @@
 			<li class="fase-arrow nav-item nav-item-home" id="navfase-inicio">
 				<a href="#inicio" class="faselink nav-link"><i class="fa fa-home"></i></a>
 			</li>
+			
 			<?php 
 			foreach($fases as $faseitem) {
 				
@@ -41,5 +42,14 @@
 
 
 			?>
+
+			<li class="fase-arrow nav-item nav-item-info" id="navfase-info">
+				<a href="#" class="nav-link plusc80timeline hidden-xs"><i class="fa fa-plus"></i></a>
+				<div class="extra-info">
+					<a href="<?php bloginfo('url');?>" class="backtoc80 hidden-xs"><img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_negro.svg" alt="<?php bloginfo('title');?>"> visitar c80.cl</a>
+					<a title="Sobre esta linea de tiempo" href="#" data-toggle="modal" data-target="#infolinea" class="nav-link"><i class="fa fa-info-circle"></i></a>
+					<a href="<?php bloginfo('url');?>" class="backtoc80 visible-xs"><img src="<?php bloginfo('template_url');?>/assets/img/c80_logo_negro.svg" alt="<?php bloginfo('title');?>"> visitar c80.cl</a>
+				</div>
+			</li>
 		</ul>
 	</nav>

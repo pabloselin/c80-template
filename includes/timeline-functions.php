@@ -143,11 +143,49 @@ function parse_field_date_for_json( $datestring, $yearonly = false ) {
 		$date_sorted 	= array(
 								'year' 	=> $date_processed->format('Y'),
 								'month'	=> $date_processed->format('m'),
-								'day'	=> $date_processed->format('d')
+								'day'	=> $date_processed->format('d'),
+								'format' => 'dd mmmm yyyy'
 							);
 
 		return $date_sorted;
 	}
+}
+
+function c80_timelinehitosfases() {
+
+	$args = array(
+			'post_type' => 'hitos',
+			'numberposts' => -1
+	);
+
+	$hitos = get_posts($args);
+	$hitosinfo = [];
+
+	foreach($hitos as $hito) {
+		$hitosinfo[$hito->post_name] = c80_checkfasehito($hito->ID);
+	}
+
+	return $hitosinfo;
+
+}
+
+function c80_checkfasehito( $hitoID ) {
+	$options = get_option('c80_timeline_options');
+	$fases = array('fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5');
+
+	foreach($fases as $fase):
+		$hito_start = $options['hito_inicial_' . $fase];
+		$hito_end = $options['hito_final_' . $fase];
+		$fecha_start = get_post_meta($hito_start, 'c80_lt_start_date', true);
+		$fecha_end = get_post_meta($hito_end, 'c80_lt_start_date', true);
+
+		$start_date_field 	= get_post_meta( $hitoID, 'c80_lt_start_date', true );
+
+		if($start_date_field == $fecha_start || $start_date_field > $fecha_start && $start_date_field < $fecha_end || $start_date_field == $fecha_end) {
+			return $fase;
+		}
+
+	endforeach;
 }
 
 add_action( 'rest_api_init', 'c80_timeline_endpoint');
@@ -172,6 +210,8 @@ function c80_parsehour($hour) {
  * Hook in and register a submenu options page for the Page post-type menu.
  */
 function c80_register_options_submenu_for_page_post_type() {
+
+	
 
 	/**
 	 * Registers options page menu item and form.
@@ -253,6 +293,27 @@ function c80_register_options_submenu_for_page_post_type() {
 			'options' => $hitos_options,
 		) );
 	}
+
+	$args = array(
+			'post_type'	=> 'visualizaciones',
+			'numberposts'	=> -1
+			);
+	$visualizaciones = get_posts( $args );
+	
+	$visoptions = array();
+
+	foreach($visualizaciones as $visualizacion) {
+		$visoptions[$visualizacion->ID] = $visualizacion->post_title;
+	}
+
+	$cmb->add_field( array(
+		'name'		=> 'Post de visualización',
+		'id'		=> 'c80_vispost',
+		'type'		=> 'select',
+		'show_option_none' => true,
+		'options'	=> $visoptions
+	));
+
 
 }
 
@@ -339,6 +400,8 @@ function c80_presentacion_fase($fase, $nextfase) {
 
 add_action( 'cmb2_init', 'c80_tlfields' );
 function c80_tlfields() {
+
+
 
 	$prefix = 'c80_lt_';
 
