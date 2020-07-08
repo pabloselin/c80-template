@@ -2783,9 +2783,19 @@ jQuery(document).ready(function($) {
         if(phasetoLoad !== null && phasetoLoad !== undefined) {
             console.log('starting timeline from hash', phasetoLoad);
             jQuery('body').addClass('timeline-on');
-            $('#timeline-js-container').empty().append('<div class="loadingZone"><i class="fa fa-spin fa-circle-o-notch"></i></div>');
-            var timeline = window.setTimeout(function(){ startTimeline(phasetoLoad, 'fase_5'); }, 1000);
-            //startTimeline(phasetoLoad, 'fase_5');
+            
+            var phaseNav = jQuery('li.fase-arrow.nav-item#navfase-' + phasetoLoad + ' a').attr('href');
+            $('html, body').animate({
+                'scrollTop':   $(phaseNav).offset().top
+            }, 500, function() {
+                window.location.hash = hash;
+                //phaseNav.addClass('active');
+                console.log('aslkdalkd', phaseNav);
+                $('#timeline-js-container').empty().append('<div class="loadingZone"><i class="fa fa-spin fa-circle-o-notch"></i></div>');
+                var timeline = window.setTimeout(function(){ startTimeline(phasetoLoad, nextPhase(fases, phasetoLoad)); }, 1000);
+                //startTimeline(phasetoLoad, 'fase_5');    
+        });
+            
         }
     }
 
@@ -2829,8 +2839,8 @@ jQuery(document).ready(function($) {
 
     $(document).keydown(function(e) {
         if(e.which == 39) {
-         var next = $('body a.btn-nextphase').attr('href');
-         if(next) {
+           var next = $('body a.btn-nextphase').attr('href');
+           if(next) {
             console.log(next);
             $('body').removeClass('timeline-on');
             $('#timeline-active ul.fases-main li').removeClass('running');
@@ -2926,7 +2936,7 @@ function startTimeline(fase, nextfase) {
         var events = data[fase].events;
         var lastSlide = timelineObj.getSlide(events.length - 1);
         var firstSlideHash = timelineObj.getSlide(0).data.unique_id;
-      
+        
         var hash = window.location.hash.substr(1);
         var hashfase = c80.timelinehitosfases[hash];
 
@@ -3016,7 +3026,7 @@ function buildShareLinks(location) {
 }
 
 function updateHash(hash) {
-   if(history.pushState) {
+ if(history.pushState) {
     history.pushState(null, null, '#' + hash);
 } else {
     location.hash = '#' + hash;
