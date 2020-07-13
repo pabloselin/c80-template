@@ -3,6 +3,7 @@ var timelineObj;
 var fases = ['fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5'];
 
 jQuery(document).ready(function($) {
+    if($('body').hasClass('page-template-c80-timeline')) {
 
     customvh();
 
@@ -126,8 +127,11 @@ jQuery(document).ready(function($) {
         $('.extra-info').toggleClass('active');
     });
     
+    }//end check for timeline if
 
 });
+
+
 
 function closeTimeline() {
     jQuery('body').removeClass('timeline-on');
