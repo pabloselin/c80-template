@@ -284,10 +284,37 @@
 			}
 		},
 		{
-			"contents": "pabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status\nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   assets/js/src/timeline.js\n        modified:   c80.sublime-workspace\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run build                                                                      \n\n> c80-template@1.0.1 build /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp\n\nfs.js:27\nconst { Math, Object } = primordials;\n                         ^\n\nReferenceError: primordials is not defined\n    at fs.js:27:26\n    at req_ (/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/node_modules/natives/index.js:143:24)\n    at Object.req [as require] (/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/node_modules/natives/index.js:55:10)\n    at Object.<anonymous> (/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/node_modules/vinyl-fs/node_modules/graceful-fs/fs.js:1:37)\n    at Module._compile (internal/modules/cjs/loader.js:959:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n    at Module.load (internal/modules/cjs/loader.js:815:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n    at Module.require (internal/modules/cjs/loader.js:852:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\nnpm ERR! code ELIFECYCLE\nnpm ERR! errno 1\nnpm ERR! c80-template@1.0.1 build: `gulp`\nnpm ERR! Exit status 1\nnpm ERR! \nnpm ERR! Failed at the c80-template@1.0.1 build script.\nnpm ERR! This is probably not a problem with npm. There is likely additional logging output above.\n\nnpm ERR! A complete log of this run can be found in:\nnpm ERR!     /home/pabloselin/.npm/_logs/2020-07-13T16_18_20_645Z-debug.log\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ nvm use\nFound '/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/.nvmrc' with version <8>\nNow using node v8.17.0 (npm v6.14.6)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run build                                                                      \n\n> c80-template@1.0.1 build /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp\n\n[12:18:27] Using gulpfile ~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js\n[12:18:27] Starting 'less'...\n[12:18:27] Starting 'embeds'...\n[12:18:27] Starting 'scripts'...\n[12:18:27] Starting 'compress'...\n[12:18:27] Finished 'compress' after 1.32 ms\n[12:18:27] Finished 'embeds' after 718 ms\n[12:18:27] Finished 'scripts' after 779 ms\n[12:18:28] Finished 'less' after 1.36 s\n[12:18:28] Starting 'default'...\n[12:18:28] Finished 'default' after 13 μs\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run build\n\n> c80-template@1.0.1 build /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp\n\n[12:20:09] Using gulpfile ~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js\n[12:20:09] Starting 'less'...\n[12:20:09] Starting 'embeds'...\n[12:20:09] Starting 'scripts'...\n[12:20:09] Starting 'compress'...\n[12:20:09] Finished 'compress' after 1.32 ms\n[12:20:09] Finished 'embeds' after 774 ms\n[12:20:09] Finished 'scripts' after 795 ms\n[12:20:10] Finished 'less' after 1.43 s\n[12:20:10] Starting 'default'...\n[12:20:10] Finished 'default' after 19 μs\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status\nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   assets/js/c80.js\n        modified:   assets/js/c80.min.js\n        modified:   assets/js/src/timeline.js\n        modified:   c80.sublime-workspace\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git commit -a -m \"loader de scripts solo en timeline\"                              \n[master 327bb95] loader de scripts solo en timeline\n 5 files changed, 317 insertions(+), 381 deletions(-)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ phploy -s\n-------------------------------------------------\n|                     PHPloy                    |\n-------------------------------------------------\n\nSERVER: production\n ^ 1 of 5 assets/js/c80.js\n ^ 2 of 5 assets/js/c80.min.js\n ^ 3 of 5 assets/js/src/timeline.js\n ^ 4 of 5 c80.sublime-workspace\n ^ 5 of 5 functions.php\n\n|---------------[ 205.18K Deployed ]---------------|\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ \npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+			"file": "includes/scripts.php",
 			"settings":
 			{
-				"buffer_size": 5500,
+				"buffer_size": 2818,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/src/main.less",
+			"settings":
+			{
+				"buffer_size": 2865,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/src/c80-variables.less",
+			"settings":
+			{
+				"buffer_size": 2744,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "pabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status\nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   assets/js/src/timeline.js\n        modified:   c80.sublime-workspace\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run build                                                                      \n\n> c80-template@1.0.1 build /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp\n\nfs.js:27\nconst { Math, Object } = primordials;\n                         ^\n\nReferenceError: primordials is not defined\n    at fs.js:27:26\n    at req_ (/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/node_modules/natives/index.js:143:24)\n    at Object.req [as require] (/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/node_modules/natives/index.js:55:10)\n    at Object.<anonymous> (/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/node_modules/vinyl-fs/node_modules/graceful-fs/fs.js:1:37)\n    at Module._compile (internal/modules/cjs/loader.js:959:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n    at Module.load (internal/modules/cjs/loader.js:815:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n    at Module.require (internal/modules/cjs/loader.js:852:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\nnpm ERR! code ELIFECYCLE\nnpm ERR! errno 1\nnpm ERR! c80-template@1.0.1 build: `gulp`\nnpm ERR! Exit status 1\nnpm ERR! \nnpm ERR! Failed at the c80-template@1.0.1 build script.\nnpm ERR! This is probably not a problem with npm. There is likely additional logging output above.\n\nnpm ERR! A complete log of this run can be found in:\nnpm ERR!     /home/pabloselin/.npm/_logs/2020-07-13T16_18_20_645Z-debug.log\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ nvm use\nFound '/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/.nvmrc' with version <8>\nNow using node v8.17.0 (npm v6.14.6)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run build                                                                      \n\n> c80-template@1.0.1 build /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp\n\n[12:18:27] Using gulpfile ~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js\n[12:18:27] Starting 'less'...\n[12:18:27] Starting 'embeds'...\n[12:18:27] Starting 'scripts'...\n[12:18:27] Starting 'compress'...\n[12:18:27] Finished 'compress' after 1.32 ms\n[12:18:27] Finished 'embeds' after 718 ms\n[12:18:27] Finished 'scripts' after 779 ms\n[12:18:28] Finished 'less' after 1.36 s\n[12:18:28] Starting 'default'...\n[12:18:28] Finished 'default' after 13 μs\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run build\n\n> c80-template@1.0.1 build /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp\n\n[12:20:09] Using gulpfile ~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js\n[12:20:09] Starting 'less'...\n[12:20:09] Starting 'embeds'...\n[12:20:09] Starting 'scripts'...\n[12:20:09] Starting 'compress'...\n[12:20:09] Finished 'compress' after 1.32 ms\n[12:20:09] Finished 'embeds' after 774 ms\n[12:20:09] Finished 'scripts' after 795 ms\n[12:20:10] Finished 'less' after 1.43 s\n[12:20:10] Starting 'default'...\n[12:20:10] Finished 'default' after 19 μs\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status\nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   assets/js/c80.js\n        modified:   assets/js/c80.min.js\n        modified:   assets/js/src/timeline.js\n        modified:   c80.sublime-workspace\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git commit -a -m \"loader de scripts solo en timeline\"                              \n[master 327bb95] loader de scripts solo en timeline\n 5 files changed, 317 insertions(+), 381 deletions(-)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ phploy -s\n-------------------------------------------------\n|                     PHPloy                    |\n-------------------------------------------------\n\nSERVER: production\n ^ 1 of 5 assets/js/c80.js\n ^ 2 of 5 assets/js/c80.min.js\n ^ 3 of 5 assets/js/src/timeline.js\n ^ 4 of 5 c80.sublime-workspace\n ^ 5 of 5 functions.php\n\n|---------------[ 205.18K Deployed ]---------------|\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ \npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git log                                                                            \ncommit 327bb95481bdc57a43b34e414c8ab2db7476191d (HEAD -> master)\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Mon Jul 13 12:20:47 2020 -0400\n\n    loader de scripts solo en timeline\n\ncommit 08d6be243a3df3f6301c76960bb426bb7b873751\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jul 8 17:41:59 2020 -0400\n\n    ogp header\n\ncommit 6852d8dc21d2c2ac6438334fba076d24a1841482\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jul 8 17:01:47 2020 -0400\n\n    ajuste para carga timeline fase activa de afuera\n\ncommit 6aef1e55fb781bb86f78e96e671e27ab68aba1c1\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jul 8 16:35:24 2020 -0400\n\n    fix link telegram\n\ncommit 15e953319ce82685a33ba2427360915d18f72ea7\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jul 8 13:25:46 2020 -0400\n\n    stable timeline social and urls\n\ncommit 27d605d010018b6d97e5c7a60f65e21a6f240816\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Fri Jun 12 14:23:22 2020 -0400\n\n    bold en active tl hito\n\ncommit b9062ef9071c6f4aed83ffc67aec347d62e02e3c\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Fri Jun 12 13:59:45 2020 -0400\n\n    colores no seleccionados tl\n\ncommit 671b1b486538425c17077cfe0ea558f9b8a1fe39\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jun 10 11:53:17 2020 -0400\n\n    ajuste boton comenzar\n\ncommit b6ce3c945b16310b84e775c225864eb3795a53f3\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jun 10 11:47:13 2020 -0400\n\n    ajustes colores y logo\n\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status                                                                         \nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   c80.sublime-workspace\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ phploy -s\n-------------------------------------------------\n|                     PHPloy                    |\n-------------------------------------------------\n\nSERVER: production\n\n   No files to upload or delete.\n\n|---------------[ 0.00B Deployed ]---------------|\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run build\n\n> c80-template@1.0.1 build /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp\n\nfs.js:27\nconst { Math, Object } = primordials;\n                         ^\n\nReferenceError: primordials is not defined\n    at fs.js:27:26\n    at req_ (/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/node_modules/natives/index.js:143:24)\n    at Object.req [as require] (/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/node_modules/natives/index.js:55:10)\n    at Object.<anonymous> (/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/node_modules/vinyl-fs/node_modules/graceful-fs/fs.js:1:37)\n    at Module._compile (internal/modules/cjs/loader.js:959:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n    at Module.load (internal/modules/cjs/loader.js:815:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n    at Module.require (internal/modules/cjs/loader.js:852:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\nnpm ERR! code ELIFECYCLE\nnpm ERR! errno 1\nnpm ERR! c80-template@1.0.1 build: `gulp`\nnpm ERR! Exit status 1\nnpm ERR! \nnpm ERR! Failed at the c80-template@1.0.1 build script.\nnpm ERR! This is probably not a problem with npm. There is likely additional logging output above.\n\nnpm ERR! A complete log of this run can be found in:\nnpm ERR!     /home/pabloselin/.npm/_logs/2020-07-14T22_56_31_928Z-debug.log\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ nvm use\nFound '/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/.nvmrc' with version <8>\nNow using node v8.17.0 (npm v6.14.6)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run build\n\n> c80-template@1.0.1 build /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp\n\n[18:56:37] Using gulpfile ~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js\n[18:56:37] Starting 'less'...\n[18:56:37] Starting 'embeds'...\n[18:56:37] Starting 'scripts'...\n[18:56:37] Starting 'compress'...\n[18:56:37] Finished 'compress' after 2.12 ms\n[18:56:38] Finished 'embeds' after 775 ms\n[18:56:38] Finished 'scripts' after 794 ms\n[18:56:39] Finished 'less' after 1.44 s\n[18:56:39] Starting 'default'...\n[18:56:39] Finished 'default' after 14 μs\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status\nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   assets/js/c80.min.js\n        modified:   c80.sublime-workspace\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git commit -a -m \"newbuild\"\n[master 6f3ee70] newbuild\n 2 files changed, 149 insertions(+), 49 deletions(-)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ phploy -s\n-------------------------------------------------\n|                     PHPloy                    |\n-------------------------------------------------\n^C\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git commit -a -m \"version change new build\"                                        \n[master dabba45] version change new build\n 1 file changed, 1 insertion(+), 1 deletion(-)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ phploy -s\n-------------------------------------------------\n|                     PHPloy                    |\n-------------------------------------------------\n\nSERVER: production\n ^ 1 of 3 assets/js/c80.min.js\n ^ 2 of 3 c80.sublime-workspace\n ^ 3 of 3 functions.php\n\n|---------------[ 108.43K Deployed ]---------------|\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git log\ncommit dabba45cc9912bb9c62fa73eb7069056bf472794 (HEAD -> master)\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Tue Jul 14 18:57:09 2020 -0400\n\n    version change new build\n\ncommit 6f3ee709e36cc9bb49b7a52f6210ae59754cab99\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Tue Jul 14 18:56:47 2020 -0400\n\n    newbuild\n\ncommit 327bb95481bdc57a43b34e414c8ab2db7476191d\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Mon Jul 13 12:20:47 2020 -0400\n\n    loader de scripts solo en timeline\n\ncommit 08d6be243a3df3f6301c76960bb426bb7b873751\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jul 8 17:41:59 2020 -0400\n\n    ogp header\n\ncommit 6852d8dc21d2c2ac6438334fba076d24a1841482\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jul 8 17:01:47 2020 -0400\n\n    ajuste para carga timeline fase activa de afuera\n\ncommit 6aef1e55fb781bb86f78e96e671e27ab68aba1c1\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jul 8 16:35:24 2020 -0400\n\n    fix link telegram\n\ncommit 15e953319ce82685a33ba2427360915d18f72ea7\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jul 8 13:25:46 2020 -0400\n\n    stable timeline social and urls\n\ncommit 27d605d010018b6d97e5c7a60f65e21a6f240816\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Fri Jun 12 14:23:22 2020 -0400\n\n    bold en active tl hito\n\ncommit b9062ef9071c6f4aed83ffc67aec347d62e02e3c\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Fri Jun 12 13:59:45 2020 -0400\n\n    colores no seleccionados tl\n\n:...skipping...                                                                                                                                                                     \ncommit dabba45cc9912bb9c62fa73eb7069056bf472794 (HEAD -> master)\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Tue Jul 14 18:57:09 2020 -0400\n\n    version change new build\n\ncommit 6f3ee709e36cc9bb49b7a52f6210ae59754cab99\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Tue Jul 14 18:56:47 2020 -0400\n\n    newbuild\n\ncommit 327bb95481bdc57a43b34e414c8ab2db7476191d\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Mon Jul 13 12:20:47 2020 -0400\n\n    loader de scripts solo en timeline\n\ncommit 08d6be243a3df3f6301c76960bb426bb7b873751\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jul 8 17:41:59 2020 -0400\n\n    ogp header\n\ncommit 6852d8dc21d2c2ac6438334fba076d24a1841482\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jul 8 17:01:47 2020 -0400\n\n    ajuste para carga timeline fase activa de afuera\n\ncommit 6aef1e55fb781bb86f78e96e671e27ab68aba1c1\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jul 8 16:35:24 2020 -0400\n\n    fix link telegram\n\ncommit 15e953319ce82685a33ba2427360915d18f72ea7\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Wed Jul 8 13:25:46 2020 -0400\n\n    stable timeline social and urls\n\ncommit 27d605d010018b6d97e5c7a60f65e21a6f240816\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Fri Jun 12 14:23:22 2020 -0400\n\n    bold en active tl hito\n\ncommit b9062ef9071c6f4aed83ffc67aec347d62e02e3c\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\nDate:   Fri Jun 12 13:59:45 2020 -0400\n\n    colores no seleccionados tl\n\ncommit 671b1b486538425c17077cfe0ea558f9b8a1fe39\nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>\n:                                                                                                                                                                                   \ncommit dabba45cc9912bb9c62fa73eb7069056bf472794 (HEAD -> master)                                                                                                                    \nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>                                                                                                                                 \nDate:   Tue Jul 14 18:57:09 2020 -0400                                                                                                                                              \n                                                                                                                                                                                    \n    version change new build                                                                                                                                                        \n                                                                                                                                                                                    \ncommit 6f3ee709e36cc9bb49b7a52f6210ae59754cab99                                                                                                                                     \nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>                                                                                                                                 \nDate:   Tue Jul 14 18:56:47 2020 -0400                                                                                                                                              \n                                                                                                                                                                                    \n    newbuild                                                                                                                                                                        \n                                                                                                                                                                                    \ncommit 327bb95481bdc57a43b34e414c8ab2db7476191d                                                                                                                                     \nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>                                                                                                                                 \nDate:   Mon Jul 13 12:20:47 2020 -0400                                                                                                                                              \n\n    loader de scripts solo en timeline                                                                                                                                              \n\ncommit 08d6be243a3df3f6301c76960bb426bb7b873751                                                                                                                                     \nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>                                                                                                                                 \nDate:   Wed Jul 8 17:41:59 2020 -0400                                                                                                                                               \n\n    ogp header                                                                                                                                                                      \n\ncommit 6852d8dc21d2c2ac6438334fba076d24a1841482                                                                                                                                     \nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>                                                                                                                                 \nDate:   Wed Jul 8 17:01:47 2020 -0400                                                                                                                                               \n\n    ajuste para carga timeline fase activa de afuera                                                                                                                                \n\ncommit 6aef1e55fb781bb86f78e96e671e27ab68aba1c1                                                                                                                                     \nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>                                                                                                                                 \nDate:   Wed Jul 8 16:35:24 2020 -0400                                                                                                                                               \n\n    fix link telegram                                                                                                                                                               \n\ncommit 15e953319ce82685a33ba2427360915d18f72ea7                                                                                                                                     \nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>                                                                                                                                 \nDate:   Wed Jul 8 13:25:46 2020 -0400                                                                                                                                               \n\n    stable timeline social and urls                                                                                                                                                 \n\ncommit 27d605d010018b6d97e5c7a60f65e21a6f240816                                                                                                                                     \nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>                                                                                                                                 \nDate:   Fri Jun 12 14:23:22 2020 -0400                                                                                                                                              \n\n    bold en active tl hito                                                                                                                                                          \n\ncommit b9062ef9071c6f4aed83ffc67aec347d62e02e3c                                                                                                                                     \nAuthor: Pablo Selín Carrasco Armijo <pablo@apie.cl>                                                                                                                                 \nDate:   Fri Jun 12 13:59:45 2020 -0400                                                                                                                                              \n\n    colores no seleccionados tl                                                                                                                                                     \n\n:\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ ",
+			"settings":
+			{
+				"buffer_size": 23331,
 				"line_ending": "Unix",
 				"name": "Login Shell",
 				"scratch": true
@@ -338,13 +365,21 @@
 			}
 		},
 		{
-			"contents": "Searching 72 files for \"c80t_run_featured\"\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/home.php:\n   10  \t\t<div class=\"featured-section\">\n   11  \t\t\t<?php \n   12: \t\t\t\t$featured = c80t_run_featured();\n   13  \t\t\t\twhile($featured->have_posts() ): $featured->the_post();\n   14  \t\t\t\t\t//Imagen destacada\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/content.php:\n  170  }\n  171  \n  172: function c80t_run_featured() {\n  173  \t/**\n  174  \t * Devuelve el primer item del menú\n\n2 matches across 2 files\n",
+			"contents": "Searching 72 files for \"c80t_run_featured\"\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/home.php:\n   10  \t\t<div class=\"featured-section\">\n   11  \t\t\t<?php \n   12: \t\t\t\t$featured = c80t_run_featured();\n   13  \t\t\t\twhile($featured->have_posts() ): $featured->the_post();\n   14  \t\t\t\t\t//Imagen destacada\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/content.php:\n  170  }\n  171  \n  172: function c80t_run_featured() {\n  173  \t/**\n  174  \t * Devuelve el primer item del menú\n\n2 matches across 2 files\n\n\nSearching 72 files for \"alegreya\"\n\n0 matches\n\nSearching 72 files for \"open_sans\"\n\n0 matches\n\nSearching 72 files for \"oswald\"\n\n0 matches\n\nSearching 324 files for \"oswald\"\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-embeds.less:\n    5  //@import 'c80-fonts.less';\n    6  \n    7: @import url(https://fonts.googleapis.com/css?family=Oswald);\n    8  @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);\n    9  \n   ..\n   20  \n   21  .wp-embed-heading a {\n   22: \tfont-family: 'Oswald', sans-serif;\n   23  \tfont-weight:normal;\n   24  \tcolor:@azul-titulo;\n   ..\n   49  \tmargin-top:0;\n   50  \tmargin-bottom:24px;\n   51: \tfont-family:'Oswald', sans-serif;\n   52  \tcolor:#9a3f0c;\n   53  }\n   ..\n   60  \n   61  .embed-footer-title {\n   62: \tfont-family:'Oswald', sans-serif;\n   63  \tfont-size:20px;\n   64  \tcolor:white;\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-fonts.less:\n   26  }\n   27  @font-face {\n   28:   font-family: 'Oswald';\n   29    font-style: normal;\n   30    font-weight: 300;\n   31:   src: local('Oswald Light'), local('Oswald-Light'), url(../fonts/Oswald/Oswald-Light.ttf) format('truetype');\n   32  }\n   33  @font-face {\n   34:   font-family: 'Oswald';\n   35    font-style: normal;\n   36    font-weight: 400;\n   37:   src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/Oswald/Oswald-Regular.ttf) format('truetype');\n   38  }\n\n14 matches across 2 files\n",
 			"settings":
 			{
-				"buffer_size": 597,
+				"buffer_size": 2148,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
+			}
+		},
+		{
+			"file": "assets/css/src/c80-fonts.less",
+			"settings":
+			{
+				"buffer_size": 1216,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -495,6 +530,8 @@
 	[
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/img",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/src",
@@ -632,6 +669,7 @@
 		"height": 101.0,
 		"where_history":
 		[
+			"*.less",
 			"*.php",
 			"*.js",
 			"*.less",
@@ -644,6 +682,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"oswald",
+			"open_sans",
+			"alegreya",
+			"dm_remove",
 			"c80t_run_featured",
 			"c80_run_featured",
 			"offset",
@@ -767,11 +809,7 @@
 			"titleslide",
 			"content-wrap",
 			"text-content",
-			"prese",
-			"text-content",
-			"get_permalink()",
-			"rewrite",
-			"$fase"
+			"prese"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -790,7 +828,7 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -806,8 +844,8 @@
 						"selection":
 						[
 							[
-								3058,
-								3058
+								451,
+								451
 							]
 						],
 						"settings":
@@ -816,10 +854,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 523.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -847,7 +885,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -876,7 +914,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -906,7 +944,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
@@ -935,7 +973,7 @@
 						"translation.y": 15841.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
@@ -964,7 +1002,7 @@
 						"translation.y": 760.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
@@ -993,7 +1031,7 @@
 						"translation.y": 3213.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
@@ -1021,7 +1059,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1037,8 +1075,8 @@
 						"selection":
 						[
 							[
-								160,
-								160
+								1279,
+								1279
 							]
 						],
 						"settings":
@@ -1051,23 +1089,110 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 9,
+					"file": "includes/scripts.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5500,
+						"buffer_size": 2818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5500,
-								5500
+								1685,
+								1685
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 357.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "assets/css/src/main.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								558,
+								558
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "assets/css/src/c80-variables.less",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1214,
+								1214
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 612.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23331,
+								23331
 							]
 						],
 						"settings":
@@ -1092,7 +1217,8 @@
 							"result_line_regex": null,
 							"scroll_past_end": true,
 							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"terminus.highlight_counter": 1883,
+							"tab_size": 2,
+							"terminus.highlight_counter": 1561,
 							"terminus_view": true,
 							"terminus_view.args":
 							{
@@ -1126,18 +1252,19 @@
 							"terminus_view.natural_keyboard": true,
 							"terminus_view.panel_name": null,
 							"terminus_view.tag": null,
-							"terminus_view.viewport_y": 1139.0,
+							"terminus_view.viewport_y": 8194.0,
+							"translate_tabs_to_spaces": true,
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 807.0,
+						"translation.y": 8194.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 13,
 					"file": "partials/sharer-timeline.php",
 					"semi_transient": false,
 					"settings":
@@ -1160,14 +1287,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 306.0,
+						"translation.y": 136.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 14,
 					"file": "functions.php",
 					"semi_transient": false,
 					"settings":
@@ -1179,8 +1306,8 @@
 						"selection":
 						[
 							[
-								61,
-								61
+								60,
+								60
 							]
 						],
 						"settings":
@@ -1192,11 +1319,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 15,
 					"file": "header.php",
 					"semi_transient": false,
 					"settings":
@@ -1222,11 +1349,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 16,
 					"file": "header-timeline.php",
 					"semi_transient": false,
 					"settings":
@@ -1252,11 +1379,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 17,
 					"file": "home.php",
 					"semi_transient": false,
 					"settings":
@@ -1281,15 +1408,15 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 18,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 597,
+						"buffer_size": 2148,
 						"regions":
 						{
 							"match":
@@ -1304,6 +1431,62 @@
 									[
 										493,
 										510
+									],
+									[
+										996,
+										1002
+									],
+									[
+										1175,
+										1181
+									],
+									[
+										1329,
+										1335
+									],
+									[
+										1446,
+										1452
+									],
+									[
+										1688,
+										1694
+									],
+									[
+										1774,
+										1780
+									],
+									[
+										1797,
+										1803
+									],
+									[
+										1826,
+										1832
+									],
+									[
+										1833,
+										1839
+									],
+									[
+										1923,
+										1929
+									],
+									[
+										2009,
+										2015
+									],
+									[
+										2034,
+										2040
+									],
+									[
+										2065,
+										2071
+									],
+									[
+										2072,
+										2078
 									]
 								],
 								"scope": ""
@@ -1312,15 +1495,15 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								736,
+								736
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 1,
+							"output_tag": 5,
 							"result_base_dir": "",
 							"result_file_regex": "^([^ \t].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -1328,14 +1511,44 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 510.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 19,
+					"file": "assets/css/src/c80-fonts.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								656,
+								656
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
 					"file": "includes/content.php",
 					"semi_transient": false,
 					"settings":
@@ -1360,7 +1573,7 @@
 						"translation.y": 4041.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 12,
 					"type": "text"
 				}
 			]
@@ -1415,6 +1628,30 @@
 		"selected_items":
 		[
 			[
+				"timeline.ph",
+				"c80-template/c80-timeline.php"
+			],
+			[
+				"scrip",
+				"c80-template/includes/scripts.php"
+			],
+			[
+				"c80fon",
+				"c80-template/assets/css/src/c80-fonts.less"
+			],
+			[
+				"main",
+				"c80-template/assets/css/src/main.less"
+			],
+			[
+				"func",
+				"c80-template/functions.php"
+			],
+			[
+				"timeline.j",
+				"c80-template/assets/js/src/timeline.js"
+			],
+			[
 				"lo",
 				"Login Shell"
 			],
@@ -1443,10 +1680,6 @@
 				"c80-template/header.php"
 			],
 			[
-				"func",
-				"c80-template/functions.php"
-			],
-			[
 				"shar",
 				"c80-template/partials/sharer.php"
 			],
@@ -1473,10 +1706,6 @@
 			[
 				"sharer",
 				"c80-template/partials/sharer.php"
-			],
-			[
-				"timeline.j",
-				"c80-template/assets/js/src/timeline.js"
 			],
 			[
 				"c80t",
@@ -1517,10 +1746,6 @@
 			[
 				"saniti",
 				"c80-template/assets/js/sanitize-title.js"
-			],
-			[
-				"scrip",
-				"c80-template/includes/scripts.php"
 			],
 			[
 				"c80time",
@@ -1913,18 +2138,6 @@
 			[
 				".git",
 				".gitignore"
-			],
-			[
-				"sidebar-mo",
-				"sidebar-modificaciones.php"
-			],
-			[
-				"mai",
-				"itrend_custom_content/itrend-main.php"
-			],
-			[
-				"main",
-				"itrend_custom_content/itrend-main.php"
 			]
 		],
 		"width": 0.0
@@ -1932,15 +2145,15 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "prom",
+		"last_filter": "bit",
 		"selected_items":
 		[
 			[
-				"prom",
+				"bit",
 				"~/Documents/WebDev/local_sites/bitacora/app/public/wp-content/themes/prompt/prompt.sublime-project"
 			],
 			[
-				"bit",
+				"prom",
 				"~/Documents/WebDev/local_sites/bitacora/app/public/wp-content/themes/prompt/prompt.sublime-project"
 			],
 			[

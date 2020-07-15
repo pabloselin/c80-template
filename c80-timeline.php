@@ -10,6 +10,15 @@ $timeline = get_query_var('timeline');
 $fase = get_query_var('fase');
 $imageid = get_post_thumbnail_id( $post->ID );
 $image = wp_get_attachment_image_src( $imageid, 'full', false );
+
+if(function_exists( 'jetpack_photon_url')) {
+	$wpthumbnail = jetpack_photon_url($image[0]);
+} else {	
+	$wpthumbnail = $image[0];	
+}
+
+
+
 $fases = array('fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5');
 $fasedata = array();
 $timeline_options = get_option('c80_timeline_options');
@@ -57,7 +66,7 @@ $timeline_info_content = get_post($timeline_options['c80_vispost']);
 
 <div id="main-timeline" class="container-fluid">
 
-	<section class="timeline-presentation" id="inicio" style="background-image: url(<?php echo $image[0];?>);">
+	<section class="timeline-presentation" id="inicio" style="background-image: url(<?php echo $wpthumbnail;?>);">
 		<div class="content-wrap">
 			<div class="intro-stuff">
 				<div class="text-header">

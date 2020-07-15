@@ -371,11 +371,19 @@ add_action( 'cmb2_admin_init', 'c80_register_options_submenu_appearance_menu' );
 function c80_presentacion_fase($fase, $nextfase) {
 	global $post;
 	$timeline_options = get_option('c80_timeline_options');
+	$imagenfase = $timeline_options['imagen_' . $fase . '_id'];
+	$imagenurl = wp_get_attachment_image_src($imagenfase, 'full', false);
+	if(function_exists( 'jetpack_photon_url')) {
+		$wpthumbnail = jetpack_photon_url($imagenurl[0]);
+	} else {	
+		$wpthumbnail = $imagenurl[0];	
+	}
+
 	$fasestart = parse_field_date_for_json(get_post_meta($timeline_options['hito_inicial_' . $fase], 'c80_lt_start_date', true));
 	$faseend = parse_field_date_for_json(get_post_meta($timeline_options['hito_final_' . $fase], 'c80_lt_start_date', true));
 	?>
 	
-	<section data-fase="<?php echo $fase;?>" id="<?php echo c80_faselink($fase, false);?>" class="presentacion-fase" style="background-image: url(<?php echo $timeline_options['imagen_' . $fase];?>);" data-nextfase="<?php echo $nextfase;?>">
+	<section data-fase="<?php echo $fase;?>" id="<?php echo c80_faselink($fase, false);?>" class="presentacion-fase" style="background-image: url(<?php echo $wpthumbnail;?>);" data-nextfase="<?php echo $nextfase;?>">
 	<div class="content-wrap">
 		<div class="presentacion-fase-text-content">
 			
