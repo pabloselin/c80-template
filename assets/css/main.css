@@ -9611,6 +9611,7 @@ section.anuncios h1.widget_title {
     font-size: 24px;
     line-height: 1.3em;
     padding: 6px 0;
+    font-weight: 600;
   }
 }
 section.anuncios .simple-image {
