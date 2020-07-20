@@ -475,7 +475,7 @@ section.anuncios {
 		height: 330px;
 		margin: 24px 0;
 		.simple-image {
-			height: auto;
+			height: 330px;
 		}
 
 		.inside-text {
@@ -536,8 +536,6 @@ section.anuncios {
 
 	.link-text {
 		position: absolute;
-		right: 0;
-		top: 0;
 		height: 100%;
 		width: 200px;
 		color: white;
@@ -555,9 +553,17 @@ section.anuncios {
 		 	font-size: 120px;
 		 }
 
+		 @media screen and (min-width: @screen-md) {
+		 	top: 0;
+		 	right: 0;
+		 }
+
 		 @media screen and (max-width: @screen-sm) {
-		 	position: relative;
+		 	position: absolute;
+		 	bottom: 0;
 		 	width: 100%;
+		 	height: 60px;
+		 	background: linear-gradient(to right, rgba(75, 88, 139, 1) 1%, rgba(199, 36, 36, 1) 20%, rgba(66, 85, 148, 1) 75%, rgba(16, 112, 119, 1) 100%);
 		 	i {
 		 		font-size: 60px;
 		 	}

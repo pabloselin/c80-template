@@ -9563,7 +9563,7 @@ section.anuncios .inside-text {
     margin: 24px 0;
   }
   section.anuncios .simple-image {
-    height: auto;
+    height: 330px;
   }
   section.anuncios .inside-text {
     margin-right: 0;
@@ -9619,8 +9619,6 @@ section.anuncios .simple-image {
 }
 section.anuncios .link-text {
   position: absolute;
-  right: 0;
-  top: 0;
   height: 100%;
   width: 200px;
   color: white;
@@ -9633,10 +9631,19 @@ section.anuncios .link-text i {
   display: block;
   font-size: 120px;
 }
+@media screen and (min-width: 992px) {
+  section.anuncios .link-text {
+    top: 0;
+    right: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   section.anuncios .link-text {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #4b588b 1%, #c72424 20%, #425594 75%, #107077 100%);
   }
   section.anuncios .link-text i {
     font-size: 60px;
