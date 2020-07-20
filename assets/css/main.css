@@ -9559,11 +9559,11 @@ section.anuncios .inside-text {
 }
 @media screen and (max-width: 768px) {
   section.anuncios {
-    height: 330px;
+    height: 250px;
     margin: 24px 0;
   }
   section.anuncios .simple-image {
-    height: 330px;
+    height: 250px;
   }
   section.anuncios .inside-text {
     margin-right: 0;
