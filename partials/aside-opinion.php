@@ -16,7 +16,7 @@
 					<article class="columna">
 						
 						<div class="avatar">
-							<?php echo c80t_avatar(70);?>
+							<?php echo c80t_avatar(75);?>
 						</div>
 				
 						<h3>
