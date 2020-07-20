@@ -3,6 +3,22 @@
 	get_header();
 ?>
 
+<section class="anuncios">
+			<?php if ( is_active_sidebar( 'anuncios' ) ) : ?>
+			
+				<?php dynamic_sidebar( 'anuncios' ); ?>
+			
+			<?php endif; ?>
+		</section>
+
+		<section class="anuncios-mobile">
+			<?php if ( is_active_sidebar( 'anuncios-mobile' ) ) : ?>
+			
+				<?php dynamic_sidebar( 'anuncios-mobile' ); ?>
+			
+			<?php endif; ?>
+		</section>
+
 
 <div id="main" class="container">
 	<div class="contenedor-home">
@@ -51,6 +67,7 @@
 				endwhile;
 				?>
 		</div>
+		
 		
 		<section class="noticias">
 

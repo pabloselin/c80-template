@@ -44,6 +44,32 @@ include( TEMPLATEPATH . '/includes/json-microdata.php' );
 include( TEMPLATEPATH . '/includes/timeline-functions.php' );
 
 
+//widgets
+/**
+ * Add a sidebar.
+ */
+function c80t_theme_slug_widgets_init() {
+    register_sidebar( array(
+        'name'          => __( 'Anuncios', 'c80' ),
+        'id'            => 'anuncios',
+        'description'   => __( 'Widgets para la sección de anuncios en home.', 'c80' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h1 class="widget_title">',
+        'after_title'   => '</h1>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Anuncios / móvil', 'c80' ),
+        'id'            => 'anuncios-mobile',
+        'description'   => __( 'Widgets para la sección de anuncios en home para dispositivos móviles.', 'c80' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h1 class="widget_title"></span>',
+        'after_title'   => '</h1>',
+    ) );
+}
+add_action( 'widgets_init', 'c80t_theme_slug_widgets_init' );
+
 //Image sizes
 function c80t_imgsizes() {
 	add_image_size( 'main', 668, 0, false );
