@@ -9559,7 +9559,7 @@ section.anuncios .inside-text {
 }
 @media screen and (max-width: 768px) {
   section.anuncios {
-    height: auto;
+    height: 330px;
     margin: 24px 0;
   }
   section.anuncios .simple-image {
@@ -9582,10 +9582,22 @@ section.anuncios img {
 section.anuncios .simple-image-text {
   position: absolute;
   left: 0;
-  top: 24px;
+  top: 0;
   z-index: 10;
   width: 100%;
   text-align: left;
+  height: 100%;
+}
+section.anuncios .simple-image-text .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  section.anuncios .simple-image-text .container {
+    display: block;
+    margin-top: 24px;
+  }
 }
 section.anuncios h1.widget_title {
   border-top: 1px solid white;
@@ -9593,6 +9605,13 @@ section.anuncios h1.widget_title {
   padding: 12px 0;
   max-width: 900px;
   margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  section.anuncios h1.widget_title {
+    font-size: 24px;
+    line-height: 1.3em;
+    padding: 6px 0;
+  }
 }
 section.anuncios .simple-image {
   display: block;
