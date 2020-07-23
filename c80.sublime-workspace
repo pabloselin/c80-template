@@ -204,69 +204,6 @@
 	"buffers":
 	[
 		{
-			"file": "c80-timeline.php",
-			"settings":
-			{
-				"buffer_size": 4156,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "includes/timeline-functions.php",
-			"settings":
-			{
-				"buffer_size": 14951,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "includes/post-types.php",
-			"settings":
-			{
-				"buffer_size": 10505,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/js/c80-timeline.js",
-			"settings":
-			{
-				"buffer_size": 412674,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/js/src/timeline.js",
-			"settings":
-			{
-				"buffer_size": 9390,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "includes/scripts.php",
-			"settings":
-			{
-				"buffer_size": 2838,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/css/src/main.less",
-			"settings":
-			{
-				"buffer_size": 2865,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "assets/css/src/c80-variables.less",
 			"settings":
 			{
@@ -279,37 +216,56 @@
 			"file": "assets/css/src/c80-home.less",
 			"settings":
 			{
-				"buffer_size": 7056,
+				"buffer_size": 8699,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "pabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ nvm use\nFound '/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/.nvmrc' with version <8>\nnNow using node v8.17.0 (npm v6.14.6)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run start\n\n> c80-template@1.0.1 start /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp watch\n\n[16:05:09] Using gulpfile ~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js\n[16:05:09] Starting 'watch'...\n[16:05:11] Finished 'watch' after 1.16 s\n[Browsersync] Proxying: http://c80.local\n[Browsersync] Access URLs:\n ------------------------------------\n       Local: http://localhost:3000\n    External: http://192.168.0.2:3000\n ------------------------------------\n          UI: http://localhost:3001\n UI External: http://localhost:3001\n ------------------------------------\n[16:06:06] Starting 'less'...\n[16:06:06] Starting 'embeds'...\n[16:06:06] Starting 'scripts'...\n[16:06:06] Finished 'embeds' after 286 ms\n[16:06:06] Finished 'scripts' after 479 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:06:08] Finished 'less' after 1.8 s\n[Browsersync] Reloading Browsers...\n[16:06:28] Starting 'less'...\n[16:06:28] Starting 'embeds'...\n[16:06:28] Starting 'scripts'...\n[16:06:28] Finished 'embeds' after 151 ms\n[16:06:29] Finished 'scripts' after 974 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:06:29] Finished 'less' after 1.03 s\n[Browsersync] Reloading Browsers...\n[16:06:54] Starting 'less'...\n[16:06:54] Starting 'embeds'...\n[16:06:54] Starting 'scripts'...\n[16:06:55] Finished 'embeds' after 200 ms\n[16:06:55] Finished 'scripts' after 243 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:06:56] Finished 'less' after 1.02 s\n[Browsersync] Reloading Browsers...\n[16:07:21] Starting 'less'...\n[16:07:21] Starting 'embeds'...\n[16:07:21] Starting 'scripts'...\n[16:07:21] Finished 'embeds' after 144 ms\n[16:07:21] Finished 'scripts' after 167 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:07:21] Finished 'less' after 784 ms\n[Browsersync] Reloading Browsers...\n[16:07:37] Starting 'less'...\n[16:07:37] Starting 'embeds'...\n[16:07:37] Starting 'scripts'...\n[16:07:37] Finished 'embeds' after 173 ms\n[Browsersync] Reloading Browsers...\n[16:07:37] Finished 'scripts' after 735 ms\n[Browsersync] 1 file changed (main.css)\n[16:07:37] Finished 'less' after 740 ms\n[Browsersync] Reloading Browsers...\n[16:08:04] Starting 'less'...\n[16:08:04] Starting 'embeds'...\n[16:08:04] Starting 'scripts'...\n[16:08:04] Finished 'embeds' after 231 ms\n[16:08:04] Finished 'scripts' after 274 ms\n[Browsersync] 1 file changed (main.css)\n[16:08:05] Finished 'less' after 1.07 s\n[Browsersync] Reloading Browsers...\n[16:11:33] Starting 'less'...\n[16:11:33] Starting 'embeds'...\n[16:11:33] Starting 'scripts'...\n[16:11:33] Finished 'embeds' after 283 ms\n[16:11:33] Finished 'scripts' after 364 ms\n[Browsersync] 1 file changed (main.css)\n[16:11:35] Finished 'less' after 1.77 s\n[Browsersync] Reloading Browsers...\n[16:12:10] Starting 'less'...\n[16:12:10] Starting 'embeds'...\n[16:12:10] Starting 'scripts'...\n[16:12:10] Finished 'embeds' after 206 ms\n[16:12:10] Finished 'scripts' after 275 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:12:11] Finished 'less' after 1.15 s\n[Browsersync] Reloading Browsers...\n[16:12:23] Starting 'less'...\n[16:12:23] Starting 'embeds'...\n[16:12:23] Starting 'scripts'...\n[16:12:23] Finished 'embeds' after 294 ms\n[16:12:23] Finished 'scripts' after 334 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:12:24] Finished 'less' after 1.16 s\n[Browsersync] Reloading Browsers...\n[16:12:53] Starting 'less'...\n[16:12:53] Starting 'embeds'...\n[16:12:53] Starting 'scripts'...\n[16:12:53] Finished 'embeds' after 151 ms\n[16:12:53] Finished 'scripts' after 193 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:12:54] Finished 'less' after 784 ms\n[Browsersync] Reloading Browsers...\n[16:13:27] Starting 'less'...\n[16:13:27] Starting 'embeds'...\n[16:13:27] Starting 'scripts'...\n[16:13:27] Finished 'embeds' after 129 ms\n[16:13:27] Finished 'scripts' after 187 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:13:28] Finished 'less' after 926 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n",
+			"file": "simple-image-widget/widget.php",
 			"settings":
 			{
-				"buffer_size": 4642,
+				"buffer_size": 998,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/src/c80-timeline.less",
+			"settings":
+			{
+				"buffer_size": 17502,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "pabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ nvm use\nFound '/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/.nvmrc' with version <8>\nnNow using node v8.17.0 (npm v6.14.6)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run start\n\n> c80-template@1.0.1 start /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp watch\n\n[16:05:09] Using gulpfile ~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js\n[16:05:09] Starting 'watch'...\n[16:05:11] Finished 'watch' after 1.16 s\n[Browsersync] Proxying: http://c80.local\n[Browsersync] Access URLs:\n ------------------------------------\n       Local: http://localhost:3000\n    External: http://192.168.0.2:3000\n ------------------------------------\n          UI: http://localhost:3001\n UI External: http://localhost:3001\n ------------------------------------\n[16:06:06] Starting 'less'...\n[16:06:06] Starting 'embeds'...\n[16:06:06] Starting 'scripts'...\n[16:06:06] Finished 'embeds' after 286 ms\n[16:06:06] Finished 'scripts' after 479 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:06:08] Finished 'less' after 1.8 s\n[Browsersync] Reloading Browsers...\n[16:06:28] Starting 'less'...\n[16:06:28] Starting 'embeds'...\n[16:06:28] Starting 'scripts'...\n[16:06:28] Finished 'embeds' after 151 ms\n[16:06:29] Finished 'scripts' after 974 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:06:29] Finished 'less' after 1.03 s\n[Browsersync] Reloading Browsers...\n[16:06:54] Starting 'less'...\n[16:06:54] Starting 'embeds'...\n[16:06:54] Starting 'scripts'...\n[16:06:55] Finished 'embeds' after 200 ms\n[16:06:55] Finished 'scripts' after 243 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:06:56] Finished 'less' after 1.02 s\n[Browsersync] Reloading Browsers...\n[16:07:21] Starting 'less'...\n[16:07:21] Starting 'embeds'...\n[16:07:21] Starting 'scripts'...\n[16:07:21] Finished 'embeds' after 144 ms\n[16:07:21] Finished 'scripts' after 167 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:07:21] Finished 'less' after 784 ms\n[Browsersync] Reloading Browsers...\n[16:07:37] Starting 'less'...\n[16:07:37] Starting 'embeds'...\n[16:07:37] Starting 'scripts'...\n[16:07:37] Finished 'embeds' after 173 ms\n[Browsersync] Reloading Browsers...\n[16:07:37] Finished 'scripts' after 735 ms\n[Browsersync] 1 file changed (main.css)\n[16:07:37] Finished 'less' after 740 ms\n[Browsersync] Reloading Browsers...\n[16:08:04] Starting 'less'...\n[16:08:04] Starting 'embeds'...\n[16:08:04] Starting 'scripts'...\n[16:08:04] Finished 'embeds' after 231 ms\n[16:08:04] Finished 'scripts' after 274 ms\n[Browsersync] 1 file changed (main.css)\n[16:08:05] Finished 'less' after 1.07 s\n[Browsersync] Reloading Browsers...\n[16:11:33] Starting 'less'...\n[16:11:33] Starting 'embeds'...\n[16:11:33] Starting 'scripts'...\n[16:11:33] Finished 'embeds' after 283 ms\n[16:11:33] Finished 'scripts' after 364 ms\n[Browsersync] 1 file changed (main.css)\n[16:11:35] Finished 'less' after 1.77 s\n[Browsersync] Reloading Browsers...\n[16:12:10] Starting 'less'...\n[16:12:10] Starting 'embeds'...\n[16:12:10] Starting 'scripts'...\n[16:12:10] Finished 'embeds' after 206 ms\n[16:12:10] Finished 'scripts' after 275 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:12:11] Finished 'less' after 1.15 s\n[Browsersync] Reloading Browsers...\n[16:12:23] Starting 'less'...\n[16:12:23] Starting 'embeds'...\n[16:12:23] Starting 'scripts'...\n[16:12:23] Finished 'embeds' after 294 ms\n[16:12:23] Finished 'scripts' after 334 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:12:24] Finished 'less' after 1.16 s\n[Browsersync] Reloading Browsers...\n[16:12:53] Starting 'less'...\n[16:12:53] Starting 'embeds'...\n[16:12:53] Starting 'scripts'...\n[16:12:53] Finished 'embeds' after 151 ms\n[16:12:53] Finished 'scripts' after 193 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:12:54] Finished 'less' after 784 ms\n[Browsersync] Reloading Browsers...\n[16:13:27] Starting 'less'...\n[16:13:27] Starting 'embeds'...\n[16:13:27] Starting 'scripts'...\n[16:13:27] Finished 'embeds' after 129 ms\n[16:13:27] Finished 'scripts' after 187 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[16:13:28] Finished 'less' after 926 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ nvm use                                                                            \nFound '/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/.nvmrc' with version <8>\nNow using node v8.17.0 (npm v6.14.6)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run watch                                                                      \nnpm ERR! missing script: watch\n\nnpm ERR! A complete log of this run can be found in:\nnpm ERR!     /home/pabloselin/.npm/_logs/2020-07-20T15_33_49_647Z-debug.log\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run start\n\n> c80-template@1.0.1 start /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp watch\n\n[11:33:54] Using gulpfile ~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js\n[11:33:54] Starting 'watch'...\n[11:33:55] Finished 'watch' after 592 ms\n[Browsersync] Proxying: http://c80.local\n[Browsersync] Access URLs:\n ------------------------------------\n       Local: http://localhost:3000\n    External: http://192.168.0.2:3000\n ------------------------------------\n          UI: http://localhost:3001\n UI External: http://localhost:3001\n ------------------------------------\n[Browsersync] Reloading Browsers...\n[11:35:31] Starting 'less'...\n[11:35:32] Starting 'embeds'...\n[11:35:32] Starting 'scripts'...\n[11:35:32] Finished 'embeds' after 204 ms\n[11:35:32] Finished 'scripts' after 248 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[11:35:32] Finished 'less' after 849 ms\n[Browsersync] Reloading Browsers...\n[11:35:34] Starting 'less'...\n[11:35:34] Starting 'embeds'...\n[11:35:34] Starting 'scripts'...\n[11:35:34] Finished 'embeds' after 162 ms\n[11:35:34] Finished 'scripts' after 187 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[11:35:34] Finished 'less' after 942 ms\n[Browsersync] Reloading Browsers...\n[11:35:49] Starting 'less'...\n[11:35:49] Starting 'embeds'...\n[11:35:49] Starting 'scripts'...\n[11:35:49] Finished 'embeds' after 148 ms\n[11:35:49] Finished 'scripts' after 169 ms\n[Browsersync] 1 file changed (main.css)\n[11:35:49] Finished 'less' after 516 ms\n[Browsersync] Reloading Browsers...\n[11:35:58] Starting 'less'...\n[11:35:58] Starting 'embeds'...\n[11:35:58] Starting 'scripts'...\n[11:35:58] Finished 'embeds' after 133 ms\n[11:35:58] Finished 'scripts' after 155 ms\n[Browsersync] 1 file changed (main.css)\n[11:35:58] Finished 'less' after 466 ms\n[Browsersync] Reloading Browsers...\n[11:36:14] Starting 'less'...\n[11:36:14] Starting 'embeds'...\n[11:36:14] Starting 'scripts'...\n[11:36:14] Finished 'embeds' after 144 ms\n[11:36:14] Finished 'scripts' after 460 ms\n[Browsersync] 1 file changed (main.css)\n[11:36:14] Finished 'less' after 466 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[11:41:19] Starting 'less'...\n[11:41:19] Starting 'embeds'...\n[11:41:19] Starting 'scripts'...\n[11:41:19] Finished 'embeds' after 161 ms\n[11:41:19] Finished 'scripts' after 173 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[11:41:20] Finished 'less' after 806 ms\n[Browsersync] Reloading Browsers...\n[11:41:56] Starting 'less'...\n[11:41:56] Starting 'embeds'...\n[11:41:56] Starting 'scripts'...\n[11:41:57] Finished 'embeds' after 160 ms\n[Browsersync] Reloading Browsers...\n[11:41:57] Finished 'scripts' after 777 ms\n[Browsersync] 1 file changed (main.css)\n[11:41:57] Finished 'less' after 800 ms\n[Browsersync] Reloading Browsers...\n[11:42:20] Starting 'less'...\n[11:42:20] Starting 'embeds'...\n[11:42:20] Starting 'scripts'...\n[11:42:20] Finished 'embeds' after 109 ms\n[11:42:20] Finished 'scripts' after 121 ms\n[Browsersync] 1 file changed (main.css)\n[11:42:20] Finished 'less' after 524 ms\n[Browsersync] Reloading Browsers...\n[11:42:36] Starting 'less'...\n[11:42:36] Starting 'embeds'...\n[11:42:36] Starting 'scripts'...\n[11:42:36] Finished 'embeds' after 69 ms\n[11:42:36] Finished 'scripts' after 384 ms\n[Browsersync] 1 file changed (main.css)\n[11:42:36] Finished 'less' after 392 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[11:50:22] Starting 'less'...\n[11:50:22] Starting 'embeds'...\n[11:50:22] Starting 'scripts'...\n[11:50:22] Finished 'embeds' after 159 ms\n[11:50:22] Finished 'scripts' after 188 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[11:50:23] Finished 'less' after 773 ms\n[Browsersync] Reloading Browsers...\n[11:51:02] Starting 'less'...\n[11:51:02] Starting 'embeds'...\n[11:51:02] Starting 'scripts'...\n[11:51:02] Finished 'embeds' after 143 ms\n[11:51:02] Finished 'scripts' after 198 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[11:51:02] Finished 'less' after 763 ms\n[Browsersync] Reloading Browsers...\n[11:51:45] Starting 'less'...\n[11:51:45] Starting 'embeds'...\n[11:51:45] Starting 'scripts'...\n[11:51:45] Finished 'embeds' after 151 ms\n[11:51:45] Finished 'scripts' after 201 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[11:51:46] Finished 'less' after 825 ms\n[Browsersync] Reloading Browsers...\n[11:52:28] Starting 'less'...\n[11:52:28] Starting 'embeds'...\n[11:52:28] Starting 'scripts'...\n[11:52:28] Finished 'embeds' after 218 ms\n[11:52:28] Finished 'scripts' after 269 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[11:52:29] Finished 'less' after 853 ms\n[Browsersync] Reloading Browsers...\n[11:52:37] Starting 'less'...\n[11:52:37] Starting 'embeds'...\n[11:52:37] Starting 'scripts'...\n[11:52:37] Finished 'embeds' after 95 ms\n[11:52:37] Finished 'scripts' after 122 ms\n[Browsersync] 1 file changed (main.css)\n[11:52:37] Finished 'less' after 519 ms\n[Browsersync] Reloading Browsers...\n[11:55:17] Starting 'less'...\n[11:55:17] Starting 'embeds'...\n[11:55:17] Starting 'scripts'...\n[11:55:18] Finished 'embeds' after 185 ms\n[11:55:18] Finished 'scripts' after 201 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[11:55:18] Finished 'less' after 793 ms\n[Browsersync] Reloading Browsers...\n[11:55:31] Starting 'less'...\n[11:55:31] Starting 'embeds'...\n[11:55:31] Starting 'scripts'...\n[11:55:32] Finished 'embeds' after 153 ms\n[11:55:32] Finished 'scripts' after 168 ms\n[Browsersync] 1 file changed (main.css)\n[11:55:32] Finished 'less' after 596 ms\n[Browsersync] Reloading Browsers...\n[11:56:17] Starting 'less'...\n[11:56:17] Starting 'embeds'...\n[11:56:17] Starting 'scripts'...\n[11:56:17] Finished 'embeds' after 196 ms\n[11:56:17] Finished 'scripts' after 261 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[11:56:17] Finished 'less' after 860 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[13:52:00] Starting 'less'...\n[13:52:01] Starting 'embeds'...\n[13:52:01] Starting 'scripts'...\n[13:52:01] Finished 'embeds' after 203 ms\n[13:52:01] Finished 'scripts' after 234 ms\n[Browsersync] 1 file changed (main.css)\n[13:52:01] Finished 'less' after 849 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[13:56:04] Starting 'less'...\n[13:56:04] Starting 'embeds'...\n[13:56:04] Starting 'scripts'...\n[13:56:04] Finished 'embeds' after 183 ms\n[13:56:04] Finished 'scripts' after 191 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[13:56:05] Finished 'less' after 853 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[13:57:57] Starting 'less'...\n[13:57:57] Starting 'embeds'...\n[13:57:57] Starting 'scripts'...\n[13:57:57] Finished 'embeds' after 137 ms\n[13:57:57] Finished 'scripts' after 177 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[13:57:58] Finished 'less' after 808 ms\n[Browsersync] Reloading Browsers...\n[13:58:25] Starting 'less'...\n[13:58:25] Starting 'embeds'...\n[13:58:25] Starting 'scripts'...\n[13:58:25] Finished 'embeds' after 91 ms\n[13:58:25] Finished 'scripts' after 111 ms\n[Browsersync] 1 file changed (main.css)\n[13:58:26] Finished 'less' after 598 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[13:58:33] Starting 'less'...\n[13:58:33] Starting 'embeds'...\n[13:58:33] Starting 'scripts'...\n[13:58:33] Finished 'embeds' after 85 ms\n[13:58:33] Finished 'scripts' after 91 ms\n[Browsersync] 1 file changed (main.css)\n[13:58:33] Finished 'less' after 439 ms\n[Browsersync] Reloading Browsers...\n[14:01:28] Starting 'less'...\n[14:01:28] Starting 'embeds'...\n[14:01:28] Starting 'scripts'...\n[14:01:29] Finished 'embeds' after 168 ms\n[14:01:29] Finished 'scripts' after 204 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[14:01:29] Finished 'less' after 850 ms\n[Browsersync] Reloading Browsers...\n[14:01:40] Starting 'less'...\n[14:01:40] Starting 'embeds'...\n[14:01:40] Starting 'scripts'...\n[14:01:40] Finished 'embeds' after 95 ms\n[14:01:40] Finished 'scripts' after 111 ms\n[Browsersync] 1 file changed (main.css)\n[14:01:40] Finished 'less' after 560 ms\n[Browsersync] Reloading Browsers...\n[14:01:45] Starting 'less'...\n[14:01:45] Starting 'embeds'...\n[14:01:45] Starting 'scripts'...\n[14:01:45] Finished 'embeds' after 162 ms\n[14:01:45] Finished 'scripts' after 180 ms\n[Browsersync] 1 file changed (main.css)\n[14:01:45] Finished 'less' after 603 ms\n[Browsersync] Reloading Browsers...\n[14:02:22] Starting 'less'...\n[14:02:22] Starting 'embeds'...\n[14:02:22] Starting 'scripts'...\n[14:02:22] Finished 'embeds' after 154 ms\n[14:02:22] Finished 'scripts' after 199 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[14:02:23] Finished 'less' after 861 ms\n[Browsersync] Reloading Browsers...\n[14:09:36] Starting 'less'...\n[14:09:36] Starting 'embeds'...\n[14:09:36] Starting 'scripts'...\n[14:09:36] Finished 'embeds' after 253 ms\n[14:09:36] Finished 'scripts' after 299 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[14:09:37] Finished 'less' after 984 ms\n[Browsersync] Reloading Browsers...\n[14:09:46] Starting 'less'...\n[14:09:46] Starting 'embeds'...\n[14:09:46] Starting 'scripts'...\n[14:09:46] Finished 'embeds' after 94 ms\n[14:09:46] Finished 'scripts' after 102 ms\n[Browsersync] 1 file changed (main.css)\n[14:09:47] Finished 'less' after 554 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[14:10:46] Starting 'less'...\n[14:10:46] Starting 'embeds'...\n[14:10:46] Starting 'scripts'...\n[14:10:46] Finished 'embeds' after 154 ms\n[14:10:46] Finished 'scripts' after 195 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[14:10:47] Finished 'less' after 798 ms\n[Browsersync] Reloading Browsers...\n[14:10:48] Starting 'less'...\n[14:10:48] Starting 'embeds'...\n[14:10:48] Starting 'scripts'...\n[14:10:48] Finished 'embeds' after 107 ms\n[14:10:48] Finished 'scripts' after 141 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[14:10:49] Finished 'less' after 820 ms\n[Browsersync] Reloading Browsers...\n[14:11:28] Starting 'less'...\n[14:11:28] Starting 'embeds'...\n[14:11:28] Starting 'scripts'...\n[14:11:28] Finished 'embeds' after 124 ms\n[14:11:29] Finished 'scripts' after 544 ms\n[Browsersync] 1 file changed (main.css)\n[14:11:29] Finished 'less' after 551 ms\n[Browsersync] Reloading Browsers...\n[14:11:50] Starting 'less'...\n[14:11:50] Starting 'embeds'...\n[14:11:50] Starting 'scripts'...\n[14:11:50] Finished 'embeds' after 75 ms\n[14:11:50] Finished 'scripts' after 89 ms\n[Browsersync] 1 file changed (main.css)\n[14:11:50] Finished 'less' after 435 ms\n[Browsersync] Reloading Browsers...\n[14:15:57] Starting 'less'...\n[14:15:57] Starting 'embeds'...\n[14:15:57] Starting 'scripts'...\n[14:15:57] Finished 'embeds' after 169 ms\n[14:15:57] Finished 'scripts' after 194 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[14:15:58] Finished 'less' after 871 ms\n[Browsersync] Reloading Browsers...\n[15:13:36] Starting 'less'...\n[15:13:36] Starting 'embeds'...\n[15:13:36] Starting 'scripts'...\n[15:13:36] Finished 'embeds' after 170 ms\n[15:13:36] Finished 'scripts' after 200 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:13:37] Finished 'less' after 714 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[15:14:36] Starting 'less'...\n[15:14:36] Starting 'embeds'...\n[15:14:36] Starting 'scripts'...\n[15:14:36] Finished 'embeds' after 189 ms\n[15:14:36] Finished 'scripts' after 234 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:14:36] Finished 'less' after 793 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[15:15:37] Starting 'less'...\n[15:15:37] Starting 'embeds'...\n[15:15:37] Starting 'scripts'...\n[15:15:37] Finished 'embeds' after 197 ms\n[15:15:37] Finished 'scripts' after 212 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:15:38] Finished 'less' after 801 ms\n[Browsersync] Reloading Browsers...\n[15:16:02] Starting 'less'...\n[15:16:02] Starting 'embeds'...\n[15:16:02] Starting 'scripts'...\n[15:16:02] Finished 'embeds' after 116 ms\n[15:16:02] Finished 'scripts' after 144 ms\n[Browsersync] 1 file changed (main.css)\n[15:16:03] Finished 'less' after 532 ms\n[Browsersync] Reloading Browsers...\n[15:16:18] Starting 'less'...\n[15:16:18] Starting 'embeds'...\n[15:16:18] Starting 'scripts'...\n[15:16:18] Finished 'embeds' after 131 ms\n[15:16:18] Finished 'scripts' after 142 ms\n[Browsersync] 1 file changed (main.css)\n[15:16:18] Finished 'less' after 510 ms\n[Browsersync] Reloading Browsers...\n[15:16:27] Starting 'less'...\n[15:16:27] Starting 'embeds'...\n[15:16:27] Starting 'scripts'...\n[15:16:27] Finished 'embeds' after 92 ms\n[15:16:27] Finished 'scripts' after 103 ms\n[Browsersync] 1 file changed (main.css)\n[15:16:28] Finished 'less' after 383 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[15:17:15] Starting 'less'...\n[15:17:15] Starting 'embeds'...\n[15:17:15] Starting 'scripts'...\n[15:17:15] Finished 'embeds' after 164 ms\n[15:17:15] Finished 'scripts' after 200 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:17:16] Finished 'less' after 818 ms\n[Browsersync] Reloading Browsers...\n[15:17:29] Starting 'less'...\n[15:17:29] Starting 'embeds'...\n[15:17:29] Starting 'scripts'...\n[15:17:29] Finished 'embeds' after 174 ms\n[15:17:29] Finished 'scripts' after 191 ms\n[Browsersync] 1 file changed (main.css)\n[15:17:29] Finished 'less' after 566 ms\n[Browsersync] Reloading Browsers...\n[15:17:30] Starting 'less'...\n[15:17:30] Starting 'embeds'...\n[15:17:30] Starting 'scripts'...\n[15:17:31] Finished 'embeds' after 143 ms\n[15:17:31] Finished 'scripts' after 171 ms\n[Browsersync] 1 file changed (main.css)\n[15:17:31] Finished 'less' after 621 ms\n[Browsersync] Reloading Browsers...\n[15:18:28] Starting 'less'...\n[15:18:28] Starting 'embeds'...\n[15:18:28] Starting 'scripts'...\n[15:18:28] Finished 'embeds' after 181 ms\n[15:18:29] Finished 'scripts' after 779 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:18:29] Finished 'less' after 788 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[15:18:50] Starting 'less'...\n[15:18:50] Starting 'embeds'...\n[15:18:50] Starting 'scripts'...\n[15:18:50] Finished 'embeds' after 68 ms\n[15:18:50] Finished 'scripts' after 76 ms\n[Browsersync] 1 file changed (main.css)\n[15:18:51] Finished 'less' after 466 ms\n[Browsersync] Reloading Browsers...\n[15:19:05] Starting 'less'...\n[15:19:05] Starting 'embeds'...\n[15:19:05] Starting 'scripts'...\n[15:19:05] Finished 'embeds' after 127 ms\n[15:19:05] Finished 'scripts' after 148 ms\n[Browsersync] 1 file changed (main.css)\n[15:19:06] Finished 'less' after 494 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[15:20:00] Starting 'less'...\n[15:20:00] Starting 'embeds'...\n[15:20:00] Starting 'scripts'...\n[15:20:00] Finished 'embeds' after 169 ms\n[15:20:00] Finished 'scripts' after 217 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:20:01] Finished 'less' after 767 ms\n[Browsersync] Reloading Browsers...\n[15:20:16] Starting 'less'...\n[15:20:16] Starting 'embeds'...\n[15:20:16] Starting 'scripts'...\n[15:20:16] Finished 'embeds' after 77 ms\n[15:20:16] Finished 'scripts' after 475 ms\n[Browsersync] 1 file changed (main.css)\n[15:20:16] Finished 'less' after 478 ms\n[Browsersync] Reloading Browsers...\n[15:20:26] Starting 'less'...\n[15:20:26] Starting 'embeds'...\n[15:20:26] Starting 'scripts'...\n[15:20:27] Finished 'embeds' after 102 ms\n[15:20:27] Finished 'scripts' after 131 ms\n[Browsersync] 1 file changed (main.css)\n[15:20:27] Finished 'less' after 474 ms\n[Browsersync] Reloading Browsers...\n[15:21:16] Starting 'less'...\n[15:21:16] Starting 'embeds'...\n[15:21:16] Starting 'scripts'...\n[15:21:16] Finished 'embeds' after 153 ms\n[15:21:17] Finished 'scripts' after 211 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:21:17] Finished 'less' after 766 ms\n[Browsersync] Reloading Browsers...\n[15:21:30] Starting 'less'...\n[15:21:30] Starting 'embeds'...\n[15:21:30] Starting 'scripts'...\n[15:21:30] Finished 'embeds' after 129 ms\n[15:21:30] Finished 'scripts' after 139 ms\n[Browsersync] 1 file changed (main.css)\n[15:21:31] Finished 'less' after 537 ms\n[Browsersync] Reloading Browsers...\n[15:21:59] Starting 'less'...\n[15:21:59] Starting 'embeds'...\n[15:21:59] Starting 'scripts'...\n[15:21:59] Finished 'embeds' after 151 ms\n[15:21:59] Finished 'scripts' after 181 ms\n[Browsersync] 1 file changed (main.css)\n[15:21:59] Finished 'less' after 568 ms\n[Browsersync] Reloading Browsers...\n[15:22:49] Starting 'less'...\n[15:22:49] Starting 'embeds'...\n[15:22:49] Starting 'scripts'...\n[15:22:49] Finished 'embeds' after 171 ms\n[15:22:49] Finished 'scripts' after 234 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:22:50] Finished 'less' after 756 ms\n[Browsersync] Reloading Browsers...\n[15:23:07] Starting 'less'...\n[15:23:07] Starting 'embeds'...\n[15:23:07] Starting 'scripts'...\n[15:23:07] Finished 'embeds' after 141 ms\n[15:23:07] Finished 'scripts' after 169 ms\n[Browsersync] 1 file changed (main.css)\n[15:23:07] Finished 'less' after 549 ms\n[Browsersync] Reloading Browsers...\n[15:23:21] Starting 'less'...\n[15:23:21] Starting 'embeds'...\n[15:23:21] Starting 'scripts'...\n[15:23:22] Finished 'embeds' after 140 ms\n[15:23:22] Finished 'scripts' after 158 ms\n[Browsersync] 1 file changed (main.css)\n[15:23:22] Finished 'less' after 481 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[15:38:38] Starting 'less'...\n[15:38:38] Starting 'embeds'...\n[15:38:38] Starting 'scripts'...\n[15:38:39] Finished 'embeds' after 220 ms\n[15:38:39] Finished 'scripts' after 266 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:38:39] Finished 'less' after 879 ms\n[Browsersync] Reloading Browsers...\n[15:39:29] Starting 'less'...\n[15:39:29] Starting 'embeds'...\n[15:39:29] Starting 'scripts'...\n[15:39:29] Finished 'embeds' after 194 ms\n[15:39:29] Finished 'scripts' after 225 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:39:30] Finished 'less' after 793 ms\n[Browsersync] Reloading Browsers...\n[15:39:47] Starting 'less'...\n[15:39:47] Starting 'embeds'...\n[15:39:47] Starting 'scripts'...\n[15:39:47] Finished 'embeds' after 133 ms\n[15:39:47] Finished 'scripts' after 143 ms\n[Browsersync] 1 file changed (main.css)\n[15:39:48] Finished 'less' after 532 ms\n[Browsersync] Reloading Browsers...\n[15:40:40] Starting 'less'...\n[15:40:40] Starting 'embeds'...\n[15:40:40] Starting 'scripts'...\n[15:40:41] Finished 'embeds' after 145 ms\n[15:40:41] Finished 'scripts' after 190 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:40:41] Finished 'less' after 771 ms\n[Browsersync] Reloading Browsers...\n[15:41:48] Starting 'less'...\n[15:41:48] Starting 'embeds'...\n[15:41:48] Starting 'scripts'...\n[15:41:48] Finished 'embeds' after 168 ms\n[15:41:48] Finished 'scripts' after 208 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:41:49] Finished 'less' after 769 ms\n[Browsersync] Reloading Browsers...\n[15:42:19] Starting 'less'...\n[15:42:19] Starting 'embeds'...\n[15:42:19] Starting 'scripts'...\n[15:42:19] Finished 'embeds' after 207 ms\n[15:42:19] Finished 'scripts' after 265 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:42:20] Finished 'less' after 830 ms\n[Browsersync] Reloading Browsers...\n[15:42:31] Starting 'less'...\n[15:42:31] Starting 'embeds'...\n[15:42:31] Starting 'scripts'...\n[15:42:32] Finished 'embeds' after 113 ms\n[15:42:32] Finished 'scripts' after 122 ms\n[Browsersync] 1 file changed (main.css)\n[15:42:32] Finished 'less' after 506 ms\n[Browsersync] Reloading Browsers...\n[15:43:14] Starting 'less'...\n[15:43:14] Starting 'embeds'...\n[15:43:14] Starting 'scripts'...\n[15:43:14] Finished 'embeds' after 225 ms\n[15:43:14] Finished 'scripts' after 291 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[15:43:15] Finished 'less' after 851 ms\n[Browsersync] Reloading Browsers...\n[15:43:32] Starting 'less'...\n[15:43:32] Starting 'embeds'...\n[15:43:32] Starting 'scripts'...\n[15:43:32] Finished 'embeds' after 106 ms\n[15:43:32] Finished 'scripts' after 127 ms\n[Browsersync] 1 file changed (main.css)\n[15:43:32] Finished 'less' after 520 ms\n[Browsersync] Reloading Browsers...\n[15:43:42] Starting 'less'...\n[15:43:42] Starting 'embeds'...\n[15:43:42] Starting 'scripts'...\n[15:43:42] Finished 'embeds' after 108 ms\n[15:43:43] Finished 'scripts' after 128 ms\n[Browsersync] 1 file changed (main.css)\n[15:43:43] Finished 'less' after 468 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[17:24:41] Starting 'less'...\n[17:24:41] Starting 'embeds'...\n[17:24:41] Starting 'scripts'...\n[17:24:42] Finished 'embeds' after 240 ms\n[17:24:42] Finished 'scripts' after 268 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[17:24:42] Finished 'less' after 888 ms\n[Browsersync] Reloading Browsers...\n[17:25:25] Starting 'less'...\n[17:25:25] Starting 'embeds'...\n[17:25:25] Starting 'scripts'...\n[17:25:26] Finished 'embeds' after 182 ms\n[17:25:26] Finished 'scripts' after 221 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[17:25:26] Finished 'less' after 776 ms\n[Browsersync] Reloading Browsers...\n[17:25:52] Starting 'less'...\n[17:25:52] Starting 'embeds'...\n[17:25:52] Starting 'scripts'...\n[17:25:52] Finished 'embeds' after 216 ms\n[17:25:52] Finished 'scripts' after 823 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[17:25:52] Finished 'less' after 871 ms\n[Browsersync] Reloading Browsers...\n[17:26:42] Starting 'less'...\n[17:26:42] Starting 'embeds'...\n[17:26:42] Starting 'scripts'...\n[17:26:42] Finished 'embeds' after 232 ms\n[17:26:42] Finished 'scripts' after 278 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[17:26:43] Finished 'less' after 817 ms\n[Browsersync] Reloading Browsers...\n[17:29:16] Starting 'less'...\n[17:29:16] Starting 'embeds'...\n[17:29:16] Starting 'scripts'...\n[17:29:16] Finished 'embeds' after 173 ms\n[17:29:16] Finished 'scripts' after 202 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[17:29:17] Finished 'less' after 802 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[17:43:21] Starting 'less'...\n[17:43:21] Starting 'embeds'...\n[17:43:21] Starting 'scripts'...\n[17:43:21] Finished 'embeds' after 231 ms\n[17:43:21] Finished 'scripts' after 259 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[17:43:22] Finished 'less' after 921 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[17:46:16] Starting 'less'...\n[17:46:16] Starting 'embeds'...\n[17:46:16] Starting 'scripts'...\n[17:46:16] Finished 'embeds' after 217 ms\n[17:46:16] Finished 'scripts' after 254 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] 1 file changed (main.css)\n[17:46:17] Finished 'less' after 848 ms\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n[Browsersync] Reloading Browsers...\n",
+			"settings":
+			{
+				"buffer_size": 29970,
 				"line_ending": "Unix",
 				"name": "Bash",
 				"scratch": true
 			}
 		},
 		{
-			"file": "partials/sharer-timeline.php",
+			"file": "functions.php",
 			"settings":
 			{
-				"buffer_size": 2151,
+				"buffer_size": 4324,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "functions.php",
+			"contents": "pabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ nvm use                                                                            \nFound '/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/.nvmrc' with version <8>\nNow using node v8.17.0 (npm v6.14.6)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run build\n\n> c80-template@1.0.1 build /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp\n\n[15:32:55] Using gulpfile ~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js\n[15:32:55] Starting 'less'...\n[15:32:55] Starting 'embeds'...\n[15:32:55] Starting 'scripts'...\n[15:32:55] Starting 'compress'...\n[15:32:55] Finished 'compress' after 1.31 ms\n[15:32:56] Finished 'embeds' after 697 ms\n[15:32:56] Finished 'scripts' after 731 ms\n[15:32:56] Finished 'less' after 1.3 s\n[15:32:56] Starting 'default'...\n[15:32:56] Finished 'default' after 28 μs\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status                                                                         \nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   assets/css/main.css\n        modified:   assets/css/src/c80-home.less\n        modified:   c80.sublime-workspace\n        modified:   functions.php\n        modified:   home.php\n        modified:   includes/scripts.php\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\n        simple-image-widget/\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git add --all\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git commit -a -m \"ajustes para banner widget lt\"                                   \n[master 28201a9] ajustes para banner widget lt\n 7 files changed, 502 insertions(+), 335 deletions(-)\n create mode 100644 simple-image-widget/widget.php\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status\nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   assets/css/main.css\n        modified:   assets/css/src/c80-home.less\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git commit -a -m \"centrado y ajustes txt\"                                          \n[master 15a0682] centrado y ajustes txt\n 2 files changed, 41 insertions(+), 4 deletions(-)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git commit -a -m \"version change\"                                                  \n[master 5909152] version change\n 1 file changed, 1 insertion(+), 1 deletion(-)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ phploy -s                                                                          \n-------------------------------------------------\n|                     PHPloy                    |\n-------------------------------------------------\n\nSERVER: production\n ^ 1 of 7 assets/css/main.css\n ^ 2 of 7 assets/css/src/c80-home.less\n ^ 3 of 7 c80.sublime-workspace\n ^ 4 of 7 functions.php\n ^ 5 of 7 home.php\n ^ 6 of 7 includes/scripts.php\n + Created directory 'simple-image-widget/'.\n ^ 7 of 7 simple-image-widget/widget.php\n\n|---------------[ 407.98K Deployed ]---------------|\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status\nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   assets/css/main.css\n        modified:   assets/css/src/c80-home.less\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run build                                                                      \n\n> c80-template@1.0.1 build /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp\n\n[17:30:09] Using gulpfile ~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js\n[17:30:09] Starting 'less'...\n[17:30:09] Starting 'embeds'...\n[17:30:09] Starting 'scripts'...\n[17:30:09] Starting 'compress'...\n[17:30:09] Finished 'compress' after 1.28 ms\n[17:30:09] Finished 'embeds' after 709 ms\n[17:30:10] Finished 'scripts' after 746 ms\n^[[1;5D[17:30:10] Finished 'less' after 1.3 s\n[17:30:10] Starting 'default'...\n[17:30:10] Finished 'default' after 18 μs\n^[[1;5Dpabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status\nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   assets/css/main.css\n        modified:   assets/css/src/c80-home.less\n        modified:   functions.php\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git commit -a -m \"ajuste movil\"                                                    \n[master 708615f] ajuste movil\n 3 files changed, 22 insertions(+), 9 deletions(-)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ phploy -s\n-------------------------------------------------\n|                     PHPloy                    |\n-------------------------------------------------\n\nSERVER: production\n ^ 1 of 3 assets/css/main.css\n ^ 2 of 3 assets/css/src/c80-home.less\n ^ 3 of 3 functions.php\n\n|---------------[ 344.17K Deployed ]---------------|\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run build                                                                      \n\n> c80-template@1.0.1 build /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp\n\n[17:44:00] Using gulpfile ~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js\n[17:44:00] Starting 'less'...\n[17:44:00] Starting 'embeds'...\n[17:44:00] Starting 'scripts'...\n[17:44:00] Starting 'compress'...\n[17:44:00] Finished 'compress' after 1.61 ms\n[17:44:01] Finished 'embeds' after 743 ms\n[17:44:01] Finished 'scripts' after 776 ms\n[17:44:01] Finished 'less' after 1.35 s\n[17:44:01] Starting 'default'...\n[17:44:01] Finished 'default' after 23 μs\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status\nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   assets/css/main.css\n        modified:   assets/css/src/c80-home.less\n        modified:   functions.php\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git commit -a -m \"ajuste alto en movil\"                                            \n[master cf24884] ajuste alto en movil\n 3 files changed, 5 insertions(+), 5 deletions(-)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ phploy -s\n-------------------------------------------------\n|                     PHPloy                    |\n-------------------------------------------------\n\nSERVER: production\n ^ 1 of 3 assets/css/main.css\n ^ 2 of 3 assets/css/src/c80-home.less\n ^ 3 of 3 functions.php\n\n|---------------[ 344.17K Deployed ]---------------|\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status\nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   assets/css/main.css\n        modified:   assets/css/src/c80-home.less\n        modified:   functions.php\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ npm run build                                                                      \n\n> c80-template@1.0.1 build /home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template\n> gulp\n\n[17:46:30] Using gulpfile ~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js\n[17:46:30] Starting 'less'...\n[17:46:30] Starting 'embeds'...\n[17:46:30] Starting 'scripts'...\n[17:46:30] Starting 'compress'...\n[17:46:30] Finished 'compress' after 1.33 ms\n[17:46:31] Finished 'embeds' after 769 ms\n[17:46:31] Finished 'scripts' after 796 ms\n[17:46:31] Finished 'less' after 1.4 s\n[17:46:31] Starting 'default'...\n[17:46:31] Finished 'default' after 18 μs\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git commit -a -m \"ajuste bold banner lt\"                                           \n[master 21ecaca] ajuste bold banner lt\n 3 files changed, 3 insertions(+), 1 deletion(-)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ phploy -s\n-------------------------------------------------\n|                     PHPloy                    |\n-------------------------------------------------\n\nSERVER: production\n ^ 1 of 3 assets/css/main.css\n ^ 2 of 3 assets/css/src/c80-home.less\n ^ 3 of 3 functions.php\n\n|---------------[ 344.21K Deployed ]---------------|\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git status                                                                         \nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   partials/aside-opinion.php\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ git commit -a -m \"test img\"                                                        \n[master 75d61f8] test img\n 1 file changed, 1 insertion(+), 1 deletion(-)\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ phploy -s\n-------------------------------------------------\n|                     PHPloy                    |\n-------------------------------------------------\n\nSERVER: production\n ^ 1 of 1 partials/aside-opinion.php\n\n|---------------[ 1.06K Deployed ]---------------|\npabloselin@outpost:~/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template$ ",
 			"settings":
 			{
-				"buffer_size": 4339,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"buffer_size": 11521,
+				"line_ending": "Unix",
+				"name": "Bash",
+				"scratch": true
 			}
 		},
 		{
@@ -340,20 +296,30 @@
 			}
 		},
 		{
-			"contents": "Searching 72 files for \"c80t_run_featured\"\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/home.php:\n   10  \t\t<div class=\"featured-section\">\n   11  \t\t\t<?php \n   12: \t\t\t\t$featured = c80t_run_featured();\n   13  \t\t\t\twhile($featured->have_posts() ): $featured->the_post();\n   14  \t\t\t\t\t//Imagen destacada\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/content.php:\n  170  }\n  171  \n  172: function c80t_run_featured() {\n  173  \t/**\n  174  \t * Devuelve el primer item del menú\n\n2 matches across 2 files\n\n\nSearching 72 files for \"alegreya\"\n\n0 matches\n\nSearching 72 files for \"open_sans\"\n\n0 matches\n\nSearching 72 files for \"oswald\"\n\n0 matches\n\nSearching 324 files for \"oswald\"\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-embeds.less:\n    5  //@import 'c80-fonts.less';\n    6  \n    7: @import url(https://fonts.googleapis.com/css?family=Oswald);\n    8  @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);\n    9  \n   ..\n   20  \n   21  .wp-embed-heading a {\n   22: \tfont-family: 'Oswald', sans-serif;\n   23  \tfont-weight:normal;\n   24  \tcolor:@azul-titulo;\n   ..\n   49  \tmargin-top:0;\n   50  \tmargin-bottom:24px;\n   51: \tfont-family:'Oswald', sans-serif;\n   52  \tcolor:#9a3f0c;\n   53  }\n   ..\n   60  \n   61  .embed-footer-title {\n   62: \tfont-family:'Oswald', sans-serif;\n   63  \tfont-size:20px;\n   64  \tcolor:white;\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-fonts.less:\n   26  }\n   27  @font-face {\n   28:   font-family: 'Oswald';\n   29    font-style: normal;\n   30    font-weight: 300;\n   31:   src: local('Oswald Light'), local('Oswald-Light'), url(../fonts/Oswald/Oswald-Light.ttf) format('truetype');\n   32  }\n   33  @font-face {\n   34:   font-family: 'Oswald';\n   35    font-style: normal;\n   36    font-weight: 400;\n   37:   src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/Oswald/Oswald-Regular.ttf) format('truetype');\n   38  }\n\n14 matches across 2 files\n",
+			"file": "partials/aside-opinion.php",
 			"settings":
 			{
-				"buffer_size": 2148,
+				"buffer_size": 1082,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 73 files for \"c80t_avatar\"\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/archive.php:\n   21  \t\t\t\t\t<?php the_post_thumbnail( 'alt-thumbnail' );?>\n   22  \t\t\t\t<?php else:?>\n   23: \t\t\t\t\t<?php echo c80t_avatar(150);?>\n   24  \t\t\t\t<?php endif;?>\n   25  \t\t\t\t</div>\n   ..\n   30  \t<?php elseif($ptype == 'columnas'):?>\n   31    <div class=\"mobile-avatar-archive visible-xs\">\n   32:   <?php echo c80t_avatar(80);?>\n   33          </div>\n   34  \t\t\t\t<?php endif;?>\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/noticias.php:\n   34  \t\t\t\t\t<?php the_post_thumbnail( 'alt-thumbnail' );?>\n   35  \t\t\t\t<?php else:?>\n   36: \t\t\t\t\t<?php echo c80t_avatar(160);?>\n   37  \t\t\t\t<?php endif;?>\n   38  \t\t\t</div>\t\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/single-columnas.php:\n   20  \t\t\t\t\t\t<h1 itemprop=\"headline\"><?php the_title();?></h1>\n   21  \t\t\t\t\t\t<div class=\"autor-card\">\n   22: \t\t\t\t\t\t\t<?php echo c80t_avatar(70);?>\n   23  \t\t\t\t\t\t\t<p class=\"autor\" itemprop=\"author\">\n   24  \t\t\t\t\t\t\t\t<?php the_author( );?>\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/author.php:\n    1  <?php\n    2  \n    3: function c80t_avatar($size) {\n    4  \tglobal $post;\n    5  \t$authorid = get_the_author_meta( 'ID' );\n\n/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/aside-opinion.php:\n   17  \t\t\t\t\t\t\n   18  \t\t\t\t\t\t<div class=\"avatar\">\n   19: \t\t\t\t\t\t\t<?php echo c80t_avatar(90);?>\n   20  \t\t\t\t\t\t</div>\n   21  \t\t\t\t\n\n6 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 1648,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
 			}
 		},
 		{
-			"file": "assets/css/src/c80-fonts.less",
+			"file": "includes/author.php",
 			"settings":
 			{
-				"buffer_size": 1216,
+				"buffer_size": 2385,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -378,6 +344,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"term",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
 			[
 				"rein",
 				"Indentation: Reindent Lines"
@@ -507,17 +477,18 @@
 	},
 	"expanded_folders":
 	[
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/img",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/src",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/vendor",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/html",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes"
 	],
 	"file_history":
 	[
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-fonts.less",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/sharer-timeline.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/c80-timeline.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/main.less",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/scripts.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/src/timeline.js",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/c80-timeline.js",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/post-types.php",
+		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/timeline-functions.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/timeline-sharer.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/timeline-nav.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/sharer.php",
@@ -528,14 +499,10 @@
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/timenav/TL.TimeGroup.less",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/timenav/TL.TimeMarker.less",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-variables.less",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/scripts.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/sanitize-title.js",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/src/timeline.js",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/c80-timeline.js",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/plugins/c80-plugin/uninstall.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/gulpfile.js",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/src/scripts.js",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/timeline-functions.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/footer-timeline.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/js/c80-timeline-mod.js",
 		"/home/pabloselin/Dropbox/cryojelly_2020/code/cryojelly_test_01/GameVars.gd",
@@ -548,7 +515,6 @@
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/timenav/TL.TimeNav.less",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/package.json",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/main.css",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/c80-timeline.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/ui/TL.MenuBar.less",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/timeline/TL.Timeline.Base.less",
 		"/home/pabloselin/Dropbox/cryojelly_2020/code/cryojelly_test_01/scenes/Intro.gd",
@@ -568,10 +534,8 @@
 		"/home/pabloselin/Documents/GameDev/cryojelly_2020/code/cryojelly_test_01/scenes/Stage.gd",
 		"/home/pabloselin/Documents/GameDev/cryojelly_2020/code/cryojelly_test_01/scenes/RoomHold.gd",
 		"/home/pabloselin/Documents/GameDev/cryojelly_2020/code/cryojelly_test_01/scenes/PablaralesBody.gd",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/sharer-timeline.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/partials/timeline-fase.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/phploy.ini",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/post-types.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/content.php",
 		"/home/pabloselin/Documents/GameDev/cryojelly_2020/code/cryojelly_test_01/data/dialogue.json",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-asides.less",
@@ -585,7 +549,6 @@
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/single.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/includes/ajax.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/c80-comments.less",
-		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/assets/css/src/main.less",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template/reunion_07052020.txt",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-config.php",
 		"/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/plugins/c80-plugin/public/class-c80-public.php",
@@ -647,6 +610,7 @@
 		"height": 101.0,
 		"where_history":
 		[
+			"*.php",
 			"*.less",
 			"*.php",
 			"*.js",
@@ -660,6 +624,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"c80t_avatar",
 			"anuncios",
 			"wpdocs",
 			"options",
@@ -786,8 +751,7 @@
 			"fases-nav-home",
 			"arrow",
 			"transitionend",
-			"presentacion-fase",
-			"nav"
+			"presentacion-fase"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -806,214 +770,11 @@
 	"groups":
 	[
 		{
-			"selected": 14,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "c80-timeline.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4156,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								393,
-								393
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "includes/timeline-functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14951,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10981,
-								10981
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 5877.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "includes/post-types.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10505,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9004,
-								9004
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3213.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "assets/js/c80-timeline.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 412674,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								598,
-								598
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "assets/js/src/timeline.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9390,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5476,
-								5476
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2368.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "includes/scripts.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2838,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								788,
-								788
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 34.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "assets/css/src/main.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2865,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								558,
-								558
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "assets/css/src/c80-variables.less",
 					"semi_transient": true,
 					"settings":
@@ -1038,24 +799,24 @@
 						"translation.y": 612.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 1,
 					"file": "assets/css/src/c80-home.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7056,
+						"buffer_size": 8699,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7017,
-								7017
+								7906,
+								7906
 							]
 						],
 						"settings":
@@ -1064,26 +825,84 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7215.0,
+						"translation.y": 8206.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 2,
+					"file": "simple-image-widget/widget.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4642,
+						"buffer_size": 998,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4642,
-								4642
+								948,
+								948
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 12.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/css/src/c80-timeline.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17502,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								804,
+								804
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29970,
+								29970
 							]
 						],
 						"settings":
@@ -1108,7 +927,7 @@
 							"result_line_regex": null,
 							"scroll_past_end": true,
 							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"terminus.highlight_counter": 4987,
+							"terminus.highlight_counter": 51029,
 							"terminus_view": true,
 							"terminus_view.args":
 							{
@@ -1142,61 +961,31 @@
 							"terminus_view.natural_keyboard": true,
 							"terminus_view.panel_name": null,
 							"terminus_view.tag": null,
-							"terminus_view.viewport_y": 1088.0,
+							"terminus_view.viewport_y": 12580.0,
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1088.0,
+						"translation.y": 12580.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "partials/sharer-timeline.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2151,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1709,
-								1709
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 5,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 136.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
+					"buffer": 5,
 					"file": "functions.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4339,
+						"buffer_size": 4324,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2108,
-								2108
+								60,
+								60
 							]
 						],
 						"settings":
@@ -1205,14 +994,96 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 561.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11521,
+								11521
+							]
+						],
+						"settings":
+						{
+							"__vi_external_disable": true,
+							"auto_complete": false,
+							"auto_complete_commit_on_tab": false,
+							"bracket_highlighter.clone_locations":
+							{
+							},
+							"bracket_highlighter.ignore": true,
+							"color_scheme": "Terminus.hidden-color-scheme",
+							"draw_centered": false,
+							"draw_indent_guides": false,
+							"draw_unicode_white_space": false,
+							"draw_white_space": "none",
+							"gutter": false,
+							"highlight_line": false,
+							"is_widget": true,
+							"result_base_dir": "/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template",
+							"result_file_regex": null,
+							"result_line_regex": null,
+							"scroll_past_end": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"terminus.highlight_counter": 3699,
+							"terminus_view": true,
+							"terminus_view.args":
+							{
+								"auto_close": true,
+								"cancellable": false,
+								"cmd":
+								[
+									"bash",
+									"-i",
+									"-l"
+								],
+								"config_name": "Bash",
+								"cwd": "/home/pabloselin/Documents/WebDev/local_sites/c80/app/public/wp-content/themes/c80-template",
+								"env":
+								{
+									"LANG": "en_US.UTF-8",
+									"TERM": "linux",
+									"TERMINUS_SUBLIME": "1",
+									"TERM_PROGRAM": "Terminus-Sublime"
+								},
+								"file_regex": null,
+								"line_regex": null,
+								"panel_name": null,
+								"tag": null,
+								"timeit": false,
+								"title": null
+							},
+							"terminus_view.cancellable": false,
+							"terminus_view.key.ctrl+k": true,
+							"terminus_view.key.ctrl+p": true,
+							"terminus_view.natural_keyboard": true,
+							"terminus_view.panel_name": null,
+							"terminus_view.tag": null,
+							"terminus_view.viewport_y": 2975.0,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2975.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "header.php",
 					"semi_transient": false,
 					"settings":
@@ -1238,11 +1109,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 8,
 					"file": "header-timeline.php",
 					"semi_transient": false,
 					"settings":
@@ -1268,11 +1139,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 9,
 					"file": "home.php",
 					"semi_transient": false,
 					"settings":
@@ -1284,8 +1155,37 @@
 						"selection":
 						[
 							[
-								456,
-								456
+								3224,
+								3224
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1832.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "partials/aside-opinion.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1082,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								475,
+								475
 							]
 						],
 						"settings":
@@ -1297,15 +1197,15 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 11,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2148,
+						"buffer_size": 1648,
 						"regions":
 						{
 							"match":
@@ -1314,68 +1214,28 @@
 								"regions":
 								[
 									[
-										226,
-										243
+										250,
+										261
 									],
 									[
-										493,
-										510
+										442,
+										453
 									],
 									[
-										996,
-										1002
+										723,
+										734
 									],
 									[
-										1175,
-										1181
+										1027,
+										1038
 									],
 									[
-										1329,
-										1335
+										1285,
+										1296
 									],
 									[
-										1446,
-										1452
-									],
-									[
-										1688,
-										1694
-									],
-									[
-										1774,
-										1780
-									],
-									[
-										1797,
-										1803
-									],
-									[
-										1826,
-										1832
-									],
-									[
-										1833,
-										1839
-									],
-									[
-										1923,
-										1929
-									],
-									[
-										2009,
-										2015
-									],
-									[
-										2034,
-										2040
-									],
-									[
-										2065,
-										2071
-									],
-									[
-										2072,
-										2078
+										1571,
+										1582
 									]
 								],
 								"scope": ""
@@ -1384,15 +1244,15 @@
 						"selection":
 						[
 							[
-								736,
-								736
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 5,
+							"output_tag": 1,
 							"result_base_dir": "",
 							"result_file_regex": "^([^ \t].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -1400,44 +1260,43 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 510.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
-					"file": "assets/css/src/c80-fonts.less",
+					"buffer": 12,
+					"file": "includes/author.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1216,
+						"buffer_size": 2385,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								656,
-								656
+								151,
+								151
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/Syntaxes/LESS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 13,
 					"file": "includes/content.php",
 					"semi_transient": false,
 					"settings":
@@ -1459,10 +1318,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4041.0,
+						"translation.y": 607.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 12,
 					"type": "text"
 				}
 			]
@@ -1517,8 +1376,20 @@
 		"selected_items":
 		[
 			[
+				"autho",
+				"c80-template/includes/author.php"
+			],
+			[
+				"asideo",
+				"c80-template/partials/aside-opinion.php"
+			],
+			[
 				"hom",
 				"c80-template/home.php"
+			],
+			[
+				"c80timeli",
+				"c80-template/assets/css/src/c80-timeline.less"
 			],
 			[
 				"func",
@@ -1747,10 +1618,6 @@
 			[
 				"c80ti",
 				"c80-template/assets/css/src/c80-timeline.less"
-			],
-			[
-				"c80timeli",
-				"c80-template/assets/js/c80-timeline.js"
 			],
 			[
 				"media",
@@ -2019,14 +1886,6 @@
 			[
 				"php",
 				"phploy.ini"
-			],
-			[
-				"dpl",
-				"dploy.yaml"
-			],
-			[
-				".git",
-				".gitignore"
 			]
 		],
 		"width": 0.0
@@ -2034,9 +1893,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "automa",
+		"last_filter": "luc",
 		"selected_items":
 		[
+			[
+				"luc",
+				"~/Documents/WebDev/local_sites/luciaegana/app/public/wp-content/themes/ler/luciaegana.sublime-project"
+			],
 			[
 				"automa",
 				"~/Documents/WebDev/local_sites/automark/app/public/wp-content/themes/automark/automark.sublime-project"
@@ -2096,10 +1959,6 @@
 			[
 				"auto",
 				"~/Documents/WebDev/local_sites/automark/app/public/wp-content/themes/automark/automark.sublime-project"
-			],
-			[
-				"luc",
-				"~/Documents/WebDev/local_sites/luciaegana/app/public/wp-content/themes/ler/luciaegana.sublime-project"
 			],
 			[
 				"cry",
